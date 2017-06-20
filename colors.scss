@@ -1,0 +1,95 @@
+$text-link-color: #3a98d8;
+$expando-button-color: #666;
+
+$primary-text-color: #32383f;
+$heading-text-color: #23374b;
+$strikethrough-text-color: #999;
+$code-block-text-color: #7f8d8e;;
+
+$content-background-color: #fff;
+$footer-background-color: rgba(36, 42, 48, 0.9);
+
+$sidebar-border-color: #e1e3e4;
+$sidebar-background-color: #f7f7f7;
+
+$link-info-border-color: #ccd1d5;
+
+$title-box-text-color: #666;
+$subscriber-count-color: #000;
+
+$upvote-color: #ee5559;
+$downvote-color: #3a98d8;
+$score-text-color: #fff;
+$upvote-info-text-color: #ffb6af;
+
+$admin-tag-background-color: $upvote-color;
+$submitter-tag-background-color: $downvote-color;
+$moderator-tag-background-color: $upvote-color;
+
+$input-text-color: #262626;
+$input-focus-border-color: #e1e1e1;
+$side-input-background-color: $sidebar-border-color;
+
+$radio-button-checked-background-color: #c22222;
+$radio-button-unchecked-background-color: #ccd2d2;
+
+$select-text-color: #000;
+
+$button-default-background-color: #3a98d8;
+$button-default-text-color: $sidebar-background-color;
+$button-post-action-background-color: rgba(255, 255, 255, .1);
+
+$link-flair-background-color: #cc2222;
+$link-flair-text-color: #fff;
+
+/* More specific nonsense */
+$link-text-icon-color: rgba(0, 0, 0, .4);
+
+$search-result-link-color: $heading-tet-color;
+
+$header-action-overlay-color: rgba(0, 0, 0, .35);
+$reddit-top-bar-area-background-color: $primary-text-color;
+$reddit-top-bar-spacer-color: rgba(0, 0, 0, .1);
+$reddit-top-bar-link-color: $primary-text-color;
+$reddit-top-bar-link-hover-background-color: rgba(50, 58, 71, .1);
+$reddit-top-bar-link-hover-text-color: $primary-text-color;
+
+$res-dialog-drop-shadow-color: rgba(0, 0, 0, .5);
+$res-dialog-border-color: $sidebar-background-color;
+$res-dialog-background-color: #fff;
+$res-shortcut-border-color: $link-info-border-color;
+$res-shortcut-edit-container-text-color: $primary-text-color;
+$res-search-menu-item-hover-color: rgba(50, 58, 71, .2);
+$res-active-elemtn-background-color: rgba(0, 0, 0, 0.02);
+
+$drop-choices-icon-color: #fff;
+$drop-choices-border-color: #434b55;
+$drop-choices-hover-text-color: #ffb6af;
+
+$more-link-border-color: rgba(0, 0, 0, .1);
+$more-link-background-color: #fff;
+$more-link-after-background-color: rgba(255, 255, 255, 0.5);
+
+$page-name-text-color: #fff;
+$page-name-text-shadow-color: rgba(0, 0, 0, 0.3215);
+
+$tab-menu-hover-box-shadow-color: rgba(0, 0, 0, 0.5);
+$tab-menu-option-background-color: #fff;
+$tab-menu-option-border-color: rgba(0, 0, 0, 0.1);
+$tab-menu-option-text-color: $primary-text-color;
+$tab-menu-option-hover-background-color: rgba(50, 58, 71, .1);
+$tab-menu-option-selected-text-color: #fff;
+
+$message-count-background-color: #c4918a;
+
+$neutral-pretty-button-border-color: #67676d;
+$positive-pretty-button-background-color: #3aca74;
+$pressed-pretty-button-background-color: #21252a;
+
+$reported-stamp-background-color: rgba(255,255,0,0.4);
+
+$next-preview-link-hover-background-color: rgba(255, 255, 255, .8);
+
+/* Night mode */
+$nightmode-content-background-color: #282828;
+$nightmode-link-flair-text-color: #c8c8c8;

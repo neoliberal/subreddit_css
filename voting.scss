@@ -1,0 +1,37 @@
+body span.score {
+	color: $score-text-color;
+}
+
+.arrow {
+	width: 25px;
+	height: 25px;
+	background: url(%%spritesheet%%) !important;
+}
+
+.arrow.up {
+	background-position: $upvote-arrow-background-position !important;
+}
+
+.arrow.upmod {
+	background-position: $upvote-arrow-mod-background-position !important;
+}
+
+.arrow.down {
+	background-position: $downvote-arrow-background-position !important;
+}
+
+.arrow.downmod {
+	background-position: $downvote-arrow-mod-background-position !important;
+}
+
+.link .score {
+	width: 35px;
+}
+
+.link .score.likes {
+	color: $upvote-color;
+}
+
+.link .score.dislikes {
+	color: $downvote-color;
+}

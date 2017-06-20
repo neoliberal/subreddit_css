@@ -1,0 +1,1113 @@
+body > .content,
+.res.res-commentBoxes body > .content,
+.modtools-page > div.content {
+	@include flex(1 1 auto);
+	@include order(-1);
+	margin: 0 0 0 0;
+	width: calc(100% - 381px);
+	padding: 0 10px !important;
+	background: $content-background-color;
+	color: $primary-text-color;
+}
+
+body > .content > .content {
+	margin: 0;
+}
+
+body > .content:before {
+	height: 3px;
+	padding: 0 20px;
+	background: linear-gradient(to left, $downvote-color, $link-flair-background-color, $downvote-color);
+	margin-left: -10px;
+	margin-right: -331px;
+	margin-bottom: 5px !important;
+}
+
+body > .content:before,
+.reddit-infobar {
+	display: block;
+	overflow: hidden;
+	margin-top: 0;
+	height: 45px;
+	border: 0;
+	line-height: 45px;
+	white-space: nowrap;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $link-flair-text-color;
+	content: "";
+}
+
+body > .content > .spacer:nth-of-type(1) {
+    display: none
+}
+
+:not(.side)+a[name=content] + .content {
+	margin-right: 30px;
+}
+
+:not(.side)+a[name=content] + .content:before {
+	margin-right: -10px;
+}
+
+.content .spacer {
+	margin: 0;
+}
+
+
+#siteTable_organic.organic-listing {
+	border: 0;
+	border-bottom: 1px solid $link-info-border-color;
+	background: none !important;
+}
+
+
+.reddit-infobar {
+	margin-bottom: -1px;
+	border-bottom: 1px solid $link-info-border-color;
+	padding: 0 10px;
+	background: 0;
+}
+
+.reddit-infobar .md {
+	display: inline-block;
+	margin: auto 0;
+	color: $tab-menu-option-selected-text-color;
+}
+
+.reddit-infobar.md-container-small .md p {
+	font-size: 11px;
+}
+
+.link,
+.link.last-clicked {
+	display: inline-block;
+	overflow: visible;
+	margin: 0;
+	padding: 10px 0;
+	border: 0;
+	border-top: 1px solid $sidebar-background-color;
+	vertical-align: top;
+}
+
+.comments-page .link,
+.content>.sitetable:nth-of-type(1)>.link:nth-of-type(1),
+.content>.spacer>.sitetable:nth-of-type(1)>.link:nth-of-type(1),
+.content>.spacer>.sitetable:nth-of-type(1)>.link:nth-of-type(2) {
+	border-top: 0;
+}
+
+.comments-page .link.odd {
+	width: 100%;
+	border-right: 0;
+}
+
+.link.odd {
+	border-right: 1px solid $link-info-border-color;
+	padding-right: 10px;
+}
+
+.link.even {
+	margin-left: -1px;
+	border-left: 1px solid $link-info-border-color;
+}
+
+.link.even .entry {
+	margin-left: 140px;
+}
+
+.clearleft,
+.link .rank {
+	display: none;
+}
+
+body > .content .link.thing .midcol {
+	width: 35px;
+	margin-top: 5px;  
+	margin-left: -3px;
+}
+
+body.comments-page > .content .link.thing .midcol {
+	align-self: flex-start;
+	margin: 0 3px;
+}
+
+body>.content .link.even.thing .midcol {
+	margin-left: 7px;
+}
+
+.comment .midcol {
+	width: 35px;
+}
+
+.link .entry .expando {
+  clear: none;
+}
+
+/* Thumbnails */
+
+.thumbnail {
+	position: relative;
+}
+
+.thumbnail,
+.thumbnail.self,
+.search-result.has-thumbnail>.thumbnail,
+.link .entry:before {
+	@include flex(none);
+	width: 80px;
+	height: 80px!important;
+}
+
+.search-result.has-thumbnail>.thumbnail {
+	margin-right: 10px;
+}
+
+.link .thumbnail img {
+	width: auto !important;
+	height: 80px !important;
+}
+
+.thumbnail:after {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	width: 80px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 700;
+	color: $score-text-color !important;
+	pointer-events: none;
+}
+
+a.thumbnail[href*="reddit.com"] {
+	background: $downvote-color;
+}
+
+.thing.stickied .thumbnail,
+.link.stickied:not(.thumbnail)+.entry:before {
+	background: $link-flair-background-color !important;
+}
+
+.thumbnail.self,
+.link:not(.thumbnail)+.entry:before,
+.thumbnail.default {
+    background: $downvote-color !important;
+}
+
+.over18 .thumbnail.nsfw {
+    background: $upvote-color;
+}
+
+body:not(.comments-page) .link:not(.thumbnail)+.entry:before {
+	position: absolute;
+	top: 0;
+	left: -90px;
+	line-height: 80px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 700;
+	color: $link-text-icon-color;
+	pointer-events: none;
+	content: "•••";
+}
+
+.thumbnail.default:after {
+	font-size: 25px;
+	content: "•••";
+}
+
+.link a.thumbnail[href*="reddit.com"]:after {
+	font-size: 11px;
+	content: "reddit";
+}
+
+body .self.thumbnail:after {
+	content: "self" !important;
+}
+
+.link.over18 a.thumbnail:after {
+	content: "nsfw" !important;
+}
+
+.link.thing.stickied .thumbnail:after {
+	content: "stickied"!important;
+	color: $score-text-color;
+	font-size: 10px !important;
+}
+
+.self .thumbnail img,
+.thing.stickied .thumbnail img,
+.comments-page .thing.stickied .thumbnail,
+.comments-page .thumbnail.self,
+.comments-page .over18 .thumbnail,
+a.thumbnail[href*="reddit.com"] img {
+	display: none;
+}
+
+.link .entry {
+	position: relative;
+	overflow: visible;
+	margin-left: 130px;
+	min-height: 80px;
+	padding: 10px;
+}
+
+.comments-page .link.self .entry,
+.comments-page .link.over18 .entry {
+	margin-left: 39px;
+}
+
+
+.thing p.title {
+	margin-bottom: 7px;
+}
+
+.thing a.title,
+.search-result-header>a {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 700;
+	color: $search-result-link-color;
+}
+
+.listing-page .domain {
+	display: inline-block;
+	height: 17px;
+	vertical-align: top;
+	line-height: 20px;
+}
+
+.spam .domain,
+.spam .domain a {
+	color: $title-box-text-color;
+}
+
+.thing a.title:hover {
+	color: $upvote-color;
+}
+
+.thing.stickied.link a.title,
+.tagline .stickied-tagline,
+.stickied.link .entry .buttons li a:hover,
+.stickied.link .redditSingleClick:hover,
+.stickied.link .entry .buttons li a.comments {
+	color: $link-flair-background-color;
+}
+
+.thing a.title:visited,
+.thing.visited a.title,
+.thing .title.visited,
+.search-result:visited,
+.search-result:visited>mark,
+.search-result.visited .search-title,
+.search-result.visited .search-link,
+.search-result.visited .search-title>mark,
+.search-result.visited .search-link>mark {
+	color: $title-box-text-color !important;
+}
+
+.md h1:after {
+	display: block;
+	margin: 7px 0;
+	width: 50px;
+	height: 1px;
+	background: $content-background-color;
+	content: "";
+	transition: .2s;
+}
+
+.title+.expando-button+.expando-button {
+	display: none;
+}
+
+html body .content .expando-button {
+	position: relative;
+	margin-right: 4px;
+	width: 28px;
+	height: 28px;
+	max-width: none;
+	max-height: none;
+	border: 0;
+	border-radius: 20px;
+	background: $more-link-border-color !important;
+	transition: .2s;
+}
+
+.usertext-body .md .expando-button,
+.wiki-page .expando-button,
+.messages-page .expando-button {
+	margin-top: 0;
+	margin-bottom: 0;
+	vertical-align: middle !important;
+}
+
+.expando-button:before,
+.res-highlight-nsfw-expando .thing.over18 .expando-button:before,
+.expando-button:after {
+	position: absolute;
+	left: 8px;
+	top: 13.5px;
+	width: 12px;
+	height: 1px;
+	background: $input-text-color;
+	content: "";
+	transition: .3s;
+}
+
+.expando-button:after {
+	transform: rotate(90deg);
+}
+
+.expando-button.expanded:before {
+	transform: rotate(180deg);
+}
+
+html body .expando-button.expanded:after {
+	transform: rotate(180deg);
+}
+
+.link.self .entry>.expando-button.collapsed:after {
+	top: 10px;
+	height: 9px;
+	border: 1px solid $input-text-color;
+	border-left: 0;
+	border-right: 0;
+	background: 0;
+	transform: rotate(0);
+}
+
+.link.self .entry>.expando-button.expanded:after {
+	top: 14px;
+	height: 0;
+	border: 0;
+}
+
+.nsfw-stamp {
+	border: 0;
+	color: $upvote-color;
+}
+
+.link .entry .tagline,
+.tagline a,
+.entry .buttons li a,
+.entry .buttons li a.nonbutton,
+.link .redditSingleClick {
+	font-size: 11px;
+	font-weight: 400;
+	letter-spacing: 0;
+	color: $title-box-text-color;
+}
+
+.stamp {
+	border-radius: 0;
+}
+
+.entry .buttons li.reported-stamp,
+ul.report-reasons {
+	border: 0 !important;
+	color: $input-text-color;
+	background: $reported-stamp-background-color;
+}
+
+ul.report-reasons {
+    width: 100%
+}
+
+.rounded {
+    border-radius: 0
+}
+
+body .thing .tagline .author.moderator,
+body .thing .tagline .author.submitter,
+body .thing .tagline .author.friend,
+body .thing .tagline .author.admin,
+.tagline .userattrs a {
+	display: inline-block;
+	margin: 0 5px;
+	border-radius: 0;
+	padding: 0 3px;
+	font-weight: 400;
+	color: $score-text-color !important;
+	background-color: $moderator-tag-background-color !important;
+}
+
+body .thing .tagline .author.submitter,
+body .thing .tagline .author.submitter:hover,
+.tagline .userattrs a.submitter {
+	background-color: $submitter-tag-background-color !important;
+	border-radius: 0px;
+}
+
+body .thing .tagline .author.moderator,
+body .thing .tagline .author.moderator:hover,
+.tagline .userattrs a.moderator {
+	color: $score-text-color !important;
+	border-radius: 0px;
+}
+
+.tagline .userattrs a.moderator {
+	color: $upvote-color !important;
+	background-color: transparent !important;
+	margin-left: 0px;
+}
+
+body .thing .tagline .author.admin,
+body .thing .tagline .author.admin:hover,
+.tagline .userattrs a.admin {
+	background-color: $admin-tag-background-color !important
+}
+
+
+.tagline .userattrs a.moderator:hover:after {
+	content: "oderator, speaking officially";
+}
+
+.tagline .userattrs a.submitter:hover:after {
+	content: "ubmitter";
+}
+
+.tagline .userattrs a.admin:hover:after {
+	content: "dmin, speaking officially";
+}
+
+.tagline .userattrs {
+	font-size: 0;
+}
+
+.tagline .userattrs a {
+	color: $score-text-color #fff;
+}
+
+.link .entry .buttons li a:hover,
+.link .redditSingleClick:hover {
+	color: $link-flair-background-color;
+}
+
+.link .entry .buttons li a.comments {
+	font-weight: 700;
+	color: $link-flair-background-color;
+}
+
+span.newComments,
+form.state-button.approve-button {
+	font-size: 11px;
+	color: $title-box-text-color;
+}
+
+.expando+ul.flat-list.buttons {
+	margin-top: 10px;
+}
+
+.link .expando {
+	margin-bottom: 0;
+}
+
+.link .usertext-body .md {
+	margin-bottom: 0;
+	border: 0;
+	border-radius: 0;
+	padding: 10px;
+}
+
+.nav-buttons {
+	border-top: 1px solid $link-info-border-color;
+	padding: 10px 0;
+	font-size: 0
+}
+
+.nextprev a,
+.next-suggestions a {
+	display: inline-block;
+	margin-right: 10px;
+	border: 0;
+	border-radius: 0;
+	padding: 10px;
+	background: $content-background-color;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: $primary-text-color;
+	transition: .2s
+}
+
+.nextprev a:hover,
+.next-suggestions a:hover {
+	border: 0;
+	background: $next-preview-link-hover-background-color;
+}
+
+
+.archived-infobar.with-icon:before {
+	background-color: transparent;
+}
+
+.panestack-title {
+	border-top: 1px solid $link-info-border-color;
+}
+
+.panestack-title,
+.menuarea {
+	vertical-align: middle;
+	margin: 0;
+	padding: 9.5px;
+	border-bottom: 1px solid $link-info-border-color;
+	color: $input-text-color;
+}
+
+.panestack-title a.title-button.gold {
+	border: 0;
+	background: 0;
+	color: $gold-title-button-text-color
+}
+
+.commentarea .menuarea {
+	margin-top: 10px;
+	margin-right: 0;
+}
+
+.commentarea .menuarea,
+.commentarea .menuarea .toggle a {
+	font-size: 12px;
+	font-weight: 400;
+	color: $comment-menu-area-toggle-text-color;
+}
+
+.dropdown.lightdrop .selected {
+	background: 0;
+	text-transform: uppercase;
+	font-size: 9px;
+	font-weight: 400;
+	color: $downvote-color;
+}
+
+.dropdown.lightdrop .selected:after {
+	content: " ▾";
+}
+
+.commentarea .commentNavSortType {
+	margin-right: 8px;
+	font-weight: 400;
+}
+
+.commentarea .commentNavSortType+.commentNavSortType {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	margin-right: 8px;
+}
+
+.gold-accent,
+.gold-accent.comment-visits-box {
+    border: 0;
+    background: 0;
+    color: $gold-accent-text-color;
+}
+
+.new-comment .usertext-body,
+.usertext.border .usertext-body {
+	border: 0;
+	background: $link-info-border-color;
+}
+
+.infobar {
+	margin-right: 0;
+	border: 0 !important;
+	padding: 5px 0;
+	background: none !important;
+}
+
+.commentarea>.sitetable>.comment {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.res.res-commentBoxes .comment,
+.comment {
+	overflow: hidden;
+	margin-bottom: 0 !important;
+	border: 1px solid $sidebar-background-color !important;
+	border-right: 0 !important;
+	border-bottom: 0 !important;
+	padding: 0 !important;
+	padding-top: 8px !important;
+}
+
+.comment .midcol {
+	margin-right: 0;
+}
+
+.comment .entry {
+	padding: 5px;
+	border: 1px solid transparent;
+}
+
+.morechildren,
+.deleted.comment {
+	margin-left: 10px;
+	border: 1px solid $link-info-border-color;
+	border-right: 0;
+	border-bottom: 0;
+	padding-bottom: 8px;
+}
+
+.comment.deleted .tagline > time {
+	margin: 0 2px 0 4px;
+}
+
+.commentarea>.sitetable>.morechildren {
+	margin-left: 0;
+	padding: 8px;
+	padding-right: 0;
+}
+
+.commentarea>.sitetable>.morechildren>.entry {
+	padding: 5px;
+}
+
+.comment .morechildren>.entry {
+	margin: 8px 0 0 8px;
+}
+
+.comment .morechildren>.child {
+	margin-top: 0;
+}
+
+.collapsed .midcol {
+	display: none;
+}
+
+.morecomments a,
+.deepthread a {
+	font-size: 11px !important;
+	font-weight: 400 !important;
+	color: $title-box-text-color !important;
+}
+
+.deepthread:after {
+	display: none;
+}
+
+.deleted.comment>.entry,
+.collapsed .entry {
+	margin: 0 0 8px 8px;
+}
+
+.noncollapsed.morerecursion .entry {
+	margin-left: -7px;
+	margin-bottom: 8px;
+}
+
+.deleted.comment>.entry>.tagline {
+	font-size: 11px;
+}
+
+.comment.collapsed .tagline:not(.expand),
+.comment.collapsed .tagline a:not(.expand),
+.comment.collapsed .search-result-meta:not(.expand),
+.comment.collapsed .search-result-meta a:not(.expand) {
+	font-style: normal;
+}
+
+.comment.collapsed .tagline:not(.expand) {
+	margin-left: 27px;
+}
+
+.comment.deleted>.midcol {
+	display: none;
+}
+
+.comment .child,
+.comment .showreplies {
+	border: 0;
+}
+
+.sitetable>.thing.noncollapsed.morerecursion>.child {
+	margin-top: 0;
+}
+
+#noresults {
+	padding: 10px;
+}
+
+.usertext.grayed .usertext-body {
+	background: 0;
+}
+
+.submit-page .content>h1 {
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+.formtabs-content {
+	width: auto;
+	border: 0;
+}
+
+.content ul.tabmenu.formtab li a {
+	margin-right: 10px;
+	border: 0;
+	padding: 0;
+	background: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 11px;
+	font-weight: 700;
+}
+
+.tabmenu.formtab .selected a {
+	color: $upvote-color;
+}
+
+.formtabs-content .infobar,
+.content.submit .info-notice {
+	border: 0;
+	margin-left: 5px;
+	background: 0;
+	font-size: 12px;
+}
+
+.roundfield,
+.linefield,
+.linefield.mobile,
+.linefield .usertext-edit {
+	width: auto;
+	border: 0;
+	background: 0;
+	color: $input-text-color
+}
+
+.roundfield span.title,
+.linefield .title {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 11px;
+	font-weight: 700;
+	color: $input-text-color
+}
+
+#newlink-with-image-upload div#new-link-preview,
+#newlink-with-image-upload span.clear-input-button {
+	background: $link-info-border-color;
+}
+
+#newlink-with-image-upload div#suggest-title {
+	position: static;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+#newlink-with-image-upload div#new-link-preview {
+	position: relative;
+	z-index: 1;
+	margin-top: -2px;
+}
+
+#newlink-with-image-upload div#new-link-preview:before {
+	position: absolute;
+	top: -25px;
+	left: calc(50% - 12.5px);
+	width: 25px;
+	height: 25px;
+	border: 12.5px solid transparent;
+	border-bottom-color: $link-info-border-color;
+	content: "";
+}
+
+div#newlink-with-image-upload .image-upload-drop-target {
+	background: 0;
+}
+
+.roundfield .usertext-edit {
+	width: 100%;
+}
+
+.roundfield .usertext-edit .md {
+	max-width: none;
+}
+
+.roundfield textarea,
+.roundfield input[type=text],
+.roundfield input[type=url] {
+	width: 100%;
+}
+
+.roundfield label {
+	font-size: 12px;
+}
+
+.submit-page button[type="submit"] {
+	margin-left: 10px;
+}
+
+.linefield textarea,
+.linefield input[type=text] {
+	width: 100%;
+}
+
+.linefield .md {
+	max-width: none;
+}
+
+.gray {
+	color: $title-box-text-color;
+}
+
+.linefield .title+.gray,
+.linefield span {
+	font-size: 11px;
+}
+
+body .markdownEditor-wrapper {
+	width: 100%;
+}
+
+.commentingAs {
+	color: $commenting-as-text-color3939;
+}
+
+body .markdownEditor .edit-btn:not(.btn-macro) {
+	border: 0;
+	background-color: $sidebar-background-color;
+}
+
+a.edit-btn {
+	vertical-align: bottom;
+}
+
+.help-toggle.toggle .option.active {
+	display: inline-block;
+}
+
+.usertext .help-toggle,
+.usertext .help-toggle a,
+.usertext a.reddiquette {
+	margin-left: 0;
+}
+
+body:not(.res) .usertext .help-toggle a {
+	border-right: 1px solid $score-text-color !important;
+}
+
+.content button.RESBigEditorPop {
+	margin: 5px 0 0 6px;
+	border-color: $downvote-color;
+	padding: 5px 10px 4px;
+	background: 0;
+	text-indent: 0;
+	color: $downvote-color;
+}
+
+div.BEFoot button {
+	margin-right: 10px;
+}
+
+.RESDialogSmall.livePreview {
+	margin-top: 15px;
+}
+
+.res #RESConsoleTopBar.RESDialogTopBar {
+	height: 50px;
+}
+
+body .livePreview .md {
+	margin: 0;
+	padding-top: 10px;
+}
+
+.pretty-form .save-button button,
+.submit.content button[type="submit"] {
+	margin-bottom: 15px;
+}
+
+#subreddit_stylesheet>.sheets:before {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 12px;
+	color: $title-box-text-color;
+	content: "Thanks for choosing Apicem! Visit /r/Apicem to leave feedback and check for updates.";
+}
+
+.sheets {
+	margin-right: 0;
+}
+
+.stylesheet-customize-container #images {
+	color: $heading-text-color;
+}
+
+form#image-upload.image-upload {
+	font-size: 12px;
+}
+
+.image-upload span {
+	padding: 0;
+}
+
+ul.image-preview-list.image-list {
+	margin: 10px -0 30px;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+ul.image-preview-list li {
+	display: inline-block;
+	margin: 0;
+	width: 50%;
+	height: auto;
+	border-top: 1px solid $sidebar-border-color;
+	padding: 10px;
+	background: $sidebar-background-color;
+}
+
+ul.image-preview-list li:nth-of-type(even) {
+	border-right: 1px solid $sidebar-border-color
+}
+
+ul.image-preview-list li:nth-of-type(odd) {
+	margin-left: -1px;
+	border-left: 1px solid $sidebar-border-color
+}
+
+ul.image-preview-list .description pre {
+	color: $heading-text-color;
+}
+
+.subreddit-rules-page:before {
+display: none;
+}
+
+.subreddit-rules-page {
+	padding-left: 0;
+	padding-bottom: 10px;
+}
+
+.subreddit-rule-form .c-form-group .label.required:after {
+	color: $score-text-color;
+}
+
+.subreddit-rule-form .form-buttons>button {
+	margin-bottom: 12px;
+}
+
+.subreddit-rule-item {
+	margin-left: 0;
+}
+
+.subreddit-rules-page .md-container .md .subreddit-rule-description {
+	color: $title-box-text-color;
+}
+
+.messages-page>.content {
+	color: $score-text-color;
+}
+
+.message .subject .correspondent {
+	border: 0;
+	border-radius: 0;
+	padding: 5px 8px;
+	background: $link-info-border-color;
+}
+
+.flat-list li.selected a {
+	color: $upvote-color;
+}
+
+.message .tagline,
+.message.message-reply>.entry {
+	color: $message-reply-entry-text-color
+}
+
+.tagline {
+  display: flex;
+  align-items: center;
+  line-height: 16px;
+}
+
+.tagline .author,
+.tagline .score,
+.tagline time,
+.tagline .userattrs {
+  height: 16px;
+  line-height: 16px;
+}
+
+a.tb-bracket-button.global-mod-button {
+	line-height: 11px;
+	position: relative;
+	top: 0;
+}
+
+.tagline .score,
+.tagline .score-hidden {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.tagline .voteWeight {
+  margin-right: 4px;
+}
+
+.tagline .edited-timestamp {
+  margin: 0 4px;
+}
+
+.tagline .stickied-tagline {
+  margin-left: 4px;
+}
+
+.link .tagline time {
+  margin: 0 4px;
+  height: 16px;
+}
+
+.link .tagline .author {
+  margin: 0 4px;
+}
+
+.link p.title {
+  margin-bottom: 4px;
+}
+
+.message.recipient>.entry {
+	color: $score-text-color;
+}
+
+.message.message-reply.recipient>.entry .head,
+.message.message-parent.recipient>.entry .head {
+	color: $title-box-text-color;
+}
+
+.message.threaded .child {
+	border-left: 1px dashed $link-info-border-color;
+}
+
+.thing.spam {
+	border-left: 3px solid $upvote-color;
+	background: 0;
+}
+
+.message.new>.entry {
+	border: 0;
+	background: $link-info-border-color;
+}
+
+.tabpane-content {
+	border: 0;
+}
+
+.usertable>.toggle {
+	border: 0;
+	background: 0;
+}
+
+.usertable>.toggle .togglebutton,
+.usertable>.toggle .error {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}

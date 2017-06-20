@@ -1,0 +1,147 @@
+input[type=text],
+textarea,
+.hover-bubble.multi-selector .create-multi input[type="text"],
+input#url {
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	color: $input-text-color;
+	transition: 0 !important;
+}
+
+input[type=text]:focus,
+textarea:focus,
+input#url:focus {
+	border: 1px $input-focus-border-color dotted !important;
+}
+
+.side input[type=text],
+.side textarea,
+.side .hover-bubble.multi-selector .create-multi input[type="text"],
+.side input#url {
+	background: $side-input-background-color;
+}
+
+input[type=radio] {
+	margin: 0 5px;
+	border-radius: 50%
+}
+
+input[type="checkbox"],
+input[type=radio],
+#rem-login-main,
+.side .titlebox h1.redditname+div:before {
+	@include appearance(none);
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 1px !important;
+	margin-bottom: 1px !important;
+	width: 20px;
+	height: 20px;
+	border: 0;
+	border-radius: 0;
+	background: $radio-button-checked-background-color url(%%spritesheet%%) no-repeat 4px -106px/105px 150px;
+	content: "";
+}
+
+input[type="checkbox"]:not(:checked),
+input[type=radio]:not(:checked),
+#rem-login-main:not(:checked) {
+	background: $radio-button-unchecked-background-color;
+}
+
+select {
+	@include appearance(none);
+	box-shadow: none;
+	border: 0;
+	border-radius: 0;
+	padding: 5px 22px 5px 8px;
+	background-position: right -88px top -130px;
+	font-size: 13px;
+	color: $select-text-color;
+}
+
+button,
+.usertext .help-toggle a,
+.usertext a.reddiquette,
+.flair-jump button,
+body #userTaggerToolTip input[type=submit],
+body #editShortcutDialog [name=shortcut-save],
+.wiki-page .wiki-page-content .wiki_button {
+	border: 1px solid $button-default-background-color;
+	border-radius: 0;
+	padding: 5px 10px;
+	background: $button-default-background-color;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: 700;
+	color: $button-default-text-color;
+	transition: .2s
+}
+
+button:hover,
+.flair-jump button:hover {
+	border: 1px solid transparent;
+	opacity: 0.8
+}
+
+button.cancel,
+button[name="preview"],
+.usertext .help-toggle a,
+.usertext a.reddiquette {
+	color: $button-default-background-color;
+	background: 0;
+	transition: .2s
+}
+
+button.cancel:hover,
+button[name="preview"]:hover,
+.usertext .help-toggle a:hover,
+.usertext a.reddiquette:hover,
+.content button.RESBigEditorPop:hover {
+	border: 1px solid $button-default-background-color;
+	background-color: $button-post-action-background-color;
+}
+
+#rem-login-main {
+	margin-right: 5px
+}
+
+.CodeMirror input {
+	color: white;
+}
+
+a.pretty-button {
+	border: 0;
+	border-radius: 0;
+	padding: 0 6px;
+	line-height: 1.6em;
+	color: $score-text-color;
+}
+
+.pretty-button.negative {
+	background: $upvote-color;
+}
+
+.pretty-button.neutral {
+	background: 0;
+	color: $select-text-color;
+	border: 1px solid $neutral-pretty-button-border-color;
+}
+
+.pretty-button.neutral.pressed {
+	background: 0;
+	color: $score-text-color;
+	border: 1px solid $neutral-pretty-button-border-color;
+}
+
+.pretty-button.positive {
+	background: $positive-pretty-button-background-color;
+}
+
+body .content a.pretty-button.pressed {
+	background: $pressed-pretty-button-background-color;
+}
+
+a.pretty-button+li {
+	margin-left: 5px;
+}

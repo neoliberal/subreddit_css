@@ -1,0 +1,56 @@
+.footer-parent,
+.footer-parent~.debuginfo {
+	width: 100%;
+	background: $footer-background-color;
+}
+
+.footer,
+.footer .col {
+	border: 0;
+}
+
+.footer {
+	display: inline-block;
+	max-width: none;
+}
+
+.footer .col {
+	padding: 0 50px;
+}
+
+.footer .flat-vert.title {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	color: $score-text-color;
+}
+
+.footer .col li {
+	padding: 5px;
+	font-size: 12px;
+}
+
+.footer-parent p.bottommenu {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 10px;
+	opacity: .4;
+	color: $score-text-color;
+}
+
+.footer-parent p.bottommenu:nth-of-type(1) {
+	border-top: solid 1px $link-info-border-color;
+	padding-top: 25px;
+	padding-bottom: 25px
+}
+
+.bottommenu a,
+.bottommenu .updated {
+	border-bottom: 1px dotted $score-text-color;
+	color: $score-text-color;
+}
+
+.footer-parent+img#hsts_pixel {
+	display: none;
+}
