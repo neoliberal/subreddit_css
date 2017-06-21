@@ -3837,7 +3837,7 @@ body.res-voteEnhancements-highlightScores span.score {
 [class$="-img"],
 [href$="-img"] {
   background: url(%%flairs%%) no-repeat;
-  background-size: 36px calc(0.4 * 6300px);
+  background-size: 36px calc(0.4 * 6400px);
   min-width: 36px;
   height: 40px;
   text-indent: 38px;
@@ -3969,316 +3969,321 @@ body.res-voteEnhancements-highlightScores span.score {
 
 [class$="-blair-img"],
 [href$="-blair-img"] {
-  background-position: 0 calc(0.4 * -100px);
+  background-position: 0 calc(0.4 * 0px);
 }
 
 [class$="-brown-img"],
 [href$="-brown-img"] {
-  background-position: 0 calc(0.4 * -200px);
+  background-position: 0 calc(0.4 * -100px);
 }
 
 [class$="-clegg-img"],
 [href$="-clegg-img"] {
-  background-position: 0 calc(0.4 * -300px);
+  background-position: 0 calc(0.4 * -200px);
 }
 
 [class$="-clinton-img"],
 [href$="-clinton-img"] {
-  background-position: 0 calc(0.4 * -400px);
+  background-position: 0 calc(0.4 * -300px);
 }
 
 [class$="-erhard-img"],
 [href$="-erhard-img"] {
-  background-position: 0 calc(0.4 * -500px);
+  background-position: 0 calc(0.4 * -400px);
 }
 
 [class$="-keating-img"],
 [href$="-keating-img"] {
-  background-position: 0 calc(0.4 * -600px);
+  background-position: 0 calc(0.4 * -500px);
 }
 
 [class$="-khama-img"],
 [href$="-khama-img"] {
-  background-position: 0 calc(0.4 * -700px);
+  background-position: 0 calc(0.4 * -600px);
 }
 
 [class$="-macron-img"],
 [href$="-macron-img"] {
-  background-position: 0 calc(0.4 * -800px);
+  background-position: 0 calc(0.4 * -700px);
 }
 
 [class$="-obama-img"],
 [href$="-obama-img"] {
-  background-position: 0 calc(0.4 * -900px);
+  background-position: 0 calc(0.4 * -800px);
 }
 
 [class$="-osborne-img"],
 [href$="-osborne-img"] {
-  background-position: 0 calc(0.4 * -1000px);
+  background-position: 0 calc(0.4 * -900px);
 }
 
 [class$="-thatcher-img"],
 [href$="-thatcher-img"] {
-  background-position: 0 calc(0.4 * -1100px);
+  background-position: 0 calc(0.4 * -1000px);
 }
 
 [class$="-tusk-img"],
 [href$="-tusk-img"] {
-  background-position: 0 calc(0.4 * -1200px);
+  background-position: 0 calc(0.4 * -1100px);
 }
 
 [class$="-yew-img"],
 [href$="-yew-img"] {
-  background-position: 0 calc(0.4 * -1300px);
+  background-position: 0 calc(0.4 * -1200px);
 }
 
 [class$="-eu-img"],
 [href$="-eu-img"] {
-  background-position: 0 calc(0.4 * -1400px);
+  background-position: 0 calc(0.4 * -1300px);
 }
 
 [class$="-nato-img"],
 [href$="-nato-img"] {
-  background-position: 0 calc(0.4 * -1500px);
+  background-position: 0 calc(0.4 * -1400px);
 }
 
 [class$="-wto-img"],
 [href$="-wto-img"] {
-  background-position: 0 calc(0.4 * -1600px);
+  background-position: 0 calc(0.4 * -1500px);
 }
 
 [class$="-commonwealth-img"],
 [href$="-commonwealth-img"] {
-  background-position: 0 calc(0.4 * -1700px);
+  background-position: 0 calc(0.4 * -1600px);
 }
 
 [class$="-un-img"],
 [href$="-un-img"] {
-  background-position: 0 calc(0.4 * -1800px);
+  background-position: 0 calc(0.4 * -1700px);
 }
 
 [class$="-acemoglu-img"],
 [href$="-acemoglu-img"] {
-  background-position: 0 calc(0.4 * -1900px);
+  background-position: 0 calc(0.4 * -1800px);
 }
 
 [class$="-autor-img"],
 [href$="-autor-img"] {
-  background-position: 0 calc(0.4 * -2000px);
+  background-position: 0 calc(0.4 * -1900px);
 }
 
 [class$="-bernanke-img"],
 [href$="-bernanke-img"] {
-  background-position: 0 calc(0.4 * -2100px);
+  background-position: 0 calc(0.4 * -2000px);
 }
 
 [class$="-carney-img"],
 [href$="-carney-img"] {
-  background-position: 0 calc(0.4 * -2200px);
+  background-position: 0 calc(0.4 * -2100px);
 }
 
 [class$="-fama-img"],
 [href$="-fama-img"] {
-  background-position: 0 calc(0.4 * -2300px);
+  background-position: 0 calc(0.4 * -2200px);
 }
 
 [class$="-friedman-img"],
 [href$="-friedman-img"] {
-  background-position: 0 calc(0.4 * -2400px);
+  background-position: 0 calc(0.4 * -2300px);
 }
 
 [class$="-george-img"],
 [href$="-george-img"] {
-  background-position: 0 calc(0.4 * -2500px);
+  background-position: 0 calc(0.4 * -2400px);
 }
 
 [class$="-goolsbee-img"],
 [href$="-goolsbee-img"] {
-  background-position: 0 calc(0.4 * -2600px);
+  background-position: 0 calc(0.4 * -2500px);
 }
 
 [class$="-hayek-img"],
 [href$="-hayek-img"] {
-  background-position: 0 calc(0.4 * -2700px);
+  background-position: 0 calc(0.4 * -2600px);
 }
 
 [class$="-heckman-img"],
 [href$="-heckman-img"] {
-  background-position: 0 calc(0.4 * -2800px);
+  background-position: 0 calc(0.4 * -2700px);
 }
 
 [class$="-keynes-img"],
 [href$="-keynes-img"] {
-  background-position: 0 calc(0.4 * -2900px);
+  background-position: 0 calc(0.4 * -2800px);
 }
 
 [class$="-krguman-img"],
 [href$="-krguman-img"] {
-  background-position: 0 calc(0.4 * -3000px);
+  background-position: 0 calc(0.4 * -2900px);
 }
 
 [class$="-mankiw-img"],
 [href$="-mankiw-img"] {
-  background-position: 0 calc(0.4 * -3100px);
+  background-position: 0 calc(0.4 * -3000px);
 }
 
 [class$="-sen-img"],
 [href$="-sen-img"] {
-  background-position: 0 calc(0.4 * -3200px);
+  background-position: 0 calc(0.4 * -3100px);
 }
 
 [class$="-yellen-img"],
 [href$="-yellen-img"] {
-  background-position: 0 calc(0.4 * -3300px);
+  background-position: 0 calc(0.4 * -3200px);
 }
 
 [class$="-hrclinton-img"],
 [href$="-hrclinton-img"] {
-  background-position: 0 calc(0.4 * -3400px);
+  background-position: 0 calc(0.4 * -3300px);
 }
 
 [class$="-merkel-img"],
 [href$="-merkel-img"] {
-  background-position: 0 calc(0.4 * -3500px);
+  background-position: 0 calc(0.4 * -3400px);
 }
 
 [class$="-verhofstadt-img"],
 [href$="-verhofstadt-img"] {
-  background-position: 0 calc(0.4 * -3600px);
+  background-position: 0 calc(0.4 * -3500px);
 }
 
 [class$="-kant-img"],
 [href$="-kant-img"] {
-  background-position: 0 calc(0.4 * -3700px);
+  background-position: 0 calc(0.4 * -3600px);
 }
 
 [class$="-volcker-img"],
 [href$="-volcker-img"] {
-  background-position: 0 calc(0.4 * -3800px);
+  background-position: 0 calc(0.4 * -3700px);
 }
 
 [class$="-sumner-img"],
 [href$="-sumner-img"] {
-  background-position: 0 calc(0.4 * -3900px);
+  background-position: 0 calc(0.4 * -3800px);
 }
 
 [class$="-lagarde-img"],
 [href$="-lagarde-img"] {
-  background-position: 0 calc(0.4 * -4000px);
+  background-position: 0 calc(0.4 * -3900px);
 }
 
 [class$="-greenspan-img"],
 [href$="-greenspan-img"] {
-  background-position: 0 calc(0.4 * -4100px);
+  background-position: 0 calc(0.4 * -4000px);
 }
 
 [class$="-mill-img"],
 [href$="-mill-img"] {
-  background-position: 0 calc(0.4 * -4200px);
+  background-position: 0 calc(0.4 * -4100px);
 }
 
 [class$="-singh-img"],
 [href$="-singh-img"] {
-  background-position: 0 calc(0.4 * -4300px);
+  background-position: 0 calc(0.4 * -4200px);
 }
 
 [class$="-aziz-img"],
 [href$="-aziz-img"] {
-  background-position: 0 calc(0.4 * -4400px);
+  background-position: 0 calc(0.4 * -4300px);
 }
 
 [class$="-douglas-img"],
 [href$="-douglas-img"] {
-  background-position: 0 calc(0.4 * -4500px);
+  background-position: 0 calc(0.4 * -4400px);
 }
 
 [class$="-indrawati-img"],
 [href$="-indrawati-img"] {
-  background-position: 0 calc(0.4 * -4600px);
+  background-position: 0 calc(0.4 * -4500px);
 }
 
 [class$="-juncker-img"],
 [href$="-juncker-img"] {
-  background-position: 0 calc(0.4 * -4700px);
+  background-position: 0 calc(0.4 * -4600px);
 }
 
 [class$="-locke-img"],
 [href$="-locke-img"] {
-  background-position: 0 calc(0.4 * -4800px);
+  background-position: 0 calc(0.4 * -4700px);
 }
 
 [class$="-montesquieu-img"],
 [href$="-montesquieu-img"] {
-  background-position: 0 calc(0.4 * -4900px);
+  background-position: 0 calc(0.4 * -4800px);
 }
 
 [class$="-okojoiweala-img"],
 [href$="-okojoiweala-img"] {
-  background-position: 0 calc(0.4 * -5000px);
+  background-position: 0 calc(0.4 * -4900px);
 }
 
 [class$="-peel-img"],
 [href$="-peel-img"] {
-  background-position: 0 calc(0.4 * -5100px);
+  background-position: 0 calc(0.4 * -5000px);
 }
 
 [class$="-smith-img"],
 [href$="-smith-img"] {
-  background-position: 0 calc(0.4 * -5200px);
+  background-position: 0 calc(0.4 * -5100px);
 }
 
 [class$="-wollstonecrat-img"],
 [href$="-wollstonecrat-img"] {
-  background-position: 0 calc(0.4 * -5300px);
+  background-position: 0 calc(0.4 * -5200px);
 }
 
 [class$="-globe-img"],
 [href$="-globe-img"] {
-  background-position: 0 calc(0.4 * -5400px);
+  background-position: 0 calc(0.4 * -5300px);
 }
 
 [class$="-trudeau-img"],
 [href$="-trudeau-img"] {
-  background-position: 0 calc(0.4 * -5500px);
+  background-position: 0 calc(0.4 * -5400px);
 }
 
 [class$="-rockefeller-img"],
 [href$="-rockefeller-img"] {
-  background-position: 0 calc(0.4 * -5600px);
+  background-position: 0 calc(0.4 * -5500px);
 }
 
 [class$="-au-img"],
 [href$="-au-img"] {
-  background-position: 0 calc(0.4 * -5700px);
+  background-position: 0 calc(0.4 * -5600px);
 }
 
 [class$="-stalin-img"],
 [href$="-stalin-img"] {
-  background-position: 0 calc(0.4 * -5800px);
+  background-position: 0 calc(0.4 * -5700px);
 }
 
 [class$="-trump-img"],
 [href$="-trump-img"] {
-  background-position: 0 calc(0.4 * -5900px);
+  background-position: 0 calc(0.4 * -5800px);
 }
 
 [class$="-worldbank-img"],
 [href$="-worldbank-img"] {
-  background-position: 0 calc(0.4 * -6000px);
+  background-position: 0 calc(0.4 * -5900px);
 }
 
 [class$="-imf-img"],
 [href$="-imf-img"] {
-  background-position: 0 calc(0.4 * -6100px);
+  background-position: 0 calc(0.4 * -6000px);
 }
 
 [class$="-soros-img"],
 [href$="-soros-img"] {
-  background-position: 0 calc(0.4 * -6200px);
+  background-position: 0 calc(0.4 * -6100px);
 }
 
 [class$="-foucault-img"],
 [href$="-foucault-img"] {
+  background-position: 0 calc(0.4 * -6200px);
+}
+
+[class$="-fdr-img"],
+[href$="-fdr-img"] {
   background-position: 0 calc(0.4 * -6300px);
 }
 
@@ -4517,6 +4522,38 @@ body span.score {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   margin-left: 0em !important;
+}
+
+/* Flexbox-ify Listing Page 
+----------------*/
+.listing-page #siteTable .link {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.listing-page #siteTable .link > .midcol {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  overflow: visible;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.listing-page #siteTable .link > .thumbnail {
+  margin-right: 15px;
+}
+
+.listing-page #siteTable .link > .entry {
+  margin-left: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.listing-page #siteTable .link > .entry a.subreddit {
+  margin: 0 0 0 3px;
+  line-height: 16px;
 }
 
 a.author.may-blank.id-t2_16qftw {
