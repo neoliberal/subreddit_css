@@ -219,7 +219,7 @@ a#RESAnnouncementAlert>span {
 	border: 0;
 	border-radius: 0;
 	padding: 10px;
-	background: $res-dialog-background-colo;
+	background: $res-dialog-background-color;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 11px;
@@ -366,7 +366,7 @@ a#RESAnnouncementAlert>span {
 	border-radius: 0;
 	padding: 10px;
 	background: 0;
-	color: $score-text-color;
+	color: $secondary-text-color;
 }
 
 .res #progressIndicator p.NERWidgetText {
@@ -427,7 +427,7 @@ a#RESAnnouncementAlert>span {
 	padding: 5px;
 	background: $upvote-color;
 	text-transform: uppercase;
-	color: $score-text-color;
+	color: $secondary-text-color;
 }
 
 .commentarea .RESSubscriptionButton {
@@ -436,7 +436,7 @@ a#RESAnnouncementAlert>span {
 
 .res .RESSubscriptionButton.unsubscribe {
 	background: $link-info-border-color;
-	color: $score-text-clor;
+	color: $secondary-text-color;
 }
 
 
@@ -509,4 +509,32 @@ div.guider .guider_content p,
 
 body.res-voteEnhancements-highlightScores span.score {
 	color: $input-text-color;
+}
+
+/* RES Fixes
+------------*/
+
+.RESHoverInfoCard h3 {
+	font-size: 11px !important;
+	font-variant: normal !important;
+	padding: 5px !important;
+}
+
+.RESDialogSmall > h3 {
+	background-color:$content-background-color !important;
+	border: none !important;
+}
+
+.RESHoverInfoCard .fancy-toggle-button .add.active {
+	height: 20px;
+	padding: 0px 5px;
+	line-height: 20px;
+}
+
+.RESHoverInfoCard::before {
+	display: none;
+}
+
+.RESHoverInfoCard::after {
+	display: none;
 }

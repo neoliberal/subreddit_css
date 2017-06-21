@@ -1,0 +1,14 @@
+// neoliberal_shill_bot
+a.author.may-blank.id-t2_16qftw {
+	font-size: 0px;
+}
+
+a.author.may-blank.id-t2_16qftw:after {
+	font-size: 10px;
+	background-color: $link-flair-background-color !important;
+	color: $secondary-text-color !important;
+	font-weight: bold;
+	padding: 2px 3px;
+	border-radius: 0px;
+	content: "/r/Neoliberal";
+}

@@ -11,7 +11,7 @@
 }
 
 @mixin appearance($rule) {
-	-webkit-apperance: $rule;
+	-webkit-appearance: $rule;
 	-moz-appearance: $rule;
 	appearance: $rule;
 }
@@ -25,7 +25,7 @@
 @mixin flex-flow($rule) {
 	-webkit-flex-flow: $rule;
 	-ms-flex-flow: $rule;
-	flex-frow: $rule;
+	flex-flow: $rule;
 }
 
 @mixin transform($transform) {
@@ -45,6 +45,12 @@
 	-webkit-order: $order;
 	-ms-flex-order: $order;
 	order: $order;
+}
+
+@mixin border-image($rule) {
+	-webkit-border-image: $rule;
+	-moz-border-image: $rule;
+	border-image: $rule;
 }
 
 @mixin animation($rule) {

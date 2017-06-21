@@ -1,0 +1,269 @@
+/* SINGLE COLUMN
+----------------*/
+
+.link {
+	width: 100%;
+}
+
+.link.odd {
+	padding-right: 0;
+	border-right: 0;
+}
+
+.link.even {
+	border-left: 0;
+}
+
+body>.content .link.even.thing .midcol {
+	margin-left: -3px;
+}
+
+.link.even .entry { 
+	margin-left: 130px;
+}
+
+/* IGM Style Tables 
+-------------------*/
+
+.md table {
+	width: 100%;
+	border: none;
+}
+
+thead {
+	background-color: $igm-table-header-background-color;
+}
+
+.md td, .md th {
+	border: 1px solid transparent !important;
+	text-align: left;
+}
+
+
+/* Body text headings 
+---------------------*/
+
+.md h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family;
+}
+
+.wiki-page-content .md h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family;
+}
+
+.md h1, .wiki-page-content .md h1 { 
+	font-size: 22px !important;
+	line-height: 1em !important;
+	margin-top: 0.5em !important;
+	margin-bottom: 0.5em !important;
+	color: $header-text-color;
+}
+
+.md h1:after, .wiki-page-content .md h1:after {
+	width: 100%;
+	background: $h1-after-background-color;
+}
+
+.md h2, h3, h4, h5 {
+	color: $header-text-color;
+	margin-top: 0.4em !important;
+	margin-bottom: 0.4em !important;
+	font-size: 18px !important;
+}
+
+.wiki-page-content .md h2, h3, h4, h5 {
+	color: $header-text-color;
+	margin-top: 0.4em !important;
+	margin-bottom: 0.4em !important;
+	font-size: 18px !important;
+}
+
+.wiki-page-content .md h2 {
+	font-size: 16px !important;
+}
+
+.md h3 {
+	color: $h3-text-color;
+}
+
+.md h4 {
+	color: $h4-text-color;
+}
+
+.md h5, .wiki-page-content .md h5 {
+	color: $header-text-color !important;
+	text-decoration: underline !important;
+}
+
+.md h6, .wiki-page-content .md h6 {
+	margin: -1px;
+	color: $h4-text-color !important;
+	font-size: 16px !important;
+	padding: 5px !important;
+}
+
+
+/* Text Dividers
+-----------------*/
+
+.md hr {
+	background: $h1-after-background-color;
+}
+
+/* Link buttons
+-------------------*/
+.morelink a, 
+.sidecontentbox a.helplink, .account-activity-box a {
+	background: $link-flair-background-color !important;
+	border-color: $policy-button-border-color;
+	color: $policy-button-text-color;
+}
+
+
+/* Subscribe Button
+--------------------*/
+.side .fancy-toggle-button a.option.active,
+#authorInfoToolTip .fancy-toggle-button a.option.active,
+.fancy-toggle-button .add.active,
+.res #RESHoverInfoSubscriptionButton {
+    background: $fancy-toggle-background-color;
+}
+
+.fancy-toggle-button a.option.active.remove {
+    background: $fancy-toggle-background-color !important;
+}
+
+
+/* Code Block
+--------------*/
+
+.md code {
+	background: $code-block-background-color !important;
+	color: $code-block-text-color !important;
+}
+
+ .md pre {
+	background: $pre-block-background-color !important;
+}
+
+/* Reddit Gold 
+---------------*/
+
+/* Comment highlights */
+.new-comment .usertext-body {
+    background: $reddit-gold-comment-highlight;
+}
+
+/* Comments
+------------*/
+
+.res.res-commentBoxes .comment,
+.comment {
+	overflow: hidden;
+	margin-bottom: 0 !important;
+	border: 1px solid $sidebar-background-color !important;
+	border-right: 0 !important;
+	border-bottom: 0 !important;
+	padding: 0 !important;
+	padding-top: 8px !important;
+}
+
+.res.res-commentBoxes .comment {
+	@include border-image(linear-gradient(to right, rgba(0,0,0,0.1) 500px, rgba(0,0,0,0.0) 100%) 42% 1% !important);
+}
+
+.res-nightmode .md h1,
+.res-nightmode .md h2,
+.res-nightmode .md h3,
+.res-nightmode .md h4,
+.res-nightmode .md strong {
+	color: $nightmode-header-text-color;
+}
+
+.morechildren, .deleted.comment {
+	@include border-image(linear-gradient(to right, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.0) 100%) 42% 1% !important);
+}
+
+.usertext.border .usertext-body {
+	background: $usertext-body-background-color !important;
+	border: 2px dashed $usertext-body-border-color;
+	margin-bottom: 5px;
+}
+
+.md p {
+	max-width: 840px;
+}
+
+
+/* Search box
+--------------*/
+
+#search input[type=text] {
+	background: $content-background-color;
+	border: 1px solid $tab-menu-option-border-color !important;
+}
+
+/* Score
+---------*/
+
+body span.score {
+	color: $title-box-text-color;
+	font-weight: bold;
+}
+
+/* Self text
+------------*/
+.link .usertext-body .md {
+	background: $self-text-background-color;
+	border: 1px solid $self-text-border-color !important;
+	max-width: 860px !important;
+}
+
+/* User Help
+-------------*/
+
+.usertext .help-toggle, .usertext .help-toggle a, .usertext a.reddiquette {
+	margin-left: 3px !important;
+	border-right-width: 1px !important;
+}
+
+/* Block Quotes
+----------------*/
+
+.md blockquote {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em !important;
+}
+
+/* Flexbox-ify Listing Page 
+----------------*/
+.listing-page #siteTable .link {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.listing-page #siteTable .link > .midcol {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  overflow: visible;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.listing-page #siteTable .link > .thumbnail {
+  margin-right: 15px;
+}
+
+.listing-page #siteTable .link > .entry {
+  margin-left: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.listing-page #siteTable .link > .entry a.subreddit {
+  margin: 0 0 0 3px;
+  line-height: 16px;
+}

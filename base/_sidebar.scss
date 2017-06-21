@@ -81,7 +81,7 @@ label+#moresearchinfo {
 	border-radius: 0;
 	padding: 10px;
 	background: 0;
-	color: $input-text-colol;
+	color: $input-text-color;
 }
 
 div.linkinfo .upvotes {
@@ -453,7 +453,7 @@ div.linkinfo .downvotes {
 
 .side .subscribers {
 	font-weight: bold;
-	color: $subsciber-count-color;
+	color: $subscriber-count-color;
 	display: inline-block;
 	margin-top: 5px;
 	margin-right: 4px;
@@ -684,4 +684,31 @@ img.tb-moderation-tools-icons {
 
 .side .md>h3:first-of-type {
 	top: 410px;
+}
+
+.sidecontentbox .flair {
+	display: none;
+}
+
+/* READERS AND USERS HERE NOW
+-----------------------------*/
+.side .titlebox .word {
+	display: none;
+}
+
+.side .subscribers .number:after {
+	content: " #{$subscriber-description}";
+}
+.side .users-online .number:after {
+	content: " #{$online-users-description}"
+}
+
+/* submit link */
+.submit-link .morelink a:before {
+    content: $submit-link;
+}
+
+/* submit text */
+.submit-text .morelink a:before {
+    content: $submit-text;
 }

@@ -1,3 +1,15 @@
+#header {
+	@include order(-1);
+	margin: 30px 0 0;
+	width: 100%;
+	height: 160px;
+	border: 0;
+	background-color: $header-background-color;
+	background-image: linear-gradient(rgba(50,58,71,.15) 32%,rgba(50,58,71,.55)), url(%%header%%);
+	background-position: left top;
+	background-size: cover;
+}
+
 #header:after {
 	position: absolute;
 	z-index: -1;
@@ -19,7 +31,7 @@
 	background: #fff;
 	white-space: nowrap;
 	font-size: 9px;
-	color: $reddit-top-bar-area-background-color;
+	color: $reddit-top-bar-background-color;
 }
 
 #sr-header-area #srLeftContainer {
@@ -159,7 +171,7 @@
 	border-top: solid 1px $drop-choices-border-color;
 	border-bottom: 0;
 	line-height: 30px;
-	color: $res-list-icon-color;
+	color: $secondary-text-color;
 }
 
 #sr-header-area .drop-choices.srdrop:before,
@@ -445,7 +457,7 @@ a#RESAnnouncementAlert {
 }
 
 #header-bottom-right #new_modmail {
-  background-position: $header-new-modmail-icon-background-positon;
+  background-position: $header-new-modmail-icon-background-position;
 }
 
 #header-bottom-right .pref-lang {

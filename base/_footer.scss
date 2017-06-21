@@ -23,7 +23,7 @@
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 700;
-	color: $score-text-color;
+	color: $secondary-text-color;
 }
 
 .footer .col li {
@@ -36,7 +36,7 @@
 	letter-spacing: 2px;
 	font-size: 10px;
 	opacity: .4;
-	color: $score-text-color;
+	color: $secondary-text-color;
 }
 
 .footer-parent p.bottommenu:nth-of-type(1) {
@@ -47,8 +47,8 @@
 
 .bottommenu a,
 .bottommenu .updated {
-	border-bottom: 1px dotted $score-text-color;
-	color: $score-text-color;
+	border-bottom: 1px dotted $secondary-text-color;
+	color: $secondary-text-color;
 }
 
 .footer-parent+img#hsts_pixel {

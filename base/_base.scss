@@ -1,3 +1,221 @@
+/* These are base theme styles that we haven't modified much. */
+*,
+:before,
+:after {
+	@include box-sizing(border-box);
+	@include text-size-adjust(none !important);
+	text-decoration: none !important;
+}
+
+body {
+	@include display-flex();
+	@include flex-flow(row wrap);
+}
+
+
+body,
+div#RESSubredditGroupDropdown,
+#search input[type="text"],
+textarea {
+    font-family: $font-family;
+}
+
+a,
+body .generic-table,
+.res #srList a,
+#searchexpando a {
+	color: $text-link-color;
+}
+
+label,
+.search-expando-button {
+    color: $expando-button-color;
+}
+
+.drop-choices,
+.res .RESDialogSmall:not(.livePreview),
+.res #RESNotifications .RESNotification,
+body #editShortcutDialog,
+div.guider {
+	box-shadow: 0 0 10px $res-dialog-drop-shadow-color;
+	border: 1px solid $res-dialog-border-color;
+	border-radius: 0;
+	background: $res-dialog-background-color;
+	letter-spacing: .5px
+}
+
+body #editShortcutDialog {
+	top: 30px
+}
+
+.md {
+	color: $input-text-color;
+	max-width: 100% !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 10px 0;
+	font-size: 11px !important;
+	font-weight: 700 !important;
+	color: $heading-text-color;
+}
+
+.md h1 {
+	font-size: 17px !important;
+}
+
+h2,
+.sidecontentbox .title h1 {
+	margin: 10px 0;
+	font-size: 14px !important;
+}
+
+
+.md del {
+	text-decoration: line-through !important;
+	color: $strikethrough-text-color;
+}
+
+.new-comment .md:not(pre)>code,
+.link .md:not(pre)>code,
+.usertext.border .md:not(pre)>code,
+.new-comment .md pre,
+.link .md pre,
+.usertext.border .md pre,
+.md code,
+.md pre {
+	border: 0;
+	padding: 5px;
+	background: $code-block-text-color;
+	font-family: $code-block-font-family;
+}
+
+.md a,
+.search-result .search-result-body:link,
+.search-result .search-result-body:link>mark {
+	border-bottom: dotted 1px $search-result-link-border-color;
+	color: $downvote-color;
+	transition: .2s
+}
+
+.md a:hover {
+	border-bottom-color: transparent;
+	color: $upvote-info-text-color;
+}
+
+body .comment .md p>a:visited,
+body h2 a:visited {
+	color: $downvote-color;
+}
+
+.md hr,
+.content hr {
+	height: 1px;
+	border: 0;
+	background: $link-info-border-color
+}
+
+.md blockquote {
+	border-left: solid 4px $link-info-border-color;
+	padding: 5px;
+	padding-left: 15px;
+	color: $input-text-color;
+}
+
+.md a[href="#bigbutton"] + a,
+.md a[href="#button"] + a,
+.md a[href="#specialbutton"] + a,
+.md a[href="#bigspecialbutton"] + a,
+.md a[href="#bigpolicybutton"] + a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    background: $link-flair-background-color;
+    border-color: $policy-button-border-color;
+    color: $policy-button-text-color !important;
+}
+
+.md a[href="#bigpolicybutton"] + a {
+	font-size: 20px;
+}
+
+.md a[href="#bigbutton"] + a:hover,
+.md a[href="#button"] + a:hover {
+	background-color: $button-post-action-background-color;
+}
+
+.md a[href$="/spoiler"],
+.md a[href$="#spoiler"],
+.md a[href$="/s"],
+.md a[href$="#s"] {
+	border: 0;
+	padding: 0 5px;
+	background: $input-text-color !important;
+	color: $input-text-color !important
+}
+
+.md a[href$="/spoiler"]:hover,
+.md a[href$="#spoiler"]:hover,
+.md a[href$="/s"]:hover,
+.md a[href$="#s"]:hover {
+	color: $secondary-text-color !important;
+}
+
+.entry .md a[href="#bigbutton"] + a, 
+.entry .md a[href="#button"] + a, 
+.entry .md a[href="#specialbutton"] + a, 
+.entry .md a[href="#bigspecialbutton"] + a {
+	padding: 5px 5px;
+	margin: 0 4px;
+	line-height: normal;
+}
+
+.drop-choices {
+	padding: 10px;
+	font-size: 9px
+}
+
+.drop-choices:not(.flairselector) a {
+	text-transform: uppercase
+}
+
+.drop-choices.lightdrop {
+	margin-left: -20px
+}
+
+.dropdown.lightdrop .selected {
+	letter-spacing: .5px
+}
+
+.drop-choices a.choice {
+	height: 30px;
+	padding: 0 10px;
+	line-height: 30px
+}
+
+.error {
+	font-size: 12px !important;
+	color: $link-flair-background-color !important;
+}
+
+.morechildren .entry a.button[style*="color: red"] {
+	color: $link-flair-background-color !important;
+}
+
+.buttons li .error {
+	font-size: 11px !important;
+}
+
 body > .content,
 .res.res-commentBoxes body > .content,
 .modtools-page > div.content {
@@ -14,15 +232,6 @@ body > .content > .content {
 	margin: 0;
 }
 
-body > .content:before {
-	height: 3px;
-	padding: 0 20px;
-	background: linear-gradient(to left, $downvote-color, $link-flair-background-color, $downvote-color);
-	margin-left: -10px;
-	margin-right: -331px;
-	margin-bottom: 5px !important;
-}
-
 body > .content:before,
 .reddit-infobar {
 	display: block;
@@ -37,6 +246,15 @@ body > .content:before,
 	letter-spacing: 1px;
 	color: $link-flair-text-color;
 	content: "";
+}
+
+body > .content:before {
+	height: 3px;
+	padding: 0 20px;
+	background: linear-gradient(to left, $downvote-color, $link-flair-background-color, $downvote-color);
+	margin-left: -10px;
+	margin-right: -331px;
+	margin-bottom: 5px !important;
 }
 
 body > .content > .spacer:nth-of-type(1) {
@@ -180,7 +398,7 @@ body>.content .link.even.thing .midcol {
 	text-transform: uppercase;
 	font-size: 11px;
 	font-weight: 700;
-	color: $score-text-color !important;
+	color: $secondary-text-color !important;
 	pointer-events: none;
 }
 
@@ -237,7 +455,7 @@ body .self.thumbnail:after {
 
 .link.thing.stickied .thumbnail:after {
 	content: "stickied"!important;
-	color: $score-text-color;
+	color: $secondary-text-color;
 	font-size: 10px !important;
 }
 
@@ -433,7 +651,7 @@ body .thing .tagline .author.admin,
 	border-radius: 0;
 	padding: 0 3px;
 	font-weight: 400;
-	color: $score-text-color !important;
+	color: $secondary-text-color !important;
 	background-color: $moderator-tag-background-color !important;
 }
 
@@ -447,7 +665,7 @@ body .thing .tagline .author.submitter:hover,
 body .thing .tagline .author.moderator,
 body .thing .tagline .author.moderator:hover,
 .tagline .userattrs a.moderator {
-	color: $score-text-color !important;
+	color: $secondary-text-color !important;
 	border-radius: 0px;
 }
 
@@ -481,7 +699,7 @@ body .thing .tagline .author.admin:hover,
 }
 
 .tagline .userattrs a {
-	color: $score-text-color #fff;
+	color: $secondary-text-color #fff;
 }
 
 .link .entry .buttons li a:hover,
@@ -867,7 +1085,7 @@ body .markdownEditor-wrapper {
 }
 
 .commentingAs {
-	color: $commenting-as-text-color3939;
+	color: $commenting-as-text-color;
 }
 
 body .markdownEditor .edit-btn:not(.btn-macro) {
@@ -890,7 +1108,7 @@ a.edit-btn {
 }
 
 body:not(.res) .usertext .help-toggle a {
-	border-right: 1px solid $score-text-color !important;
+	border-right: 1px solid $secondary-text-color !important;
 }
 
 .content button.RESBigEditorPop {
@@ -987,7 +1205,7 @@ display: none;
 }
 
 .subreddit-rule-form .c-form-group .label.required:after {
-	color: $score-text-color;
+	color: $secondary-text-color;
 }
 
 .subreddit-rule-form .form-buttons>button {
@@ -1003,7 +1221,7 @@ display: none;
 }
 
 .messages-page>.content {
-	color: $score-text-color;
+	color: $secondary-text-color;
 }
 
 .message .subject .correspondent {
@@ -1074,7 +1292,7 @@ a.tb-bracket-button.global-mod-button {
 }
 
 .message.recipient>.entry {
-	color: $score-text-color;
+	color: $secondary-text-color;
 }
 
 .message.message-reply.recipient>.entry .head,
@@ -1111,3 +1329,28 @@ a.tb-bracket-button.global-mod-button {
 	border: 0;
 	padding: 0;
 }
+
+input#disableDailyTipsCheckbox {
+	margin-right: 5px;
+}
+
+body .blueButton,
+a.guider_button {
+	border: 0;
+	border-radius: 0;
+	background: $downvote-color;
+}
+
+.pageNavigator[href="#header"] {
+	display: none;
+}
+
+@import "inputs";
+@import "header";
+@import "sidebar";
+@import "flair-selector";
+@import "footer";
+@import "search";
+@import "voting";
+@import "wiki";
+@import "res";

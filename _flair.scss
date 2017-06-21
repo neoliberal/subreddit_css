@@ -9,71 +9,72 @@ $text-flairs: (
 	gray: rgba(0, 0, 0, 0.5)
 );
 
-$image-flairs: (
-	blair: 0
-	brown: 1
-	clegg: 2,
-	clinton: 3,
-	erhard: 4,
-	keating: 5,
-	khama: 6,
-	macron: 7,
-	obama: 8,
-	osborne: 9,
-	thatcher: 10,
-	tusk: 11,
-	yew: 12,
-	eu: 13,
-	nato: 14,
-	wto: 15,
-	commonwealth: 16,
-	un: 17,
-	acemoglu: 18,
-	autor: 19,
-	bernanke: 20,
-	carney: 21,
-	fama: 22,
-	friedman: 23,
-	george: 24,
-	goolsbee: 25,
-	hayek: 26,
-	heckman: 27,
-	keynes: 28,
-	krguman: 29,
-	mankiw: 30,
-	sen: 31,
-	yellen: 32,
-	hrclinton: 33,
-	merkel: 34,
-	verhofstadt: 35,
-	kant: 36,
-	volcker: 37,
-	sumner: 38,
-	lagarde: 39,
-	greenspan: 40,
-	mill: 41,
-	singh: 42,
-	aziz: 43,
-	douglas: 44,
-	indrawati: 45,
-	juncker: 46,
-	locke: 47,
-	montesquieu: 48,
-	okojoiweala: 49,
-	peel: 50,
-	smith: 51,
-	wollstonecrat: 52,
-	globe: 53,
-	trudeau: 54,
-	rockefeller: 55,
-	au: 56,
-	stalin: 57,
-	trump: 58,
-	worldbank: 59,
-	imf: 60,
-	soros: 61,
-	foucault: 62
-);
+/* ORDER MATTERS */
+$image-flairs:
+	blair,
+	brown,
+	clegg,
+	clinton, 
+	erhard,
+	keating,
+	khama,
+	macron,
+	obama,
+	osborne,
+	thatcher,
+	tusk,
+	yew,
+	eu,
+	nato,
+	wto,
+	commonwealth,
+	un,
+	acemoglu,
+	autor,
+	bernanke,
+	carney,
+	fama,
+	friedman,
+	george,
+	goolsbee,
+	hayek,
+	heckman,
+	keynes,
+	krguman,
+	mankiw,
+	sen,
+	yellen,
+	hrclinton,
+	merkel,
+	verhofstadt,
+	kant,
+	volcker,
+	sumner,
+	lagarde,
+	greenspan,
+	mill,
+	singh,
+	aziz,
+	douglas,
+	indrawati,
+	juncker,
+	locke,
+	montesquieu,
+	okojoiweala,
+	peel,
+	smith,
+	wollstonecrat,
+	globe,
+	trudeau,
+	rockefeller,
+	au,
+	stalin,
+	trump,
+	worldbank,
+	imf,
+	soros,
+	foucault
+;
 
 .flair,
 .linkflairlabel {
@@ -133,28 +134,6 @@ $image-flairs: (
 	border: none !important;
 }
 
-@each $key, $value in $text-flairs {
-	.flair-text-#{$key} {
-		text-indent: 3px;
-		line-height: 20px;
-	}
-
-	.flair-text-#{$key}:before {
-		width: calc(100% - -3px);
-    left: 0;
-    text-indent: 4px;
-	}
-
-	.tagline .flair-text-#{$key} {
-		height: 20px;
-	}
-	
-	[class*="flair-text-#{$key}"]:before,
-	[href*="#flair-text-#{$key}"]:before {
-		background-color: $value !important;
-	}
-}
-
 .flair {
 	position: relative;
 	line-height: 40px;
@@ -197,14 +176,42 @@ $image-flairs: (
 	border-radius: 0px;
 }
 
-@each $key, $value in $image-flairs {
-	[class$="-#{$key}-img"],
-	[href$="-#{$key}-img"] {
-    background-position: 0 calc(0.4 * (-100 * $value)px);
+@each $key, $value in $text-flairs {
+	.flair-text-#{$key} {
+		text-indent: 3px;
+		line-height: 20px;
+	}
+
+	.flair-text-#{$key}:before {
+		width: calc(100% - -3px);
+    left: 0;
+    text-indent: 4px;
+	}
+
+	.tagline .flair-text-#{$key} {
+		height: 20px;
+	}
+	
+	[class*="flair-text-#{$key}"]:before,
+	[href*="#flair-text-#{$key}"]:before {
+		background-color: $value !important;
 	}
 }
 
 
+@each $flair in $image-flairs {
+	$offset: -100 * index($image-flairs, $flair);
+	
+	[class$="-#{$flair}-img"],
+	[href$="-#{$flair}-img"] {
+    background-position: 0 calc(0.4 * #{$offset}px);
+	}
+}
+
+
+body.listing-page div.content .flair {
+	display:none;
+}
 
 /* Night Mode */
 
