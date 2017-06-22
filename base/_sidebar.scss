@@ -205,7 +205,7 @@ div.linkinfo .downvotes {
 
 .sidebox.submit.disabled .morelink a:before {
 	width: 300px;
-	content: "submissions restricted";
+	content: $submissions-disabled-text;
 }
 
 .morelink a:after,
@@ -326,14 +326,14 @@ div.linkinfo .downvotes {
 .side .fancy-toggle-button a.option:after {
 	letter-spacing: 1px;
 	font-size: 10px;
-	content: "subscribe";
+	content: $subscribe-button-text;
 }
 
 .side .fancy-toggle-button a.option:before {
 	display: inline-block;
 	letter-spacing: 1px;
 	font-size: 10px;
-	content: "un";
+	content: $unsubscribe-button-prefix;
 	margin-right: 0;
 }
 
@@ -593,7 +593,7 @@ img.tb-moderation-tools-icons {
 	padding-top: 10px;
 	font-size: 12px;
 	color: $title-box-text-color;
-	content: "subreddit theme: /r/Apicem by /u/Cereal_Addict with edits by /r/neoliberal";
+	content: $subreddit-theme-citation;
 }
 
 .gadget .midcol {

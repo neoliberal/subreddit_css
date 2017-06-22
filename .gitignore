@@ -1,4 +1,6 @@
 .sass-cache/
 *.css.map
 
+.vscode/
+
 out/

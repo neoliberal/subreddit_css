@@ -10,5 +10,16 @@ a.author.may-blank.id-t2_16qftw:after {
 	font-weight: bold;
 	padding: 2px 3px;
 	border-radius: 0px;
+	margin-right: 0.5em;
 	content: "/r/Neoliberal";
+}
+
+// I don't know what this is, Draco please explain.
+div#thing_t1_dj7tfur > div.entry p .score{font-size:0px !important}
+div#thing_t1_dj7tfur > div.entry p .score:after {
+    content:"4 points" !important;
+    color: black !important;
+    top: 0px !important;
+    position: inherit !important;
+    font-size: 9px !important;
 }

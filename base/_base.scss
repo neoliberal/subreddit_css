@@ -442,19 +442,19 @@ body:not(.comments-page) .link:not(.thumbnail)+.entry:before {
 
 .link a.thumbnail[href*="reddit.com"]:after {
 	font-size: 11px;
-	content: "reddit";
+	content: $thumbnail-label-link-reddit;
 }
 
 body .self.thumbnail:after {
-	content: "self" !important;
+	content: $thumbnail-label-self !important;
 }
 
 .link.over18 a.thumbnail:after {
-	content: "nsfw" !important;
+	content: $thumbnail-label-nsfw !important;
 }
 
 .link.thing.stickied .thumbnail:after {
-	content: "stickied"!important;
+	content: $thumbnail-label-stickied !important;
 	color: $secondary-text-color;
 	font-size: 10px !important;
 }
@@ -683,15 +683,15 @@ body .thing .tagline .author.admin:hover,
 
 
 .tagline .userattrs a.moderator:hover:after {
-	content: "oderator, speaking officially";
+	content: $userattr-hover-moderator;
 }
 
 .tagline .userattrs a.submitter:hover:after {
-	content: "ubmitter";
+	content: $userattr-hover-submitter;
 }
 
 .tagline .userattrs a.admin:hover:after {
-	content: "dmin, speaking officially";
+	content: $userattr-hover-admin;
 }
 
 .tagline .userattrs {
