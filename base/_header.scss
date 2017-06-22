@@ -440,6 +440,13 @@ a#RESAnnouncementAlert {
 	transition: .2s;
 }
 
+#header #header-bottom-right .beta-hint>a,
+#header-bottom-right #new_modmail,
+.res .res #RESAccountSwitcherIcon,
+.ChatApp__reddit-icon {
+	background: url(%%spritesheet2%%);
+}
+
 #header-bottom-right .user > a {
 	background-position: $header-user-icon-background-position;
 }
@@ -457,7 +464,7 @@ a#RESAnnouncementAlert {
 }
 
 #header-bottom-right #new_modmail {
-  background-position: $header-new-modmail-icon-background-position;
+	background-position: $header-new-modmail-icon-background-position;
 }
 
 #header-bottom-right .pref-lang {
@@ -501,13 +508,6 @@ a#RESAnnouncementAlert {
 
 #header #header-bottom-right .beta-hint>a {
 	margin: 0;
-}
-
-.res .res #RESAccountSwitcherIcon,
-#header #header-bottom-right .beta-hint>a,
-#header-bottom-right #new_modmail,
-.ChatApp__reddit-icon {
-	background: url(%%spritesheet2%%);
 }
 
 #header .beta-hint>a:before,
