@@ -221,8 +221,12 @@ div.linkinfo .downvotes {
 	transition: .4s;
 }
 
+.submit-text .morelink a:after {
+	background-position: $submit-text-hover-icon-background-offset;
+}
+
 .submit-link .morelink a:after {
-	background-position: $more-link-icon-background-position;
+	background-position: $submit-link-hover-icon-background-offset;
 }
 
 .sidecontentbox a.helplink:after {
