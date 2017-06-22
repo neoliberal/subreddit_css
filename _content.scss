@@ -261,6 +261,7 @@ body span.score {
   margin-left: 0;
   align-self: stretch;
   flex-grow: 1;
+  border: 1px solid transparent;
 }
 
 .listing-page #siteTable .link > .entry a.subreddit {
