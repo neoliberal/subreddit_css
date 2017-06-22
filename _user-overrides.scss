@@ -1,20 +1,24 @@
 // neoliberal_shill_bot
-a.author.may-blank.id-t2_16qftw {
+a.author.may-blank.id-t2_16qftw,
+body .thing .tagline a.author.may-blank.id-t2_16qftw {
 	font-size: 0px;
+	background-color: transparent !important;
+	margin-right: 0;
+	padding: 0;
 }
 
 a.author.may-blank.id-t2_16qftw:after {
-	font-size: 10px;
+	font-size: 11px;
 	background-color: $link-flair-background-color !important;
 	color: $secondary-text-color !important;
 	font-weight: bold;
-	padding: 2px 3px;
+	padding: 2px 5px;
 	border-radius: 0px;
 	margin-right: 0.5em;
 	content: "/r/Neoliberal";
 }
 
-// I don't know what this is, Draco please explain.
+// some poor downvoted user score override
 div#thing_t1_dj7tfur > div.entry p .score{font-size:0px !important}
 div#thing_t1_dj7tfur > div.entry p .score:after {
     content:"4 points" !important;
