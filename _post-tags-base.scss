@@ -16,7 +16,7 @@
 }
 
 .user-override-endorsement {
-	@extend .user-override-announce;
+	@extend .user-override-announce; 
 
 	color: $post-endorsement-background-color;
 }
