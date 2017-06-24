@@ -1,6 +1,5 @@
 .user-override-disclaimer {
 	color: $post-disclaimer-background-color;
-	font-style: italic;
 	border-top: 1px dashed $post-disclaimer-divider-color;
 	padding: 3px 5px;
 	margin-top: 1px;
@@ -8,6 +7,26 @@
 	display: block;
 	text-transform: uppercase;
 	font-weight: 800;
+}
+
+.user-override-announce {
+	@extend .user-override-disclaimer;
+	
+	font-style: italic;
+}
+
+.user-override-endorsement {
+	@extend .user-override-announce;
+
+	color: $post-endorsement-background-color;
+}
+
+.user-override-citation-needed {
+	content:"[citation needed]";
+	display: inline-block;
+	margin-left: .5em;
+	color:#0079D3;
+	font-style:italic;
 }
 
 @import "post-tags";
