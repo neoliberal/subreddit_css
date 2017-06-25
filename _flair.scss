@@ -201,8 +201,7 @@ $image-flairs:
 
 
 @each $flair in $image-flairs {
-	/*$offset: -100 * (index($image-flairs, $flair) - 1);*/
-	$offset: 5000;
+	$offset: -100 * (index($image-flairs, $flair) - 1);
 	
 	[class$="-#{$flair}-img"],
 	[href$="-#{$flair}-img"] {
