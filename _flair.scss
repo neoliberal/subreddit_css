@@ -205,7 +205,8 @@ $image-flairs:
 	
 	[class$="-#{$flair}-img"],
 	[href$="-#{$flair}-img"] {
-    background-position: 0 calc(0.4 * #{$offset}px);
+    /*background-position: 0 calc(0.4 * #{$offset}px);*/
+		background-position: 0 calc(0.4 * -5000px);
 	}
 }
 
