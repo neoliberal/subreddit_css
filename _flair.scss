@@ -127,7 +127,7 @@ $image-flairs:
 [class$="-img"],
 [href$="-img"] {
 	background: url(%%flairs%%) no-repeat;
-	background-size: 36px calc(0.4 * 5000px);
+	background-size: 36px calc(0.4 * #{length($image-flairs) * 100}px);
 	min-width: 36px;
 	height: 40px;
 	text-indent: 38px;
