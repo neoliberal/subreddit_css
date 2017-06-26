@@ -1,1 +1,6 @@
 /* Corn Laws anniversary theme file */
+
+[class$="-img"],
+[href$="-img"] {
+		background-position: 0 calc(0.4 * -5000px);
+}
