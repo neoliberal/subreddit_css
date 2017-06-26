@@ -28,7 +28,7 @@
 }
 
 .thing.comment .upmod:focus:after {
-    color: orange;
+    color: #e66060;
 }
 
 .thing.comment .downmod:focus:after, .thing.comment .upmod:focus:after {
@@ -158,7 +158,7 @@
 
 @keyframes DeathKnellUp {
     8% {
-        top: -0px;
+        top: 2px;
         opacity: 1
     }
     15% {
@@ -178,7 +178,7 @@
 
 @-webkit-keyframes DeathKnellUp {
     8% {
-        top: -0px;
+        top: 2px;
         opacity: 1
     }
     15% {
@@ -198,7 +198,7 @@
 
 @-moz-keyframes DeathKnellUp {
     8% {
-        top: -0px;
+        top: 2px;
         opacity: 1
     }
     15% {
@@ -218,7 +218,7 @@
 
 @-o-keyframes DeathKnellUp {
     8% {
-        top: 0px;
+        top: -2px;
         opacity: 1
     }
     15% {
