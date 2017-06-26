@@ -2,5 +2,15 @@
 
 [class$="-img"],
 [href$="-img"] {
-		background-position: 0 calc(0.4 * -5000px);
+    background-position: 0 calc(0.4 * -5000px);
+}
+
+.side:before {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    width: 299px;
+    height: 400px;
+    background: url(%%sidebarimage%%) 0/contain;
+    content: ""
 }
