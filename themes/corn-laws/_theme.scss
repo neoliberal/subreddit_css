@@ -346,7 +346,7 @@
 }
 
 .content[role="main"] {
-    background-color: rgba(0, 0, 0, 0.11);
+    background-color: rgba(0, 0, 0, 0.11) !important;
     background-image: url(%%s1%%), url(%%s2%%), url(%%s3%%) !important;
     -webkit-animation: snow 10s linear infinite;
     -moz-animation: snow 10s linear infinite;
