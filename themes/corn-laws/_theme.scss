@@ -1,5 +1,17 @@
 /* Corn Laws anniversary theme file */
 
+.report-button a {
+    font-size: 0.000000001em !important;
+}
+
+.report-button a:after {
+    content: " repeal corn law";
+    font-size: 11px;
+    left: -5px;
+    position: relative;
+    margin-right: -6px;
+}
+
 [class$="-img"],
 [href$="-img"] {
     background-position: 0 calc(0.4 * -5000px);
