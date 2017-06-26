@@ -14,3 +14,386 @@
     background: url(%%sidebarimage%%) 0/contain;
     content: ""
 }
+
+.arrow.downmod {
+    overflow: visible;
+}
+
+.midcol.dislikes {
+    padding-bottom: 15px;
+}
+
+.thing.comment .downmod:focus:after {
+    color: #0000e5;
+}
+
+.thing.comment .upmod:focus:after {
+    color: orange;
+}
+
+.thing.comment .downmod:focus:after, .thing.comment .upmod:focus:after {
+    content: "";
+    width: 60px;
+    height: 43px;
+    font-size: 9px;
+    font-weight: normal;
+    text-shadow: 0px 0px 1px #333333;
+    position: relative;
+    top: 0px;
+    opacity: 0;
+    -webkit-animation-name: DeathKnell;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 0.2s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-name: DeathKnell;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-delay: 0.2s;
+    -moz-animation-iteration-count: 1;
+    -o-animation-name: DeathKnell;
+    -o-animation-duration: 2s;
+    -o-animation-timing-function: ease-out;
+    -o-animation-delay: 0.2s;
+    -o-animation-iteration-count: 1;
+    -ms-animation-name: DeathKnell;
+    -ms-animation-duration: 2s;
+    -ms-animation-timing-function: ease-out;
+    -ms-animation-delay: 0.2s;
+    -ms-animation-iteration-count: 1;
+    animation-name: DeathKnell;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.2s;
+    animation-iteration-count: 1;
+}
+
+.thing.comment .upmod:focus:after {
+    animation-name: DeathKnellUp;
+    -ms-animation-name: DeathKnellUp;
+    -o-animation-name: DeathKnellUp;
+    -moz-animation-name: DeathKnellUp;
+    -webkit-animation-name: DeathKnellUp;
+}
+
+@keyframes DeathKnell {
+    8% {
+        top: 5px;
+        opacity: 1
+    }
+    15% {
+        top: 10px
+    }
+    40% {
+        opacity: 1
+    }
+    50% {
+        top: 15px
+    }
+    100% {
+        top: 20px;
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes DeathKnell {
+    8% {
+        top: 5px;
+        opacity: 1
+    }
+    15% {
+        top: 10px
+    }
+    40% {
+        opacity: 1
+    }
+    50% {
+        top: 15px
+    }
+    100% {
+        top: 20px;
+        opacity: 0
+    }
+}
+
+@-moz-keyframes DeathKnell {
+    8% {
+        top: 5px;
+        opacity: 1
+    }
+    15% {
+        top: 10px
+    }
+    40% {
+        opacity: 1
+    }
+    50% {
+        top: 15px
+    }
+    100% {
+        top: 20px;
+        opacity: 0
+    }
+}
+
+@-o-keyframes DeathKnell {
+    8% {
+        top: 5px;
+        opacity: 1
+    }
+    15% {
+        top: 10px
+    }
+    40% {
+        opacity: 1
+    }
+    50% {
+        top: 15px
+    }
+    100% {
+        top: 20px;
+        opacity: 0
+    }
+}
+
+@keyframes DeathKnellUp {
+    8% {
+        top: -0px;
+        opacity: 1
+    }
+    15% {
+        top: -5px
+    }
+    40% {
+        opacity: 1
+    }
+    50% {
+        top: -10px
+    }
+    100% {
+        top: -15px;
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes DeathKnellUp {
+    8% {
+        top: -0px;
+        opacity: 1
+    }
+    15% {
+        top: -5px
+    }
+    40% {
+        opacity: 1
+    }
+    50% {
+        top: -10px
+    }
+    100% {
+        top: -15px;
+        opacity: 0
+    }
+}
+
+@-moz-keyframes DeathKnellUp {
+    8% {
+        top: -0px;
+        opacity: 1
+    }
+    15% {
+        top: -5px
+    }
+    40% {
+        opacity: 1
+    }
+    50% {
+        top: -10px
+    }
+    100% {
+        top: -20px;
+        opacity: 0
+    }
+}
+
+@-o-keyframes DeathKnellUp {
+    8% {
+        top: 0px;
+        opacity: 1
+    }
+    15% {
+        top: -5px
+    }
+    40% {
+        opacity: 1
+    }
+    50% {
+        top: -10px
+    }
+    100% {
+        top: -20px;
+        opacity: 0
+    }
+}
+
+.thing[data-fullname$="a"].comment .downmod:focus:after,
+.thing[data-fullname$="e"].comment .downmod:focus:after,
+.thing[data-fullname$="k"].comment .downmod:focus:after,
+.thing[data-fullname$="p"].comment .downmod:focus:after,
+.thing[data-fullname$="r"].comment .downmod:focus:after,
+.thing[data-fullname$="w"].comment .downmod:focus:after,
+.thing[data-fullname$="z"].comment .downmod:focus:after,
+.thing[data-fullname$="7"].comment .downmod:focus:after,
+.thing[data-fullname$="0"].comment .downmod:focus:after {
+    content: "Tarrifs!"
+}
+
+.thing[data-fullname$="b"].comment .downmod:focus:after,
+.thing[data-fullname$="f"].comment .downmod:focus:after,
+.thing[data-fullname$="j"].comment .downmod:focus:after,
+.thing[data-fullname$="o"].comment .downmod:focus:after,
+.thing[data-fullname$="u"].comment .downmod:focus:after,
+.thing[data-fullname$="v"].comment .downmod:focus:after,
+.thing[data-fullname$="x"].comment .downmod:focus:after,
+.thing[data-fullname$="4"].comment .downmod:focus:after,
+.thing[data-fullname$="6"].comment .downmod:focus:after,
+.thing[data-fullname$="9"].comment .downmod:focus:after {
+    content: "Tarrifs..."
+}
+
+.thing[data-fullname$="c"].comment .downmod:focus:after,
+.thing[data-fullname$="g"].comment .downmod:focus:after,
+.thing[data-fullname$="l"].comment .downmod:focus:after,
+.thing[data-fullname$="n"].comment .downmod:focus:after,
+.thing[data-fullname$="q"].comment .downmod:focus:after,
+.thing[data-fullname$="s"].comment .downmod:focus:after,
+.thing[data-fullname$="2"].comment .downmod:focus:after,
+.thing[data-fullname$="3"].comment .downmod:focus:after {
+    content: "TARRIFS"
+}
+
+.thing[data-fullname$="d"].comment .downmod:focus:after,
+.thing[data-fullname$="h"].comment .downmod:focus:after,
+.thing[data-fullname$="i"].comment .downmod:focus:after,
+.thing[data-fullname$="m"].comment .downmod:focus:after,
+.thing[data-fullname$="t"].comment .downmod:focus:after,
+.thing[data-fullname$="y"].comment .downmod:focus:after,
+.thing[data-fullname$="1"].comment .downmod:focus:after,
+.thing[data-fullname$="5"].comment .downmod:focus:after,
+.thing[data-fullname$="8"].comment .downmod:focus:after {
+    content: "Fuck Disraeli!";
+    font-size: 0.9em;
+}
+
+.thing[data-fullname$="a"].comment .upmod:focus:after,
+.thing[data-fullname$="e"].comment .upmod:focus:after,
+.thing[data-fullname$="k"].comment .upmod:focus:after,
+.thing[data-fullname$="p"].comment .upmod:focus:after,
+.thing[data-fullname$="r"].comment .upmod:focus:after,
+.thing[data-fullname$="w"].comment .upmod:focus:after,
+.thing[data-fullname$="z"].comment .upmod:focus:after,
+.thing[data-fullname$="7"].comment .upmod:focus:after,
+.thing[data-fullname$="0"].comment .upmod:focus:after {
+    content: "FREE TRADE"
+}
+
+.thing[data-fullname$="b"].comment .upmod:focus:after,
+.thing[data-fullname$="f"].comment .upmod:focus:after,
+.thing[data-fullname$="j"].comment .upmod:focus:after,
+.thing[data-fullname$="o"].comment .upmod:focus:after,
+.thing[data-fullname$="u"].comment .upmod:focus:after,
+.thing[data-fullname$="v"].comment .upmod:focus:after,
+.thing[data-fullname$="x"].comment .upmod:focus:after,
+.thing[data-fullname$="4"].comment .upmod:focus:after,
+.thing[data-fullname$="6"].comment .upmod:focus:after,
+.thing[data-fullname$="9"].comment .upmod:focus:after {
+    content: "Prosperity!"
+}
+
+.thing[data-fullname$="c"].comment .upmod:focus:after,
+.thing[data-fullname$="g"].comment .upmod:focus:after,
+.thing[data-fullname$="l"].comment .upmod:focus:after,
+.thing[data-fullname$="n"].comment .upmod:focus:after,
+.thing[data-fullname$="q"].comment .upmod:focus:after,
+.thing[data-fullname$="s"].comment .upmod:focus:after,
+.thing[data-fullname$="2"].comment .upmod:focus:after,
+.thing[data-fullname$="3"].comment .upmod:focus:after {
+    content: "Wage growth :D"
+}
+
+.thing[data-fullname$="d"].comment .upmod:focus:after,
+.thing[data-fullname$="h"].comment .upmod:focus:after,
+.thing[data-fullname$="i"].comment .upmod:focus:after,
+.thing[data-fullname$="m"].comment .upmod:focus:after,
+.thing[data-fullname$="t"].comment .upmod:focus:after,
+.thing[data-fullname$="y"].comment .upmod:focus:after,
+.thing[data-fullname$="1"].comment .upmod:focus:after,
+.thing[data-fullname$="5"].comment .upmod:focus:after,
+.thing[data-fullname$="8"].comment .upmod:focus:after {
+    content: "Praise Robert Peel!"
+}
+
+.content[role="main"] {
+    background: none;
+    background-color: rgba(0, 0, 0, 0.11);
+    font-family: Androgyne;
+    background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: snow 10s linear infinite;
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    50% {
+        background-position: 500px 500px, 100px 200px, -100px 150px;
+    }
+    100% {
+        background-position: 500px 1000px, 200px 400px, -100px 300px;
+    }
+}
+
+@-moz-keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    50% {
+        background-position: 500px 500px, 100px 200px, -100px 150px;
+    }
+    100% {
+        background-position: 400px 1000px, 200px 400px, 100px 300px;
+    }
+}
+
+@-webkit-keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    50% {
+        background-position: 500px 500px, 100px 200px, -100px 150px;
+    }
+    100% {
+        background-position: 500px 1000px, 200px 400px, -100px 300px;
+    }
+}
+
+@-ms-keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    50% {
+        background-position: 500px 500px, 100px 200px, -100px 150px;
+    }
+    100% {
+        background-position: 500px 1000px, 200px 400px, -100px 300px;
+    }
+}
