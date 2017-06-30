@@ -215,18 +215,18 @@ $icon-flairs:
 }
 
 @each $key, $flairColor in $text-flairs {
-	.flair-text-#{$key} {
+	[class*="flair-text-#{$key}"]:not([class*="img"]) {
 		text-indent: 3px;
 		line-height: 20px;
 	}
 
-	.flair-text-#{$key}:before {
+	[class*="flair-text-#{$key}"]:not([class*="img"]):before {
 		width: calc(100% - -3px);
-    left: 0;
-    text-indent: 4px;
+        left: 0;
+        text-indent: 4px;
 	}
 
-	.tagline .flair-text-#{$key} {
+	.tagline [class*="flair-text-#{$key}"]:not([class*="img"]) {
 		height: 20px;
 	}
 	
