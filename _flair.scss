@@ -210,7 +210,7 @@ $icon-flairs:
 	$offset: -24 * (index($icon-flairs, $iconKey) - 1);
 
 	[class*="flair-text"][class*="-icon-#{$iconKey}"]:after {
-		background-position: 0 $offset;
+		background-position: 0 #{$offset}px;
 	}
 }
 
