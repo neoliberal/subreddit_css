@@ -22,3 +22,9 @@ div#thing_t1_djjm3dj > div.entry .md:before{ content:"FUCK SEPARATION OF POWERS"
 div#thing_t1_djhcc1i > div.entry .md:after{ @extend .user-override-disclaimer; content:"idiot ";}
 div#thing_t1_djl4e4m > div.entry .md:after{ @extend .user-override-disclaimer; content:"user was banned for this post";}
 div#thing_t1_djm289u> div.entry p .score:before{content:"3"}
+/**Begin djma6qd**/
+div#thing_t1_djma6qd > div.entry .md:after{
+	@extend .user-override-disclaimer;
+	content: "another test again";
+}
+/**End djma6qd**/
