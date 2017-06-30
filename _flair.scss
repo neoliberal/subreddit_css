@@ -209,7 +209,7 @@ $icon-flairs:
 @each $iconKey in $icon-flairs {
 	$offset: -24 * (index($icon-flairs, $iconKey) - 1);
 
-	[class*="flair-text"][class*="icon-#{$iconKey}"]:after {
+	[class*="flair-text"][class*="-icon-#{$iconKey}"]:after {
 		background-position: 0 $offset;
 	}
 }
