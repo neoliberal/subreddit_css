@@ -85,6 +85,9 @@ $icon-flairs:
 	magic,
 	megaphone,
 	writer,
+	biohazard,
+	beaker,
+	skull
 ;
 
 .flair,
@@ -203,6 +206,14 @@ $icon-flairs:
 	transform: translateY(-50%);
 }
 
+@each $iconKey in $icon-flairs {
+	$offset: -24 * (index($icon-flairs, $iconKey) - 1);
+
+	[class*="flair-text"][class*="icon-#{$iconKey}"]:after {
+		background-position: 0 $offset;
+	}
+}
+
 @each $key, $flairColor in $text-flairs {
 	.flair-text-#{$key} {
 		text-indent: 3px;
@@ -223,16 +234,7 @@ $icon-flairs:
 	[href*="#flair-text-#{$key}"]:before {
 		background-color: $flairColor !important;
 	}
-
-	@each $iconKey in $icon-flairs {
-		$offset: -24 * (index($icon-flairs, $iconKey) - 1);
-
-		[class*="flair-text-#{$key}"][class*="icon-#{$iconKey}"]:after {
-			background-position: 0 $offset;
-		}
-	}
 }
-
 
 @each $flair in $image-flairs {
 	$offset: -100 * (index($image-flairs, $flair) - 1);
