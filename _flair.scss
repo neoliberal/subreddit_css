@@ -191,14 +191,14 @@ $icon-flairs:
 }
 
 [class*="flair-text"][class*="icon"] {
-	margin-right: 33px;
+	margin-right: 38px;
 }
 
 [class*="flair-text"][class*="icon"]:after {
 	content: " ";
 	background-image: url(%%flairicons%%);
-	width: 20px;
-	height: 20px;
+	width: 24px;
+	height: 24px;
 	position: absolute;
 	margin-left: 10px;
 	top: 50%;
