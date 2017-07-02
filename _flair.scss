@@ -260,7 +260,7 @@ $clear-flairs:
 	[class$="-#{$flair}-img"]:before,
 	[href$="-#{$flair}-img"]:before {
 		left: 0;
-		width: calc(100% + 6px) !important;
+		width: calc(100% - -6px);
 	}
 }
 
