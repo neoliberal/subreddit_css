@@ -90,6 +90,11 @@ $icon-flairs:
 	skull
 ;
 
+// Flairs in this list will be overridden.
+$clear-flairs:
+	hrclinton
+;
+
 .flair,
 .linkflairlabel {
 	vertical-align: middle;
@@ -245,6 +250,19 @@ $icon-flairs:
 	}
 }
 
+@each $flair in $clear-flairs {
+	[class$="-#{$flair}-img"],
+	[href$="-#{$flair}-img"] {
+		background: none;
+  	text-indent: 3px;
+	}
+
+	[class$="-#{$flair}-img"]:before,
+	[href$="-#{$flair}-img"]:before {
+		left: 0;
+		width: calc(100% + 6px);
+	}
+}
 
 body.listing-page div.content .flair {
 	display:none;

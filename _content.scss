@@ -1,3 +1,34 @@
+/* Header
+----------------*/
+#header {
+	$header: header_contractionary;
+
+	@if($expansionary) {
+		$header: header_expansionary;
+	}
+
+	@include order(-1);
+	margin: 30px 0 0;
+	width: 100%;
+	height: 160px;
+	border: 0;
+	background-color: $header-background-color;
+	background-image: linear-gradient(rgba(50,58,71,.15) 32%,rgba(50,58,71,.55)), url(%%#{$header}%%);
+	background-position: left top;
+	background-size: cover;
+}
+
+#header:after {
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background: $header-action-overlay-color;
+	content: ""
+}
+
 /* SINGLE COLUMN
 ----------------*/
 
