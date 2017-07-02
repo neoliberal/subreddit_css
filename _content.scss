@@ -1,10 +1,10 @@
 /* Header
 ----------------*/
 #header {
-	$header: header_contractionary;
+	$header: header-contractionary;
 
 	@if($expansionary) {
-		$header: header_expansionary;
+		$header: header-expansionary;
 	}
 
 	@include order(-1);
