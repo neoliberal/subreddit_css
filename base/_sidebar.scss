@@ -659,8 +659,14 @@ img.tb-moderation-tools-icons {
 }
 
 #header { 
+	$header: header-contractionary;
+
+	@if($expansionary) {
+		$header: header-expansionary;
+	}
+
    height: 300px;
-   background: linear-gradient(rgba(50,58,71,0.1) 52%,rgba(50,58,71,.6)), url(%%header%%);
+   background: linear-gradient(rgba(50,58,71,0.1) 52%,rgba(50,58,71,.6)), url(%%#{$header}%%);
 }
 
 #header .pagename {
