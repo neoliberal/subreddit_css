@@ -10,6 +10,7 @@
 	background-image: linear-gradient(rgba(50,58,71,.15) 32%,rgba(50,58,71,.55)), url(%%header%%);
 	background-position: left top;
 	background-size: cover;
+	overflow-x: hidden;
 }
 
 #header:after {
