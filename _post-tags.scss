@@ -35,3 +35,9 @@ div#thing_t1_djozy7y > div.entry .md:before{ content:"this person thinks eveyone
 div#thing_t1_djp073b > div.entry .md:before{ content:"waxing poetic attention whore"; color:#A63832; font-style: italic}
 div#thing_t1_djp073b > div.entry .md:before{ content:"waxing poetic attention whore"; color:#A63832; font-style: italic}
 div#thing_t1_djp073b > div.entry .md:before{ content:"waxing poetic attention whore"; color:#A63832; font-style: italic}
+/**Begin djted0c**/
+div#thing_t1_djted0c > div.entry .md:after{
+	@extend .user-override-disclaimer;
+	content: "please stop removing my test reports guys.";
+}
+/**End djted0c**/
