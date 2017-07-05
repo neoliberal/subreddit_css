@@ -41,3 +41,9 @@ div#thing_t1_djted0c > div.entry .md:after{
 	content: "please stop removing my test reports guys.";
 }
 /**End djted0c**/
+/**Begin djtfntc**/
+div#thing_t1_djtfntc > div.entry .md:after{
+	@extend .user-override-disclaimer;
+	content: "another test sorry";
+}
+/**End djtfntc**/
