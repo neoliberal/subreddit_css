@@ -1,7 +1,8 @@
-$font-family: -apple-system, BlinkMacSystemFont, Helvetica, "Roboto", Arial, "Lucida Grande", sans-serif;
-$code-block-font-family: "Courier New", monospace;
-
 $expansionary: false;
+
+$subscriber-description: "coastal elites";
+$online-users-description: "users fighting for the HRC flair";
+
 
 @import "util/mixins";
 @import "util/metrics";
