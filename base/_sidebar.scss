@@ -458,13 +458,13 @@ div.linkinfo .downvotes {
 .side .subscribers {
 	font-weight: bold; 
 	color: $subscriber-count-color;
-	display: inline-block;
+	display: block;
 	margin-top: 5px;
 	margin-right: 4px;
 }
 
 .side .users-online {
-	display: inline-block;
+	display: block;
 }
 
 .side .users-online:before {
