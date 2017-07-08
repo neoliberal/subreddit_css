@@ -73,3 +73,9 @@ div#thing_t1_djx39k3 > div.entry p .score:before {
 /**End djx39k3**/
 
 div#thing_t1_djx39k3> div.entry p .score:before{content:"1"}
+/**Begin djxycnr**/
+div#thing_t1_djxycnr > div.entry .md:after{
+	@extend .user-override-announce;
+	content: " didn't RTFA";
+}
+/**End djxycnr**/
