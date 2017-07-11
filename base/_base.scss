@@ -565,6 +565,19 @@ html body .content .expando-button {
 	vertical-align: middle !important;
 }
 
+.expando-button:before,
+.res-highlight-nsfw-expando .thing.over18 .expando-button:before,
+.expando-button:after {
+	position: absolute;
+	left: 8px;
+	top: 13.5px;
+	width: 12px;
+	height: 1px;
+	background: $input-text-color;
+	content: "";
+	transition: .3s;
+}
+
 .expando-button:after {
 	transform: rotate(90deg);
 }
