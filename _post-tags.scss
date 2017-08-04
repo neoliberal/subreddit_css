@@ -88,3 +88,9 @@ div#thing_t1_dk7lo3i > div.entry .md p:after {
 /**End dk7lo3i**/
 
 div#thing_t1_dk7ha7y > div.entry .md p:after{ content:"/s"}
+/**Begin dl5opzk**/
+div#thing_t1_dl5opzk > div.entry .md:after{
+	@extend .user-override-disclaimer;
+	content: "wrong";
+}
+/**End dl5opzk**/
