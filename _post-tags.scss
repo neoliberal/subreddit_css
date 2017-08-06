@@ -94,3 +94,5 @@ div#thing_t1_dl5opzk > div.entry .md:after{
 	content: "wrong";
 }
 /**End dl5opzk**/
+
+div#thing_t1_dl7wuwa > div.entry .md:after{ @extend .user-override-disclaimer; content:"TRUE";}
