@@ -248,6 +248,18 @@ body > .content:before,
 	content: "";
 }
 
+.reddit-infobar {
+	border-bottom: 0px;
+}
+
+.reddit-infobar.with-icon:before {
+	background-color: $post-disclaimer-background-color;
+}
+
+.reddit-infobar.md-container-small .md > p {
+	color: $primary-text-color;
+}
+
 body > .content:before {
 	height: 3px;
 	padding: 0 20px;
@@ -758,7 +770,6 @@ form.state-button.approve-button {
 	border: 0;
 	background: $next-preview-link-hover-background-color;
 }
-
 
 .archived-infobar.with-icon:before {
 	background-color: transparent;
