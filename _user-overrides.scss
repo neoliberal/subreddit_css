@@ -3,11 +3,9 @@ a.author.may-blank.id-t2_6l4z3 {
 }
 
 // neoliberal_shill_bot
-// the "html body" is needed to override !important
-html body a.author.may-blank.id-t2_16qftw {
+// the all the junk is to override !important
+html body .thing .tagline .author.moderator a.author.may-blank.id-t2_16qftw {
 	font-size: 0;
-	margin-right: 0;
-	padding: 0;
 	background-color: $link-flair-background-color !important;
 	color: $secondary-text-color !important;
 }
