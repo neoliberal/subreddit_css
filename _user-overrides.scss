@@ -3,22 +3,18 @@ a.author.may-blank.id-t2_6l4z3 {
 }
 
 // neoliberal_shill_bot
-a.author.may-blank.id-t2_16qftw,
-a.author.may-blank.id-t2_16qftw {
-	font-size: 0px;
-	background-color: transparent !important;
+// the "html body" is needed to override !important
+html body a.author.may-blank.id-t2_16qftw {
+	font-size: 0;
 	margin-right: 0;
 	padding: 0;
+	background-color: $link-flair-background-color !important;
+	color: $secondary-text-color !important;
 }
 
 a.author.may-blank.id-t2_16qftw:after {
 	font-size: 11px;
-	background-color: $link-flair-background-color !important;
-	color: $secondary-text-color !important;
 	font-weight: bold;
-	padding: 2px 5px;
-	border-radius: 0px;
-	margin-right: 0.5em;
 	content: "/r/Neoliberal";
 }
 
