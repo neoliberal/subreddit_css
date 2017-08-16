@@ -243,6 +243,10 @@ a#sr-more-link,
 	text-shadow: -1px 1px 3px $page-name-text-shadow-color !important;
 }
 
+#header .pagename a:hover {
+	text-decoration: none;
+}
+
 #header .pagename:after {
 	margin-left: 25px;
 	white-space: nowrap;
