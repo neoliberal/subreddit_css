@@ -1,10 +1,17 @@
 /* These are base theme styles that we haven't modified much. */
-*,
-:before,
-:after {
+
+html {
 	@include box-sizing(border-box);
 	@include text-size-adjust(none !important);
 	text-decoration: none !important;
+}
+
+*,
+:before,
+:after {
+	@include box-sizing(inherit);
+	@include text-size-adjust(inherit);
+	text-decoration: inherit;
 }
 
 body {
