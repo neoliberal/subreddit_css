@@ -510,6 +510,18 @@ body.res-voteEnhancements-highlightScores span.score {
 	color: $input-text-color;
 }
 
+// make res tags pretty
+.res .userTagLink.hasTag {
+	font-size: 11px;
+	padding: 1px 6px;
+	border: 0;
+	border-radius: 0;
+}
+
+.res .userTagLink.hasTag:hover {
+	text-decoration: none;
+}
+
 /* RES Fixes
 ------------*/
 
