@@ -665,8 +665,9 @@ img.tb-moderation-tools-icons {
 		$header: header-expansionary;
 	}
 
-   height: 350px;
+   height: 380px;
    background: linear-gradient(rgba(50,58,71,0.1) 52%,rgba(50,58,71,.6)), url(%%#{$header}%%);
+   background-position-y: 30px;
 }
 
 #header .pagename {
@@ -685,7 +686,7 @@ img.tb-moderation-tools-icons {
 }
 
 #header .tabmenu { 
-	top: 300px;
+	top: 330px;
 }
 
 .side .md a[href="#headerbutton"] + a {
