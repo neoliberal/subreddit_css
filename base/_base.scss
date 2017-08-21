@@ -190,7 +190,23 @@ body h2 a:visited {
 .drop-choices a.choice {
 	height: 30px;
 	padding: 0 10px;
-	line-height: 30px
+	line-height: 30px;
+}
+
+a.choice[href*="?sort=controversial"] {
+    visibility: hidden;
+    position: relative;
+}
+	
+a.choice[href*="?sort=controversial"]::after {
+    visibility: visible;
+    content: "hot takes";
+    top: 0;
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+    padding: 2px 3px 1px;
+    display: block;
 }
 
 .error {
