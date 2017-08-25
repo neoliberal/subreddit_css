@@ -2,29 +2,32 @@ a.author.may-blank.id-t2_6l4z3 {
 	display: none !important;
 }
 
-// neoliberal_shill_bot
+// jobautomator
 // the all the junk is to override !important
-body .thing .tagline a.author.may-blank.id-t2_16qftw {
+body .thing .tagline a.author.may-blank.id-t2_bhlgwn1 {
 	font-size: 0;
 }
 
-body .thing .tagline a.author.moderator.may-blank.id-t2_16qftw {
+body .thing .tagline a.author.moderator.may-blank.id-t2_bhlgwn1 {
 	background-color: $link-flair-background-color !important;
 	color: $secondary-text-color !important;
 }
 
-a.author.may-blank.id-t2_16qftw:after {
+a.author.may-blank.id-t2_bhlgwn1:after {
 	font-size: 11px;
 	font-weight: bold;
 	content: "/r/Neoliberal";
 }
 
 // some poor downvoted user score override
-div#thing_t1_dj7tfur > div.entry p .score{font-size:0px !important}
-div#thing_t1_dj7tfur > div.entry p .score:after {
-    content:"4 points" !important;
-    color: black !important;
-    top: 0px !important;
-    position: inherit !important;
-    font-size: 9px !important;
+div#thing_t1_dj7tfur>div.entry p .score {
+	font-size: 0px !important
+}
+
+div#thing_t1_dj7tfur>div.entry p .score:after {
+	content: "4 points" !important;
+	color: black !important;
+	top: 0px !important;
+	position: inherit !important;
+	font-size: 9px !important;
 }
