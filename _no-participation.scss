@@ -21,7 +21,7 @@ body:lang(np) .helplink {
 
 body:lang(np) #siteTable:before {
     content: "You have been linked to a read-only version of this subreddit. Please respect the community by not voting.";
-    $link-flair-background-color;
+    background-color: $link-flair-background-color;
     border-color: $policy-button-border-color;
     color: $policy-button-text-color !important;
     display: block;
