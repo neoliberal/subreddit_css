@@ -21,13 +21,12 @@ body:lang(np) .helplink {
 
 body:lang(np) #siteTable:before {
     content: "You have been linked to a read-only version of this subreddit. Please respect the community by not voting.";
+    $link-flair-background-color;
+    border-color: $policy-button-border-color;
+    color: $policy-button-text-color !important;
     display: block;
-    max-width: 800px;
-    background-color: #F6E69F;
     padding: 5px 10px;
-    margin: 5px 305px 5px 0px;
-    border: 1px solid orange;
-    font-size: small;
+    font-size: 17px;
 }
 
 body:lang(np) .entry.likes:not(.reddit-entry):before,
