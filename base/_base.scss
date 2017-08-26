@@ -193,20 +193,14 @@ body h2 a:visited {
 	line-height: 30px;
 }
 
-a.choice[href*="?sort=controversial"] {
+a.choice[href*="controversial"] {
     visibility: hidden;
     position: relative;
 }
 	
-a.choice[href*="?sort=controversial"]::after {
+a.choice[href*="controversial"]::before {
     visibility: visible;
     content: "hot takes";
-    top: 0;
-    left: 0;
-    position: absolute;
-    cursor: pointer;
-    padding: 2px 3px 1px;
-    display: block;
 }
 
 .error {
