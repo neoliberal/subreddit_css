@@ -200,7 +200,7 @@ a.choice[href*="controversial"] {
 a.choice[href*="controversial"]::before {
 	visibility: visible;
 	content: "hot takes";
-	font-size: 10px;
+	font-size: 9px;
 }
 
 .tabmenu a.choice[href*="controversial"]::before {
