@@ -19,12 +19,11 @@ body {
 	@include flex-flow(row wrap);
 }
 
-
 body,
 div#RESSubredditGroupDropdown,
 #search input[type="text"],
 textarea {
-    font-family: $font-family;
+	font-family: $font-family;
 }
 
 a,
@@ -36,7 +35,7 @@ body .generic-table,
 
 label,
 .search-expando-button {
-    color: $expando-button-color;
+	color: $expando-button-color;
 }
 
 .drop-choices,
@@ -81,7 +80,6 @@ h2,
 	margin: 10px 0;
 	font-size: 14px !important;
 }
-
 
 .md del {
 	text-decoration: line-through !important;
@@ -134,37 +132,37 @@ body h2 a:visited {
 	color: $input-text-color;
 }
 
-.md a[href="#bigbutton"] + a,
-.md a[href="#button"] + a,
-.md a[href="#specialbutton"] + a,
-.md a[href="#bigspecialbutton"] + a,
-.md a[href="#bigpolicybutton"] + a {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    letter-spacing: 1px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: 700;
-    background: $link-flair-background-color;
-    border-color: $policy-button-border-color;
-    color: $policy-button-text-color !important;
+.md a[href="#bigbutton"]+a,
+.md a[href="#button"]+a,
+.md a[href="#specialbutton"]+a,
+.md a[href="#bigspecialbutton"]+a,
+.md a[href="#bigpolicybutton"]+a {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px 20px;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: 700;
+	background: $link-flair-background-color;
+	border-color: $policy-button-border-color;
+	color: $policy-button-text-color !important;
 }
 
-.md a[href="#bigpolicybutton"] + a {
+.md a[href="#bigpolicybutton"]+a {
 	font-size: 20px;
 }
 
-.md a[href="#bigbutton"] + a:hover,
-.md a[href="#button"] + a:hover {
+.md a[href="#bigbutton"]+a:hover,
+.md a[href="#button"]+a:hover {
 	background-color: $button-post-action-background-color;
 }
 
-.entry .md a[href="#bigbutton"] + a, 
-.entry .md a[href="#button"] + a, 
-.entry .md a[href="#specialbutton"] + a, 
-.entry .md a[href="#bigspecialbutton"] + a {
+.entry .md a[href="#bigbutton"]+a,
+.entry .md a[href="#button"]+a,
+.entry .md a[href="#specialbutton"]+a,
+.entry .md a[href="#bigspecialbutton"]+a {
 	padding: 5px 5px;
 	margin: 0 4px;
 	line-height: normal;
@@ -194,13 +192,13 @@ body h2 a:visited {
 }
 
 a.choice[href*="controversial"] {
-    visibility: hidden;
+	visibility: hidden;
 	position: relative;
 	font-size: 0;
 }
-	
+
 a.choice[href*="controversial"]::before {
-    visibility: visible;
+	visibility: visible;
 	content: "hot takes";
 	font-size: 10px;
 }
@@ -222,9 +220,9 @@ a.choice[href*="controversial"]::before {
 	font-size: 11px !important;
 }
 
-body > .content,
-.res.res-commentBoxes body > .content,
-.modtools-page > div.content {
+body>.content,
+.res.res-commentBoxes body>.content,
+.modtools-page>div.content {
 	@include flex(1 1 auto);
 	@include order(-1);
 	margin: 0 0 0 0;
@@ -234,11 +232,11 @@ body > .content,
 	color: $primary-text-color;
 }
 
-body > .content > .content {
+body>.content>.content {
 	margin: 0;
 }
 
-body > .content:before,
+body>.content:before,
 .reddit-infobar {
 	display: block;
 	overflow: hidden;
@@ -262,11 +260,11 @@ body > .content:before,
 	background-color: $post-disclaimer-background-color;
 }
 
-.reddit-infobar.md-container-small .md > p {
+.reddit-infobar.md-container-small .md>p {
 	color: $primary-text-color;
 }
 
-body > .content:before {
+body>.content:before {
 	height: 3px;
 	padding: 0 20px;
 	background: linear-gradient(to left, $downvote-color, $link-flair-background-color, $downvote-color);
@@ -275,15 +273,15 @@ body > .content:before {
 	margin-bottom: 5px !important;
 }
 
-body > .content > .spacer:nth-of-type(1) {
-    display: none
+body>.content>.spacer:nth-of-type(1) {
+	display: none
 }
 
-:not(.side)+a[name=content] + .content {
+:not(.side)+a[name=content]+.content {
 	margin-right: 30px;
 }
 
-:not(.side)+a[name=content] + .content:before {
+:not(.side)+a[name=content]+.content:before {
 	margin-right: -10px;
 }
 
@@ -291,13 +289,11 @@ body > .content > .spacer:nth-of-type(1) {
 	margin: 0;
 }
 
-
 #siteTable_organic.organic-listing {
 	border: 0;
 	border-bottom: 1px solid $link-info-border-color;
 	background: none !important;
 }
-
 
 .reddit-infobar {
 	margin-bottom: -1px;
@@ -339,6 +335,12 @@ body > .content > .spacer:nth-of-type(1) {
 	border-right: 0;
 }
 
+body.show-controversial .comment.controversial>.entry .score::after {
+	content: "Hot Take";
+	top: 0;
+	padding-left: 5px;
+}
+
 .link.odd {
 	border-right: 1px solid $link-info-border-color;
 	padding-right: 10px;
@@ -358,13 +360,13 @@ body > .content > .spacer:nth-of-type(1) {
 	display: none;
 }
 
-body > .content .link.thing .midcol {
+body>.content .link.thing .midcol {
 	width: 35px;
-	margin-top: 5px;  
+	margin-top: 5px;
 	margin-left: -3px;
 }
 
-body.comments-page > .content .link.thing .midcol {
+body.comments-page>.content .link.thing .midcol {
 	align-self: flex-start;
 	margin: 0 3px;
 }
@@ -378,8 +380,9 @@ body>.content .link.even.thing .midcol {
 }
 
 .link .entry .expando {
-  clear: none;
+	clear: none;
 }
+
 
 /* Thumbnails */
 
@@ -432,11 +435,11 @@ a.thumbnail[href*="reddit.com"] {
 .thumbnail.self,
 .link:not(.thumbnail)+.entry:before,
 .thumbnail.default {
-    background: $downvote-color !important;
+	background: $downvote-color !important;
 }
 
 .over18 .thumbnail.nsfw {
-    background: $upvote-color;
+	background: $upvote-color;
 }
 
 body:not(.comments-page) .link:not(.thumbnail)+.entry:before {
@@ -498,7 +501,6 @@ a.thumbnail[href*="reddit.com"] img {
 .comments-page .link.over18 .entry {
 	margin-left: 39px;
 }
-
 
 .thing p.title {
 	margin-bottom: 7px;
@@ -652,11 +654,11 @@ ul.report-reasons {
 }
 
 ul.report-reasons {
-    width: 100%
+	width: 100%
 }
 
 .rounded {
-    border-radius: 0
+	border-radius: 0
 }
 
 body .thing .tagline .author.moderator,
@@ -698,7 +700,6 @@ body .thing .tagline .author.admin:hover,
 .tagline .userattrs a.admin {
 	background-color: $admin-tag-background-color !important
 }
-
 
 .tagline .userattrs a.moderator:hover:after {
 	content: $userattr-hover-moderator;
@@ -838,9 +839,9 @@ form.state-button.approve-button {
 
 .gold-accent,
 .gold-accent.comment-visits-box {
-    border: 0;
-    background: 0;
-    color: $gold-accent-text-color;
+	border: 0;
+	background: 0;
+	color: $gold-accent-text-color;
 }
 
 .new-comment .usertext-body,
@@ -890,7 +891,7 @@ form.state-button.approve-button {
 	padding-bottom: 8px;
 }
 
-.comment.deleted .tagline > time {
+.comment.deleted .tagline>time {
 	margin: 0 2px 0 4px;
 }
 
@@ -1209,7 +1210,7 @@ ul.image-preview-list .description pre {
 }
 
 .subreddit-rules-page:before {
-display: none;
+	display: none;
 }
 
 .subreddit-rules-page {
@@ -1254,17 +1255,17 @@ display: none;
 }
 
 .tagline {
-  display: flex;
-  align-items: center;
-  line-height: 16px;
+	display: flex;
+	align-items: center;
+	line-height: 16px;
 }
 
 .tagline .author,
 .tagline .score,
 .tagline time,
 .tagline .userattrs {
-  height: 16px;
-  line-height: 16px;
+	height: 16px;
+	line-height: 16px;
 }
 
 a.tb-bracket-button.global-mod-button {
@@ -1275,33 +1276,33 @@ a.tb-bracket-button.global-mod-button {
 
 .tagline .score,
 .tagline .score-hidden {
-  margin-left: 5px;
-  margin-right: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .tagline .voteWeight {
-  margin-right: 4px;
+	margin-right: 4px;
 }
 
 .tagline .edited-timestamp {
-  margin: 0 4px;
+	margin: 0 4px;
 }
 
 .tagline .stickied-tagline {
-  margin-left: 4px;
+	margin-left: 4px;
 }
 
 .link .tagline time {
-  margin: 0 4px;
-  height: 16px;
+	margin: 0 4px;
+	height: 16px;
 }
 
 .link .tagline .author {
-  margin: 0 4px;
+	margin: 0 4px;
 }
 
 .link p.title {
-  margin-bottom: 4px;
+	margin-bottom: 4px;
 }
 
 .message.recipient>.entry {
