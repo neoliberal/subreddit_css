@@ -195,12 +195,18 @@ body h2 a:visited {
 
 a.choice[href*="controversial"] {
     visibility: hidden;
-    position: relative;
+	position: relative;
+	font-size: 0;
 }
 	
 a.choice[href*="controversial"]::before {
     visibility: visible;
-    content: "hot takes";
+	content: "hot takes";
+	font-size: 10px;
+}
+
+.tabmenu a.choice[href*="controversial"]::before {
+	font-size: 11px;
 }
 
 .error {
