@@ -132,7 +132,7 @@ body h2 a:visited {
 	color: $input-text-color;
 }
 
-.commentarea .stickied {
+div:not(.commentarea) .stickied {
 
 .md a[href="#bigbutton"]+a,
 .md a[href="#button"]+a,
