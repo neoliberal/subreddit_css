@@ -132,6 +132,8 @@ body h2 a:visited {
 	color: $input-text-color;
 }
 
+.stickied {
+
 .md a[href="#bigbutton"]+a,
 .md a[href="#button"]+a,
 .md a[href="#specialbutton"]+a,
@@ -152,6 +154,8 @@ body h2 a:visited {
 
 .md a[href="#bigpolicybutton"]+a {
 	font-size: 20px;
+}
+
 }
 
 .md a[href="#bigbutton"]+a:hover,
