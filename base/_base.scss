@@ -156,8 +156,6 @@ div:not(.commentarea) .stickied, .side {
 	font-size: 20px;
 }
 
-}
-
 .md a[href="#bigbutton"]+a:hover,
 .md a[href="#button"]+a:hover {
 	background-color: $button-post-action-background-color;
@@ -170,6 +168,8 @@ div:not(.commentarea) .stickied, .side {
 	padding: 5px 5px;
 	margin: 0 4px;
 	line-height: normal;
+}
+
 }
 
 .drop-choices {
