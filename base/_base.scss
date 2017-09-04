@@ -1,0 +1,2685 @@
+*,
+:after,
+:before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none
+}
+
+.md,
+body {
+    color: #5e6875
+}
+
+#search input[type=text],
+body,
+textarea {
+    font-family: -apple-system, BlinkMacSystemFont, "Open Sans", Helvetica, sans-serif
+}
+
+.md {
+    font-weight: 400
+}
+
+.md,
+.side .md {
+    font-size: 14px
+}
+
+div.RESDialogSmall>h3 {
+    color: #5e6875;
+    height: 40px;
+    border: 0
+}
+
+.md a,
+.search-result-meta a,
+.side .titlebox h1 a,
+a {
+    color: #5f9dd2
+}
+
+.tagline a {
+    color: #585858
+}
+
+.md a {
+    text-decoration: underline
+}
+
+.commentNavSortType:hover,
+a:hover {
+    text-decoration: none!important
+}
+
+.green,
+.search-result-meta .moderator {
+    color: #c22
+}
+
+.md strong {
+    font-weight: 700;
+    color: #4d5968
+}
+
+.md code,
+.md pre {
+    font-family: "Courier New", monospace;
+    border: 1px solid rgba(144, 144, 144, .25);
+    border-radius: 5px;
+    padding: 2px 6px;
+    background: rgba(144, 144, 144, .075)
+}
+
+.md pre {
+    padding: 15px
+}
+
+.md pre>code {
+    margin: 0
+}
+
+.link .md :not(pre)>code,
+.link .md pre,
+.new-comment .md :not(pre)>code,
+.new-comment .md pre,
+.usertext.border .md :not(pre)>code,
+.usertext.border .md pre {
+    background: rgba(144, 144, 144, .075)
+}
+
+.md hr,
+hr {
+    height: 1px;
+    border: 0;
+    background: rgba(144, 144, 144, .25)
+}
+
+.linefield .title,
+.md h1,
+.md h2,
+.md h3,
+.md h4,
+.md h5,
+.md h6,
+.roundfield span.title,
+.side .titlebox h1.redditname a,
+.sidecontentbox .title h1,
+.wiki-page .wikititle,
+.wiki-page-content .md h1,
+.wiki-page-content .md h2,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-decoration: none;
+    letter-spacing: .05em;
+    font-weight: 700;
+    color: #4d5968
+}
+
+h1,
+h2 {
+    font-size: 17px!important
+}
+
+.linefield .title,
+.roundfield .title,
+.side .titlebox h1 a,
+.sidecontentbox .title h1,
+h3,
+h4 {
+    font-size: 14px!important
+}
+
+h5,
+h6 {
+    font-size: 11px!important
+}
+
+.md blockquote {
+    margin: 15px 0;
+    border-left: 4px solid rgba(144, 144, 144, .25);
+    padding: 5px;
+    background: rgba(144, 144, 144, .075);
+    font-style: italic
+}
+
+.md th {
+    border: 0
+}
+
+.md table tbody tr:nth-child(2n+1) {
+    background: rgba(144, 144, 144, .075)
+}
+
+.md table tbody tr {
+    border: 0;
+    border-bottom: 1px solid rgba(144, 144, 144, .25)
+}
+
+.md table tbody tr:first-of-type {
+    border-top: 1px solid rgba(144, 144, 144, .25)
+}
+
+.md td {
+    border: 0;
+    border-right: 1px solid rgba(144, 144, 144, .25);
+    padding: 15px
+}
+
+.md td:first-of-type {
+    border-left: 1px solid rgba(144, 144, 144, .25)
+}
+
+#editShortcutDialog input[type=text],
+#search input[type=text],
+.c-form-control,
+.combined-search-page #search input[type=text],
+.linefield input[type=text],
+.linkinfo .shortlink input,
+.login-form-side input[type=password],
+.login-form-side input[type=text],
+.pretty-form input[type=text],
+.pretty-form textarea,
+.roundfield input[type=text],
+.roundfield input[type=url],
+.roundfield textarea,
+input[type=checkbox],
+input[type=text],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: none;
+    border: 1px solid rgba(144, 144, 144, .25);
+    border-radius: 5px;
+    background-color: rgba(144, 144, 144, .075);
+    color: #4d5968
+}
+
+.res .side h1.redditname+div:before,
+input[type=radio],
+select {
+    box-shadow: none;
+    border: 1px solid rgba(144, 144, 144, .25);
+    background-color: rgba(144, 144, 144, .075);
+    color: #4d5968
+}
+
+.res .side h1.redditname+div:before,
+input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none
+}
+
+.res .side h1.redditname+div:before,
+select {
+    border-radius: 5px
+}
+
+.flairselector .customizer input,
+select#comment-visits {
+    background-color: #f7f7f7
+}
+
+#editShortcutDialog input[type=text]:focus,
+#search input[type=text]:focus,
+.c-form-control:focus,
+.hover-bubble.multi-selector .create-multi input[type=text]:focus,
+.roundfield input[type=url]:focus,
+input[type=text]:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 0 0 0 1px #5f9dd2;
+    border-color: #5f9dd2
+}
+
+:focus {
+    outline: 0
+}
+
+#rem-login-main,
+.res .side h1.redditname+div:before,
+input[type=checkbox],
+input[type=radio] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 2px!important;
+    margin-bottom: 5px!important;
+    width: 18px;
+    height: 18px
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 20px;
+    padding: 0 20px 0 5px;
+    background-image: url(%%spritesheet%%);
+    background-repeat: no-repeat;
+    background-position: right -31px top -106px;
+    background-size: 50px 121px
+}
+
+input[type=radio] {
+    border-radius: 50%
+}
+
+.res .side h1.redditname+div:before,
+input[type=checkbox]:checked,
+input[type=radio]:checked {
+    border: 0;
+    background: #5f9dd2 url(%%spritesheet%%) no-repeat -24px -76px/45px 109px;
+    content: ""
+}
+
+.md a[href="#button"]+a {
+    display: inline-block;
+    color: #4d5968
+}
+
+.md a[href="#button"]+a,
+.md a[href="#specialbutton"]+a {
+    width: auto;
+    height: 30px;
+    border: 2px solid rgba(144, 144, 144, .25);
+    border-radius: 5px;
+    padding: 0 10px;
+    background: 0 0;
+    line-height: 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    transition: .2s
+}
+
+.md a[href="#bigbutton"]+a {
+    display: inline-block;
+    color: #4d5968
+}
+
+.md a[href="#bigbutton"]+a,
+.md a[href="#bigspecialbutton"]+a {
+    width: auto;
+    border: 2px solid rgba(144, 144, 144, .25);
+    border-radius: 5px;
+    background: 0 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    transition: .2s
+}
+
+.over18 button,
+.wiki-page .wiki-page-content input.wiki_button,
+button,
+span.RESDashboardToggle,
+span.RESDashboardToggle.remove,
+span.RESshortcutside,
+span.RESshortcutside.remove {
+    width: auto;
+    border-radius: 5px;
+    padding: 0 10px
+}
+
+.over18 button,
+.side .fancy-toggle-button .active,
+.usertext .help-toggle .active,
+.usertext a.reddiquette,
+.wiki-page .wiki-page-content input.wiki_button,
+button,
+span.RESDashboardToggle,
+span.RESDashboardToggle.remove,
+span.RESshortcutside,
+span.RESshortcutside.remove {
+    display: inline-block;
+    height: 30px;
+    border: 2px solid rgba(144, 144, 144, .25);
+    background: 0 0;
+    line-height: 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    color: #4d5968;
+    transition: .2s
+}
+
+.side .fancy-toggle-button .active {
+    border-radius: 5px
+}
+
+.usertext .help-toggle .active,
+.usertext a.reddiquette {
+    width: auto;
+    padding: 0 10px
+}
+
+.flair-jump button,
+.submit-page .tabmenu.formtab li a,
+.wiki-page .pageactions .wikiaction,
+span.RESSubscriptionButton,
+span.RESSubscriptionButton.unsubscribe {
+    display: inline-block;
+    color: #4d5968
+}
+
+input#addSubreddit {
+    display: inline-block
+}
+
+.flair-jump button,
+.res .blueButton,
+.res a.RESNotificationButtonBlue,
+.submit-page .tabmenu.formtab li a,
+.wiki-page .pageactions .wikiaction,
+a.guider_button,
+input#addSubreddit,
+span.RESSubscriptionButton,
+span.RESSubscriptionButton.unsubscribe {
+    width: auto;
+    height: 30px;
+    border: 2px solid rgba(144, 144, 144, .25);
+    border-radius: 5px;
+    padding: 0 10px;
+    background: 0 0;
+    line-height: 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    transition: .2s
+}
+
+.md a[href="#bigbutton"]+a:hover,
+.md a[href="#button"]+a:hover,
+.side .fancy-toggle-button .active:hover,
+.usertext .help-toggle .active:hover,
+.usertext a.reddiquette:hover,
+.wiki-page .pageactions .wikiaction:hover,
+body button.RESBigEditorPop:hover,
+button:hover,
+span.RESDashboardToggle.remove:hover,
+span.RESDashboardToggle:hover,
+span.RESSubscriptionButton:hover,
+span.RESshortcutside.remove:hover,
+span.RESshortcutside:hover {
+    background-color: rgba(144, 144, 144, .075)
+}
+
+.md a[href="#bigbutton"]+a:active,
+.md a[href="#button"]+a:active,
+.side .fancy-toggle-button .active:active,
+.usertext .help-toggle .active:active,
+.usertext a.reddiquette:active,
+button.RESBigEditorPop:active,
+button:active,
+span.RESDashboardToggle.remove:active,
+span.RESDashboardToggle:active,
+span.RESshortcutside.remove:active,
+span.RESshortcutside:active {
+    background-color: rgba(144, 144, 144, .2)
+}
+
+.md a[href="#bigspecialbutton"]+a,
+.md a[href="#specialbutton"]+a,
+.res .blueButton,
+.res a.RESNotificationButtonBlue,
+.submit-page .tabmenu.formtab li.selected a,
+.wiki-page .pageactions .wikiaction-current,
+a.guider_button,
+button.save,
+button[name=save] {
+    display: inline-block;
+    border-color: transparent;
+    background: #5f9dd2;
+    color: #fff
+}
+
+.md a[href="#bigbutton"]+a+.keyNavAnnotation,
+.md a[href="#bigspecialbutton"]+a+.keyNavAnnotation,
+.md a[href="#button"]+a+.keyNavAnnotation,
+.md a[href="#specialbutton"]+a+.keyNavAnnotation,
+.res i#RESSearchMenuItem {
+    display: none
+}
+
+.md a[href="#bigbutton"]+a,
+.md a[href="#bigspecialbutton"]+a {
+    height: 40px;
+    padding: 0 20px;
+    line-height: 36px
+}
+
+.md a[href="#bigspecialbutton"]+a:hover,
+.md a[href="#specialbutton"]+a:hover,
+.morelink a:hover,
+.wiki-page .pageactions .wikiaction-current:hover,
+button.save:hover,
+button[name=save]:hover {
+    background: #e44
+}
+
+.md a[href="#bigspecialbutton"]+a:active,
+.md a[href="#specialbutton"]+a:active,
+.morelink a:active,
+button.save:active,
+button[name=save]:active {
+    border-color: #4b91cc;
+    background: #4b91cc
+}
+
+.side .md a[href="#bigbutton"]+a,
+.side .md a[href="#bigspecialbutton"]+a,
+.side .md a[href="#button"]+a,
+.side .md a[href="#specialbutton"]+a {
+    margin-top: 5px;
+    overflow: hidden;
+    vertical-align: center;
+    text-overflow: ellipsis;
+    text-align: center
+}
+
+.side .md a[href="#button"]+a,
+.side .md a[href="#specialbutton"]+a {
+    margin-right: 10px;
+    width: 93.3px
+}
+
+.side .fancy-toggle-button+span+span,
+.side .md a[href="#rightalign"]+a[href="#button"]+a,
+.side .md a[href="#rightalign"]+a[href="#specialbutton"]+a {
+    margin-right: 0
+}
+
+.side .md a[href="#bigbutton"]+a,
+.side .md a[href="#bigspecialbutton"]+a {
+    width: 300px
+}
+
+.BEFoot button {
+    margin-right: 10px
+}
+
+.error {
+    color: #e286a9
+}
+
+.little {
+    font-size: 11px
+}
+
+.rounded {
+    border-radius: 5px
+}
+
+.dropdown.lightdrop .selected,
+body .dropdown.srdrop .selected {
+    margin-left: 0;
+    padding: 0;
+    background: 0 0;
+    text-decoration: none;
+    color: inherit
+}
+
+.dropdown.lightdrop .selected:after,
+body .dropdown.srdrop .selected:after {
+    content: " ▾"
+}
+
+.drop-choices,
+.res .res .RESDropdownList {
+    text-transform: uppercase;
+    font-size: 9px
+}
+
+.drop-choices,
+.res .res .RESDropdownList,
+div#RESSubredditGroupDropdown,
+table#srList {
+    z-index: 2147483647!important;
+    overflow: visible;
+    width: auto;
+    max-height: none!important;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px!important;
+    background: #2f373f;
+    font-family: inherit;
+    transition: opacity .2s
+}
+
+.res body.res:not(.res-v5) .RESDropdownList:not(#RESAccountSwitcherDropdown),
+body:not(.res-v5) .drop-choices:not(#autocomplete_dropdown),
+body:not(.res-v5) div#RESSubredditGroupDropdown,
+body:not(.res-v5) table#srList {
+    display: block!important;
+    opacity: 0;
+    pointer-events: none
+}
+
+.res .res .RESDropdownList:not(#RESAccountSwitcherDropdown) {
+    top: 0
+}
+
+#autocomplete_dropdown,
+div#header-bottom-right #userbarToggle+* {
+    margin-left: 10px
+}
+
+#autocomplete_dropdown .selectedItem {
+    background: rgba(255, 255, 255, .1)
+}
+
+.res body.res:not(.res-v5) .RESDropdownList[style*="display: block"]:not(#RESAccountSwitcherDropdown),
+body:not(.res-v5) .drop-choices.inuse:not(#autocomplete_dropdown),
+body:not(.res-v5) div#RESSubredditGroupDropdown[style*="display: block"],
+body:not(.res-v5) table#srList[style*="display: block"],
+div.flairselector.drop-choices.active:not(#autocomplete_dropdown) {
+    opacity: 1;
+    pointer-events: auto
+}
+
+#sr-header-area .drop-choices.srdrop {
+    margin-top: 10px;
+    margin-left: 10px
+}
+
+.srdrop .choice.bottom-option {
+    border: 0;
+    font-style: normal;
+    font-weight: 700
+}
+
+.drop-choices.lightdrop {
+    margin-top: 8px
+}
+
+div#RESSubredditGroupDropdown,
+table#srList {
+    top: 40px!important;
+    text-transform: uppercase;
+    font-size: 9px
+}
+
+div.RESDropdownList,
+ul#RESAccountSwitcherDropdown {
+    margin-top: 10px;
+    font-size: 9px
+}
+
+div.RESDropdownList {
+    margin-right: 15px
+}
+
+table#srList {
+    left: 10px
+}
+
+table#srList thead {
+    font-weight: 700
+}
+
+div.sortAsc,
+div.sortDesc {
+    margin-top: 9px;
+    height: 12px
+}
+
+div.sortAsc:after,
+div.sortDesc:after {
+    vertical-align: top
+}
+
+table#srList td {
+    padding: 0 8px
+}
+
+#sr-header-area .selected a,
+div#RESSubredditGroupDropdown .RESShortcutsCurrentSub a,
+div#sr-header-area a.RESShortcutsCurrentSub,
+table#srList a {
+    color: #fff!important
+}
+
+table#srList td.RESshortcut,
+table#srList td.RESvisited {
+    text-transform: uppercase
+}
+
+.drop-choices:before,
+.res .res .RESDropdownList:before,
+div#RESSubredditGroupDropdown:before,
+table#srList:before {
+    position: absolute;
+    top: -8px;
+    left: 25px;
+    width: 16px;
+    height: 8px;
+    border: 8px solid transparent;
+    border-top: 0;
+    border-bottom: 8px solid #2f373f;
+    content: ""
+}
+
+.res .res .RESDropdownList:before {
+    left: auto;
+    right: 47px
+}
+
+.drop-choices a.choice,
+.res .res .RESDropdownList li,
+div#RESSubredditGroupDropdown li a,
+table#srList tr {
+    height: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, .075);
+    padding: 0 5px;
+    line-height: 30px;
+    color: #fff
+}
+
+div#RESSubredditGroupDropdown ul {
+    border: 0;
+    padding: 0
+}
+
+div#RESSubredditGroupDropdown li {
+    margin: 0;
+    padding: 0
+}
+
+div#RESSubredditGroupDropdown li a {
+    display: block
+}
+
+.res .res .RESDropdownList li {
+    font-weight: 400
+}
+
+.drop-choices form:last-of-type a,
+.drop-choices>a.choice:last-of-type,
+.res .res .RESDropdownList li:last-of-type,
+.side .md>ul:nth-of-type(1)>li>ul>li:last-of-type,
+.side .md>ul:nth-of-type(1)>li>ul>li>ul>li:last-of-type,
+table#srList tbody tr:last-of-type {
+    border: 0
+}
+
+.drop-choices a.choice:hover,
+.res .res .RESDropdownList li a:hover,
+.res .res .RESDropdownList li:hover,
+div#RESSubredditGroupDropdown li:hover,
+div#RESSubredditGroupDropdown ul a:hover,
+table#srList tr:hover {
+    background: 0 0
+}
+
+.res .res .RESDropdownList a,
+.res .res .RESDropdownList a:visited,
+.res .res .RESDropdownList li a:hover,
+.res .res .RESDropdownList li:hover {
+    color: #fff
+}
+
+div.RESDropdownList .toggleButton {
+    margin-left: 20px;
+    margin-right: 0
+}
+
+div.moduleToggle,
+div.toggleButton {
+    width: auto
+}
+
+div.moduleToggle .toggleOff,
+div.moduleToggle .toggleOn,
+div.toggleButton .toggleOff,
+div.toggleButton .toggleOn {
+    border: 0
+}
+
+div.moduleToggle:not(.enabled) .toggleOff,
+div.toggleButton:not(.enabled) .toggleOff {
+    background: #758ce1
+}
+
+div.moduleToggle.enabled .toggleOn,
+div.toggleButton.enabled .toggleOn {
+    background: #5f9dd2
+}
+
+.moduleToggle::before,
+.toggleButton::before {
+    display: none
+}
+
+div#RESSubredditGroupDropdown li+.RESShortcutsEditButtons,
+div#RESSubredditGroupDropdown>.RESShortcutsEditButtons {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    white-space: nowrap
+}
+
+div#RESSubredditGroupDropdown .RESShortcutsEditButtons .res-icon {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    width: 50%;
+    border: 0;
+    color: #fff
+}
+
+.RESShortcutsEditButtons .res-icon.delete {
+    text-align: left
+}
+
+.RESShortcutsEditButtons .res-icon.edit {
+    text-align: right
+}
+
+div.flairselector.drop-choices {
+    margin-top: 25px;
+    box-shadow: none;
+    border: 0!important;
+    text-transform: none
+}
+
+.side div.flairselector.drop-choices {
+    left: auto!important;
+    right: 10px;
+    width: 300px!important
+}
+
+.side div.flairselector.drop-choices:before {
+    left: calc(50% - 8px)
+}
+
+.content div.flairselector.drop-choices:before {
+    left: auto;
+    right: 25px
+}
+
+#header .tabmenu li a,
+.flairselector h2 {
+    color: #fff;
+    background: 0 0
+}
+
+#header {
+    height: 260px;
+    border: 0;
+    box-shadow: inset 0 -90px 0 0 rgba(21, 27, 33, .75);
+    background: url(%%overlay%%) fixed center/auto auto, linear-gradient(45deg, transparent, rgba(0, 0, 0, .75)), url(%%header%%) 0 0/cover
+}
+
+#header,
+body .modal {
+    z-index: 2147483647
+}
+
+#sr-header-area {
+    height: 30px;
+    border: 0;
+    padding-right: 110px;
+    background: rgba(21, 27, 33, .3);
+    line-height: 30px;
+    text-transform: uppercase;
+    font-size: 9px;
+    color: #fff
+}
+
+#sr-header-area .dropdown.srdrop .selected {
+    margin: 0 10px 0 5px
+}
+
+#sr-header-area #srLeftContainer {
+    padding-left: 10px
+}
+
+#sr-header-area .sr-list {
+    margin-right: 50px
+}
+
+#sr-header-area #srLeftContainer a,
+#sr-header-area .sr-list a,
+#sr-header-area a.subbarlink {
+    margin-right: 10px;
+    color: #fff
+}
+
+#sr-header-area .separator {
+    display: none
+}
+
+#sr-header-area .srSep {
+    margin: 0
+}
+
+#RESShortcuts.sr-bar {
+    text-transform: uppercase!important
+}
+
+#sr-more-link,
+div#RESShortcutsEditContainer {
+    display: flex;
+    width: auto;
+    height: 30px;
+    max-height: none;
+    background: 0 0;
+    color: #fff
+}
+
+div#RESShortcutsEditContainer div {
+    position: static;
+    display: inline-block;
+    margin-right: 6px;
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    background: 0 0;
+    text-align: center;
+    font-size: 14px!important;
+    color: #fff
+}
+
+#RESShortcutsRight {
+    order: 2
+}
+
+#header #header-img {
+    top: 82.5px;
+    margin: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff url(%%spritesheet%%) 5px -30px;
+    line-height: 35px;
+    text-indent: 45px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff
+}
+
+#header img#header-img {
+    padding-left: 35px
+}
+
+#header a#header-img-a:after {
+    position: absolute;
+    top: 92.5px;
+    left: 65px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    content: "REDDIT.COM"
+}
+
+#header #header-img,
+#header .pagename,
+#header .tabmenu {
+    position: absolute;
+    left: 20px;
+    text-transform: uppercase
+}
+
+#header .pagename {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    bottom: 40px
+}
+
+#header .pagename a {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff
+}
+
+#header .tabmenu {
+    margin: 0;
+    bottom: 20px
+}
+
+#header .tabmenu li,
+#header .tabmenu li.res-tabmenu-button {
+    display: inline;
+    margin: 0 10px 0 0;
+    font-weight: 400
+}
+
+#header .tabmenu li.selected {
+    border-bottom: 2px solid #fff;
+    font-weight: 700
+}
+
+#header .tabmenu li a {
+    border: 0;
+    padding: 0
+}
+
+#header #header-bottom-right {
+    top: 107.5px;
+    right: 20px;
+    padding: 0;
+    background: 0 0;
+    text-transform: uppercase
+}
+
+div#userbarToggle,
+div#userbarToggle.userbarShow {
+    position: relative;
+    left: auto;
+    right: auto;
+    height: 20px;
+    min-height: 0;
+    border: 0;
+    background: 0 0;
+    line-height: 16px;
+    color: #fff
+}
+
+.res div#userbarToggle.userbarShow {
+    top: -17.5px
+}
+
+#userbarToggle.userbarShow:before {
+    position: absolute;
+    right: calc(100% - -10px);
+    white-space: nowrap;
+    line-height: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    content: "View userbar"
+}
+
+#header .beta-hint {
+    height: 20px
+}
+
+#header .beta-hint,
+#header .beta-hint a {
+    position: static;
+    margin: 0;
+    opacity: 1
+}
+
+#header .beta-hint,
+#header .logout,
+#header .user,
+#header-bottom-right .flat-list,
+span#openRESPrefs {
+    display: inline-block;
+    vertical-align: top
+}
+
+span#openRESPrefs {
+    margin-left: 20px
+}
+
+#header #RESAccountSwitcherIcon,
+#header .beta-hint a {
+    display: inline-block;
+    overflow: hidden;
+    top: 0;
+    vertical-align: top;
+    width: 20px!important;
+    height: 20px;
+    background: url(%%spritesheet%%) 0/120px 290px;
+    font-size: 0
+}
+
+#header #header-bottom-right #mail,
+#header #header-bottom-right #modmail,
+#header-bottom-right #openRESPrefs .gearIcon,
+#header-bottom-right .logout a,
+#header-bottom-right a.pref-lang {
+    display: inline-block;
+    overflow: hidden;
+    top: 0;
+    vertical-align: top;
+    margin-left: 20px;
+    width: 20px!important;
+    height: 20px;
+    background: url(%%spritesheet%%) 0/120px 290px;
+    font-size: 0
+}
+
+#header-bottom-right #openRESPrefs .gearIcon {
+    margin-left: 0;
+    background-position: -56px -56px
+}
+
+#header .beta-hint a {
+    margin-left: 0;
+    background-position: -28px -28px
+}
+
+#header #RESAccountSwitcherIcon {
+    margin: 0 10px;
+    background-position: -56px -28px
+}
+
+#header #header-bottom-right #mail {
+    background-position: -84px -28px
+}
+
+#header #header-bottom-right #modmail {
+    background-position: 0 -56px
+}
+
+#header #header-bottom-right #new_modmail {
+    margin-left: 20px;
+    transform: scale(1.3);
+    top: 1px
+}
+
+#header-bottom-right a.pref-lang {
+    background-position: -28px -56px
+}
+
+#header-bottom-right .logout a {
+    background-position: -84px -56px
+}
+
+#header #header-bottom-right #mail.havemail,
+#header #header-bottom-right #modmail.havemail {
+    top: -5px!important;
+    margin-left: 15px;
+    width: 30px!important;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e286a9
+}
+
+#header #header-bottom-right #mail.havemail {
+    background-position: -79px -23px
+}
+
+#header #header-bottom-right #modmail.havemail {
+    background-position: 5px -51px
+}
+
+.message-count {
+    position: fixed;
+    left: calc(50% - 150px);
+    bottom: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .15);
+    width: 300px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    background: #758ce1;
+    font-size: 11px;
+    color: #fff
+}
+
+.message-count:before {
+    position: absolute;
+    top: 7.5px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: url(%%spritesheet%%) -84px -28px/120px 290px;
+    content: ""
+}
+
+.message-count:after {
+    content: " new messages in your inbox!"
+}
+
+#header .user {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    margin: 0 0 0 10px;
+    height: 20px;
+    line-height: 20px;
+    white-space: nowrap;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff
+}
+
+#header .user a {
+    color: #fff
+}
+
+#header .ChatApp__reddit-icon {
+    margin-left: 20px;
+    color: #fff
+}
+
+#header-bottom-right .separator {
+    display: none!important
+}
+
+.side .md a[href="#headerbutton"]+a {
+    position: absolute;
+    top: 190px;
+    right: 20px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 0 30px;
+    line-height: 46px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    transition: .2s;
+    z-index: 2147483647
+}
+
+.side .md a[href="#headerbutton"]+a:hover {
+    background-color: rgba(255, 255, 255, .075)
+}
+
+.side .md a[href="#headerbutton"]+a:active {
+    background-color: rgba(255, 255, 255, .2)
+}
+
+.side {
+    margin: 0 0 50px 10px;
+    width: 322px;
+    border-bottom-left-radius: 5px;
+    border-left: 2px solid rgba(144, 144, 144, .25);
+    border-bottom: 2px solid rgba(144, 144, 144, .25);
+    padding: 0 10px 10px
+}
+
+.side .spacer {
+    margin: 10px 0
+}
+
+#search input[type=text] {
+    height: 40px
+}
+
+#searchexpando {
+    margin-top: 10px
+}
+
+label+#moresearchinfo {
+    margin-top: 10px;
+    border: 0
+}
+
+.infobar {
+    border: 1px solid rgba(144, 144, 144, .25);
+    background: #fff
+}
+
+#searchexpando,
+.ad300x250,
+.infobar {
+    border-radius: 5px
+}
+
+.account-activity-box a,
+.morelink,
+.morelink:hover,
+.sidecontentbox a.helplink {
+    position: relative;
+    float: none;
+    height: 40px;
+    border: 0;
+    background: 0 0;
+    line-height: 40px;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700
+}
+
+.account-activity-box a,
+.morelink,
+.morelink:hover {
+    display: block
+}
+
+.sidecontentbox a.helplink {
+    border-radius: 5px;
+    background: #c22;
+    transition: .2s
+}
+
+.account-activity-box a,
+.morelink a {
+    border-radius: 5px;
+    background: #c22;
+    color: #fff;
+    transition: .2s
+}
+
+.disabled .morelink a {
+    color: rgba(255, 255, 255, .6)
+}
+
+.account-activity-box a {
+    background: #f36c60
+}
+
+.account-activity-box a:hover {
+    background: #f87
+}
+
+.account-activity-box a:active {
+    background: #dc6257
+}
+
+.account-activity-box a:before,
+.create .morelink a:before,
+.sidecontentbox a.helplink:before,
+.submit.mod-override .morelink a:after,
+.submit:not(.disabled) .morelink a:before {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background: url(%%spritesheet%%) 0/120px 290px;
+    content: ""
+}
+
+.submit-link:not(.disabled) .morelink a:before {
+    background-position: 0 -84px
+}
+
+.submit-text:not(.disabled) .morelink a:before {
+    background-position: -28px -84px
+}
+
+.create .morelink a:before {
+    background-position: -84px -84px
+}
+
+.sidecontentbox a.helplink:before {
+    background-position: -84px -28px
+}
+
+.account-activity-box a:before {
+    background-position: 0 -112px
+}
+
+.side .submit.mod-override .morelink a:after {
+    margin: 0;
+    left: 35px;
+    background-position: -56px -84px;
+    opacity: 1
+}
+
+.flairselector li a.author,
+.flairselector li a.title,
+.hover-bubble.anchor-right:before,
+.morelink .nub,
+.titlebox .leavemoderator:before,
+.users-online:before {
+    display: none
+}
+
+.side .fancy-toggle-button {
+    margin: 0
+}
+
+.sidecontentbox a.helplink {
+    display: block;
+    margin: 10px 0
+}
+
+.fancy-toggle-button .add,
+.side .fancy-toggle-button .add,
+.sidecontentbox a.helplink,
+input#addSubreddit {
+    border-color: transparent;
+    background: #69b391;
+    color: #fff
+}
+
+.side .fancy-toggle-button .add:hover,
+.sidecontentbox a.helplink:hover {
+    background: #72c29d
+}
+
+.side .fancy-toggle-button .add:active,
+.sidecontentbox a.helplink:active {
+    background: #59987c
+}
+
+.res span.RESDashboardToggle,
+.res span.RESshortcutside,
+.side .fancy-toggle-button .active {
+    margin: 5px 10px 10px 0;
+    width: 93.3px;
+    padding: 0;
+    white-space: nowrap;
+    text-align: center
+}
+
+.hover-bubble {
+    border: 0
+}
+
+span.RESshortcutside,
+span.RESshortcutside.remove {
+    margin-right: 10px;
+    margin-bottom: 10px
+}
+
+.users-online {
+    display: inline-block;
+    margin-left: 10px
+}
+
+.leavemoderator,
+.titlebox form.toggle {
+    padding: 0;
+    font-size: 12px;
+    color: inherit
+}
+
+.leavemoderator,
+.users-online {
+    margin-bottom: 8px
+}
+
+.titlebox form.toggle:nth-of-type(1) input[type=checkbox] {
+    margin-top: 0!important
+}
+
+.flairselector li,
+.flairselector li:hover,
+body .entry .buttons .flairselector li {
+    margin-bottom: 5px;
+    border: 0;
+    padding: 5px;
+    background: 0 0
+}
+
+.flairselector li.selected {
+    border: 0;
+    background: rgba(255, 255, 255, .1)
+}
+
+.flairoptionpane {
+    max-height: none
+}
+
+.flair {
+    border-radius: 3px;
+    display: none;
+}
+
+.flair-mod,
+.flair-expert,
+.flair-shame,
+.flair-regular,
+.flair-other {
+    display: inline-block;
+}
+
+.flair,
+.linkflairlabel {
+    border: 1px solid rgba(144, 144, 144, .25);
+    background: rgba(144, 144, 144, .075);
+    color: #5e6875
+}
+
+.flair,
+html .link .flair {
+    padding: 1px 6px;
+    font-size: 11px
+}
+
+.link .flair {
+    margin-top: 0
+}
+
+.linkflairlabel,
+.over18>.entry>p>a.title:before,
+.stickied>.entry>p>a.title:before {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 6px;
+    height: 20px;
+    border-radius: 3px;
+    padding: 0 6px;
+    font-size: medium;
+    font-weight: 700;
+    line-height: 18px
+}
+
+.over18>.entry>p>a.title:before,
+.stickied>.entry>p>a.title:before {
+    line-height: 20px
+}
+
+.side .linkflairlabel {
+    font-size: 11px;
+    font-weight: 400
+}
+
+.flair-other,
+.flairselector .linkflair-other .linkflairlabel,
+.linkflair-other .title .linkflairlabel,
+.nsfw-stamp,
+.over18>.entry>p>a.title:before {
+    border: 0;
+    background: #e286a9;
+    color: #fff;
+    content: "NSFW"
+}
+
+.flair-turquoise,
+.flairselector .linkflair-turquoise .linkflairlabel,
+.linkflair-turquoise .title .linkflairlabel {
+    border: 0;
+    background: #54d3cf;
+    color: #fff
+}
+
+.flair-green,
+.flairselector .linkflair-green .linkflairlabel,
+.linkflair-green .title .linkflairlabel,
+.stickied>.entry>p>a.title:before {
+    border: 0;
+    background: #69b391;
+    color: #fff;
+    content: "Stickied"
+}
+
+.flair-regular,
+.flairselector .linkflair-regular .linkflairlabel,
+.linkflair-regular .title .linkflairlabel {
+    border: 0;
+    background: #00187b;
+    color: #fff
+}
+
+.flair-mod,
+.flairselector .linkflair-mod .linkflairlabel,
+.linkflair-mod .title .linkflairlabel {
+    border: 0;
+    background: #c22;
+    color: #fff
+}
+
+.flair-expert,
+.flairselector .linkflair-expert .linkflairlabel,
+.linkflair-expert .title .linkflairlabel {
+    border: 0;
+    background: #8075e5;
+    color: #fff
+}
+
+.flair-shame,
+.flairselector .linkflair-shame .linkflairlabel,
+.linkflair-shame .title .linkflairlabel {
+    border: 0;
+    background: #ff7705;
+    color: #fff
+}
+
+.flair:empty {
+    background: transparent;
+    border: none;
+    margin-left: 36px;
+}
+
+.flairselector form {
+    border-top: 1px solid rgba(255, 255, 255, .075)
+}
+
+.flairselector form button {
+    background: #fff;
+    color: #4d5968
+}
+
+.titlebox .bottom {
+    border-top: 1px solid rgba(144, 144, 144, .25);
+    font-weight: 300;
+    color: #5e6875
+}
+
+.sidecontentbox .title {
+    margin-bottom: 5px
+}
+
+.sidecontentbox .collapse-button {
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgba(144, 144, 144, .25);
+    border-radius: 5px;
+    text-indent: -1px;
+    font-weight: 700;
+    background: 0 0;
+    color: #4d5968
+}
+
+.login-form-side,
+.sidecontentbox .content {
+    border: 1px solid rgba(144, 144, 144, .25);
+    border-radius: 5px;
+    padding: 10px
+}
+
+.sidecontentbox .helplink~.content li {
+    margin: 2px 0
+}
+
+.sidecontentbox span.score,
+a.reddit-comment-link {
+    font-weight: 400;
+    color: #5e6875
+}
+
+.side:after {
+    font-size: 12px;
+    content: "CSS based on /r/Structura";
+    text-align: center
+}
+
+body>.content {
+    margin: 10px
+}
+
+.reddit-infobar.md-container-small {
+    padding: 6.5px 10px
+}
+
+.menuarea {
+    margin: 0;
+    border-bottom: 1px solid rgba(144, 144, 144, .25);
+    padding: 0 10px 10px
+}
+
+.reddit-infobar {
+    border-radius: 5px
+}
+
+.link,
+.link.last-clicked,
+.organic-listing {
+    margin: 0;
+    border: 0;
+    padding: 15px 0
+}
+
+.link.last-clicked {
+    background: rgba(144, 144, 144, .05)
+}
+
+.link a.thumbnail[href*="reddit.com"] img,
+.rank {
+    display: none
+}
+
+.link .midcol {
+    margin: 0 10px
+}
+
+html body .midcol div.arrow {
+    margin-top: 0;
+}
+
+.arrow.upmod {
+    border-bottom: 10px solid #ff8b60
+}
+
+.link .score {
+    margin: 5px 0
+}
+
+html body .midcol :not(.score)+div.arrow {
+    margin-top: 5px
+}
+
+.arrow.downmod {
+    border-top: 10px solid #9494ff
+}
+
+body .thumbnail {
+    margin: 0 10px 0 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px
+}
+
+body .thumbnail img {
+    width: auto;
+    height: 70px
+}
+
+.link.stickied .thumbnail,
+.search-result.has-thumbnail>.thumbnail.nsfw,
+.self .thumbnail,
+.thumbnail.default,
+.thumbnail.nsfw,
+.thumbnail[href*="reddit.com"] {
+    margin: 0 22.5px 0 12.5px;
+    flex: none;
+    width: 45px;
+    height: 45px;
+    border: 2px solid rgba(144, 144, 144, .25);
+    border-radius: 50%;
+    background: #fff url(%%spritesheet%%)
+}
+
+.thumbnail.default {
+    background-position: -97px -133px
+}
+
+.thumbnail[href*="reddit.com"] {
+    background-position: 8px -27px
+}
+
+.self .thumbnail.self {
+    background-position: -60px -133px
+}
+
+.search-result.has-thumbnail>.thumbnail.nsfw,
+.thumbnail.nsfw {
+    background-position: 8px -166px
+}
+
+.link.stickied .thumbnail {
+    background-position: -26px -133px
+}
+
+.link .entry {
+    padding-right: 0
+}
+
+.link .entry.RES-keyNav-activeElement {
+    padding-right: 10px
+}
+
+.commentarea div.RES-keyNav-activeElement .md,
+.commentarea div.RES-keyNav-activeElement.entry .noncollapsed,
+div.RES-keyNav-activeElement {
+    background: 0 0!important
+}
+
+.commentarea div.RES-keyNav-activeElement.entry .noncollapsed,
+div.RES-keyNav-activeElement {
+    border-right: 2px solid #95adc9
+}
+
+.thing a.title {
+    vertical-align: top
+}
+
+.search-result :link,
+.search-result :link>mark,
+.thing a.title {
+    font-weight: 700;
+    color: #4d5968
+}
+
+.search-result-meta .stickied-tagline,
+.tagline .stickied-tagline,
+.thing.stickied.link a.title {
+    color: #69b391
+}
+
+.search-result :visited,
+.search-result :visited>mark,
+.search-result.visited .search-link,
+.search-result.visited .search-link>mark,
+.search-result.visited .search-title,
+.search-result.visited .search-title>mark,
+html .thing .title.visited,
+html .thing .title:visited,
+html .thing.visited .title {
+    color: #95adc9
+}
+
+.thing.over18 a.title {
+    color: #e286a9
+}
+
+.expando-button {
+    position: relative;
+    width: 25px!important;
+    max-width: none!important;
+    height: 25px!important;
+    max-height: none!important;
+    border: 2px solid rgba(144, 144, 144, .25);
+    border-radius: 5px;
+    background: #fff url(%%spritesheet%%) 0/90px 218px!important
+}
+
+.expando-button.selftext {
+    background-position: -18px -102px!important
+}
+
+.expando-button.video {
+    background-position: -39px -102px!important
+}
+
+.expando-button.image {
+    background-position: -60px -102px!important
+}
+
+.expando-button.image.gallery {
+    background-position: 3px -123px!important
+}
+
+.expando-button.video-muted {
+    background-position: -18px -125px!important
+}
+
+.expando-button:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    width: 21px;
+    height: 21px;
+    border-radius: 5px;
+    background: #fff;
+    line-height: 21px;
+    text-align: center;
+    text-indent: 1px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #4d5968;
+    content: "✕";
+    transition: .2s
+}
+
+.expando-button.expanded:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+    opacity: 1
+}
+
+.commentarea .menuarea,
+.commentarea .menuarea .toggle a,
+.domain,
+.domain a,
+.entry .buttons li a,
+.search-result-meta,
+.tagline,
+div.commentNavSortType,
+span.redditSingleClick {
+    font-size: 11px;
+    font-weight: 400;
+    color: #4d5968
+}
+
+.tagline .userattrs a.admin,
+.tagline .userattrs a.moderator,
+.tagline .userattrs a.submitter,
+.thing .tagline a.author.admin,
+.thing .tagline a.author.moderator,
+.thing .tagline a.author.submitter {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 1px 6px;
+    font-size: 11px;
+    font-weight: 400;
+    color: #fff
+}
+
+.tagline .userattrs a.submitter,
+.thing .tagline a.author.submitter,
+.thing .tagline a.author.submitter:hover {
+    background: #5f9dd2!important
+}
+
+.tagline .userattrs a.moderator,
+.thing .tagline a.author.moderator,
+.thing .tagline a.author.moderator:hover {
+    background: #c22!important
+}
+
+.tagline .userattrs a.admin,
+.thing .tagline a.author.admin,
+.thing .tagline a.author.admin:hover {
+    background: #e286a9!important
+}
+
+.tagline .userattrs {
+    font-size: 0
+}
+
+.footer-parent+#hsts_pixel,
+span.nsfw-stamp {
+    display: none
+}
+
+.entry .buttons li+li {
+    padding-left: 0
+}
+
+.entry .buttons li {
+    margin-right: 5px
+}
+
+a.pretty-button,
+div.entry .buttons li.reported-stamp {
+    border: 0!important;
+    border-radius: 2px;
+    padding: 1px 6px;
+    line-height: inherit
+}
+
+div.entry .buttons li.reported-stamp {
+    margin-right: 0;
+    color: #000
+}
+
+a.pretty-button {
+    color: #fff
+}
+
+.pretty-button.negative {
+    background: #e286a9
+}
+
+.pretty-button.neutral {
+    background: #4f92d1
+}
+
+.pretty-button.positive {
+    background: #69b391
+}
+
+ul.report-reasons {
+    width: 100%;
+    border: 0;
+    color: #000
+}
+
+.link .usertext-body .md {
+    border-color: rgba(144, 144, 144, .25);
+    border-radius: 5px;
+    background: #fff
+}
+
+.link .usertext .md {
+    padding: 15px
+}
+
+div#progressIndicator,
+div.NERPageMarker {
+    width: auto;
+    height: auto;
+    border: 0;
+    border-radius: 0
+}
+
+span.RESThrobber,
+span.RESThrobber:after,
+span.RESThrobber:before {
+    box-shadow: none
+}
+
+.footer-parent {
+    position: relative;
+    padding: 0;
+    background: url(%%overlay%%) fixed center/auto auto, linear-gradient(45deg, rgba(39, 161, 227, .65), rgba(231, 35, 42, .65)), url(%%header%%) fixed center/cover
+}
+
+.footer {
+    display: block;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    border: 0;
+    border-radius: 0;
+    padding: 50px 0;
+    background: rgba(21, 27, 33, .6);
+    text-align: center
+}
+
+.footer .col {
+    flex: none;
+    border: 0;
+    padding: 0 50px
+}
+
+.flat-vert.title {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff
+}
+
+.footer .col .flat-vert.title:before {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -30px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background: url(%%spritesheet%%) 0/120px 290px;
+    content: ""
+}
+
+.footer .col:nth-of-type(1) .flat-vert.title:before {
+    background-position: -56px -168px
+}
+
+.footer .col:nth-of-type(2) .flat-vert.title:before {
+    background-position: -84px -168px
+}
+
+.footer .col:nth-of-type(3) .flat-vert.title:before {
+    background-position: 0 -196px
+}
+
+.footer .col:nth-of-type(4) .flat-vert.title:before {
+    background-position: -28px -196px
+}
+
+.footer .col li {
+    margin-bottom: 10px
+}
+
+.footer .col a,
+.footer-parent .bottommenu,
+.footer-parent .bottommenu a {
+    color: #fff
+}
+
+.footer-parent .bottommenu:nth-of-type(1) {
+    padding: 60px 0 20px
+}
+
+.footer-parent .bottommenu:nth-of-type(2) {
+    padding-bottom: 60px
+}
+
+.footer-parent~.debuginfo {
+    position: relative;
+    margin-top: -25px;
+    color: #fff
+}
+
+.linkinfo {
+    border: 1px solid rgba(144, 144, 144, .25);
+    border-radius: 5px;
+    background: 0 0
+}
+
+.panestack-title {
+    margin-right: 320px;
+    border: 0;
+    border-top: 1px solid rgba(144, 144, 144, .25);
+    padding: 10px 0
+}
+
+div.usertext-edit.md-container {
+    width: 503px!important
+}
+
+a.edit-btn {
+    vertical-align: bottom
+}
+
+.content button.RESBigEditorPop {
+    margin-top: 5px;
+    border: 2px solid rgba(144, 144, 144, .25);
+    border-radius: 0 5px 5px 0;
+    padding: 0 10px;
+    background-position: 10px 50%;
+    color: #4d5968;
+    margin-left: 0
+}
+
+.usertext .help-toggle {
+    margin-left: 0
+}
+
+.res .usertext .help-toggle .active,
+.usertext a.reddiquette {
+    border-right: 0
+}
+
+.usertext a.reddiquette {
+    border-radius: 5px 0 0 5px
+}
+
+.usertext .help-toggle .active {
+    border-radius: 0 5px 5px 0
+}
+
+.res .usertext .help-toggle .active {
+    border-radius: 0
+}
+
+.new-comment .usertext-body {
+    border: 0;
+    background: rgba(144, 144, 144, .075)
+}
+
+.formtabs-content,
+.gold-accent,
+.wiki-page .pageactions {
+    border: 0
+}
+
+#subreddit_stylesheet>.sheets:before,
+.linefield,
+.roundfield,
+.wiki-page .wiki-page-content .wiki>.toc>ul {
+    border: 1px solid rgba(144, 144, 144, .25);
+    border-radius: 5px
+}
+
+.search-page button.search-submit-button {
+    height: 40px;
+    border-radius: 5px
+}
+
+.submit-page .submit.content .spacer {
+    margin-bottom: 10px
+}
+
+.image-upload span,
+.submit-page ul.tabmenu.formtab {
+    padding: 0
+}
+
+.submit-page .tabmenu.formtab li {
+    margin-right: 10px
+}
+
+.roundfield input[type=text],
+.roundfield input[type=url],
+.roundfield textarea {
+    width: 500px
+}
+
+.content.submit .info-notice {
+    width: 520px;
+    border: 0
+}
+
+form .spacer+.spacer {
+    margin: 10px 0
+}
+
+.linefield,
+.roundfield {
+    width: 520px;
+    background: 0 0
+}
+
+.linefield div.usertext-edit.md-container {
+    width: 494px!important
+}
+
+div#RESStyleSheetTipPane {
+    width: calc(100% - 322px);
+    border-color: rgba(144, 144, 144, .25);
+    border-radius: 5px
+}
+
+#subreddit_stylesheet>.sheets:before {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    content: "Thanks for choosing Structura! Visit /r/Structura to leave feedback and check for updates. If you have any questions related to the CSS, /r/CSSHelp is better and faster."
+}
+
+.sheets {
+    margin-right: 322px
+}
+
+.sheets .buttons,
+.sheets .col>div {
+    margin: 0
+}
+
+ul#image-preview-list.image-list {
+    display: block;
+    margin: 0 322px 0 0
+}
+
+ul#image-preview-list li {
+    display: inline-block;
+    float: none;
+    width: 50%;
+    height: auto
+}
+
+.flat-list li.selected a {
+    color: #e286a9
+}
+
+.message .subject .correspondent,
+.tabmenu li.selected a,
+.tabpane-content,
+div#RESStyleSheetTipPane-header,
+div.RESDialogSmall {
+    border: 0
+}
+
+.flair-jump button {
+    vertical-align: top;
+    margin-left: 10px
+}
+
+.RESDialogSmall.livePreview {
+    margin-top: 10px
+}
+
+div#BigEditor,
+div#RESConsoleContainer,
+div#RESNotifications,
+div#RESShortcutsAddFormContainer,
+div#editShortcutDialog,
+div#modalOverlay,
+div.guider {
+    z-index: 2147483647!important
+}
+
+div.guider {
+    box-shadow: none;
+    border: 2px solid rgba(144, 144, 144, .25)
+}
+
+#header .pagename a {
+    visibility: hidden;
+    position: relative
+}
+
+#header .pagename a:after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Neoliberal"
+}
+
+.side .md>ul:nth-of-type(1) {
+    position: fixed;
+    z-index: 2147483646;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    background: #2f373f;
+    white-space: nowrap;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff
+}
+
+.side .md>ul:nth-of-type(1) a,
+.side .md>ul:nth-of-type(1) strong {
+    text-decoration: none;
+    color: #fff
+}
+
+.side .md>ul:nth-of-type(1) li {
+    position: relative;
+    display: inline-block;
+    margin-right: 50px;
+    height: 50px;
+    line-height: 50px
+}
+
+.side .md>ul:nth-of-type(1)>li>p {
+    display: inline-block
+}
+
+.side .md>ul:nth-of-type(1)>li>ul,
+.side .md>ul:nth-of-type(1)>li>ul>li>ul {
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+    pointer-events: none;
+    border: 0;
+    padding: 10px 20px!important;
+    text-align: left;
+    background: #2f373f;
+    transition: opacity .2s
+}
+
+.side .md>ul:nth-of-type(1)>li>ul {
+    right: -20px;
+    top: 50px;
+    border-radius: 0 0 5px 5px
+}
+
+.side .md>ul:nth-of-type(1)>li>ul>li>ul {
+    top: 0;
+    right: calc(100% - -20px);
+    border-radius: 5px
+}
+
+.side .md>ul:nth-of-type(1)>li:hover>ul,
+.side .md>ul:nth-of-type(1)>li>ul:hover,
+.side .md>ul:nth-of-type(1)>li>ul>li:hover>ul,
+.side .md>ul:nth-of-type(1)>li>ul>li>ul:hover {
+    opacity: 1;
+    pointer-events: auto
+}
+
+.side .md>ul:nth-of-type(1)>li:hover>ul:after,
+.side .md>ul:nth-of-type(1)>li>ul:hover:after {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    content: ""
+}
+
+.side .md>ul:nth-of-type(1)>li>ul>li,
+.side .md>ul:nth-of-type(1)>li>ul>li>ul>li {
+    display: block;
+    margin: 0;
+    height: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, .075);
+    padding: 0 20px;
+    line-height: 40px;
+    white-space: nowrap
+}
+
+.side .md>ul:nth-of-type(1)>li>ul>li:hover:before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 20px;
+    height: 40px;
+    content: ""
+}
+
+.side .md>ul:nth-of-type(1)>li>ul>li>ul>li ul {
+    display: none
+}
+
+.modtools-page>div.content,
+body>.content {
+    margin-top: 60px
+}
+
+.side .md>h1:first-of-type {
+    position: absolute;
+    overflow: hidden;
+    top: 270px;
+    left: 10px;
+    right: 330px;
+    margin: 0;
+    height: 40px;
+    border: 1px solid rgba(144, 144, 144, .25);
+    border-radius: 5px;
+    padding: 0 10px;
+    white-space: nowrap;
+    text-transform: none;
+    letter-spacing: 0;
+    font: 300 14px/40px -apple-system, "Open Sans", Helvetica, sans-serif!important;
+    color: #5e6875!important
+}
+
+.side .md>h1:first-of-type strong {
+    color: #c22
+}
+
+.side .md>h1:first-of-type:before {
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-weight: 700;
+    color: #4d5968!important;
+    content: "Announcements: "
+}
+
+.side:before {
+    display: block;
+    margin: 10px 0;
+    height: 300px;
+    border-radius: 5px;
+    background: url(%%sidebarimage%%);
+    content: ""
+}
+
+.flair-image {
+    margin-top: 12px;
+    margin-bottom: 9px;
+    margin-left: 45px
+}
+
+.flair-image:before {
+    background-image: url(%%flairs%%);
+    background-size: 36px calc(0.4*7500px);
+    width: 36px;
+    height: 40px;
+    position: absolute;
+    content: "";
+    margin-left: -45px;
+    margin-top: -15px
+}
+
+.link .flair,
+.side .titlebox .word {
+    display: none
+}
+
+.side .subscribers .number:after {
+    content: " readers"
+}
+
+.side .users-online .number:after {
+    content: " users here now"
+}
+
+.flair-blair:before {
+    background-position: 0 calc(.4*0px)
+}
+
+.flair-brown:before {
+    background-position: 0 calc(.4*-100px)
+}
+
+.flair-clegg:before {
+    background-position: 0 calc(.4*-200px)
+}
+
+.flair-clinton:before {
+    background-position: 0 calc(.4*-300px)
+}
+
+.flair-erhard:before {
+    background-position: 0 calc(.4*-400px)
+}
+
+.flair-keating:before {
+    background-position: 0 calc(.4*-500px)
+}
+
+.flair-khama:before {
+    background-position: 0 calc(.4*-600px)
+}
+
+.flair-macron:before {
+    background-position: 0 calc(.4*-700px)
+}
+
+.flair-obama:before {
+    background-position: 0 calc(.4*-800px)
+}
+
+.flair-osborne:before {
+    background-position: 0 calc(.4*-900px)
+}
+
+.flair-thatcher:before {
+    background-position: 0 calc(.4*-1000px)
+}
+
+.flair-tusk:before {
+    background-position: 0 calc(.4*-1100px)
+}
+
+.flair-yew:before {
+    background-position: 0 calc(.4*-1200px)
+}
+
+.flair-eu:before {
+    background-position: 0 calc(.4*-1300px)
+}
+
+.flair-nato:before {
+    background-position: 0 calc(.4*-1400px)
+}
+
+.flair-wto:before {
+    background-position: 0 calc(.4*-1500px)
+}
+
+.flair-commonwealth:before {
+    background-position: 0 calc(.4*-1600px)
+}
+
+.flair-un:before {
+    background-position: 0 calc(.4*-1700px)
+}
+
+.flair-acemoglu:before {
+    background-position: 0 calc(.4*-1800px)
+}
+
+.flair-autor:before {
+    background-position: 0 calc(.4*-1900px)
+}
+
+.flair-bernanke:before {
+    background-position: 0 calc(.4*-2000px)
+}
+
+.flair-carney:before {
+    background-position: 0 calc(.4*-2100px)
+}
+
+.flair-fama:before {
+    background-position: 0 calc(.4*-2200px)
+}
+
+.flair-friedman:before {
+    background-position: 0 calc(.4*-2300px)
+}
+
+.flair-george:before {
+    background-position: 0 calc(.4*-2400px)
+}
+
+.flair-goolsbee:before {
+    background-position: 0 calc(.4*-2500px)
+}
+
+.flair-hayek:before {
+    background-position: 0 calc(.4*-2600px)
+}
+
+.flair-heckman:before {
+    background-position: 0 calc(.4*-2700px)
+}
+
+.flair-keynes:before {
+    background-position: 0 calc(.4*-2800px)
+}
+
+.flair-krugman:before {
+    background-position: 0 calc(.4*-2900px)
+}
+
+.flair-mankiw:before {
+    background-position: 0 calc(.4*-3000px)
+}
+
+.flair-sen:before {
+    background-position: 0 calc(.4*-3100px)
+}
+
+.flair-yellen:before {
+    background-position: 0 calc(.4*-3200px)
+}
+
+.flair-hrclinton:before {
+    background-position: 0 calc(.4*-3300px)
+}
+
+.flair-merkel:before {
+    background-position: 0 calc(.4*-3400px)
+}
+
+.flair-verhofstadt:before {
+    background-position: 0 calc(.4*-3500px)
+}
+
+.flair-kant:before {
+    background-position: 0 calc(.4*-3600px)
+}
+
+.flair-volcker:before {
+    background-position: 0 calc(.4*-3700px)
+}
+
+.flair-sumner:before {
+    background-position: 0 calc(.4*-3800px)
+}
+
+.flair-lagarde:before {
+    background-position: 0 calc(.4*-3900px)
+}
+
+.flair-greenspan:before {
+    background-position: 0 calc(.4*-4000px)
+}
+
+.flair-mill:before {
+    background-position: 0 calc(.4*-4100px)
+}
+
+.flair-singh:before {
+    background-position: 0 calc(.4*-4200px)
+}
+
+.flair-aziz:before {
+    background-position: 0 calc(.4*-4300px)
+}
+
+.flair-douglas:before {
+    background-position: 0 calc(.4*-4400px)
+}
+
+.flair-indrawati:before {
+    background-position: 0 calc(.4*-4500px)
+}
+
+.flair-juncker:before {
+    background-position: 0 calc(.4*-4600px)
+}
+
+.flair-locke:before {
+    background-position: 0 calc(.4*-4700px)
+}
+
+.flair-montesquieu:before {
+    background-position: 0 calc(.4*-4800px)
+}
+
+.flair-okonjoiweala:before {
+    background-position: 0 calc(.4*-4900px)
+}
+
+.flair-peel:before {
+    background-position: 0 calc(.4*-5000px)
+}
+
+.flair-smith:before {
+    background-position: 0 calc(.4*-5100px)
+}
+
+.flair-wollstonecraft:before {
+    background-position: 0 calc(.4*-5200px)
+}
+
+.flair-globe:before {
+    background-position: 0 calc(.4*-5300px)
+}
+
+.flair-trudeau:before {
+    background-position: 0 calc(.4*-5400px)
+}
+
+.flair-rockefeller:before {
+    background-position: 0 calc(.4*-5500px)
+}
+
+.flair-au:before {
+    background-position: 0 calc(.4*-5600px)
+}
+
+.flair-stalin:before {
+    background-position: 0 calc(.4*-5700px)
+}
+
+.flair-trump:before {
+    background-position: 0 calc(.4*-5800px)
+}
+
+.flair-worldbank:before {
+    background-position: 0 calc(.4*-5900px)
+}
+
+.flair-imf:before {
+    background-position: 0 calc(.4*-6000px)
+}
+
+.flair-soros:before {
+    background-position: 0 calc(.4*-6100px)
+}
+
+.flair-foucault:before {
+    background-position: 0 calc(.4*-6200px)
+}
+
+.flair-fdr:before {
+    background-position: 0 calc(.4*-6300px)
+}
+
+.flair-bush:before {
+    background-position: 0 calc(.4*-6400px)
+}
+
+.flair-bloomberg:before {
+    background-position: 0 calc(.4*-6500px)
+}
+
+.flair-draghi:before {
+    background-position: 0 calc(.4*-6600px)
+}
+
+.flair-mrworldwide:before {
+    background-position: 0 calc(.4*-6700px)
+}
+
+.flair-reagan:before {
+    background-position: 0 calc(.4*-6800px)
+}
+
+.flair-picardiasanders:before {
+    background-position: 0 calc(.4*-6900px)
+}
+
+.flair-pvnr:before {
+    background-position: 0 calc(.4*-7000px)
+}
+
+.flair-burke:before {
+    background-position: 0 calc(.4*-7100px)
+}
+
+.flair-rajan:before {
+    background-position: 0 calc(.4*-7200px)
+}
+
+.flair-samuelson:before {
+    background-position: 0 calc(.4*-7300px)
+}
+
+.flair-gladstone:before {
+    background-position: 0 calc(.4*-7400px)
+}
