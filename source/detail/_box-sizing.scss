@@ -1,0 +1,11 @@
+@import "mixins.scss";
+
+html {
+    @include box-sizing(border-box);
+    @include text-sizing-adjust(none);
+}
+
+*::after, *::before {
+    @include box-sizing(inherit);
+    @include text-sizing-adjust(none);
+}
