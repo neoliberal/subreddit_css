@@ -1,0 +1,294 @@
+.side div.flairselector.drop-choices {
+    left: auto!important;
+    right: 10px;
+    width: 300px!important
+}
+
+.side div.flairselector.drop-choices:before {
+    left: calc(50% - 8px)
+}
+
+.side {
+    margin: 0 0 50px 10px;
+    width: 322px;
+    border-bottom-left-radius: 5px;
+    border-left: 2px solid rgba(144, 144, 144, .25);
+    border-bottom: 2px solid rgba(144, 144, 144, .25);
+    padding: 0 10px 10px
+}
+
+.side .spacer {
+    margin: 10px 0
+}
+
+#search input[type=text] {
+    height: 40px
+}
+
+#searchexpando {
+    margin-top: 10px
+}
+
+label+#moresearchinfo {
+    margin-top: 10px;
+    border: 0
+}
+
+.infobar {
+    border: 1px solid rgba(144, 144, 144, .25);
+    background: #fff
+}
+
+#searchexpando,
+.ad300x250,
+.infobar {
+    border-radius: 5px
+}
+
+.account-activity-box a,
+.morelink,
+.morelink:hover,
+.sidecontentbox a.helplink {
+    position: relative;
+    float: none;
+    height: 40px;
+    border: 0;
+    background: 0 0;
+    line-height: 40px;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700
+}
+
+.account-activity-box a,
+.morelink,
+.morelink:hover {
+    display: block
+}
+
+.sidecontentbox a.helplink {
+    border-radius: 5px;
+    background: #c22;
+    transition: .2s
+}
+
+.account-activity-box a,
+.morelink a {
+    border-radius: 5px;
+    background: #c22;
+    color: #fff;
+    transition: .2s
+}
+
+.disabled .morelink a {
+    color: rgba(255, 255, 255, .6)
+}
+
+.account-activity-box a {
+    background: #f36c60
+}
+
+.account-activity-box a:hover {
+    background: #f87
+}
+
+.account-activity-box a:active {
+    background: #dc6257
+}
+
+.account-activity-box a:before,
+.create .morelink a:before,
+.sidecontentbox a.helplink:before,
+.submit.mod-override .morelink a:after,
+.submit:not(.disabled) .morelink a:before {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background: url(%%spritesheet%%) 0/120px 290px;
+    content: ""
+}
+
+.submit-link:not(.disabled) .morelink a:before {
+    background-position: 0 -84px
+}
+
+.submit-text:not(.disabled) .morelink a:before {
+    background-position: -28px -84px
+}
+
+.create .morelink a:before {
+    background-position: -84px -84px
+}
+
+.sidecontentbox a.helplink:before {
+    background-position: -84px -28px
+}
+
+.account-activity-box a:before {
+    background-position: 0 -112px
+}
+
+.side .submit.mod-override .morelink a:after {
+    margin: 0;
+    left: 35px;
+    background-position: -56px -84px;
+    opacity: 1
+}
+
+.flairselector li a.author,
+.flairselector li a.title,
+.hover-bubble.anchor-right:before,
+.morelink .nub,
+.titlebox .leavemoderator:before,
+.users-online:before {
+    display: none
+}
+
+.side .fancy-toggle-button {
+    margin: 0
+}
+
+.sidecontentbox a.helplink {
+    display: block;
+    margin: 10px 0
+}
+
+.fancy-toggle-button .add,
+.side .fancy-toggle-button .add,
+.sidecontentbox a.helplink,
+input#addSubreddit {
+    border-color: transparent;
+    background: #c22;
+    color: #fff;
+    text-align: center
+}
+
+.side .subButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 0 10px;
+}
+
+.side .titlebox .subButtons>span {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-right: 5px;
+}
+
+.side .titlebox .subButtons>span:last-child {
+    margin-right: 0
+}
+
+.side .fancy-toggle-button .add:hover,
+.sidecontentbox a.helplink:hover {
+    background: #e44
+}
+
+.side .fancy-toggle-button .add:active,
+.sidecontentbox a.helplink:active {
+    background: #d33
+}
+
+.titlebox>.subscribe-button {
+    width: 100%
+}
+
+.res span.RESDashboardToggle,
+.res span.RESshortcutside,
+.side .fancy-toggle-button .active {
+    width: 100%;
+    padding: 0;
+    white-space: nowrap;
+    text-align: center
+}
+
+.hover-bubble {
+    border: 0
+}
+
+.users-online {
+    display: inline-block;
+    margin-left: 10px
+}
+
+.leavemoderator,
+.titlebox form.toggle {
+    padding: 0;
+    font-size: 12px;
+    color: inherit
+}
+
+.leavemoderator,
+.users-online {
+    margin-bottom: 8px
+}
+
+.titlebox form.toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.titlebox form.toggle input {
+    margin: 0 5px 0 0 !important;
+}
+
+.side .linkflairlabel {
+    font-size: 11px;
+    font-weight: 400
+}
+
+.titlebox .bottom {
+    border-top: 1px solid rgba(144, 144, 144, .25);
+    font-weight: 300;
+    color: #5e6875;
+}
+
+.side .titlebox .bottom {
+    padding: 10px 0;
+}
+
+.sidecontentbox .title {
+    margin-bottom: 5px
+}
+
+.sidecontentbox .collapse-button {
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgba(144, 144, 144, .25);
+    border-radius: 5px;
+    text-indent: 0;
+    font-weight: 700;
+    background: 0 0;
+    color: #4d5968;
+    line-height: 12px;
+}
+
+.login-form-side,
+.sidecontentbox .content {
+    border: 1px solid rgba(144, 144, 144, .25);
+    border-radius: 5px;
+    padding: 10px
+}
+
+.sidecontentbox .helplink~.content li {
+    margin: 2px 0
+}
+
+.sidecontentbox span.score,
+a.reddit-comment-link {
+    font-weight: 400;
+    color: #5e6875
+}
+
+.side:after {
+    font-size: 12px;
+    content: "CSS based on /r/Structura";
+    text-align: center
+}

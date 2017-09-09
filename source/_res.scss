@@ -1,0 +1,168 @@
+.res .side h1.redditname+div:before,
+input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none
+}
+
+.res .side h1.redditname+div:before,
+select {
+    border-radius: 5px
+}
+
+.res .side h1.redditname+div:before,
+input[type=checkbox]:checked,
+input[type=radio]:checked {
+    border: 0;
+    background: #5f9dd2 url(%%spritesheet%%) no-repeat -24px -76px/45px 109px;
+    content: ""
+}
+
+.res .side h1.redditname+div:before,
+input[type=radio],
+select {
+    box-shadow: none;
+    border: 1px solid rgba(144, 144, 144, .25);
+    background-color: rgba(144, 144, 144, .075);
+    color: #4d5968
+}
+
+#rem-login-main,
+.res .side h1.redditname+div:before,
+input[type=checkbox],
+input[type=radio] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 2px!important;
+    margin-bottom: 5px!important;
+    width: 18px;
+    height: 18px
+}
+
+.res body.res:not(.res-v5) .RESDropdownList:not(#RESAccountSwitcherDropdown),
+body:not(.res-v5) .drop-choices:not(#autocomplete_dropdown),
+body:not(.res-v5) div#RESSubredditGroupDropdown,
+body:not(.res-v5) table#srList {
+    display: block!important;
+    opacity: 0;
+    pointer-events: none
+}
+
+.res .res .RESDropdownList:not(#RESAccountSwitcherDropdown) {
+    top: 0
+}
+
+.res body.res:not(.res-v5) .RESDropdownList[style*="display: block"]:not(#RESAccountSwitcherDropdown),
+body:not(.res-v5) .drop-choices.inuse:not(#autocomplete_dropdown),
+body:not(.res-v5) div#RESSubredditGroupDropdown[style*="display: block"],
+body:not(.res-v5) table#srList[style*="display: block"],
+div.flairselector.drop-choices.active:not(#autocomplete_dropdown) {
+    opacity: 1;
+    pointer-events: auto
+}
+
+.res .res .RESDropdownList:before {
+    left: auto;
+    right: 47px
+}
+
+.res .res .RESDropdownList li {
+    font-weight: 400
+}
+
+.res .res .RESDropdownList a,
+.res .res .RESDropdownList a:visited,
+.res .res .RESDropdownList li a:hover,
+.res .res .RESDropdownList li:hover {
+    color: #fff
+}
+
+div#RESSubredditGroupDropdown li+.RESShortcutsEditButtons,
+div#RESSubredditGroupDropdown>.RESShortcutsEditButtons {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    white-space: nowrap
+}
+
+div#RESSubredditGroupDropdown .RESShortcutsEditButtons .res-icon {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    width: 50%;
+    border: 0;
+    color: #fff
+}
+
+.RESShortcutsEditButtons .res-icon.delete {
+    text-align: left
+}
+
+.RESShortcutsEditButtons .res-icon.edit {
+    text-align: right
+}
+
+.res div#userbarToggle.userbarShow {
+    top: -17.5px
+}
+
+.link .entry.RES-keyNav-activeElement {
+    padding-right: 10px
+}
+
+.commentarea div.RES-keyNav-activeElement .md,
+.commentarea div.RES-keyNav-activeElement.entry .noncollapsed,
+div.RES-keyNav-activeElement {
+    background: 0 0!important
+}
+
+.commentarea div.RES-keyNav-activeElement.entry .noncollapsed,
+div.RES-keyNav-activeElement {
+    border-right: 2px solid #95adc9
+}
+
+.tagline .RESUserTagImage {
+    margin-right: 5px;
+}
+
+.comment .usertext-body .RESUserTagImage::after {
+    margin-left: 3px;
+}
+
+.res .usertext .help-toggle .active {
+    border-radius: 0
+}
+
+div.RESDialogSmall>h3 {
+    color: #5e6875;
+    height: 40px;
+    border: 0
+}
+
+.message-count {
+    position: fixed;
+    left: calc(50% - 150px);
+    bottom: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .15);
+    width: 300px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    background: #758ce1;
+    font-size: 11px;
+    color: #fff
+}
+
+.message-count:before {
+    position: absolute;
+    top: 7.5px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: url(%%spritesheet%%) -84px -28px/120px 290px;
+    content: ""
+}
+
+.message-count:after {
+    content: " new message(s) from Soros"
+}
