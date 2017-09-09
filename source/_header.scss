@@ -12,20 +12,15 @@
         text-transform: uppercase;
         font-size: 9px;
         color: #fff;
-        .dropdown.srdrop .selected {
-            margin: 0 10px 0 5px
+        a {
+            margin-right: 10px;
+            color: #fff;
         }
         #srLeftContainer {
             padding-left: 10px
         }
         .sr-list {
             margin-right: 50px
-        }
-        #srLeftContainer a,
-        .sr-list a,
-        a.subbarlink {
-            margin-right: 10px;
-            color: #fff
         }
         .separator {
             display: none
@@ -188,31 +183,21 @@
     }
 }
 
+#srList {
+    left: 10px;
+    thead {
+        font-weight: 700;
+    }
+    td {
+        padding: 0 8px;
+        &.RESshortcut,
+        &.RESvisited {
+            text-transform: uppercase;
+        }
+    }
+}
+
 #header #header,
 body .modal {
     z-index: 2147483647
-}
-
-#sr-header-area .selected a,
-div#RESSubredditGroupDropdown .RESShortcutsCurrentSub a,
-div#sr-header-area a.RESShortcutsCurrentSub,
-table#srList a {
-    color: #fff;
-}
-
-table#srList td.RESshortcut,
-table#srList td.RESvisited {
-    text-transform: uppercase
-}
-
-table#srList {
-    left: 10px
-}
-
-table#srList thead {
-    font-weight: 700
-}
-
-table#srList td {
-    padding: 0 8px
 }
