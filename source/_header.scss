@@ -1,315 +1,206 @@
-#header .tabmenu li a,
-.flairselector h2 {
-    color: #fff;
-    background: 0 0
-}
-
-#header {
-    height: 389px;
-    border: 0;
-    box-shadow: inset 0 -90px 0 0 rgb(49, 49, 49);
-    background: url(%%header-ex%%);
-}
-
 #header {
     height: 300px;
+    border: 0;
     box-shadow: inset 0 -38px 0 0 rgba(49, 49, 49, 0.8);
+    background: url(%%header%%);
+    #sr-header-area {
+        height: 30px;
+        border: 0;
+        padding-right: 110px;
+        background: rgba(21, 27, 33, .3);
+        line-height: 30px;
+        text-transform: uppercase;
+        font-size: 9px;
+        color: #fff;
+        .dropdown.srdrop .selected {
+            margin: 0 10px 0 5px
+        }
+        #srLeftContainer {
+            padding-left: 10px
+        }
+        .sr-list {
+            margin-right: 50px
+        }
+        #srLeftContainer a,
+        .sr-list a,
+        a.subbarlink {
+            margin-right: 10px;
+            color: #fff
+        }
+        .separator {
+            display: none
+        }
+        .srSep {
+            margin: 0
+        }
+        .ChatApp__reddit-icon {
+            margin-left: 20px;
+            color: #fff
+        }
+        .drop-choices.srdrop {
+            margin-top: 10px;
+            margin-left: 10px
+        }
+    }
+    #header-bottom-left {
+        #header-img-a,
+        .redditname {
+            display: none;
+        }
+        .tabmenu {
+            position: absolute;
+            left: 20px;
+            text-transform: uppercase;
+            bottom: 12px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            li {
+                display: inline;
+                margin: 0 10px 0 0;
+                font-weight: 400;
+                &.selected {
+                    font-weight: 700
+                }
+                a {
+                    border: 0;
+                    padding: 0;
+                    color: #fff;
+                    background: 0 0;
+                }
+            }
+        }
+    }
+    #header-bottom-right {
+        top: 271px;
+        right: 20px;
+        padding: 0;
+        background: 0 0;
+        text-transform: uppercase;
+        .user {
+            position: absolute;
+            top: -35px;
+            right: 0;
+            margin: 0 0 0 10px;
+            height: 20px;
+            line-height: 20px;
+            white-space: nowrap;
+            font-size: 11px;
+            font-weight: 700;
+            color: #fff;
+            a {
+                color: #fff;
+            }
+        }
+        .separator {
+            display: none
+        }
+        .beta-hint {
+            height: 20px
+        }
+        .beta-hint,
+        .beta-hint a {
+            position: static;
+            margin: 0;
+            opacity: 1
+        }
+        .beta-hint,
+        .logout,
+        .user,
+        .flat-list,
+        span#openRESPrefs {
+            display: inline-block;
+            vertical-align: top
+        }
+        span#openRESPrefs {
+            margin-left: 20px
+        }
+        #RESAccountSwitcherIcon,
+        .beta-hint a {
+            display: inline-block;
+            overflow: hidden;
+            top: 0;
+            vertical-align: top;
+            width: 20px!important;
+            height: 20px;
+            background: url(%%spritesheet%%) 0/120px 290px;
+            font-size: 0
+        }
+        #mail,
+        #modmail,
+        #openRESPrefs .gearIcon,
+        .logout a,
+        a.pref-lang {
+            display: inline-block;
+            overflow: hidden;
+            top: 0;
+            vertical-align: top;
+            margin-left: 20px;
+            width: 20px!important;
+            height: 20px;
+            background: url(%%spritesheet%%) 0/120px 290px;
+            font-size: 0
+        }
+        #openRESPrefs .gearIcon {
+            margin-left: 0;
+            background-position: -56px -56px
+        }
+        .beta-hint a {
+            margin-left: 0;
+            background-position: -28px -28px
+        }
+        #RESAccountSwitcherIcon {
+            margin: 0 10px;
+            background-position: -56px -28px
+        }
+        #mail {
+            background-position: -84px -28px;
+            &.havemail {
+                background-position: -79px -23px;
+            }
+        }
+        #modmail {
+            background-position: 0 -56px;
+            &.havemail {
+                background-position: 5px -51px;
+            }
+        }
+        #new_modmail {
+            margin-left: 20px;
+            transform: scale(1.3);
+            top: 1px
+        }
+        #mail.havemail,
+        #modmail.havemail {
+            top: -5px!important;
+            margin-left: 15px;
+            width: 30px!important;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #e286a9
+        }
+        a.pref-lang {
+            background-position: -28px -56px
+        }
+        .logout a {
+            background-position: -84px -56px
+        }
+    }
 }
 
-.redditname {
-    display: none;
-}
-
-#sr-header-area .drop-choices.srdrop {
-    margin-top: 10px;
-    margin-left: 10px
+#header #header,
+body .modal {
+    z-index: 2147483647
 }
 
 #sr-header-area .selected a,
 div#RESSubredditGroupDropdown .RESShortcutsCurrentSub a,
 div#sr-header-area a.RESShortcutsCurrentSub,
 table#srList a {
-    color: #fff!important
+    color: #fff;
 }
 
 table#srList td.RESshortcut,
 table#srList td.RESvisited {
     text-transform: uppercase
-}
-
-#header .tabmenu {
-    bottom: 12px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#header .tabmenu li.selected {
-    border-bottom: none;
-}
-
-#header #header-bottom-right {
-    top: 271px;
-}
-
-.side .md a[href="#headerbutton"]+a {
-    top: 50px;
-}
-
-#header .user {
-    background-color: rgba(49, 49, 49, 0.8);
-    padding: 5px 20px;
-    height: 26px;
-    bottom: 28px;
-    margin: 0;
-    right: -20px;
-}
-
-#header,
-body .modal {
-    z-index: 2147483647
-}
-
-#header #header-img {
-    top: 82.5px;
-    margin: 0;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background: #fff url(%%spritesheet%%) 5px -30px;
-    line-height: 35px;
-    text-indent: 45px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff
-}
-
-#header img#header-img {
-    padding-left: 35px
-}
-
-#header a#header-img-a {
-    display: none;
-}
-
-#header #header-img,
-#header .pagename,
-#header .tabmenu {
-    position: absolute;
-    left: 20px;
-    text-transform: uppercase
-}
-
-#header .pagename {
-    font-size: 20px;
-    font-weight: 400;
-    color: #fff;
-    bottom: 40px
-}
-
-#header .pagename a {
-    font-size: 30px;
-    font-weight: 700;
-    color: #fff
-}
-
-#header .tabmenu {
-    margin: 0;
-    bottom: 20px
-}
-
-#header .tabmenu li,
-#header .tabmenu li.res-tabmenu-button {
-    display: inline;
-    margin: 0 10px 0 0;
-    font-weight: 400
-}
-
-#header .tabmenu li.selected {
-    border-bottom: 2px solid #fff;
-    font-weight: 700
-}
-
-#header .tabmenu li a {
-    border: 0;
-    padding: 0
-}
-
-#header #header-bottom-right {
-    top: 348.5px;
-    right: 20px;
-    padding: 0;
-    background: 0 0;
-    text-transform: uppercase
-}
-
-#header .beta-hint {
-    height: 20px
-}
-
-#header .beta-hint,
-#header .beta-hint a {
-    position: static;
-    margin: 0;
-    opacity: 1
-}
-
-#header .beta-hint,
-#header .logout,
-#header .user,
-#header-bottom-right .flat-list,
-span#openRESPrefs {
-    display: inline-block;
-    vertical-align: top
-}
-
-span#openRESPrefs {
-    margin-left: 20px
-}
-
-#header #RESAccountSwitcherIcon,
-#header .beta-hint a {
-    display: inline-block;
-    overflow: hidden;
-    top: 0;
-    vertical-align: top;
-    width: 20px!important;
-    height: 20px;
-    background: url(%%spritesheet%%) 0/120px 290px;
-    font-size: 0
-}
-
-#header #header-bottom-right #mail,
-#header #header-bottom-right #modmail,
-#header-bottom-right #openRESPrefs .gearIcon,
-#header-bottom-right .logout a,
-#header-bottom-right a.pref-lang {
-    display: inline-block;
-    overflow: hidden;
-    top: 0;
-    vertical-align: top;
-    margin-left: 20px;
-    width: 20px!important;
-    height: 20px;
-    background: url(%%spritesheet%%) 0/120px 290px;
-    font-size: 0
-}
-
-#header-bottom-right #openRESPrefs .gearIcon {
-    margin-left: 0;
-    background-position: -56px -56px
-}
-
-#header .beta-hint a {
-    margin-left: 0;
-    background-position: -28px -28px
-}
-
-#header #RESAccountSwitcherIcon {
-    margin: 0 10px;
-    background-position: -56px -28px
-}
-
-#header #header-bottom-right #mail {
-    background-position: -84px -28px
-}
-
-#header #header-bottom-right #modmail {
-    background-position: 0 -56px
-}
-
-#header #header-bottom-right #new_modmail {
-    margin-left: 20px;
-    transform: scale(1.3);
-    top: 1px
-}
-
-#header-bottom-right a.pref-lang {
-    background-position: -28px -56px
-}
-
-#header-bottom-right .logout a {
-    background-position: -84px -56px
-}
-
-#header #header-bottom-right #mail.havemail,
-#header #header-bottom-right #modmail.havemail {
-    top: -5px!important;
-    margin-left: 15px;
-    width: 30px!important;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #e286a9
-}
-
-#header #header-bottom-right #mail.havemail {
-    background-position: -79px -23px
-}
-
-#header #header-bottom-right #modmail.havemail {
-    background-position: 5px -51px
-}
-
-#sr-header-area {
-    height: 30px;
-    border: 0;
-    padding-right: 110px;
-    background: rgba(21, 27, 33, .3);
-    line-height: 30px;
-    text-transform: uppercase;
-    font-size: 9px;
-    color: #fff
-}
-
-#sr-header-area .dropdown.srdrop .selected {
-    margin: 0 10px 0 5px
-}
-
-#sr-header-area #srLeftContainer {
-    padding-left: 10px
-}
-
-#sr-header-area .sr-list {
-    margin-right: 50px
-}
-
-#sr-header-area #srLeftContainer a,
-#sr-header-area .sr-list a,
-#sr-header-area a.subbarlink {
-    margin-right: 10px;
-    color: #fff
-}
-
-#sr-header-area .separator {
-    display: none
-}
-
-#sr-header-area .srSep {
-    margin: 0
-}
-
-#header .user {
-    position: absolute;
-    top: -35px;
-    right: 0;
-    margin: 0 0 0 10px;
-    height: 20px;
-    line-height: 20px;
-    white-space: nowrap;
-    font-size: 11px;
-    font-weight: 700;
-    color: #fff
-}
-
-#header .user a {
-    color: #fff
-}
-
-#header .ChatApp__reddit-icon {
-    margin-left: 20px;
-    color: #fff
-}
-
-#header-bottom-right .separator {
-    display: none!important
 }

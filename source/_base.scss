@@ -1840,10 +1840,15 @@ span.RESThrobber:before {
     color: #fff
 }
 
+.side .md a[href="#headerbutton"]+a {
+    top: 50px;
+}
+
 .linkinfo {
     border: 1px solid rgba(144, 144, 144, .25);
     border-radius: 5px;
-    background: 0 0 padding: 10px;
+    background: 0 0;
+     padding: 10px;
 }
 
 .panestack-title {
