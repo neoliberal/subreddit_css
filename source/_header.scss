@@ -204,3 +204,15 @@ table#srList td.RESshortcut,
 table#srList td.RESvisited {
     text-transform: uppercase
 }
+
+table#srList {
+    left: 10px
+}
+
+table#srList thead {
+    font-weight: 700
+}
+
+table#srList td {
+    padding: 0 8px
+}

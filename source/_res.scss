@@ -138,6 +138,28 @@ div.RESDialogSmall>h3 {
     border: 0
 }
 
+#NREFloat {
+    position: fixed;
+    margin-top: 1px;
+    right: 13px;
+    top: 45px !important;
+    z-index: 1234567979797;
+}
+
+#NREFloat ul {
+    display: flex;
+    width: 50px;
+    left: -5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#NREFloat[hidden] {
+    display: block;
+    z-index: 2147483646;
+}
+
 .message-count {
     position: fixed;
     left: calc(50% - 150px);
