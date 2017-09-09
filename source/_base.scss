@@ -1,12 +1,13 @@
-.md,
-body {
-    color: #5e6875
-}
-
 #search input[type=text],
 body,
 textarea {
     font-family: -apple-system, BlinkMacSystemFont, "Open Sans", Helvetica, sans-serif
+}
+
+.md .-lists,
+.md ul,
+.md ol {
+    padding-left: 20px;
 }
 
 .md {
@@ -35,10 +36,6 @@ a {
     color: #585858
 }
 
-.md a {
-    text-decoration: underline
-}
-
 .commentNavSortType:hover,
 a:hover {
     text-decoration: none!important
@@ -51,7 +48,11 @@ a:hover {
 
 .md strong {
     font-weight: 700;
-    color: #4d5968
+}
+
+.md em sup {
+    font-style: normal;
+    vertical-align: sub;
 }
 
 .md code,
@@ -139,31 +140,39 @@ h6 {
     font-style: italic
 }
 
+
+/*
 .md th {
     border: 0
 }
 
 .md table tbody tr:nth-child(2n+1) {
-    background: rgba(144, 144, 144, .075)
+    background: rgba(144,144,144,.075)
 }
 
 .md table tbody tr {
     border: 0;
-    border-bottom: 1px solid rgba(144, 144, 144, .25)
+    border-bottom: 1px solid rgba(144,144,144,.25)
 }
 
 .md table tbody tr:first-of-type {
-    border-top: 1px solid rgba(144, 144, 144, .25)
+    border-top: 1px solid rgba(144,144,144,.25)
 }
 
 .md td {
     border: 0;
-    border-right: 1px solid rgba(144, 144, 144, .25);
+    border-right: 1px solid rgba(144,144,144,.25);
     padding: 15px
 }
 
 .md td:first-of-type {
-    border-left: 1px solid rgba(144, 144, 144, .25)
+    border-left: 1px solid rgba(144,144,144,.25)
+}
+*/
+
+.md tr,
+.md td {
+    border: none
 }
 
 #editShortcutDialog input[type=text],
@@ -228,10 +237,6 @@ textarea:focus {
     border-color: #5f9dd2
 }
 
-:focus {
-    outline: 0
-}
-
 #rem-login-main,
 .res .side h1.redditname+div:before,
 input[type=checkbox],
@@ -249,10 +254,7 @@ select {
     -moz-appearance: none;
     height: 20px;
     padding: 0 20px 0 5px;
-    background-image: url(%%spritesheet%%);
-    background-repeat: no-repeat;
-    background-position: right -31px top -106px;
-    background-size: 50px 121px
+    background: url(%%spritesheet%%) no-repeat right -31px top -106px/50px 121px;
 }
 
 input[type=radio] {
@@ -276,7 +278,7 @@ input[type=radio]:checked {
 .md a[href="#specialbutton"]+a {
     width: auto;
     height: 30px;
-    border: 2px solid rgba(144, 144, 144, .25);
+    border: rgba(144, 144, 144, .25);
     border-radius: 5px;
     padding: 0 10px;
     background: 0 0;
@@ -330,9 +332,9 @@ span.RESshortcutside,
 span.RESshortcutside.remove {
     display: inline-block;
     height: 30px;
-    border: 2px solid rgba(144, 144, 144, .25);
+    border: 1px solid rgba(144, 144, 144, .25);
     background: 0 0;
-    line-height: 26px;
+    line-height: 28px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 10px;
@@ -375,11 +377,11 @@ span.RESSubscriptionButton,
 span.RESSubscriptionButton.unsubscribe {
     width: auto;
     height: 30px;
-    border: 2px solid rgba(144, 144, 144, .25);
+    border: 1px solid rgba(144, 144, 144, .25);
     border-radius: 5px;
     padding: 0 10px;
     background: 0 0;
-    line-height: 26px;
+    line-height: 28px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 10px;
@@ -428,7 +430,7 @@ button.save,
 button[name=save] {
     display: inline-block;
     border-color: transparent;
-    background: #5f9dd2;
+    background: #c22;
     color: #fff
 }
 
@@ -461,8 +463,8 @@ button[name=save]:hover {
 .morelink a:active,
 button.save:active,
 button[name=save]:active {
-    border-color: #4b91cc;
-    background: #4b91cc
+    border-color: #a00;
+    background: #a00
 }
 
 .side .md a[href="#bigbutton"]+a,
@@ -796,6 +798,25 @@ div.flairselector.drop-choices {
     right: 25px
 }
 
+a.choice[href$="controversial"] {
+    visibility: hidden;
+    position: relative;
+}
+
+a.choice[href$="controversial"]:after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, .075);
+    padding: 0 5px;
+    line-height: 30px;
+    color: #fff;
+    width: 100%;
+    content: "Hot takes"
+}
+
 #header .tabmenu li a,
 .flairselector h2 {
     color: #fff;
@@ -803,10 +824,10 @@ div.flairselector.drop-choices {
 }
 
 #header {
-    height: 260px;
+    height: 389px;
     border: 0;
-    box-shadow: inset 0 -90px 0 0 rgba(21, 27, 33, .75);
-    background: url(%%overlay%%) fixed center/auto auto, linear-gradient(45deg, transparent, rgba(0, 0, 0, .75)), url(%%header%%) 0 0/cover
+    box-shadow: inset 0 -90px 0 0 rgb(49, 49, 49);
+    background: url(%%header-ex%%);
 }
 
 #header,
@@ -901,14 +922,8 @@ div#RESShortcutsEditContainer div {
     padding-left: 35px
 }
 
-#header a#header-img-a:after {
-    position: absolute;
-    top: 92.5px;
-    left: 65px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff;
-    content: "REDDIT.COM"
+#header a#header-img-a {
+    display: none;
 }
 
 #header #header-img,
@@ -955,7 +970,7 @@ div#RESShortcutsEditContainer div {
 }
 
 #header #header-bottom-right {
-    top: 107.5px;
+    top: 348.5px;
     right: 20px;
     padding: 0;
     background: 0 0;
@@ -1122,7 +1137,7 @@ span#openRESPrefs {
 }
 
 .message-count:after {
-    content: " new messages in your inbox!"
+    content: " new message(s) from Soros"
 }
 
 #header .user {
@@ -1153,7 +1168,7 @@ span#openRESPrefs {
 
 .side .md a[href="#headerbutton"]+a {
     position: absolute;
-    top: 190px;
+    top: 225px;
     right: 20px;
     height: 50px;
     border: 2px solid #fff;
@@ -1165,11 +1180,31 @@ span#openRESPrefs {
     font-weight: 700;
     color: #fff;
     transition: .2s;
-    z-index: 2147483647
+    z-index: 2147483647;
+    background: rgba(0, 0, 0, 0.75)
+}
+
+.side .md a[href="#homebutton"]+a {
+    position: absolute;
+    top: 1px;
+    left: 566px;
+    width: 300px;
+    height: 300px;
+    border: none;
+    border-radius: 150px;
+    padding: 0 30px;
+    line-height: 46px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    transition: .2s;
+    z-index: 2147483647;
+    background: rgba(0, 0, 0, 0);
 }
 
 .side .md a[href="#headerbutton"]+a:hover {
-    background-color: rgba(255, 255, 255, .075)
+    background-color: rgba(0, 0, 0, .5)
 }
 
 .side .md a[href="#headerbutton"]+a:active {
@@ -1330,25 +1365,46 @@ label+#moresearchinfo {
 .sidecontentbox a.helplink,
 input#addSubreddit {
     border-color: transparent;
-    background: #69b391;
-    color: #fff
+    background: #c22;
+    color: #fff;
+    text-align: center
+}
+
+.side .subButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 0 10px;
+}
+
+.side .titlebox .subButtons>span {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-right: 5px;
+}
+
+.side .titlebox .subButtons>span:last-child {
+    margin-right: 0
 }
 
 .side .fancy-toggle-button .add:hover,
 .sidecontentbox a.helplink:hover {
-    background: #72c29d
+    background: #e44
 }
 
 .side .fancy-toggle-button .add:active,
 .sidecontentbox a.helplink:active {
-    background: #59987c
+    background: #d33
+}
+
+.titlebox>.subscribe-button {
+    width: 100%
 }
 
 .res span.RESDashboardToggle,
 .res span.RESshortcutside,
 .side .fancy-toggle-button .active {
-    margin: 5px 10px 10px 0;
-    width: 93.3px;
+    width: 100%;
     padding: 0;
     white-space: nowrap;
     text-align: center
@@ -1356,12 +1412,6 @@ input#addSubreddit {
 
 .hover-bubble {
     border: 0
-}
-
-span.RESshortcutside,
-span.RESshortcutside.remove {
-    margin-right: 10px;
-    margin-bottom: 10px
 }
 
 .users-online {
@@ -1381,8 +1431,15 @@ span.RESshortcutside.remove {
     margin-bottom: 8px
 }
 
-.titlebox form.toggle:nth-of-type(1) input[type=checkbox] {
-    margin-top: 0!important
+.titlebox form.toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.titlebox form.toggle input {
+    margin: 0 5px 0 0 !important;
 }
 
 .flairselector li,
@@ -1404,16 +1461,25 @@ body .entry .buttons .flairselector li {
 }
 
 .flair {
-    border-radius: 3px;
     display: none;
+    border-radius: 0px;
+    visibility: hidden;
+    white-space: nowrap;
+    width: 1px;
+    margin-right: -10px;
 }
 
 .flair-mod,
 .flair-expert,
 .flair-shame,
 .flair-regular,
+.flair-orange,
+.flair-green,
 .flair-other {
     display: inline-block;
+    visibility: visible;
+    width: auto;
+    margin-right: 5px;
 }
 
 .flair,
@@ -1425,8 +1491,9 @@ body .entry .buttons .flairselector li {
 
 .flair,
 html .link .flair {
-    padding: 1px 6px;
-    font-size: 11px
+    padding: 2px 4px;
+    font-size: 10px;
+    font-weight: 600
 }
 
 .link .flair {
@@ -1468,11 +1535,11 @@ html .link .flair {
     content: "NSFW"
 }
 
-.flair-turquoise,
-.flairselector .linkflair-turquoise .linkflairlabel,
-.linkflair-turquoise .title .linkflairlabel {
+.flair-orange,
+.flairselector .linkflair-orange .linkflairlabel,
+.linkflair-orange .title .linkflairlabel {
     border: 0;
-    background: #54d3cf;
+    background: #ffa500;
     color: #fff
 }
 
@@ -1490,7 +1557,7 @@ html .link .flair {
 .flairselector .linkflair-regular .linkflairlabel,
 .linkflair-regular .title .linkflairlabel {
     border: 0;
-    background: #00187b;
+    background: #0348ae;
     color: #fff
 }
 
@@ -1514,7 +1581,7 @@ html .link .flair {
 .flairselector .linkflair-shame .linkflairlabel,
 .linkflair-shame .title .linkflairlabel {
     border: 0;
-    background: #ff7705;
+    background: #775a00;
     color: #fff
 }
 
@@ -1536,7 +1603,11 @@ html .link .flair {
 .titlebox .bottom {
     border-top: 1px solid rgba(144, 144, 144, .25);
     font-weight: 300;
-    color: #5e6875
+    color: #5e6875;
+}
+
+.side .titlebox .bottom {
+    padding: 10px 0;
 }
 
 .sidecontentbox .title {
@@ -1546,12 +1617,13 @@ html .link .flair {
 .sidecontentbox .collapse-button {
     width: 15px;
     height: 15px;
-    border: 2px solid rgba(144, 144, 144, .25);
+    border: 1px solid rgba(144, 144, 144, .25);
     border-radius: 5px;
-    text-indent: -1px;
+    text-indent: 0;
     font-weight: 700;
     background: 0 0;
-    color: #4d5968
+    color: #4d5968;
+    line-height: 12px;
 }
 
 .login-form-side,
@@ -1578,7 +1650,8 @@ a.reddit-comment-link {
 }
 
 body>.content {
-    margin: 10px
+    margin: 10px;
+    margin-top: 60px;
 }
 
 .reddit-infobar.md-container-small {
@@ -1616,12 +1689,14 @@ body>.content {
     margin: 0 10px
 }
 
-html body .midcol div.arrow {
-    margin-top: 0;
+.comment .midcol {
+    width: 20px;
+    margin-top: 16px;
+    transform: scale(1.3)
 }
 
-.arrow.upmod {
-    border-bottom: 10px solid #ff8b60
+html body .midcol div.arrow {
+    margin-top: 0;
 }
 
 .link .score {
@@ -1630,10 +1705,6 @@ html body .midcol div.arrow {
 
 html body .midcol :not(.score)+div.arrow {
     margin-top: 5px
-}
-
-.arrow.downmod {
-    border-top: 10px solid #9494ff
 }
 
 body .thumbnail {
@@ -1646,6 +1717,16 @@ body .thumbnail {
 body .thumbnail img {
     width: auto;
     height: 70px
+}
+
+p.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.approval-checkmark {
+    margin: 0 5px 0 0;
 }
 
 .link.stickied .thumbnail,
@@ -1703,6 +1784,14 @@ div.RES-keyNav-activeElement {
     border-right: 2px solid #95adc9
 }
 
+.tagline .RESUserTagImage {
+    margin-right: 5px;
+}
+
+.comment .usertext-body .RESUserTagImage::after {
+    margin-left: 3px;
+}
+
 .thing a.title {
     vertical-align: top
 }
@@ -1742,29 +1831,29 @@ html .thing.visited .title {
     max-width: none!important;
     height: 25px!important;
     max-height: none!important;
-    border: 2px solid rgba(144, 144, 144, .25);
+    border: 1px solid rgba(144, 144, 144, .25);
     border-radius: 5px;
     background: #fff url(%%spritesheet%%) 0/90px 218px!important
 }
 
 .expando-button.selftext {
-    background-position: -18px -102px!important
+    background-position: -17px -101px!important
 }
 
 .expando-button.video {
-    background-position: -39px -102px!important
+    background-position: -38px -101px!important
 }
 
 .expando-button.image {
-    background-position: -60px -102px!important
+    background-position: -59px -101px!important
 }
 
 .expando-button.image.gallery {
-    background-position: 3px -123px!important
+    background-position: 2px -122px!important
 }
 
 .expando-button.video-muted {
-    background-position: -18px -125px!important
+    background-position: -17px -124px!important
 }
 
 .expando-button:after {
@@ -1817,8 +1906,9 @@ span.redditSingleClick {
 .thing .tagline a.author.moderator,
 .thing .tagline a.author.submitter {
     display: inline-block;
-    border-radius: 3px;
+    border-radius: 0;
     padding: 1px 6px;
+    height: 16px;
     font-size: 11px;
     font-weight: 400;
     color: #fff
@@ -1842,8 +1932,22 @@ span.redditSingleClick {
     background: #e286a9!important
 }
 
+.tagline .voteWeight {
+    margin-right: 5px;
+}
+
 .tagline .userattrs {
     font-size: 0
+}
+
+.tagline .userattrs .cakeday {
+    margin-right: 5px;
+}
+
+.userattrs .admin,
+.userattrs .moderator,
+.userattrs .submitter {
+    margin: 0 5px;
 }
 
 .footer-parent+#hsts_pixel,
@@ -1886,6 +1990,21 @@ a.pretty-button {
 
 .pretty-button.positive {
     background: #69b391
+}
+
+.pretty-button.negative.pressed {
+    background-image: none;
+    background-color: #da3574;
+}
+
+.pretty-button.neutral.pressed {
+    background-image: none;
+    background-color: #074b8c;
+}
+
+.pretty-button.positive.pressed {
+    background-image: none;
+    background-color: #166f46;
 }
 
 ul.report-reasons {
@@ -2003,7 +2122,7 @@ span.RESThrobber:before {
 .linkinfo {
     border: 1px solid rgba(144, 144, 144, .25);
     border-radius: 5px;
-    background: 0 0
+    background: 0 0 padding: 10px;
 }
 
 .panestack-title {
@@ -2029,6 +2148,12 @@ a.edit-btn {
     background-position: 10px 50%;
     color: #4d5968;
     margin-left: 0
+}
+
+#shortlink-text {
+    padding-left: 5px;
+    border: none;
+    border-radius: 0;
 }
 
 .usertext .help-toggle {
@@ -2120,13 +2245,6 @@ div#RESStyleSheetTipPane {
     border-radius: 5px
 }
 
-#subreddit_stylesheet>.sheets:before {
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
-    content: "Thanks for choosing Structura! Visit /r/Structura to leave feedback and check for updates. If you have any questions related to the CSS, /r/CSSHelp is better and faster."
-}
-
 .sheets {
     margin-right: 322px
 }
@@ -2184,29 +2302,16 @@ div.guider {
     border: 2px solid rgba(144, 144, 144, .25)
 }
 
-#header .pagename a {
-    visibility: hidden;
-    position: relative
-}
-
-#header .pagename a:after {
-    visibility: visible;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "Neoliberal"
-}
-
 .side .md>ul:nth-of-type(1) {
     position: fixed;
     z-index: 2147483646;
     top: 0;
-    left: 0;
+    right: 0;
     margin: 0;
-    width: 100%;
-    height: 50px;
-    padding: 0;
-    background: #2f373f;
+    width: 320px;
+    height: 36px;
+    padding-left: 5px;
+    background-color: rgba(0, 0, 0, 0.75);
     white-space: nowrap;
     text-align: right;
     text-transform: uppercase;
@@ -2224,9 +2329,9 @@ div.guider {
 .side .md>ul:nth-of-type(1) li {
     position: relative;
     display: inline-block;
-    margin-right: 50px;
-    height: 50px;
-    line-height: 50px
+    padding: 0 12px;
+    height: 36px;
+    line-height: 36px
 }
 
 .side .md>ul:nth-of-type(1)>li>p {
@@ -2240,16 +2345,15 @@ div.guider {
     opacity: 0;
     pointer-events: none;
     border: 0;
-    padding: 10px 20px!important;
+    padding: 0 5px;
     text-align: left;
-    background: #2f373f;
-    transition: opacity .2s
+    background: rgba(0, 0, 0, 0.75);
+    transition: opacity .1s
 }
 
 .side .md>ul:nth-of-type(1)>li>ul {
-    right: -20px;
-    top: 50px;
-    border-radius: 0 0 5px 5px
+    top: 36px;
+    border-radius: 0;
 }
 
 .side .md>ul:nth-of-type(1)>li>ul>li>ul {
@@ -2300,15 +2404,18 @@ div.guider {
     display: none
 }
 
-.modtools-page>div.content,
-body>.content {
-    margin-top: 60px
+.side .md>ul:nth-of-type(1)>li:nth-of-type(2)>ul {
+    left: -5px;
+}
+
+.side .md>ul:nth-of-type(1)>li:nth-of-type(3)>ul {
+    left: -6px;
 }
 
 .side .md>h1:first-of-type {
     position: absolute;
     overflow: hidden;
-    top: 270px;
+    top: 400px;
     left: 10px;
     right: 330px;
     margin: 0;
@@ -2338,7 +2445,7 @@ body>.content {
 .side:before {
     display: block;
     margin: 10px 0;
-    height: 300px;
+    height: 428px;
     border-radius: 5px;
     background: url(%%sidebarimage%%);
     content: ""
@@ -2347,31 +2454,50 @@ body>.content {
 .flair-image {
     margin-top: 12px;
     margin-bottom: 9px;
-    margin-left: 45px
+    margin-left: 40px;
+    display: inline-block;
 }
 
 .flair-image:before {
     background-image: url(%%flairs%%);
-    background-size: 36px calc(0.4*7500px);
+    background-size: 36px calc(0.4*7600px);
     width: 36px;
     height: 40px;
     position: absolute;
     content: "";
     margin-left: -45px;
-    margin-top: -15px
+    margin-top: -15px;
+    visibility: visible
 }
 
 .link .flair,
-.side .titlebox .word {
+.side .titlebox .word,
+.sidecontentbox .flair {
     display: none
 }
 
+.side .subscribers {
+    font-size: 14px;
+    display: block;
+    margin: 5px 0;
+}
+
+.side .users-online {
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
 .side .subscribers .number:after {
-    content: " readers"
+    content: " Yellen from the rooftops"
 }
 
 .side .users-online .number:after {
-    content: " users here now"
+    content: " putting the 'no' in 'Cohn'"
+}
+
+body.show-controversial .comment.controversial>.entry .score:after {
+    top: 0px;
+    content: " Hot Take"
 }
 
 .flair-blair:before {
@@ -2672,4 +2798,167 @@ body>.content {
 
 .flair-gladstone:before {
     background-position: 0 calc(.4*-7400px)
+}
+
+.flair-lindner:before {
+    background-position: 0 calc(.4*-7500px)
+}
+
+.arrow.up {
+    background-image: url(%%up%%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.arrow.upmod {
+    background-image: url(%%upmod%%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+p.tagline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.comment>.entry>.tagline {
+    min-height: 37px;
+}
+
+body.mod-toolbox .tb-bracket-button {
+    position: absolute;
+    width: 100%;
+    height: 13px;
+    box-sizing: border-box;
+    border-width: 1px;
+    left: 0;
+    text-align: center;
+    top: 0;
+}
+
+body.mod-toolbox .tb-bracket-button.global-mod-button,
+body.mod-toolbox .tb-bracket-button.nuke-button {
+    position: relative;
+    width: 13px;
+}
+
+.history-button,
+.usernote-button {
+    position: relative;
+    display: flex;
+    min-width: 13px;
+    height: 13px;
+    margin-right: 3px;
+    left: 1px;
+}
+
+.history-button {
+    margin-right: 7px;
+}
+
+.tagline .score {
+    margin-right: 5px;
+}
+
+.tb-bracket-button.add-user-tag-neoliberal:not([title=""]) {
+    position: relative;
+}
+
+.flair-image {
+    margin-top: 9px;
+}
+
+.top-matter .tagline time {
+    margin: 0 3px;
+}
+
+.top-matter .tagline .author {
+    margin-left: 3px
+}
+
+.top-matter .tagline .stickied-tagline {
+    margin-left: 5px;
+}
+
+
+/* hello youth please combine these rules with the matching rules above when you clean this up ty */
+
+#header {
+    height: 300px;
+    box-shadow: inset 0 -38px 0 0 rgba(49, 49, 49, 0.8);
+}
+
+.redditname {
+    display: none;
+}
+
+#header .tabmenu {
+    bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header .tabmenu li.selected {
+    border-bottom: none;
+}
+
+#header #header-bottom-right {
+    top: 271px;
+}
+
+.side .md a[href="#headerbutton"]+a {
+    top: 50px;
+}
+
+#header .user {
+    background-color: rgba(49, 49, 49, 0.8);
+    padding: 5px 20px;
+    height: 26px;
+    bottom: 28px;
+    margin: 0;
+    right: -20px;
+}
+
+.side .md>h1:first-of-type {
+    top: 310px
+}
+
+#NREFloat {
+    position: fixed;
+    margin-top: 1px;
+    right: 13px;
+    top: 45px !important;
+    z-index: 1234567979797;
+}
+
+#NREFloat ul {
+    display: flex;
+    width: 50px;
+    left: -5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#NREFloat[hidden] {
+    display: block;
+    z-index: 2147483646;
+}
+
+@media only screen and (max-width: 876px) {
+    .side {
+        display: none;
+    }
+    body>.content {
+        margin-top: 0;
+    }
+    .panestack-title {
+        margin-right: 0;
+    }
 }
