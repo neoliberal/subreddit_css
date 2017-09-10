@@ -138,6 +138,16 @@ div.RESDialogSmall>h3 {
     border: 0
 }
 
+.RESUserTag > a.userTagLink.hasTag {
+    border: 0;
+    border-radius: 0;
+    padding: 2px 4px;
+    font-size: 10px;
+    font-weight: 600;
+    height: 16px;
+    display: inline-block;
+}
+
 #NREFloat {
     position: fixed;
     margin-top: 1px;
