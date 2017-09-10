@@ -445,7 +445,7 @@ a.choice[href$="controversial"]:after {
 
 #sr-more-link,
 div#RESShortcutsEditContainer {
-    display: flex;
+    @include display-flex();
     width: auto;
     height: 30px;
     max-height: none;
@@ -610,7 +610,7 @@ body .thumbnail img {
 }
 
 p.title {
-    display: flex;
+    @include display-flex();
     flex-direction: row;
     align-items: center;
 }
@@ -1114,7 +1114,7 @@ body.show-controversial .comment.controversial>.entry .score:after {
 }
 
 p.tagline {
-    display: flex;
+    @include display-flex();
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;

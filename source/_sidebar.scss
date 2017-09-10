@@ -318,7 +318,7 @@ input#addSubreddit {
 }
 
 .side .subButtons {
-    display: flex;
+    @include display-flex();
     flex-direction: row;
     justify-content: space-between;
     margin: 5px 0 10px;
@@ -374,7 +374,7 @@ input#addSubreddit {
 }
 
 .titlebox form.toggle {
-    display: flex;
+    @include display-flex();
     flex-direction: row;
     align-items: center;
     padding: 5px 0;

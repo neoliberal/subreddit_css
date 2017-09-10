@@ -19,7 +19,7 @@
 @mixin display-flex() {
 	display: -webkit-flex;
 	display: -ms-flexbox;
-	display: flex;
+	@include display-flex();
 }
 
 @mixin flex-flow($rule) {

@@ -145,7 +145,7 @@ div.RESDialogSmall>h3 {
     top: 45px !important;
     z-index: 1234567979797;
     ul {
-        display: flex;
+        @include display-flex();
         width: 50px;
         left: -5px;
         flex-direction: row;
