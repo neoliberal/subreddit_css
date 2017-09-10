@@ -1,0 +1,29 @@
+body.mod-toolbox {
+    .tb-bracket-button {
+        position: absolute;
+        width: 100%;
+        height: 13px;
+        box-sizing: border-box;
+        border-width: 1px;
+        left: 0;
+        text-align: center;
+        top: 0;
+        &.global-mod-button,
+        &.nuke-button {
+            position: relative;
+            width: 13px;
+        }
+    }
+    .history-button,
+    .usernote-button {
+        position: relative;
+        display: flex;
+        min-width: 13px;
+        height: 13px;
+        margin-right: 3px;
+        left: 1px;
+    }
+    .history-button {
+        margin-right: 7px;
+    }
+}

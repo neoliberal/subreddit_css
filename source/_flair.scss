@@ -1,0 +1,434 @@
+.flair {
+    display: none;
+    border-radius: 0px;
+    visibility: hidden;
+    white-space: nowrap;
+    width: 1px;
+    margin-right: -10px;
+}
+
+.flair-image {
+    margin-top: 9px;
+}
+
+.flair-mod,
+.flair-expert,
+.flair-shame,
+.flair-regular,
+.flair-orange,
+.flair-green,
+.flair-other {
+    display: inline-block;
+    visibility: visible;
+    width: auto;
+    margin-right: 5px;
+}
+
+.flair,
+.linkflairlabel {
+    border: 1px solid rgba(144, 144, 144, .25);
+    background: rgba(144, 144, 144, .075);
+    color: #5e6875
+}
+
+.flair,
+html .link .flair {
+    padding: 2px 4px;
+    font-size: 10px;
+    font-weight: 600
+}
+
+.link .flair {
+    margin-top: 0
+}
+
+.flair-other,
+.flairselector .linkflair-other .linkflairlabel,
+.linkflair-other .title .linkflairlabel,
+.nsfw-stamp,
+.over18>.entry>p>a.title:before {
+    border: 0;
+    background: #e286a9;
+    color: #fff;
+    content: "NSFW"
+}
+
+.flair-orange,
+.flairselector .linkflair-orange .linkflairlabel,
+.linkflair-orange .title .linkflairlabel {
+    border: 0;
+    background: #ffa500;
+    color: #fff
+}
+
+.flair-green,
+.flairselector .linkflair-green .linkflairlabel,
+.linkflair-green .title .linkflairlabel,
+.stickied>.entry>p>a.title:before {
+    border: 0;
+    background: #69b391;
+    color: #fff;
+    content: "Stickied"
+}
+
+.flair-regular,
+.flairselector .linkflair-regular .linkflairlabel,
+.linkflair-regular .title .linkflairlabel {
+    border: 0;
+    background: #0348ae;
+    color: #fff
+}
+
+.flair-mod,
+.flairselector .linkflair-mod .linkflairlabel,
+.linkflair-mod .title .linkflairlabel {
+    border: 0;
+    background: #c22;
+    color: #fff
+}
+
+.flair-expert,
+.flairselector .linkflair-expert .linkflairlabel,
+.linkflair-expert .title .linkflairlabel {
+    border: 0;
+    background: #8075e5;
+    color: #fff
+}
+
+.flair-shame,
+.flairselector .linkflair-shame .linkflairlabel,
+.linkflair-shame .title .linkflairlabel {
+    border: 0;
+    background: #775a00;
+    color: #fff
+}
+
+.flair:empty {
+    background: transparent;
+    border: none;
+    margin-left: 36px;
+}
+
+// ToDo: Make a Loop
+.flair-image {
+    margin-top: 12px;
+    margin-bottom: 9px;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.flair-image:before {
+    background-image: url(%%flairs%%);
+    background-size: 36px calc(0.4*7600px);
+    width: 36px;
+    height: 40px;
+    position: absolute;
+    content: "";
+    margin-left: -45px;
+    margin-top: -15px;
+    visibility: visible
+}
+
+.flair-blair:before {
+    background-position: 0 calc(.4*0px)
+}
+
+.flair-brown:before {
+    background-position: 0 calc(.4*-100px)
+}
+
+.flair-clegg:before {
+    background-position: 0 calc(.4*-200px)
+}
+
+.flair-clinton:before {
+    background-position: 0 calc(.4*-300px)
+}
+
+.flair-erhard:before {
+    background-position: 0 calc(.4*-400px)
+}
+
+.flair-keating:before {
+    background-position: 0 calc(.4*-500px)
+}
+
+.flair-khama:before {
+    background-position: 0 calc(.4*-600px)
+}
+
+.flair-macron:before {
+    background-position: 0 calc(.4*-700px)
+}
+
+.flair-obama:before {
+    background-position: 0 calc(.4*-800px)
+}
+
+.flair-osborne:before {
+    background-position: 0 calc(.4*-900px)
+}
+
+.flair-thatcher:before {
+    background-position: 0 calc(.4*-1000px)
+}
+
+.flair-tusk:before {
+    background-position: 0 calc(.4*-1100px)
+}
+
+.flair-yew:before {
+    background-position: 0 calc(.4*-1200px)
+}
+
+.flair-eu:before {
+    background-position: 0 calc(.4*-1300px)
+}
+
+.flair-nato:before {
+    background-position: 0 calc(.4*-1400px)
+}
+
+.flair-wto:before {
+    background-position: 0 calc(.4*-1500px)
+}
+
+.flair-commonwealth:before {
+    background-position: 0 calc(.4*-1600px)
+}
+
+.flair-un:before {
+    background-position: 0 calc(.4*-1700px)
+}
+
+.flair-acemoglu:before {
+    background-position: 0 calc(.4*-1800px)
+}
+
+.flair-autor:before {
+    background-position: 0 calc(.4*-1900px)
+}
+
+.flair-bernanke:before {
+    background-position: 0 calc(.4*-2000px)
+}
+
+.flair-carney:before {
+    background-position: 0 calc(.4*-2100px)
+}
+
+.flair-fama:before {
+    background-position: 0 calc(.4*-2200px)
+}
+
+.flair-friedman:before {
+    background-position: 0 calc(.4*-2300px)
+}
+
+.flair-george:before {
+    background-position: 0 calc(.4*-2400px)
+}
+
+.flair-goolsbee:before {
+    background-position: 0 calc(.4*-2500px)
+}
+
+.flair-hayek:before {
+    background-position: 0 calc(.4*-2600px)
+}
+
+.flair-heckman:before {
+    background-position: 0 calc(.4*-2700px)
+}
+
+.flair-keynes:before {
+    background-position: 0 calc(.4*-2800px)
+}
+
+.flair-krugman:before {
+    background-position: 0 calc(.4*-2900px)
+}
+
+.flair-mankiw:before {
+    background-position: 0 calc(.4*-3000px)
+}
+
+.flair-sen:before {
+    background-position: 0 calc(.4*-3100px)
+}
+
+.flair-yellen:before {
+    background-position: 0 calc(.4*-3200px)
+}
+
+.flair-hrclinton:before {
+    background-position: 0 calc(.4*-3300px)
+}
+
+.flair-merkel:before {
+    background-position: 0 calc(.4*-3400px)
+}
+
+.flair-verhofstadt:before {
+    background-position: 0 calc(.4*-3500px)
+}
+
+.flair-kant:before {
+    background-position: 0 calc(.4*-3600px)
+}
+
+.flair-volcker:before {
+    background-position: 0 calc(.4*-3700px)
+}
+
+.flair-sumner:before {
+    background-position: 0 calc(.4*-3800px)
+}
+
+.flair-lagarde:before {
+    background-position: 0 calc(.4*-3900px)
+}
+
+.flair-greenspan:before {
+    background-position: 0 calc(.4*-4000px)
+}
+
+.flair-mill:before {
+    background-position: 0 calc(.4*-4100px)
+}
+
+.flair-singh:before {
+    background-position: 0 calc(.4*-4200px)
+}
+
+.flair-aziz:before {
+    background-position: 0 calc(.4*-4300px)
+}
+
+.flair-douglas:before {
+    background-position: 0 calc(.4*-4400px)
+}
+
+.flair-indrawati:before {
+    background-position: 0 calc(.4*-4500px)
+}
+
+.flair-juncker:before {
+    background-position: 0 calc(.4*-4600px)
+}
+
+.flair-locke:before {
+    background-position: 0 calc(.4*-4700px)
+}
+
+.flair-montesquieu:before {
+    background-position: 0 calc(.4*-4800px)
+}
+
+.flair-okonjoiweala:before {
+    background-position: 0 calc(.4*-4900px)
+}
+
+.flair-peel:before {
+    background-position: 0 calc(.4*-5000px)
+}
+
+.flair-smith:before {
+    background-position: 0 calc(.4*-5100px)
+}
+
+.flair-wollstonecraft:before {
+    background-position: 0 calc(.4*-5200px)
+}
+
+.flair-globe:before {
+    background-position: 0 calc(.4*-5300px)
+}
+
+.flair-trudeau:before {
+    background-position: 0 calc(.4*-5400px)
+}
+
+.flair-rockefeller:before {
+    background-position: 0 calc(.4*-5500px)
+}
+
+.flair-au:before {
+    background-position: 0 calc(.4*-5600px)
+}
+
+.flair-stalin:before {
+    background-position: 0 calc(.4*-5700px)
+}
+
+.flair-trump:before {
+    background-position: 0 calc(.4*-5800px)
+}
+
+.flair-worldbank:before {
+    background-position: 0 calc(.4*-5900px)
+}
+
+.flair-imf:before {
+    background-position: 0 calc(.4*-6000px)
+}
+
+.flair-soros:before {
+    background-position: 0 calc(.4*-6100px)
+}
+
+.flair-foucault:before {
+    background-position: 0 calc(.4*-6200px)
+}
+
+.flair-fdr:before {
+    background-position: 0 calc(.4*-6300px)
+}
+
+.flair-bush:before {
+    background-position: 0 calc(.4*-6400px)
+}
+
+.flair-bloomberg:before {
+    background-position: 0 calc(.4*-6500px)
+}
+
+.flair-draghi:before {
+    background-position: 0 calc(.4*-6600px)
+}
+
+.flair-mrworldwide:before {
+    background-position: 0 calc(.4*-6700px)
+}
+
+.flair-reagan:before {
+    background-position: 0 calc(.4*-6800px)
+}
+
+.flair-picardiasanders:before {
+    background-position: 0 calc(.4*-6900px)
+}
+
+.flair-pvnr:before {
+    background-position: 0 calc(.4*-7000px)
+}
+
+.flair-burke:before {
+    background-position: 0 calc(.4*-7100px)
+}
+
+.flair-rajan:before {
+    background-position: 0 calc(.4*-7200px)
+}
+
+.flair-samuelson:before {
+    background-position: 0 calc(.4*-7300px)
+}
+
+.flair-gladstone:before {
+    background-position: 0 calc(.4*-7400px)
+}
+
+.flair-lindner:before {
+    background-position: 0 calc(.4*-7500px)
+}

@@ -1,27 +1,13 @@
-$expansionary: false;
+@import "include/normalize";
 
-$subscriber-description: "establishment contrarians";
-$online-users-description: "who know the center and right can only come together via a unity sandwich";
+@import "global";
 
-@import "util/mixins";
-@import "util/metrics";
+@import "source/detail/box-sizing";
+@import "source/detail/colors";
+@import "source/detail/mixins";
+@import "source/detail/spritesheet";
+@import "source/detail/variables";
 
-@import "colors";
-@import "labels";
+@import "source/base";
 
-@import "base/base";
-@import "flair";
-@import "content";
-@import "header";
-
-@import "post-tags-base";
-@import "user-overrides";
-
-@import "tablet";
-
-@import "no-participation";
-
-// If you want to use a theme, comment out the line below and change the middle accordingly.
-// I wish we could make this more dynamic, but SASS doesn't support it yet.
-
-@import "themes/corn-laws/theme";
+@import "source/special/special";
