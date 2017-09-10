@@ -1157,6 +1157,33 @@ p.tagline {
     }
 }
 
+.message-count {
+    position: fixed;
+    left: calc(50% - 150px);
+    bottom: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .15);
+    width: 300px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    background: #758ce1;
+    font-size: 11px;
+    color: #fff;
+    &:before {
+        position: absolute;
+        top: 7.5px;
+        left: 10px;
+        width: 20px;
+        height: 20px;
+        background: url(%%spritesheet%%) -84px -28px/120px 290px;
+        content: ""
+    }
+    &:after {
+        content: " new message(s) from Soros"
+    }
+}
+
 @import "buttons";
 @import "comments";
 @import "flair";
