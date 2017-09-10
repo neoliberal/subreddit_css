@@ -1088,178 +1088,10 @@ div.guider {
     border: 2px solid rgba(144, 144, 144, .25)
 }
 
-.side .md>ul:nth-of-type(1) {
-    position: fixed;
-    z-index: 2147483646;
-    top: 0;
-    right: 0;
-    margin: 0;
-    width: 320px;
-    height: 36px;
-    padding-left: 5px;
-    background-color: rgba(0, 0, 0, 0.75);
-    white-space: nowrap;
-    text-align: right;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700;
-    color: #fff
-}
-
-.side .md>ul:nth-of-type(1) a,
-.side .md>ul:nth-of-type(1) strong {
-    text-decoration: none;
-    color: #fff
-}
-
-.side .md>ul:nth-of-type(1) li {
-    position: relative;
-    display: inline-block;
-    padding: 0 12px;
-    height: 36px;
-    line-height: 36px
-}
-
-.side .md>ul:nth-of-type(1)>li>p {
-    display: inline-block
-}
-
-.side .md>ul:nth-of-type(1)>li>ul,
-.side .md>ul:nth-of-type(1)>li>ul>li>ul {
-    position: absolute;
-    margin: 0;
-    opacity: 0;
-    pointer-events: none;
-    border: 0;
-    padding: 0 5px;
-    text-align: left;
-    background: rgba(0, 0, 0, 0.75);
-    transition: opacity .1s
-}
-
-.side .md>ul:nth-of-type(1)>li>ul {
-    top: 36px;
-    border-radius: 0;
-}
-
-.side .md>ul:nth-of-type(1)>li>ul>li>ul {
-    top: 0;
-    right: calc(100% - -20px);
-    border-radius: 5px
-}
-
-.side .md>ul:nth-of-type(1)>li:hover>ul,
-.side .md>ul:nth-of-type(1)>li>ul:hover,
-.side .md>ul:nth-of-type(1)>li>ul>li:hover>ul,
-.side .md>ul:nth-of-type(1)>li>ul>li>ul:hover {
-    opacity: 1;
-    pointer-events: auto
-}
-
-.side .md>ul:nth-of-type(1)>li:hover>ul:after,
-.side .md>ul:nth-of-type(1)>li>ul:hover:after {
-    position: absolute;
-    top: -10px;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    content: ""
-}
-
-.side .md>ul:nth-of-type(1)>li>ul>li,
-.side .md>ul:nth-of-type(1)>li>ul>li>ul>li {
-    display: block;
-    margin: 0;
-    height: 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, .075);
-    padding: 0 20px;
-    line-height: 40px;
-    white-space: nowrap
-}
-
-.side .md>ul:nth-of-type(1)>li>ul>li:hover:before {
-    position: absolute;
-    top: 0;
-    left: -20px;
-    width: 20px;
-    height: 40px;
-    content: ""
-}
-
-.side .md>ul:nth-of-type(1)>li>ul>li>ul>li ul {
-    display: none
-}
-
-.side .md>ul:nth-of-type(1)>li:nth-of-type(2)>ul {
-    left: -5px;
-}
-
-.side .md>ul:nth-of-type(1)>li:nth-of-type(3)>ul {
-    left: -6px;
-}
-
-.side .md>h1:first-of-type {
-    position: absolute;
-    overflow: hidden;
-    top: 400px;
-    left: 10px;
-    right: 330px;
-    margin: 0;
-    height: 40px;
-    border: 1px solid rgba(144, 144, 144, .25);
-    border-radius: 5px;
-    padding: 0 10px;
-    white-space: nowrap;
-    text-transform: none;
-    letter-spacing: 0;
-    font: 300 14px/40px -apple-system, "Open Sans", Helvetica, sans-serif!important;
-    color: #5e6875!important
-}
-
-.side .md>h1:first-of-type strong {
-    color: #c22
-}
-
-.side .md>h1:first-of-type:before {
-    text-transform: uppercase;
-    letter-spacing: .05em;
-    font-weight: 700;
-    color: #4d5968!important;
-    content: "Announcements: "
-}
-
-.side:before {
-    display: block;
-    margin: 10px 0;
-    height: 428px;
-    border-radius: 5px;
-    background: url(%%sidebarimage%%);
-    content: ""
-}
-
 .link .flair,
 .side .titlebox .word,
 .sidecontentbox .flair {
     display: none
-}
-
-.side .subscribers {
-    font-size: 14px;
-    display: block;
-    margin: 5px 0;
-}
-
-.side .users-online {
-    font-size: 14px;
-    margin: 0 0 10px;
-}
-
-.side .subscribers .number:after {
-    content: " Yellen from the rooftops"
-}
-
-.side .users-online .number:after {
-    content: " putting the 'no' in 'Cohn'"
 }
 
 body.show-controversial .comment.controversial>.entry .score:after {
@@ -1293,47 +1125,12 @@ p.tagline {
     min-height: 37px;
 }
 
-body.mod-toolbox .tb-bracket-button {
-    position: absolute;
-    width: 100%;
-    height: 13px;
-    box-sizing: border-box;
-    border-width: 1px;
-    left: 0;
-    text-align: center;
-    top: 0;
-}
-
-body.mod-toolbox .tb-bracket-button.global-mod-button,
-body.mod-toolbox .tb-bracket-button.nuke-button {
-    position: relative;
-    width: 13px;
-}
-
-.history-button,
-.usernote-button {
-    position: relative;
-    display: flex;
-    min-width: 13px;
-    height: 13px;
-    margin-right: 3px;
-    left: 1px;
-}
-
-.history-button {
-    margin-right: 7px;
-}
-
 .tagline .score {
     margin-right: 5px;
 }
 
 .tb-bracket-button.add-user-tag-neoliberal:not([title=""]) {
     position: relative;
-}
-
-.flair-image {
-    margin-top: 9px;
 }
 
 .top-matter .tagline time {
@@ -1346,12 +1143,6 @@ body.mod-toolbox .tb-bracket-button.nuke-button {
 
 .top-matter .tagline .stickied-tagline {
     margin-left: 5px;
-}
-
-/* hello youth please combine these rules with the matching rules above when you clean this up ty */
-
-.side .md>h1:first-of-type {
-    top: 310px
 }
 
 @media only screen and (max-width: 876px) {
