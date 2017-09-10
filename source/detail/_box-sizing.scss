@@ -2,10 +2,10 @@
 
 html {
     @include box-sizing(border-box);
-    @include text-sizing-adjust(none);
+    @include text-size-adjust(none);
 }
 
 *::after, *::before {
     @include box-sizing(inherit);
-    @include text-sizing-adjust(none);
+    @include text-size-adjust(none);
 }

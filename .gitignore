@@ -41,3 +41,6 @@ Temporary Items
 .history
 
 # End of https://www.gitignore.io/api/sass,macos,visualstudiocode
+
+### SASS Build ###
+output.css
