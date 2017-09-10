@@ -13,6 +13,9 @@ body.mod-toolbox {
             position: relative;
             width: 13px;
         }
+        &.add-user-tag-neoliberal:not([title=""]) {
+            position: relative;
+        }
     }
     .history-button,
     .usernote-button {
