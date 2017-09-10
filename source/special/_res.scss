@@ -76,21 +76,22 @@ div.flairselector.drop-choices.active:not(#autocomplete_dropdown) {
     color: #fff
 }
 
-div#RESSubredditGroupDropdown li+.RESShortcutsEditButtons,
-div#RESSubredditGroupDropdown>.RESShortcutsEditButtons {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    white-space: nowrap
-}
-
-div#RESSubredditGroupDropdown .RESShortcutsEditButtons .res-icon {
-    display: inline-block;
-    float: none;
-    margin: 0;
-    width: 50%;
-    border: 0;
-    color: #fff
+div#RESSubredditGroupDropdown {
+    li+.RESShortcutsEditButtons,
+    >.RESShortcutsEditButtons {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        white-space: nowrap
+    }
+    .RESShortcutsEditButtons .res-icon {
+        display: inline-block;
+        float: none;
+        margin: 0;
+        width: 50%;
+        border: 0;
+        color: #fff
+    }
 }
 
 .RESShortcutsEditButtons .res-icon.delete {
@@ -138,7 +139,7 @@ div.RESDialogSmall>h3 {
     border: 0
 }
 
-.RESUserTag > a.userTagLink.hasTag {
+.RESUserTag>a.userTagLink.hasTag {
     border: 0;
     border-radius: 0;
     padding: 2px 4px;
