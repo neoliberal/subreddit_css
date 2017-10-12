@@ -56,7 +56,7 @@ $color in $flair-colors {
     .flairselector .linkflair-#{"" + $key},
     .linkflair-#{"" + $key} .title .linkflairlabel {
         border: 0;
-        background: "" + $color;
+        background: $color;
         color: #fff;
     }
 }
