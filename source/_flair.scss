@@ -1,6 +1,6 @@
 // ToDo: Break up into logical flairsheets to decrease compression
-$image-flairs: (blair, brown, clegg, clinton, erhard, keating, khama, macron, obama, osborne, thatcher, tusk, yew, eu, nato, wto, commonwealth, un, acemoglu, autor, bernanke, carney, fama, friedman, george, goolsbee, hayek, heckman, keynes, krugman, mankiw, sen, yellen, hrclinton, merkel, verhofstadt, kant, volcker, sumner, lagarde, greenspan, mill, singh, aziz, douglas, indrawati, juncker, locke, montesquieu, okonjoiweala, peel, smith, wollstonecraft, globe, trudeau, rockefeller, au, stalin, trump, worldbank, imf, soros, foucault, fdr, bush, bloomberg, draghi, mrworldwide, reagan, picardiasanders, pvnr, burke, rajan, samuelson, gladstone, musculindner, lidner, coolmutti, ryan, vestager, elizabeth, );
-$flair-colors: (mod: #c22, expert: #8075e5, regular: #0348ae, orange: #ffa500, shame: #775a00, green: #69b391, other: #e286a9, );
+$image-flairs: (blair, brown, clegg, clinton, erhard, keating, khama, macron, obama, osborne, thatcher, tusk, yew, eu, nato, wto, commonwealth, un, acemoglu, autor, bernanke, carney, fama, friedman, george, goolsbee, hayek, heckman, keynes, krugman, mankiw, sen, yellen, hrclinton, merkel, verhofstadt, kant, volcker, sumner, lagarde, greenspan, mill, singh, aziz, douglas, indrawati, juncker, locke, montesquieu, okonjoiweala, peel, smith, wollstonecraft, globe, trudeau, rockefeller, au, stalin, trump, worldbank, imf, soros, foucault, fdr, bush, bloomberg, draghi, mrworldwide, reagan, picardiasanders, pvnr, burke, rajan, samuelson, gladstone, musculindner, lidner, coolmutti, ryan, vestager, elizabeth);
+$flair-colors: (mod: #c22, expert: #8075e5, regular: #0348ae, orange: #ffa500, shame: #775a00, green: #69b391, other: #e286a9);
 .flair {
     display: none;
     border-radius: 0px;
@@ -8,12 +8,6 @@ $flair-colors: (mod: #c22, expert: #8075e5, regular: #0348ae, orange: #ffa500, s
     white-space: nowrap;
     width: 1px;
     margin-right: -10px;
-    &,
-    .linkflairlabel {
-        border: 1px solid rgba(144, 144, 144, .25);
-        background: rgba(144, 144, 144, .075);
-        color: #5e6875;
-    }
     &:empty {
         background: transparent;
         border: none;
@@ -36,9 +30,9 @@ $flair-colors: (mod: #c22, expert: #8075e5, regular: #0348ae, orange: #ffa500, s
             visibility: visible
         }
     }
-    @each $flair in $image-flairs {
-        $offset: -100 * (index($image-flairs, $flair) - 1);
-        &-#{$flair}:before {
+    @each $image in $image-flairs {
+        $offset: -100 * (index($image-flairs, $image) - 1);
+        &-#{"" + $image}:before {
             background-position: 0 calc(0.4 * #{$offset}px);
         }
     }
@@ -46,19 +40,26 @@ $flair-colors: (mod: #c22, expert: #8075e5, regular: #0348ae, orange: #ffa500, s
 
 @each $key,
 $color in $flair-colors {
-    .flair-#{$key} {
+    .flair-#{"" + $key} {
         display: inline-block;
         visibility: visible;
         width: auto;
         margin-right: 5px;
     }
-    .flair-#{$key},
-    .flairselector .linkflair-#{$key},
-    .linkflair-#{$key} .title .linkflairlabel {
+    .flair-#{"" + $key},
+    .flairselector .linkflair-#{"" + $key},
+    .linkflair-#{"" + $key} .title .linkflairlabel {
         border: 0;
-        background: $color;
+        background: "" + $color;
         color: #fff;
     }
+}
+
+.flair,
+.linkflairlabel {
+    border: 1px solid rgba(144, 144, 144, .25);
+    background: rgba(144, 144, 144, .075);
+    color: #5e6875;
 }
 
 .flair .flair,
