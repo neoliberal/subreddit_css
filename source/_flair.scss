@@ -8,10 +8,16 @@ $flair-colors: (mod: #c22, expert: #8075e5, regular: #0348ae, orange: #ffa500, s
     white-space: nowrap;
     width: 1px;
     margin-right: -10px;
+    padding: 2px 4px;
+    font-size: 10px;
+    font-weight: 600;
     &:empty {
         background: transparent;
         border: none;
         margin-left: 36px;
+    }
+    .link & {
+        margin-top: 0
     }
     &-image {
         margin-top: 12px;
@@ -53,22 +59,4 @@ $color in $flair-colors {
         background: "" + $color;
         color: #fff;
     }
-}
-
-.flair,
-.linkflairlabel {
-    border: 1px solid rgba(144, 144, 144, .25);
-    background: rgba(144, 144, 144, .075);
-    color: #5e6875;
-}
-
-.flair .flair,
-html .link .flair {
-    padding: 2px 4px;
-    font-size: 10px;
-    font-weight: 600
-}
-
-.link .flair {
-    margin-top: 0
 }
