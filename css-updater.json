@@ -1,0 +1,6 @@
+{
+    "css-updater": {
+        "main": "index.scss",
+        "assets": "assets/"
+    }
+}
