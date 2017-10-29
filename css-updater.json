@@ -1,6 +1,14 @@
 {
     "css-updater": {
         "main": "index.scss",
-        "assets": "assets/"
+        "assets": "assets/",
+        "reddit": {
+            "subreddit": "neoliberal",
+            "testing": "nl_staging"
+        },
+        "style": {
+            "kind": "sass",
+            "sass_style": "compressed"
+        }
     }
 }
