@@ -3,12 +3,14 @@
         "main": "index.scss",
         "assets": "assets/",
         "reddit": {
-            "subreddit": "neoliberal",
+            "main": "neoliberal",
             "testing": "nl_staging"
         },
         "style": {
-            "kind": "sass",
-            "sass_style": "compressed"
+            "type": "sass",
+            "options": {
+                "output_style": "compressed"
+            }
         }
     }
 }
