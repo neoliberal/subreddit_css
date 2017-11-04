@@ -1,5 +1,5 @@
 {
-    "css-updater": {
+    "css_updater": {
         "main": "index.scss",
         "assets": "assets/",
         "reddit": {
