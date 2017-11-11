@@ -10,6 +10,12 @@
             "type": "sass",
             "options": {
                 "output_style": "compressed"
+                "pre-build": [
+                    "tools/assemble_images.py"
+                ]
+                "custom_functions: [
+                    "tools/add_images.py"
+                ]
             }
         }
     }
