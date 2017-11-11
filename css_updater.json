@@ -13,7 +13,7 @@
                 "pre-build": [
                     "tools/assemble_images.py"
                 ],
-                "custom_functions: [
+                "custom_functions": [
                     "tools/add_images.py"
                 ]
             }
