@@ -9,7 +9,7 @@
         "style": {
             "type": "sass",
             "options": {
-                "output_style": "compressed"
+                "output_style": "compressed",
                 "pre-build": [
                     "tools/assemble_images.py"
                 ],
