@@ -8,8 +8,7 @@ def assemble_images() -> None:
     converts flairs into a combined flairsheet
     """
     flairs_dir: Path = (Path.cwd().parent / "assets" / "flairs")
-    subdirs: List[Path] = list(flairs_dir.iterdir())
-    for subdir in subdirs:
+    for subdir in flairs_dir.iterdir():
         assemble_spritsheet(subdir)
     return
 
