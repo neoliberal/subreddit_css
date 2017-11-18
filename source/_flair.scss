@@ -1,6 +1,6 @@
 // ToDo: Break up into logical flairsheets to decrease compression
 $image-flairs: (blair, brown, clegg, clinton, erhard, keating, khama, macron, obama, osborne, thatcher, tusk, yew, eu, nato, wto, commonwealth, un, acemoglu, autor, bernanke, carney, fama, friedman, george, goolsbee, hayek, heckman, keynes, krugman, mankiw, sen, yellen, hrclinton, merkel, verhofstadt, kant, volcker, sumner, lagarde, greenspan, mill, singh, aziz, douglas, indrawati, juncker, locke, montesquieu, okonjoiweala, peel, smith, wollstonecraft, globe, trudeau, rockefeller, au, stalin, trump, worldbank, imf, soros, foucault, fdr, bush, bloomberg, draghi, mrworldwide, reagan, picardiasanders, pvnr, burke, rajan, samuelson, gladstone, musculindner, lidner, coolmutti, ryan, vestager, elizabeth);
-$flair-colors: (mod: #c22, expert: #8075e5, regular: #0348ae, orange: #ffa500, shame: #775a00, green: #69b391, other: #e286a9);
+$flair-colors: (mod: #c22, expert: #8075e5, regular: #0348ae, orange: #ffa500, shame: #775a00, green: #69b391, other: #e286a9, plain : transparent);
 .flair {
     display: none;
     border-radius: 0px;
@@ -36,11 +36,13 @@ $flair-colors: (mod: #c22, expert: #8075e5, regular: #0348ae, orange: #ffa500, s
             visibility: visible
         }
     }
-    @each $image in $image-flairs {
-        $offset: -100 * (index($image-flairs, $image) - 1);
-        &-#{"" + $image}:before {
-            background-position: 0 calc(0.4 * #{$offset}px);
-        }
+}
+
+@each $image in $image-flairs {
+    $offset: -100 * (index($image-flairs, $image) - 1);
+    flair-#{$image}:before,
+    .wiki-page-flairs .md.wiki table td:nth-child(2n)>a[href="#flair"+quote($image)+"img"] {
+        background-position: 0 calc(0.4 * #{$offset}px);
     }
 }
 
