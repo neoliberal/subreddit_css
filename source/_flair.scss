@@ -48,15 +48,15 @@ $flair-colors: (mod: #c22, expert: #8075e5, regular: #0348ae, orange: #ffa500, s
 
 @each $key,
 $color in $flair-colors {
-    .flair-#{"" + $key} {
+    .flair-#{$key} {
         display: inline-block;
         visibility: visible;
         width: auto;
         margin-right: 5px;
     }
-    .flair-#{"" + $key},
-    .flairselector .linkflair-#{"" + $key},
-    .linkflair-#{"" + $key} .title .linkflairlabel {
+    .flair-#{$key},
+    .flairselector .linkflair-#{$key},
+    .linkflair-#{$key} .title .linkflairlabel {
         border: 0;
         background: $color;
         color: #fff;
