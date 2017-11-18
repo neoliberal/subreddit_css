@@ -41,7 +41,7 @@ $flair-colors: (mod: #c22, expert: #8075e5, regular: #0348ae, orange: #ffa500, s
 @each $image in $image-flairs {
     $offset: -100 * (index($image-flairs, $image) - 1);
     flair-#{$image}:before,
-    .wiki-page-flairs .md.wiki table td:nth-child(2n)>a[href="#flair"+quote($image)+"img"] {
+    a[href="#flair"+quote($image)+"img"] {
         background-position: 0 calc(0.4 * #{$offset}px);
     }
 }
