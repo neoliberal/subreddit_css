@@ -567,17 +567,9 @@ body>.content {
     padding: 15px 0
 }
 
-.link.last-clicked {
-    background: rgba(144, 144, 144, .05)
-}
-
 .link a.thumbnail[href*="reddit.com"] img,
 .rank {
     display: none
-}
-
-.link .midcol {
-    margin: 0 10px
 }
 
 .comment .midcol {
@@ -628,55 +620,6 @@ html .thing.visited .title {
     border: 1px solid rgba(144, 144, 144, .25);
     border-radius: 5px;
     background: #fff url(%%spritesheet%%) 0/90px 218px!important
-}
-
-.expando-button.selftext {
-    background-position: -17px -101px!important
-}
-
-.expando-button.video {
-    background-position: -38px -101px!important
-}
-
-.expando-button.image {
-    background-position: -59px -101px!important
-}
-
-.expando-button.image.gallery {
-    background-position: 2px -122px!important
-}
-
-.expando-button.video-muted {
-    background-position: -17px -124px!important
-}
-
-.expando-button:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    transform: scale(0);
-    opacity: 0;
-    width: 21px;
-    height: 21px;
-    border-radius: 5px;
-    background: #fff;
-    line-height: 21px;
-    text-align: center;
-    text-indent: 1px;
-    font-size: 14px;
-    font-weight: 900;
-    color: #4d5968;
-    content: "✕";
-    transition: .2s
-}
-
-.expando-button.expanded:after {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    transform: scale(1);
-    opacity: 1
 }
 
 .commentarea .menuarea,
@@ -807,16 +750,6 @@ ul.report-reasons {
     color: #000
 }
 
-.link .usertext-body .md {
-    border-color: rgba(144, 144, 144, .25);
-    border-radius: 5px;
-    background: #fff
-}
-
-.link .usertext .md {
-    padding: 15px
-}
-
 div#progressIndicator,
 div.NERPageMarker {
     width: auto;
@@ -829,10 +762,6 @@ span.RESThrobber,
 span.RESThrobber:after,
 span.RESThrobber:before {
     box-shadow: none
-}
-
-.side .md a[href="#headerbutton"]+a {
-    top: 50px;
 }
 
 .linkinfo {
