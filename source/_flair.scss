@@ -1,18 +1,6 @@
 // ToDo: Break up into logical flairsheets to decrease compression
 $image-flairs: (blair, brown, clegg, clinton, erhard, keating, khama, macron, obama, osborne, thatcher, tusk, yew, eu, nato, wto, commonwealth, un, acemoglu, autor, bernanke, carney, fama, friedman, george, goolsbee, hayek, heckman, keynes, krugman, mankiw, sen, yellen, hrclinton, merkel, verhofstadt, kant, volcker, sumner, lagarde, greenspan, mill, singh, aziz, douglas, indrawati, juncker, locke, montesquieu, okonjoiweala, peel, smith, wollstonecraft, globe, trudeau, rockefeller, au, stalin, trump, worldbank, imf, soros, foucault, fdr, bush, bloomberg, draghi, mrworldwide, reagan, picardiasanders, pvnr, burke, rajan, samuelson, gladstone, musculindner, lidner, coolmutti, ryan, vestager, elizabeth);
-
-$flair-colors: (
-    red: #c22,
-    orange: #ffa500,
-    green: #69b391,
-    lime: lime,
-    babyblue: #78c8ee,
-    blue: #0348ae,
-    purple: #8075e5,
-    pink: #e286a9,
-    plain : transparent
-);
-
+$flair-colors: ( red: #c22, orange: #ffa500, green: #69b391, lime: lime, babyblue: #78c8ee, blue: #0348ae, purple: #8075e5, pink: #e286a9, plain: transparent);
 .tagline .flair {
     display: none;
     border-radius: 0px;
@@ -25,7 +13,7 @@ $flair-colors: (
     font-weight: 600;
     &:empty {
         background: transparent;
-        border: none;
+        border: 0;
         margin-left: 36px;
     }
     .link & {
@@ -61,20 +49,23 @@ $flair-colors: (
 @each $image in $image-flairs {
     $offset: -100 * (index($image-flairs, $image) - 1);
     flair-#{$image}:before,
-    a[href="#flair"+quote($image)+"img"] {
+    a[href="#flair-#{$image}-img"] {
         background-position: 0 calc(0.4 * #{$offset}px);
     }
 }
 
 @each $key,
 $color in $flair-colors {
-    .flair-#{$key},
-    .flairselector .linkflair-#{$key},
-    .linkflair-#{$key} .title .linkflairlabel {
+    .tagline .flair-#{"" + $key},
+    .flairselector .linkflair-#{"" + $key},
+    .linkflair-#{"" + $key} .title .linkflairlabel {
         background-color: $color;
     }
-
-    .flair-#{$key}-border {
+    .tagline .flair-#{"" + $key}-border {
         border: 2px solid $color
     }
+}
+
+a.author.moderator~.flair-mod {
+    background-color: #c22 !important
 }
