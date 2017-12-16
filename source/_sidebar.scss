@@ -381,10 +381,10 @@
             background: url("%%" + $sidebar-image + "%%");
             content: ""
         }
-        &:after {
-            font-size: 12px;
-            content: $sidebar-text;
-            text-align: center
-        }
+    }
+    &:after {
+        font-size: 12px;
+        content: $sidebar-text;
+        text-align: center
     }
 }
