@@ -457,7 +457,7 @@ div#RESShortcutsEditContainer div {
     line-height: 30px;
     background: 0 0;
     text-align: center;
-    font-size: 14px!important;
+    font-size: 14px;
     color: #fff
 }
 
@@ -606,17 +606,6 @@ html .thing.visited .title {
     color: #e286a9
 }
 
-.expando-button {
-    position: relative;
-    width: 25px!important;
-    max-width: none!important;
-    height: 25px!important;
-    max-height: none!important;
-    border: 1px solid rgba(144, 144, 144, .25);
-    border-radius: 5px;
-    background: #fff url(%%spritesheet%%) 0/90px 218px!important
-}
-
 .commentarea .menuarea,
 .commentarea .menuarea .toggle a,
 .domain,
@@ -649,19 +638,19 @@ span.redditSingleClick {
 .tagline .userattrs a.submitter,
 .thing .tagline a.author.submitter,
 .thing .tagline a.author.submitter:hover {
-    background: #5f9dd2!important
+    background: #5f9dd2
 }
 
 .tagline .userattrs a.moderator,
 .thing .tagline a.author.moderator,
 .thing .tagline a.author.moderator:hover {
-    background: #c22!important
+    background: #c22
 }
 
 .tagline .userattrs a.admin,
 .thing .tagline a.author.admin,
 .thing .tagline a.author.admin:hover {
-    background: #e286a9!important
+    background: #e286a9
 }
 
 .tagline .voteWeight {
@@ -697,7 +686,7 @@ span.nsfw-stamp {
 
 a.pretty-button,
 div.entry .buttons li.reported-stamp {
-    border: 0!important;
+    border: 0;
     border-radius: 2px;
     padding: 1px 6px;
     line-height: inherit
@@ -774,7 +763,7 @@ span.RESThrobber:before {
 }
 
 div.usertext-edit.md-container {
-    width: 503px!important
+    width: 503px
 }
 
 a.edit-btn {
@@ -873,7 +862,7 @@ form .spacer+.spacer {
 }
 
 .linefield div.usertext-edit.md-container {
-    width: 494px!important
+    width: 494px
 }
 
 div#RESStyleSheetTipPane {
@@ -931,7 +920,7 @@ div#RESShortcutsAddFormContainer,
 div#editShortcutDialog,
 div#modalOverlay,
 div.guider {
-    z-index: 2147483647!important
+    z-index: 2147483647
 }
 
 div.guider {

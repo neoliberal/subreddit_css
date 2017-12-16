@@ -135,7 +135,7 @@
             top: 0;
             vertical-align: top;
             margin-left: 20px;
-            width: 20px!important;
+            width: 20px;
             height: 20px;
             background: url(%%spritesheet%%) 0/120px 290px;
             font-size: 0
@@ -171,9 +171,9 @@
         }
         #mail.havemail,
         #modmail.havemail {
-            top: -5px !important;
+            top: -5px;
             margin-left: 15px;
-            width: 30px!important;
+            width: 30px;
             height: 30px;
             border-radius: 50%;
             background-color: #e286a9

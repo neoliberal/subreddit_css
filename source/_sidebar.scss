@@ -26,9 +26,9 @@
         }
     }
     div.flairselector.drop-choices {
-        left: auto!important;
+        left: auto;
         right: 10px;
-        width: 300px!important;
+        width: 300px;
         &:before {
             left: calc(50% - 8px)
         }
@@ -48,8 +48,8 @@
             white-space: nowrap;
             text-transform: none;
             letter-spacing: 0;
-            font: 300 14px/40px -apple-system, "Open Sans", Helvetica, sans-serif!important;
-            color: #5e6875!important;
+            font: 300 14px/40px -apple-system, "Open Sans", Helvetica, sans-serif!;
+            color: #5e6875;
             strong {
                 color: #c22
             }
@@ -57,7 +57,7 @@
                 text-transform: uppercase;
                 letter-spacing: .05em;
                 font-weight: 700;
-                color: #4d5968!important;
+                color: #4d5968;
                 content: "Announcements: "
             }
         }
@@ -337,7 +337,7 @@
             align-items: center;
             padding: 5px 0;
             input {
-                margin: 0 5px 0 0 !important;
+                margin: 0 5px 0 0;
             }
         }
         .bottom {
