@@ -30,11 +30,6 @@ a {
     color: #585858
 }
 
-.commentNavSortType:hover,
-a:hover {
-    text-decoration: none!important
-}
-
 .green,
 .search-result-meta .moderator {
     color: #c22
@@ -109,7 +104,7 @@ h6 {
 
 h1,
 h2 {
-    font-size: 17px!important
+    font-size: 17px
 }
 
 .linefield .title,
@@ -118,12 +113,12 @@ h2 {
 .sidecontentbox .title h1,
 h3,
 h4 {
-    font-size: 14px!important
+    font-size: 14px
 }
 
 h5,
 h6 {
-    font-size: 11px!important
+    font-size: 11px
 }
 
 .md blockquote {
@@ -259,13 +254,13 @@ body .dropdown.srdrop .selected:after {
 .res .res .RESDropdownList,
 div#RESSubredditGroupDropdown,
 table#srList {
-    z-index: 2147483647!important;
+    z-index: 2147483647;
     overflow: visible;
     width: auto;
-    max-height: none!important;
+    max-height: none;
     border: 0;
     border-radius: 5px;
-    padding: 10px!important;
+    padding: 10px;
     background: #2f373f;
     font-family: inherit;
     transition: opacity .2s
@@ -292,7 +287,7 @@ div#header-bottom-right #userbarToggle+* {
 
 div#RESSubredditGroupDropdown,
 table#srList {
-    top: 40px!important;
+    top: 40px;
     text-transform: uppercase;
     font-size: 9px
 }
@@ -411,7 +406,7 @@ div.toggleButton.enabled .toggleOn {
 div.flairselector.drop-choices {
     margin-top: 25px;
     box-shadow: none;
-    border: 0!important;
+    border: 0;
     text-transform: none
 }
 
@@ -440,7 +435,7 @@ a.choice[href$="controversial"]:after {
 }
 
 #RESShortcuts.sr-bar {
-    text-transform: uppercase!important
+    text-transform: uppercase
 }
 
 #sr-more-link,

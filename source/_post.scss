@@ -85,20 +85,28 @@ p.title {
 }
 
 .expando-button {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    max-width: none;
+    max-height: none;
+    border: 1px solid rgba(144, 144, 144, .25);
+    border-radius: 5px;
+    background: #fff url(%%spritesheet%%) 0/90px 218px;
     &.selftext {
-        background-position: -17px -101px!important
+        background-position: -17px -101px
     }
     &.video {
-        background-position: -38px -101px!important
+        background-position: -38px -101px
     }
     &.image {
-        background-position: -59px -101px!important;
+        background-position: -59px -101px;
         &.gallery {
-            background-position: 2px -122px!important
+            background-position: 2px -122px
         }
     }
     &.video-muted {
-        background-position: -17px -124px!important
+        background-position: -17px -124px
     }
     &.expanded:after {
         @include transform(scale(1));

@@ -32,8 +32,8 @@ input[type=checkbox],
 input[type=radio] {
     display: inline-block;
     vertical-align: middle;
-    margin-top: 2px!important;
-    margin-bottom: 5px!important;
+    margin-top: 2px;
+    margin-bottom: 5px;
     width: 18px;
     height: 18px
 }
@@ -42,7 +42,7 @@ input[type=radio] {
 body:not(.res-v5) .drop-choices:not(#autocomplete_dropdown),
 body:not(.res-v5) div#RESSubredditGroupDropdown,
 body:not(.res-v5) table#srList {
-    display: block!important;
+    display: block;
     opacity: 0;
     pointer-events: none
 }
@@ -113,7 +113,7 @@ div#RESSubredditGroupDropdown {
 .commentarea div.RES-keyNav-activeElement .md,
 .commentarea div.RES-keyNav-activeElement.entry .noncollapsed,
 div.RES-keyNav-activeElement {
-    background: 0 0!important
+    background: 0 0
 }
 
 .commentarea div.RES-keyNav-activeElement.entry .noncollapsed,
@@ -155,7 +155,7 @@ div.RESDialogSmall>h3 {
     position: fixed;
     margin-top: 1px;
     right: 13px;
-    top: 45px !important;
+    top: 45px;
     z-index: 1234567979797;
     ul {
         @include display-flex();
@@ -170,6 +170,6 @@ div.RESDialogSmall>h3 {
         z-index: 2147483646;
     }
     .message-count {
-        display: none!important;
+        display: none;
     }
 }
