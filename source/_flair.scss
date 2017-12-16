@@ -1,7 +1,19 @@
 // ToDo: Break up into logical flairsheets to decrease compression
 $image-flairs: (blair, brown, clegg, clinton, erhard, keating, khama, macron, obama, osborne, thatcher, tusk, yew, eu, nato, wto, commonwealth, un, acemoglu, autor, bernanke, carney, fama, friedman, george, goolsbee, hayek, heckman, keynes, krugman, mankiw, sen, yellen, hrclinton, merkel, verhofstadt, kant, volcker, sumner, lagarde, greenspan, mill, singh, aziz, douglas, indrawati, juncker, locke, montesquieu, okonjoiweala, peel, smith, wollstonecraft, globe, trudeau, rockefeller, au, stalin, trump, worldbank, imf, soros, foucault, fdr, bush, bloomberg, draghi, mrworldwide, reagan, picardiasanders, pvnr, burke, rajan, samuelson, gladstone, musculindner, lidner, coolmutti, ryan, vestager, elizabeth);
-$flair-colors: (mod: #c22, expert: #8075e5, regular: #0348ae, orange: #ffa500, shame: #775a00, green: #69b391, other: #e286a9, plain : transparent);
-.flair {
+
+$flair-colors: (
+    red: #c22,
+    orange: #ffa500,
+    green: #69b391,
+    lime: lime,
+    babyblue: #78c8ee,
+    blue: #0348ae,
+    purple: #8075e5,
+    pink: #e286a9,
+    plain : transparent
+);
+
+.tagline .flair {
     display: none;
     border-radius: 0px;
     visibility: hidden;
@@ -36,6 +48,14 @@ $flair-colors: (mod: #c22, expert: #8075e5, regular: #0348ae, orange: #ffa500, s
             visibility: visible
         }
     }
+    &-text {
+        border: 0;
+        display: inline-block;
+        visibility: visible;
+        width: auto;
+        margin-right: 5px;
+        color: #fff;
+    }
 }
 
 @each $image in $image-flairs {
@@ -48,17 +68,13 @@ $flair-colors: (mod: #c22, expert: #8075e5, regular: #0348ae, orange: #ffa500, s
 
 @each $key,
 $color in $flair-colors {
-    .flair-#{$key} {
-        display: inline-block;
-        visibility: visible;
-        width: auto;
-        margin-right: 5px;
-    }
     .flair-#{$key},
     .flairselector .linkflair-#{$key},
     .linkflair-#{$key} .title .linkflairlabel {
-        border: 0;
-        background: $color;
-        color: #fff;
+        background-color: $color;
+    }
+
+    .flair-#{$key}-border {
+        border: 2px solid $color
     }
 }
