@@ -16,8 +16,8 @@
         }
     }
     .users-online {
-        display: inline-block;
-        margin-left: 10px;
+        display: block;
+        margin: 0 0 10px;
         font-size: 14px;
         .number:after {
             content: $online-text;
