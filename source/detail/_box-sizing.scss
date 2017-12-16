@@ -5,7 +5,7 @@ html {
     @include text-size-adjust(none);
 }
 
-*::after, *::before {
+*, *::after, *::before {
     @include box-sizing(inherit);
     @include text-size-adjust(none);
 }
