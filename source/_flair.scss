@@ -1,10 +1,8 @@
 // ToDo: Break up into logical flairsheets to decrease compression
-$image-flairs: 
-(blair, brown, clegg, clinton, erhard, keating, khama, macron, obama, osborne, thatcher, tusk, yew, eu, nato, wto, commonwealth, un, acemoglu, autor, bernanke, carney, fama, friedman, george, goolsbee, hayek, heckman, keynes, krugman, mankiw, sen, yellen, hrclinton, merkel, verhofstadt, kant, volcker, sumner, lagarde, greenspan, mill, singh, aziz, douglas, indrawati, juncker, locke, montesquieu, okonjoiweala, peel, smith, wollstonecraft, globe, trudeau, rockefeller, au, stalin, trump, worldbank, imf, soros, foucault, fdr, bush, bloomberg, draghi, mrworldwide, reagan, picardiasanders, pvnr, burke, rajan, samuelson, gladstone, musculindner, lidner, coolmutti, ryan, vestager, elizabeth);
 $flair-colors: ( red: #c22, orange: #ffa500, green: #69b391, lime: lime, babyblue: #78c8ee, blue: #0348ae, purple: #8075e5, pink: #e286a9, plain: transparent);
 
 $image-flairs: (
-    economists: (
+    economist: (
         acemoglu,
         autor,
         fama,
@@ -113,11 +111,18 @@ $image-flairs: (
     }
 }
 
-@each $image in $image-flairs {
-    $offset: -100 * (index($image-flairs, $image) - 1);
-    .flair-#{$image}:before,
-    a[href="#flair-#{$image}-img"] {
-        background-position: 0 calc(0.4 * #{$offset}px);
+@each $key, $value in $image-flairs {
+    .flair-#{$key} {
+        background-image: url("%%#{$key}-flair%%");
+        background-size: 36px calc(0.4* #{length($value) * 100}px);
+    }
+
+    @each $image in $value {
+        $offset: -100 * (index($value, $image) - 1);
+        .flair-#{$image}:before,
+        a[href="#flair-#{$key}-#{$image}-img"] {
+            background-position: 0 calc(0.4 * #{$offset}px);
+        }
     }
 }
 
