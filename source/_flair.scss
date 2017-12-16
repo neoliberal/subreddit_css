@@ -81,6 +81,12 @@ $image-flairs: (
     )
 );
 
+.link .flair,
+.side .titlebox .word,
+.sidecontentbox .flair {
+    display: none
+}
+
 .tagline .flair {
     display: none;
     border-radius: 0px;
