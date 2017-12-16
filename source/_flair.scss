@@ -105,8 +105,6 @@ $image-flairs: (
         margin-left: 40px;
         display: inline-block;
         &:before {
-            background-image: url(%%flairs%%);
-            background-size: 36px calc(0.4* #{length($image-flairs) * 100}px);
             width: 36px;
             height: 40px;
             position: absolute;
