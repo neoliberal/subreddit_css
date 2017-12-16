@@ -48,7 +48,7 @@ $flair-colors: ( red: #c22, orange: #ffa500, green: #69b391, lime: lime, babyblu
 
 @each $image in $image-flairs {
     $offset: -100 * (index($image-flairs, $image) - 1);
-    flair-#{$image}:before,
+    .flair-#{$image}:before,
     a[href="#flair-#{$image}-img"] {
         background-position: 0 calc(0.4 * #{$offset}px);
     }
