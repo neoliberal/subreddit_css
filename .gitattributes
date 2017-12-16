@@ -1,18 +1,16 @@
-# Auto detect text files and perform LF normalization
-# http://davidlaing.com/2012/09/19/customise-your-gitattributes-to-become-a-git-ninja/
 * text=auto
 
 # Documents
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
+*.doc diff=astextplain
+*.DOC diff=astextplain
 *.docx diff=astextplain
 *.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
+*.dot diff=astextplain
+*.DOT diff=astextplain
+*.pdf diff=astextplain
+*.PDF diff=astextplain
+*.rtf diff=astextplain
+*.RTF diff=astextplain
 *.md text
 *.adoc text
 *.textile text
@@ -22,6 +20,9 @@
 *.tsv text
 *.sql text
 
+# Data
+*.json text
+
 # Graphics
 *.png binary
 *.jpg binary
@@ -30,8 +31,10 @@
 *.tif binary
 *.tiff binary
 *.ico binary
-# SVG treated as an asset (binary) by default. If you want to treat it as text,
-# comment-out the following line and uncomment the line after.
 *.svg binary
-#*.svg text
 *.eps binary
+
+# SCSS / CSS
+
+*.scss text diff=css
+*.css text diff=css
