@@ -146,9 +146,10 @@ div.RESDialogSmall>h3 {
     margin-right: 5.5px;
     font-size: 10px;
     font-weight: 600;
-    height: 18px;
-    line-height: 18px;
+    height: 14px;
+    line-height: 14px;
     display: inline-block;
+    box-sizing: content-box;
 }
 
 #NREFloat {
