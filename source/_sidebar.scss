@@ -316,6 +316,20 @@
         font-size: 11px;
         font-weight: 400
     }
+    .login-form-side,
+    .sidecontentbox .content {
+        border: 1px solid rgba(144, 144, 144, .25);
+        border-radius: 5px;
+        padding: 10px
+    }
+    .sidecontentbox .helplink~.content li {
+        margin: 2px 0
+    }
+    .sidecontentbox span.score,
+    a.reddit-comment-link {
+        font-weight: 400;
+        color: #5e6875
+    }
     .titlebox {
         .subButtons {
             @include display-flex();
@@ -359,20 +373,6 @@
             background: 0 0;
             color: #4d5968;
             line-height: 12px;
-        }
-        .login-form-side,
-        .sidecontentbox .content {
-            border: 1px solid rgba(144, 144, 144, .25);
-            border-radius: 5px;
-            padding: 10px
-        }
-        .sidecontentbox .helplink~.content li {
-            margin: 2px 0
-        }
-        .sidecontentbox span.score,
-        a.reddit-comment-link {
-            font-weight: 400;
-            color: #5e6875
         }
         .fancy-toggle-button .active {
             border-radius: 5px
