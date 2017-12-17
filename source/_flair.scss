@@ -122,7 +122,8 @@ $image-flairs: (
         font-size: 10px;
         font-weight: 600;
         box-sizing: border-box;
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
         visibility: visible;
         width: auto;
         margin: 0 3px;
