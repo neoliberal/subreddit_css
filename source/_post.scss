@@ -140,6 +140,25 @@ p.title {
     flex-wrap: wrap;
     align-content: center;
     min-height: 40px;
+    a.moderator,
+    a.submitter {
+        display: inline-block;
+        border-radius: 0;
+        padding: 0 6px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+    a.moderator {
+        background: #c22;
+    }
+    a.submitter {
+        background: #5f9dd2;
+    }
+    a.admin {
+        background: #e286a9;
+    }
     .author,
     time,
     .score,
@@ -158,23 +177,15 @@ p.title {
             font-weight: 600;
             padding: 0 6px;
             font-size: 10px;
-            &.moderator {
-                background: #c22;
-                &:after {
-                    content: "oderator, speaking officially"
-                }
+            text-decoration: none;
+            &.moderator:after {
+                content: "oderator, speaking officially"
             }
-            &.submitter {
-                background: #5f9dd2;
-                &:after {
-                    content: "ubmitter"
-                }
+            &.submitter:after {
+                content: "ubmitter"
             }
-            &.admin {
-                background: #e286a9;
-                &:after {
-                    content: "dmin"
-                }
+            &.admin:after {
+                content: "dmin"
             }
         }
     }
