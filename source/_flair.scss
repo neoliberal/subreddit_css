@@ -158,14 +158,13 @@ $image-flairs: (
     }
 }
 
-@each $key,
-$color in $flair-colors {
-    .tagline .flair-#{"" + $key},
+@each $key, $color in $flair-colors {
+    .tagline .flair-#{$key},
     .flairselector .linkflair-#{"" + $key},
-    .linkflair-#{"" + $key} .title .linkflairlabel {
+    .linkflair-#{$key} .title .linkflairlabel {
         background-color: $color;
     }
-    .tagline .flair-#{"" + $key}-border {
+    .tagline .flair-#{$key}-border {
         border: 2px solid $color
     }
 }
