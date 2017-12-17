@@ -26,9 +26,7 @@ a {
     color: #5f9dd2
 }
 
-.tagline a {
-    color: #585858
-}
+.tagline
 
 .green,
 .search-result-meta .moderator {
@@ -620,57 +618,6 @@ span.redditSingleClick {
     color: #4d5968
 }
 
-.tagline .userattrs a.admin,
-.tagline .userattrs a.moderator,
-.tagline .userattrs a.submitter,
-.thing .tagline a.author.admin,
-.thing .tagline a.author.moderator,
-.thing .tagline a.author.submitter {
-    display: inline-block;
-    border-radius: 0;
-    padding: 1px 6px;
-    height: 16px;
-    font-size: 11px;
-    font-weight: 400;
-    color: #fff
-}
-
-.tagline .userattrs a.submitter,
-.thing .tagline a.author.submitter,
-.thing .tagline a.author.submitter:hover {
-    background: #5f9dd2
-}
-
-.tagline .userattrs a.moderator,
-.thing .tagline a.author.moderator,
-.thing .tagline a.author.moderator:hover {
-    background: #c22
-}
-
-.tagline .userattrs a.admin,
-.thing .tagline a.author.admin,
-.thing .tagline a.author.admin:hover {
-    background: #e286a9
-}
-
-.tagline .voteWeight {
-    margin-right: 5px;
-}
-
-.tagline .userattrs {
-    font-size: 0
-}
-
-.tagline .userattrs .cakeday {
-    margin-right: 5px;
-}
-
-.userattrs .admin,
-.userattrs .moderator,
-.userattrs .submitter {
-    margin: 0 5px;
-}
-
 .footer-parent+#hsts_pixel,
 span.nsfw-stamp {
     display: none
@@ -945,14 +892,6 @@ body.show-controversial .comment.controversial>.entry .score:after {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0 0;
-}
-
-p.tagline {
-    @include display-flex();
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
 }
 
 @media only screen and (max-width: 876px) {

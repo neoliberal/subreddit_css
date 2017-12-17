@@ -134,18 +134,48 @@ p.title {
 }
 
 .tagline {
+    @include display-flex();
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
     min-height: 40px;
-    >a {
-        margin-right: 0.5em,
+    .author,
+    time,
+    .score,
+    .voteWeight {
+        color: #585858;
+        margin: 0 3px;
     }
-    .userattrs a.moderator {
-        height: 20px;
-        line-height: 20px;
-        margin: 0;
-        font-weight: 600;
-        padding: 0 4px;
-        &:after {
-            content: "oderator, speaking officially"
+    .userattrs {
+        font-size: 0;
+        a {
+            display: inline-block;
+            height: 20px;
+            line-height: 20px;
+            color: white;
+            margin: 0;
+            font-weight: 600;
+            padding: 0 4px;
+            font-size: 10px;
+            &.moderator {
+                background: #c22;
+                &:after {
+                    content: "oderator, speaking officially"
+                }
+            }
+            &.submitter {
+                background: #5f9dd2;
+                &:after {
+                    content: "ubmitter"
+                }
+            }
+            &.admin {
+                background: #e286a9;
+                &:after {
+                    content: "dmin"
+                }
+            }
         }
     }
 }
