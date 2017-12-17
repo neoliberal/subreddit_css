@@ -2,9 +2,9 @@ body.mod-toolbox {
     .tb-bracket-button {
         box-sizing: border-box;
         position: relative;
-        width: 18px;
-        height: 18px;
-        line-height: 18px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
         font-size: 10px;
         border: 0;
         padding: 0;
@@ -13,5 +13,16 @@ body.mod-toolbox {
         right: 0;
         bottom: 0;
         text-align: center;
+        display: block;
+        margin-right: 3em;
+        color: white;
+        background-color: #c22;
+        font-weight: 600
+    }
+    .usernote-button {
+        margin-left: 0
+    }
+    .history-button {
+        display: flex
     }
 }
