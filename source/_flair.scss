@@ -132,15 +132,15 @@ $image-flairs: (
     }
 }
 
-@each $key, $value in $image-flairs {
-    $length: length($value) * 100;
-    .flair-#{$key} {
-        background-image: url("%%#{$key}-flair%%") no-repeat;
+@each $name, $category in $image-flairs {
+    $length: length($category) * 100;
+    .flair-#{$name} {
+        background-image: url("%%#{$name}-flair%%") no-repeat;
         background-size: 36px calc(0.4* #{$length}px);
     }
 
-    a[href$="#{$key}-img"] {
-        @extend .flair-#{$key};
+    a[href$="#{$name}-img"] {
+        @extend .flair-#{$name};
         display: block;
         min-width: 36px;
         height: 40px;
@@ -149,10 +149,10 @@ $image-flairs: (
         border: 0
     }
 
-    @each $image in $value {
-        $offset: -100 * (index($value, $image) - 1);
+    @each $image in $category {
+        $offset: -100 * (index($category, $image) - 1);
         .flair-#{$image}:before,
-        a[href="#flair-#{$image}-#{$key}-img"] {
+        a[href="#flair-#{$image}-#{$category}-img"] {
             background-position: 0 calc(0.4 * #{$offset}px);
         }
     }
