@@ -955,26 +955,6 @@ p.tagline {
     align-content: center;
 }
 
-.comment>.entry>.tagline {
-    min-height: 37px;
-}
-
-.tagline .score {
-    margin-right: 5px;
-}
-
-.top-matter .tagline time {
-    margin: 0 3px;
-}
-
-.top-matter .tagline .author {
-    margin-left: 3px
-}
-
-.top-matter .tagline .stickied-tagline {
-    margin-left: 5px;
-}
-
 @media only screen and (max-width: 876px) {
     .side {
         display: none;
