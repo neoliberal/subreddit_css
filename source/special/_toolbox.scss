@@ -1,26 +1,16 @@
 body.mod-toolbox {
     .tb-bracket-button {
         box-sizing: border-box;
-        position: absolute;
+        position: relative;
         width: 18px;
         height: 18px;
-        border-width: 1px;
-        left: 0;
-        text-align: center;
+        line-height: 18px;
+        border: 0;
+        padding: 0;
         top: 0;
-        &.global-mod-button,
-        &.nuke-button {
-            position: relative;
-            width: 18px;
-        }
-        &.add-user-tag-neoliberal:not([title=""]) {
-            position: relative;
-        }
-    }
-    .history-button,
-    .usernote-button {
-        position: relative;
-        min-width: 18px;
-        height: 18px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
     }
 }
