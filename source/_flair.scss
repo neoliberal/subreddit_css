@@ -133,15 +133,26 @@ $image-flairs: (
 }
 
 @each $key, $value in $image-flairs {
+    $length: length($value) * 100;
     .flair-#{$key} {
-        background-image: url("%%#{$key}-flair%%");
-        background-size: 36px calc(0.4* #{length($value) * 100}px);
+        background-image: url("%%#{$key}-flair%%") no-repeat;
+        background-size: 36px calc(0.4* #{$length}px);
+    }
+
+    a[href$="#{$key}-img"] {
+        @extend .flair-#{$key};
+        display: block;
+        min-width: 36px;
+        height: 40px;
+        text-indent: 38px;
+        padding-top: 12px;
+        border: 0
     }
 
     @each $image in $value {
         $offset: -100 * (index($value, $image) - 1);
         .flair-#{$image}:before,
-        a[href="#flair-#{$key}-#{$image}-img"] {
+        a[href="#flair-#{$image}-#{$key}-img"] {
             background-position: 0 calc(0.4 * #{$offset}px);
         }
     }
