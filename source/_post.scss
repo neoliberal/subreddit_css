@@ -133,7 +133,7 @@ p.title {
     }
 }
 
-.tagline {
+body .tagline {
     @include display-flex();
     flex-direction: row;
     align-items: center;
@@ -141,14 +141,18 @@ p.title {
     align-content: center;
     min-height: 40px;
     a.moderator,
-    a.submitter {
+    a.submitter,
+    a.admin {
         display: inline-block;
         border-radius: 0;
         padding: 0 6px;
         height: 20px;
+        color: white;
         line-height: 20px;
         font-size: 10px;
         font-weight: 400;
+        margin: 0 3px;
+        text-decoration: none;
     }
     a.moderator {
         background: #c22;
@@ -169,15 +173,7 @@ p.title {
     .userattrs {
         font-size: 0;
         a {
-            display: inline-block;
-            height: 20px;
-            line-height: 20px;
-            color: white;
-            margin: 0 3px;
             font-weight: 600;
-            padding: 0 6px;
-            font-size: 10px;
-            text-decoration: none;
             &.moderator:after {
                 content: "oderator, speaking officially"
             }
