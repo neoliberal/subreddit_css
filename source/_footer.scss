@@ -13,7 +13,7 @@
         background: rgba(21, 27, 33, .6);
         text-align: center;
         .col {
-            flex: none;
+            @include flex(none);
             border: 0;
             padding: 0 50px;
             li {

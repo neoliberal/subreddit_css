@@ -1,8 +1,15 @@
 .link {
+    @include display-flex();
+    .title {
+        @include display-flex();
+        flex-direction: row;
+        align-items: center;
+    }
     .score {
         margin: 5px 0
     }
     .entry {
+        @include flex(1);
         padding-right: 0
     }
     &.stickied .thumbnail {
@@ -22,10 +29,6 @@
     }
 }
 
-html body .midcol :not(.score)+div.arrow {
-    margin-top: 5px
-}
-
 body .thumbnail {
     margin: 0 10px 0 0;
     width: 70px;
@@ -35,12 +38,6 @@ body .thumbnail {
         width: auto;
         height: 70px
     }
-}
-
-p.title {
-    @include display-flex();
-    flex-direction: row;
-    align-items: center;
 }
 
 .approval-checkmark {
@@ -54,7 +51,7 @@ p.title {
 .thumbnail.nsfw,
 .thumbnail[href*="reddit.com"] {
     margin: 0 22.5px 0 12.5px;
-    flex: none;
+    @include flex(none);
     width: 45px;
     height: 45px;
     border: 2px solid rgba(144, 144, 144, .25);
