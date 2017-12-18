@@ -202,10 +202,6 @@
             $factor: (20/16);
             @include transform(scale($factor))
         }
-        #mail.havemail,
-        #modmail.havemail {
-            background-color: #e286a9
-        }
         a.pref-lang {
             background-position: -28px -56px
         }
