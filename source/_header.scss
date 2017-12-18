@@ -5,6 +5,7 @@
     background: url(%%header-ex%%);
     z-index: 2147483647;
     font-family: $future-font;
+    letter-spacing: 2px;
     #sr-header-area {
         height: 30px;
         border: 0;
@@ -138,43 +139,26 @@
         .separator {
             display: none
         }
-        .beta-hint {
-            height: 20px
-        }
         .beta-hint,
         .beta-hint a {
-            position: inherit;
+            position: relative;
             margin: 0;
             opacity: 1
-        }
-        .beta-hint,
-        .logout,
-        .user,
-        .flat-list,
-        #openRESPrefs {
-            display: inline-block;
-            vertical-align: top
-        }
-        #openRESPrefs {
-            margin-left: 20px
-        }
-        #RESAccountSwitcherIcon,
-        .beta-hint a {
-            display: inline-block;
-            overflow: hidden;
-            top: 0;
-            vertical-align: top;
-            background: url(%%spritesheet%%) 0/120px 290px;
-            font-size: 0
         }
         #mail,
         #modmail,
         #openRESPrefs .gearIcon,
         .logout a,
-        a.pref-lang {
-            display: inline-block;
+        a.pref-lang,
+        #RESAccountSwitcherIcon,
+        .beta-hint,
+        .beta-hint a {
+            display: flex;
+            justify-content: center;
+            height: 20px;
+            width: 20px;
+            margin: 0 6px;
             overflow: hidden;
-            vertical-align: top;
             background: url(%%spritesheet%%) 0/120px 290px;
             font-size: 0
         }
@@ -183,12 +167,18 @@
             background-position: -56px -56px
         }
         .beta-hint a {
-            margin-left: 0;
             background-position: -28px -28px
         }
         #RESAccountSwitcherIcon {
             margin: 0 10px;
             background-position: -56px -28px
+        }
+        #modmail,
+        #new_modmail,
+        #chat,
+        #mail {
+            top: 0;
+            margin: 0 6px;
         }
         #mail {
             background-position: -84px -28px;
@@ -202,13 +192,16 @@
                 background-position: 5px -51px;
             }
         }
+        #chat {
+            $factor: (20/15);
+            @include transform(scale($factor))
+        }
         #new_modmail {
-            top: 1px
+            $factor: (20/16);
+            @include transform(scale($factor))
         }
         #mail.havemail,
         #modmail.havemail {
-            top: -5px;
-            border-radius: 50%;
             background-color: #e286a9
         }
         a.pref-lang {
