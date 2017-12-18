@@ -507,6 +507,11 @@ body>.content {
     margin-top: 60px;
 }
 
+.sitetable {
+    @include display-flex();
+    flex-direction: column;
+}
+
 .reddit-infobar.md-container-small {
     padding: 6.5px 10px
 }
