@@ -1,14 +1,9 @@
 .side {
-    margin: 0 0 50px 10px;
-    border-bottom-left-radius: 5px;
-    border-left: 2px solid rgba(144, 144, 144, .25);
-    border-bottom: 2px solid rgba(144, 144, 144, .25);
-    padding: 0 10px 10px;
-    width: 300px;
+    margin: $sidebar-spacing 0;
+    padding: 0 $sidebar-spacing;
+    width: $sidebar-width;
+    background-color: $sidebar-background-color;
     box-sizing: content-box;
-    .spacer {
-        margin: 10px 0;
-    }
     .subscribers {
         font-size: 14px;
         display: block;
