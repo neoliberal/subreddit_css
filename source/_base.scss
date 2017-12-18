@@ -507,16 +507,6 @@ body .entry .buttons .flairselector li {
     color: #4d5968
 }
 
-body>.content {
-    margin: 10px;
-    margin-top: 60px;
-}
-
-.sitetable {
-    @include display-flex();
-    flex-direction: column;
-}
-
 .reddit-infobar.md-container-small {
     padding: 6.5px 10px
 }
@@ -915,6 +905,7 @@ body.show-controversial .comment.controversial>.entry .score:after {
 @import "announcement";
 @import "buttons";
 @import "comments";
+@import "content";
 // @import "flair";
 @import "footer";
 @import "header";

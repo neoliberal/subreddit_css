@@ -17,3 +17,5 @@ $announcement-left: $body-spacing;
 $announcement-right: $body-spacing + $sidebar-width + $sidebar-spacing + $sidebar-spacing;
 $announcement-height: 50px;
 $announcement-spacing: 20px;
+
+$content-top: $announcement-height + $body-spacing;
