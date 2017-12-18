@@ -1,0 +1,30 @@
+.side .md h1:first-of-type {
+    position: absolute;
+    overflow: hidden;
+    top: $announcement-top;
+    left: $announcement-left;
+    right: $announcement-right;
+    margin: 0;
+    height: $announcement-height;
+    line-height: $announcement-height;
+    padding: 0 $announcement-spacing;
+    white-space: nowrap;
+    text-transform: none;
+    font-family: $future-font;
+    font-size: $announcement-font-size;
+    color: $announcement-text-color;
+    background-color: $announcement-background-color;
+    font-weight: $announcement-font-weight;
+    letter-spacing: $announcement-letter-spacing;
+    strong, a {
+        color: $announcement-bold-color;
+        font-weight: $announcement-bold-font-weight;
+    }
+    &:before {
+        text-transform: uppercase;
+        letter-spacing: $announcement-letter-spacing;
+        font-weight: $announcement-bold-font-weight;
+        color: $announcement-bold-color;
+        content:  $announcement-text;
+    }
+}

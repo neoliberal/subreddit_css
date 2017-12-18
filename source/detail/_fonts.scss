@@ -1,3 +1,10 @@
 $future-font: Futura, "Trebuchet MS", Arial, sans-serif;
 
-$header-font-size: 12px;
+$base-font-size: 12px;
+
+$header-font-size: $base-font-size;
+
+$announcement-font-size: $base-font-size + 2px;
+$announcement-font-weight: 400;
+$announcement-bold-font-weight: 600;
+$announcement-letter-spacing: 0.05em;

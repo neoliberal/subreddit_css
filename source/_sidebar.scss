@@ -33,35 +33,6 @@
             left: calc(50% - 8px)
         }
     }
-    .md {
-        h1:first-of-type {
-            position: absolute;
-            overflow: hidden;
-            top: 310px;
-            left: 10px;
-            right: 330px;
-            margin: 0;
-            height: 40px;
-            border: 1px solid rgba(144, 144, 144, .25);
-            border-radius: 5px;
-            padding: 0 10px;
-            white-space: nowrap;
-            text-transform: none;
-            letter-spacing: 0;
-            font: 300 14px/40px -apple-system, "Open Sans", Helvetica, sans-serif;
-            color: #5e6875;
-            strong {
-                color: #c22
-            }
-            &:before {
-                text-transform: uppercase;
-                letter-spacing: .05em;
-                font-weight: 700;
-                color: #4d5968;
-                content: "Announcements: "
-            }
-        }
-    }
     #search input[type=text] {
         height: 40px;
         width: 100%;
