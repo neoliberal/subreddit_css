@@ -134,28 +134,28 @@ $image-flairs: (
 
 @each $name, $category in $image-flairs {
     $length: length($category) * 100;
-    .flair-#{$name} {
+    .flair-#{$name},
+    a[href$="#{$name}-img"] {
         background-image: url("%%#{$name}-flair%%") no-repeat;
         background-size: 36px calc(0.4* #{$length}px);
-    }
-
-    a[href$="#{$name}-img"] {
-        @extend .flair-#{$name};
-        display: block;
-        min-width: 36px;
-        height: 40px;
-        text-indent: 38px;
-        padding-top: 12px;
-        border: 0
     }
 
     @each $image in $category {
         $offset: -100 * (index($category, $image) - 1);
         .flair-#{$image}:before,
-        a[href="#flair-#{$image}-#{$name}-img"] {
+        a[href="#{$image}-#{$name}-img"] {
             background-position: 0 calc(0.4 * #{$offset}px);
         }
     }
+}
+
+a[href$="-img"] {
+    display: block;
+    min-width: 36px;
+    height: 40px;
+    text-indent: 38px;
+    padding-top: 12px;
+    border: 0
 }
 
 @each $key, $color in $flair-colors {
