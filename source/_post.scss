@@ -4,6 +4,9 @@
         @include display-flex();
         flex-direction: row;
         align-items: center;
+        .domain {
+            @include display-flex();
+        }
     }
     .score {
         margin: 5px 0
