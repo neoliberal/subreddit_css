@@ -152,7 +152,7 @@ $image-flairs: (
     @each $image in $category {
         $offset: -100 * (index($category, $image) - 1);
         .flair-#{$image}:before,
-        a[href="#flair-#{$image}-#{$category}-img"] {
+        a[href="#flair-#{$image}-#{$name}-img"] {
             background-position: 0 calc(0.4 * #{$offset}px);
         }
     }

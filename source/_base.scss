@@ -432,37 +432,6 @@ a.choice[href$="controversial"]:after {
     content: "Hot takes"
 }
 
-#RESShortcuts.sr-bar {
-    text-transform: uppercase
-}
-
-#sr-more-link,
-div#RESShortcutsEditContainer {
-    @include display-flex();
-    width: auto;
-    height: 30px;
-    max-height: none;
-    background: 0 0;
-    color: #fff
-}
-
-div#RESShortcutsEditContainer div {
-    position: static;
-    display: inline-block;
-    margin-right: 6px;
-    width: auto;
-    height: 30px;
-    line-height: 30px;
-    background: 0 0;
-    text-align: center;
-    font-size: 14px;
-    color: #fff
-}
-
-#RESShortcutsRight {
-    order: 2
-}
-
 div#userbarToggle,
 div#userbarToggle.userbarShow {
     position: relative;

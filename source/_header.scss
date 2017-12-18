@@ -7,18 +7,56 @@
     #sr-header-area {
         height: 30px;
         border: 0;
-        padding-right: 110px;
+        padding: 0 20px;
         background: rgba(21, 27, 33, .3);
-        line-height: 30px;
         text-transform: uppercase;
         font-size: 9px;
         color: #fff;
+        @include display-flex();
+        align-items: center;
+        justify-content: space-between;
+        #srLeftContainer {
+            @include display-flex();
+            max-height: none;
+            padding: 0;
+        }
+        #srLeftContainer,
+        #RESShortcutsViewport,
+        #RESShortcutsEditContainer {
+            max-height: none
+        }
+        #RESShortcuts.sr-bar {
+            text-transform: uppercase
+        }
+        #sr-more-link,
+        #RESShortcutsEditContainer {
+            @include display-flex();
+            width: auto;
+            width: auto;
+            max-height: none;
+            background: 0 0;
+            color: #fff;
+            position: inherit;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #RESShortcutsEditContainer div {
+            position: inherit;
+            display: inline-block;
+            margin-right: 6px;
+            width: auto;
+            height: auto;
+            line-height: unset;
+            background: none;
+            font-size: 14px;
+            color: #fff
+        }
+        #RESShortcutsRight {
+            order: 2
+        }
         a {
             margin-right: 10px;
             color: #fff;
-        }
-        #srLeftContainer {
-            padding-left: 10px
         }
         .sr-list {
             margin-right: 50px
@@ -27,6 +65,7 @@
             display: none
         }
         .srSep {
+            display: none;
             margin: 0
         }
         .ChatApp__reddit-icon {
@@ -107,11 +146,11 @@
         .logout,
         .user,
         .flat-list,
-        span#openRESPrefs {
+        #openRESPrefs {
             display: inline-block;
             vertical-align: top
         }
-        span#openRESPrefs {
+        #openRESPrefs {
             margin-left: 20px
         }
         #RESAccountSwitcherIcon,
