@@ -1,4 +1,4 @@
-#header {
+body #header {
     height: 300px;
     border: 0;
     box-shadow: inset 0 -38px 0 0 rgba(49, 49, 49, 0.8);
@@ -7,7 +7,7 @@
     font-family: $future-font;
     letter-spacing: 2px;
     #sr-header-area {
-        height: 30px;
+        height: 60px;
         border: 0;
         padding: 0 20px;
         line-height: unset;
@@ -17,7 +17,7 @@
         color: #fff;
         @include display-flex();
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         .width-clip {
             display: flex;
             justify-content: center;
@@ -27,8 +27,10 @@
             max-height: none;
             padding: 0;
         }
+        #RESShortcutsViewport {
+            display: none;
+        }
         #srLeftContainer,
-        #RESShortcutsViewport,
         #RESShortcutsEditContainer {
             max-height: none
         }
@@ -63,7 +65,9 @@
             order: 2
         }
         a {
-            margin-right: 10px;
+            padding: 0 6px;
+            display: inline-block;
+            font-size: 14px;
             color: #fff;
         }
         .sr-list {
