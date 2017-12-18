@@ -8,6 +8,7 @@
         height: 30px;
         border: 0;
         padding: 0 20px;
+        line-height: unset;
         background: rgba(21, 27, 33, .3);
         text-transform: uppercase;
         font-size: 9px;
@@ -15,6 +16,10 @@
         @include display-flex();
         align-items: center;
         justify-content: space-between;
+        .width-clip {
+            display: flex;
+            justify-content: center;
+        }
         #srLeftContainer {
             @include display-flex();
             max-height: none;
@@ -25,16 +30,18 @@
         #RESShortcutsEditContainer {
             max-height: none
         }
-        #RESShortcuts.sr-bar {
+        #RESShortcuts {
+            display: block;
+            float: none;
             text-transform: uppercase
         }
         #sr-more-link,
         #RESShortcutsEditContainer {
             @include display-flex();
             width: auto;
-            width: auto;
+            height: auto;
             max-height: none;
-            background: 0 0;
+            background: none;
             color: #fff;
             position: inherit;
             align-items: center;
@@ -43,7 +50,6 @@
         #RESShortcutsEditContainer div {
             position: inherit;
             display: inline-block;
-            margin-right: 6px;
             width: auto;
             height: auto;
             line-height: unset;
