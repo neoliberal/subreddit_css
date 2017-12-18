@@ -6,6 +6,11 @@
     z-index: 2147483647;
     font-family: $future-font;
     letter-spacing: 2px;
+    .separator,
+    .srSep {
+        display: none;
+        margin: 0
+    }
     #sr-header-area {
         height: 60px;
         border: 0;
@@ -71,13 +76,6 @@
         .sr-list {
             margin-right: 50px
         }
-        .separator {
-            display: none
-        }
-        .srSep {
-            display: none;
-            margin: 0
-        }
         .ChatApp__reddit-icon {
             margin-left: 20px;
             color: #fff
@@ -94,24 +92,28 @@
         }
         .tabmenu {
             position: absolute;
-            left: 20px;
             text-transform: uppercase;
-            bottom: 12px;
+            top: auto;
+            bottom: 0;
+            height: 40px;
             @include display-flex();
             flex-direction: row;
             align-items: center;
+            margin: 0;
+            padding: 0 20px;
             li {
-                display: inline;
-                margin: 0 10px 0 0;
+                display: inline-block;
+                margin: 0;
+                padding: 0 6px;
                 font-weight: 400;
                 &.selected {
-                    font-weight: 700
+                    font-weight: 600
                 }
                 a {
                     border: 0;
                     padding: 0;
                     color: #fff;
-                    background: 0 0;
+                    background: none;
                 }
             }
         }
@@ -138,9 +140,6 @@
                 font-weight: 400;
                 color: #fff;
             }
-        }
-        .separator {
-            display: none
         }
         .beta-hint,
         .beta-hint a {
