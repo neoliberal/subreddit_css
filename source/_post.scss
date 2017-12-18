@@ -1,4 +1,7 @@
 .link {
+    padding: $body-spacing;
+    margin: 0;
+    border: 0;
     @include display-flex();
     .title {
         @include display-flex();
