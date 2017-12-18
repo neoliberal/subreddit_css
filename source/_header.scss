@@ -30,7 +30,7 @@
             padding: 0 $header-spacing;
             .dropdown.srdrop {
                 float: none;
-                padding: inherit;
+                padding: 0;
                 .selected-title {
                     margin: 0;
                 }
@@ -79,6 +79,7 @@
         a {
             padding: 0 $header-item-spacing;
             display: inline-block;
+            text-decoration: none;
         }
         .sr-list {
             margin-right: 50px
