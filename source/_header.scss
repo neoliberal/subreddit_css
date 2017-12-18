@@ -1,4 +1,4 @@
-body #header {
+#header {
     height: 300px;
     border: 0;
     box-shadow: inset 0 -38px 0 0 rgba(49, 49, 49, 0.8);
@@ -13,13 +13,13 @@ body #header {
         line-height: unset;
         background: rgba(21, 27, 33, .3);
         text-transform: uppercase;
-        font-size: 9px;
+        font-size: 14px;
         color: #fff;
         @include display-flex();
         align-items: center;
         justify-content: flex-end;
         .width-clip {
-            display: flex;
+            @include display-flex();
             justify-content: center;
         }
         #srLeftContainer {
@@ -58,7 +58,6 @@ body #header {
             height: auto;
             line-height: unset;
             background: none;
-            font-size: 14px;
             color: #fff
         }
         #RESShortcutsRight {
@@ -67,7 +66,6 @@ body #header {
         a {
             padding: 0 6px;
             display: inline-block;
-            font-size: 14px;
             color: #fff;
         }
         .sr-list {
@@ -125,11 +123,11 @@ body #header {
         background: none;
         height: 40px;
         text-transform: uppercase;
-        display: flex;
+        @include display-flex();
         justify-content: flex-end;
         align-items: center;
         .user {
-            display: flex;
+            @include display-flex();
             align-items: center;
             background-color: none;
             margin: 0;
@@ -157,7 +155,7 @@ body #header {
         #RESAccountSwitcherIcon,
         .beta-hint,
         .beta-hint a {
-            display: flex;
+            @include display-flex();
             justify-content: center;
             height: 20px;
             width: 20px;
