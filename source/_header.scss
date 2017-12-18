@@ -116,21 +116,16 @@
         top: 271px;
         right: 20px;
         padding: 0;
-        background: 0 0;
+        background: none;
         text-transform: uppercase;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
         .user {
             background-color: rgba(49, 49, 49, 0.8);
-            padding: 5px 20px;
-            height: 26px;
-            bottom: 28px;
             margin: 0;
-            right: -20px;
-            position: absolute;
-            top: -35px;
-            line-height: 20px;
             white-space: nowrap;
             font-size: 11px;
-            font-weight: 700;
             color: #fff;
             a {
                 color: #fff;
@@ -144,7 +139,7 @@
         }
         .beta-hint,
         .beta-hint a {
-            position: static;
+            position: inherit;
             margin: 0;
             opacity: 1
         }
@@ -165,8 +160,6 @@
             overflow: hidden;
             top: 0;
             vertical-align: top;
-            width: 20px;
-            height: 20px;
             background: url(%%spritesheet%%) 0/120px 290px;
             font-size: 0
         }
@@ -177,11 +170,7 @@
         a.pref-lang {
             display: inline-block;
             overflow: hidden;
-            top: 0;
             vertical-align: top;
-            margin-left: 20px;
-            width: 20px;
-            height: 20px;
             background: url(%%spritesheet%%) 0/120px 290px;
             font-size: 0
         }
@@ -210,16 +199,11 @@
             }
         }
         #new_modmail {
-            margin-left: 20px;
-            transform: scale(1.3);
             top: 1px
         }
         #mail.havemail,
         #modmail.havemail {
             top: -5px;
-            margin-left: 15px;
-            width: 30px;
-            height: 30px;
             border-radius: 50%;
             background-color: #e286a9
         }
