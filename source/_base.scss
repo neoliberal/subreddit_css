@@ -710,7 +710,7 @@ body.show-controversial .comment.controversial>.entry .score:after {
     }
 }
 
-.message-count {
+.message-count[style="display: inline-block"] {
     position: fixed;
     display: inline-flex !important;
     left: 0;
