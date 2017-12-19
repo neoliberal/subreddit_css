@@ -1,0 +1,23 @@
+.stylesheet-customize-container {
+    @include display-flex();
+    flex-direction: column;
+    background-color: $content-color;
+    padding: $stylesheet-page-vertical-spacing $stylesheet-page-horizontal-spacing;
+    .sheets,
+    h2,
+    #stylesheet_contents+div {
+        margin: 0;
+        padding: $stylesheet-page-vertical-spacing 0;
+    }
+    h2 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: $stylesheet-page-header-text-color;
+    }
+    #stylesheet_contents+div {
+        @include display-flex();
+        justify-content: flex-start;
+        align-items: center;
+        text-transform: uppercase;
+    }
+}
