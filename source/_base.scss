@@ -710,17 +710,16 @@ body.show-controversial .comment.controversial>.entry .score:after {
     }
 }
 
-.message-count[style="display: inline-block"] {
+.message-count {
     position: fixed;
-    display: inline-flex !important;
     left: 0;
     right: 0;
     bottom: $message-count-bottom;
     margin: 0 auto;
     width: $message-count-width;
     height: $message-count-height;
-    justify-content: center;
-    align-items: center;
+    line-height: $message-count-height;
+    text-align: center;
     background-color: $message-count-background-color;
     font-size: $message-count-text-size;
     color: $message-count-text-color;
