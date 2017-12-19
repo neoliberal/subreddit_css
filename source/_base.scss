@@ -100,7 +100,6 @@ body .dropdown.srdrop .selected:after {
 .res .res .RESDropdownList,
 div#RESSubredditGroupDropdown,
 table#srList {
-    z-index: 2147483647;
     overflow: visible;
     width: auto;
     max-height: none;
@@ -662,16 +661,6 @@ div.RESDialogSmall {
 
 .RESDialogSmall.livePreview {
     margin-top: 10px
-}
-
-div#BigEditor,
-div#RESConsoleContainer,
-div#RESNotifications,
-div#RESShortcutsAddFormContainer,
-div#editShortcutDialog,
-div#modalOverlay,
-div.guider {
-    z-index: 2147483647
 }
 
 div.guider {

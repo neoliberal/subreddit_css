@@ -153,7 +153,6 @@ div.RESDialogSmall>h3 {
     margin-top: 1px;
     right: 13px;
     top: 45px;
-    z-index: 1234567979797;
     ul {
         @include display-flex();
         width: 50px;
@@ -164,7 +163,6 @@ div.RESDialogSmall>h3 {
     }
     &[hidden] {
         display: block;
-        z-index: 2147483646;
     }
     .message-count {
         display: none !important;
