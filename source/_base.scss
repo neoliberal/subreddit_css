@@ -712,28 +712,20 @@ body.show-controversial .comment.controversial>.entry .score:after {
 
 .message-count {
     position: fixed;
-    left: calc(50% - 150px);
-    bottom: 10px;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .15);
-    width: 300px;
-    height: 35px;
-    text-align: center;
-    line-height: 35px;
-    border-radius: 5px;
-    background: #758ce1;
-    font-size: 11px;
-    color: #fff;
-    &:before {
-        position: absolute;
-        top: 7.5px;
-        left: 10px;
-        width: 20px;
-        height: 20px;
-        background: url(%%spritesheet%%) -84px -28px/120px 290px;
-        content: ""
-    }
+    display: inline-flex;
+    left: 0;
+    right: 0;
+    bottom: $message-count-bottom;
+    margin: 0 auto;
+    width: $message-count-width;
+    height: $message-count-height;
+    justify-content: center;
+    align-items: center;
+    background-color: $message-count-background-color;
+    font-size: $message-count-text-size;
+    color: $message-count-text-color;
     &:after {
-        content: " new message(s) from Soros"
+        content: $message-count-text;
     }
 }
 
