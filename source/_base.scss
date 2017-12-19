@@ -712,7 +712,7 @@ body.show-controversial .comment.controversial>.entry .score:after {
 
 .message-count {
     position: fixed;
-    display: inline-flex;
+    display: inline-flex !important;
     left: 0;
     right: 0;
     bottom: $message-count-bottom;
