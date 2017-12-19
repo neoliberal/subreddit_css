@@ -726,6 +726,7 @@ body.show-controversial .comment.controversial>.entry .score:after {
     color: $message-count-text-color;
     &:after {
         content: $message-count-text;
+        margin-left: 0.5em;
     }
 }
 
