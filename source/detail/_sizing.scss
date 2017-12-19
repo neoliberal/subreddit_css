@@ -11,14 +11,16 @@ $header-item-spacing: 6px;
 
 $sidebar-width: 300px;
 $sidebar-spacing: 20px;
+$combined-sidebar-spacing: $body-spacing + $sidebar-width + $sidebar-spacing + $sidebar-spacing;
 
 $announcement-top: $body-spacing + $combined-header-height + $body-spacing;
 $announcement-left: $body-spacing;
-$announcement-right: $body-spacing + $sidebar-width + $sidebar-spacing + $sidebar-spacing;
+$announcement-right: $combined-sidebar-spacing;
 $announcement-height: 50px;
 $announcement-spacing: 20px;
 
 $content-top: $announcement-height + $body-spacing;
+$content-spacing: $combined-sidebar-spacing;
 
 $link-spacing: $body-spacing;
 

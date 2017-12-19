@@ -1,11 +1,13 @@
 #header {
     height: $combined-header-height;
     border: 0;
+    width: 100%;
     background: url(%%header%%);
     font-family: $future-font;
     letter-spacing: 2px;
     background-position: center $topbar-height;
     background-color: $main-color;
+    order: -1;
     .separator,
     .srSep {
         display: none;
