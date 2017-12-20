@@ -13,119 +13,133 @@
         display: none;
         margin: 0
     }
-    #sr-header-area {
-        height: $topbar-height;
-        border: 0;
-        padding: 0 $header-spacing;
-        line-height: unset;
-        background: $topbar-color;
-        text-transform: uppercase;
-        font-size: $header-font-size;
-        color: $header-text-color;
+    &:after {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: $bottombar-height;
+        background: $bottombar-color;
+        content: "";
+    }
+}
+
+#sr-header-area {
+    height: $topbar-height;
+    border: 0;
+    padding: 0 $header-spacing;
+    line-height: unset;
+    background: $topbar-color;
+    text-transform: uppercase;
+    font-size: $header-font-size;
+    color: $header-text-color;
+    @include display-flex();
+    align-items: center;
+    justify-content: center;
+    .width-clip {
         @include display-flex();
-        align-items: center;
         justify-content: center;
-        .width-clip {
-            @include display-flex();
-            justify-content: center;
-            padding: 0 $header-spacing;
-            .dropdown.srdrop {
-                float: none;
-                padding: 0;
-                .selected-title {
-                    margin: 0;
-                }
-            }
-        }
-        #srLeftContainer {
-            @include display-flex();
-            max-height: none;
-            padding: 0;
-        }
-        #RESShortcutsViewport {
-            display: none;
-        }
-        #srLeftContainer,
-        #RESShortcutsEditContainer {
-            max-height: none
-        }
-        #RESShortcuts {
-            display: block;
+        padding: 0 $header-spacing;
+        .dropdown.srdrop {
             float: none;
-            text-transform: uppercase
-        }
-        #sr-more-link,
-        #RESShortcutsEditContainer {
-            @include display-flex();
-            width: auto;
-            height: auto;
-            max-height: none;
-            background: none;
-            position: inherit;
-            align-items: center;
-            justify-content: space-around;
-        }
-        #RESShortcutsEditContainer div {
-            position: inherit;
-            display: inline-block;
-            width: auto;
-            height: auto;
-            line-height: unset;
-            background: none;
-            color: $header-text-color;
-        }
-        #RESShortcutsRight {
-            order: 2
-        }
-        a {
-            padding: 0 $header-item-spacing;
-            display: inline-block;
-            text-decoration: none;
-        }
-        .sr-list {
-            margin-right: 50px
-        }
-        .ChatApp__reddit-icon {
-            margin-left: 20px;
-        }
-        .drop-choices.srdrop {
-            margin-top: 10px;
-            margin-left: 10px
-        }
-    }
-    #header-bottom-left {
-        #header-img-a,
-        .redditname {
-            display: none;
-        }
-        .tabmenu {
-            position: absolute;
-            text-transform: uppercase;
-            top: auto;
-            bottom: 0;
-            height: $bottombar-height;
-            @include display-flex();
-            flex-direction: row;
-            align-items: center;
-            margin: 0;
-            padding: 0 $header-spacing;
-            li {
-                display: inline-block;
+            padding: 0;
+            .selected-title {
                 margin: 0;
-                padding: 0 $header-item-spacing;
-                font-weight: 400;
-                &.selected {
-                    font-weight: 600
-                }
-                a {
-                    border: 0;
-                    padding: 0;
-                    background: none;
-                    color: $header-text-color;
-                }
             }
         }
     }
+    #srLeftContainer {
+        @include display-flex();
+        max-height: none;
+        padding: 0;
+    }
+    #RESShortcutsViewport {
+        display: none;
+    }
+    #srLeftContainer,
+    #RESShortcutsEditContainer {
+        max-height: none
+    }
+    #RESShortcuts {
+        display: block;
+        float: none;
+        text-transform: uppercase
+    }
+    #sr-more-link,
+    #RESShortcutsEditContainer {
+        @include display-flex();
+        width: auto;
+        height: auto;
+        max-height: none;
+        background: none;
+        position: inherit;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #RESShortcutsEditContainer div {
+        position: inherit;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        line-height: unset;
+        background: none;
+        color: $header-text-color;
+    }
+    #RESShortcutsRight {
+        order: 2
+    }
+    a {
+        padding: 0 $header-item-spacing;
+        display: inline-block;
+        text-decoration: none;
+    }
+    .sr-list {
+        margin-right: 50px
+    }
+    .ChatApp__reddit-icon {
+        margin-left: 20px;
+    }
+    .drop-choices.srdrop {
+        margin-top: 10px;
+        margin-left: 10px
+    }
+}
+
+#header-bottom-left {
+    #header-img-a,
+    .redditname {
+        display: none;
+    }
+    .tabmenu {
+        position: absolute;
+        text-transform: uppercase;
+        top: auto;
+        bottom: 0;
+        height: $bottombar-height;
+        @include display-flex();
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        padding: 0 $header-spacing;
+        li {
+            display: inline-block;
+            margin: 0;
+            padding: 0 $header-item-spacing;
+            font-weight: 400;
+            &.selected {
+                font-weight: 600
+            }
+            a {
+                border: 0;
+                padding: 0;
+                background: none;
+                color: $header-text-color;
+            }
+        }
+    }
+}
+
     #header-bottom-right {
         top: auto;
         bottom: 0;
@@ -216,17 +230,6 @@
             background-position: -84px -56px
         }
     }
-    &:after {
-        position: absolute;
-        z-index: -1;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: $bottombar-height;
-        background: $bottombar-color;
-        content: "";
-    }
-}
 
 #srList {
     left: 10px;
