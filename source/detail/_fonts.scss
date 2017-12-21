@@ -1,16 +1,17 @@
 $future-font: Futura, "Trebuchet MS", Arial, sans-serif;
 
 $base-font-size: 12px;
+$base-letter-spacing: 0.05em;
 
-$header-font-size: $base-font-size;
+$header-font-size: 1em;
 
-$announcement-font-size: $base-font-size + 2px;
+$announcement-font-size: 1.2em;
 $announcement-font-weight: 400;
 $announcement-bold-font-weight: 600;
-$announcement-letter-spacing: 0.05em;
+$announcement-letter-spacing: $base-letter-spacing;
 
 $toolbox-bar-font-size: $base-font-size;
 
-$np-font-size: $base-font-size + 2px;
+$np-font-size: 1.2em;
 $np-font-weight: 600;
-$np-letter-spacing: 0.05em;
+$np-letter-spacing: $base-letter-spacing;

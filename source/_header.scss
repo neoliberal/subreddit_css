@@ -4,7 +4,7 @@
     width: 100%;
     background: url(%%header%%);
     font-family: $future-font;
-    letter-spacing: 2px;
+    font-size: $header-font-size;
     background-position: center $topbar-height;
     background-color: $main-color;
     order: -1;
@@ -30,7 +30,7 @@
         line-height: unset;
         background: $topbar-color;
         text-transform: uppercase;
-        font-size: $header-font-size;
+        font-size: inherit;
         color: $header-text-color;
         @include display-flex();
         align-items: center;
@@ -104,6 +104,7 @@
         }
     }
     #header-bottom-left {
+        font-size: inherit;
         #header-img-a,
         .redditname {
             display: none;
@@ -143,16 +144,16 @@
         background: none;
         height: $bottombar-height;
         text-transform: uppercase;
+        font-size: inherit;
         @include display-flex();
         justify-content: flex-end;
         align-items: center;
         .user {
             @include display-flex();
             align-items: center;
-            background-color: none;
+            background: none;
             margin: 0;
             white-space: nowrap;
-            font-size: $header-font-size;
             a {
                 font-weight: 400;
                 color: $header-text-color;

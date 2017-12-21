@@ -3,7 +3,8 @@ body {
     padding: $body-spacing;
     @include display-flex();
     flex-flow: row wrap;
-    font-size: 16px;
+    font-size: $base-font-size;
+    letter-spacing: $base-letter-spacing;
     height: 100vh;
     a {
         color: $link-color;
