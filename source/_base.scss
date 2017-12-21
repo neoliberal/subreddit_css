@@ -11,6 +11,26 @@ body {
     }
 }
 
+html {
+    @include box-sizing(border-box);
+    @include text-size-adjust(none);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+}
+
+*,
+*::after,
+*::before {
+    @include box-sizing(inherit);
+    @include text-size-adjust(none);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: inherit;
+}
+
 #search input[type=text],
 body,
 textarea {
