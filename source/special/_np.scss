@@ -1,0 +1,41 @@
+body:lang(np):not(.subscriber) {
+    .arrow {
+        visibility: hidden !important;
+    }
+    .usertext-edit,
+    .sidebox.submit,
+    .commentingAs,
+    .markdownEditor,
+    a[onclick*="return reply(this)"],
+    .subButtons,
+    .helplink,
+    .titlebox .fancy-toggle-button.toggle>.option.add {
+        display: none !important;
+    }
+    #siteTable:before {
+        content: "You have been linked to a read-only version of this subreddit. Please respect the community by not voting.";
+        display: block;
+        max-width: 800px;
+        background-color: #F6E69F;
+        padding: 5px 10px;
+        margin: 5px 305px 5px 0px;
+        border: 1px solid orange;
+        font-size: small;
+    }
+    .entry.likes:not(.reddit-entry):before,
+    .entry.dislikes:not(.reddit-entry):before {
+        content: "Please do not vote or comment when you come from external subreddits.";
+        color: red;
+        font-size: large;
+        font-weight: bold;
+    }
+}
+
+body.wiki-page:lang(np):not(.subscriber) {
+    span.pageactions a.wikiaction-edit:not(.wikiaction-current),
+    div.wiki-page-content form#editform label[for='reason'],
+    div.wiki-page-content form#editform input#wiki_revision_reason,
+    div.wiki-page-content form#editform input[type='submit'] {
+        display: none !important;
+    }
+}
