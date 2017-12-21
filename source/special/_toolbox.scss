@@ -25,4 +25,50 @@ body.mod-toolbox {
     .history-button {
         display: flex
     }
+    div#tb-bottombar {
+        background-color: $toolbox-bar-background-color;
+        text-align: unset;
+        @include display-flex();
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 $toolbox-bar-spacing !important;
+        border: 0;
+        height: $toolbox-bar-height;
+        font-size: $toolbox-bar-font-size;
+        font-family: $future-font;
+        color: $toolbox-bar-text-color;
+        #tb-bottombar-contentleft {
+            @include display-flex();
+            align-items: center;
+            height: auto;
+            width: auto;
+            line-height: unset;
+            >a {
+                background: transparent;
+                border: 0;
+                vertical-align: unset;
+                height: auto;
+                color: $toolbox-bar-text-color;
+                text-transform: uppercase;
+            }
+        }
+        #tb-bottombar-contentright {
+            flex: 1;
+            #tb-toolbarcounters {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                >a {
+                    margin: 0 $toolbox-bar-item-spacing;
+                    text-decoration: none;
+                    top: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.tb-modbar-shown {
+    margin-bottom: 40px;
 }
