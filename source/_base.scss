@@ -25,9 +25,9 @@ html {
 *::before {
     @include box-sizing(inherit);
     @include text-size-adjust(none);
-    text-rendering: optimizeLegibility;
+    text-rendering: inherit;
     -webkit-font-smoothing: inherit;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: inherit;
     font-kerning: inherit;
 }
 
