@@ -617,33 +617,6 @@ form .spacer+.spacer {
     width: 494px
 }
 
-div#RESStyleSheetTipPane {
-    width: calc(100% - 322px);
-    border-color: rgba(144, 144, 144, .25);
-    border-radius: 5px
-}
-
-.sheets {
-    margin-right: 322px
-}
-
-.sheets .buttons,
-.sheets .col>div {
-    margin: 0
-}
-
-ul#image-preview-list.image-list {
-    display: block;
-    margin: 0 322px 0 0
-}
-
-ul#image-preview-list li {
-    display: inline-block;
-    float: none;
-    width: 50%;
-    height: auto
-}
-
 .flat-list li.selected a {
     color: #e286a9
 }
