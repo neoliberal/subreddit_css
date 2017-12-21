@@ -3,6 +3,9 @@ body {
     padding: $body-spacing;
     @include display-flex();
     flex-flow: row wrap;
+    a {
+        color: $link-color;
+    }
 }
 
 #search input[type=text],
