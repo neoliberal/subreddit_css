@@ -6,7 +6,8 @@
     .sheets,
     h2,
     #stylesheet_contents+div,
-    #RESStyleSheetTipPane {
+    #RESStyleSheetTipPane,
+    ul.image-preview-list {
         margin: 0;
         padding: $stylesheet-page-vertical-spacing 0;
     }
@@ -34,5 +35,18 @@
         justify-content: flex-start;
         align-items: center;
         text-transform: uppercase;
+    }
+    ul.image-preview-list {
+        @include display-flex();
+        flex-wrap: wrap;
+        li {
+            width: 50%;
+            @include display-flex();
+            align-items: center;
+            justify-content: flex-start;
+            .description {
+                padding-left: $stylesheet-page-vertical-spacing;
+            }
+        }
     }
 }
