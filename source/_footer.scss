@@ -1,9 +1,15 @@
 .footer-parent {
+    @include display-flex();
+    flex-direction: column;
     position: relative;
     padding: 0;
     background-color: $footer-color;
     width: 100%;
     padding: $footer-spacing;
+    color: $footer-text-color;
+    a {
+        color: $footer-link-color;
+    }
     .footer {
         display: block;
         margin: 0;
@@ -15,9 +21,6 @@
             @include flex(none);
             border: 0;
             padding: 0;
-            a {
-                color: #fff,
-            }
             .flat-vert.title {
                 text-transform: uppercase;
                 font-size: 15px;
@@ -49,15 +52,11 @@
         }
     }
     .bottommenu {
-        color: #fff;
         padding: 10px 0;
-        a {
-            color: #fff;
-        }
     }
     ~.debuginfo {
         position: relative;
         margin-top: -25px;
-        color: #fff
+        color: $footer-text-color;
     }
 }
