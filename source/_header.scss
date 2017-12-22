@@ -42,8 +42,13 @@
             .dropdown.srdrop {
                 float: none;
                 padding: 0;
-                .selected-title {
+                .selected.title {
+                    background-image: none;
+                    padding: 0;
                     margin: 0;
+                    &:after {
+                        content: "▼"
+                    }
                 }
             }
         }
