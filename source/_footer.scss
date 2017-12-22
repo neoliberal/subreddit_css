@@ -13,12 +13,14 @@
         color: $footer-link-color;
     }
     .footer {
-        display: block;
+        @include display-flex();
+        justify-content: space-evenly;
         margin: 0;
         width: 100%;
         max-width: none;
         border: 0;
         border-radius: 0;
+        padding: 0;
         .col {
             @include flex(none);
             border: 0;
