@@ -5,6 +5,7 @@ body {
     flex-flow: row wrap;
     font-size: $base-font-size;
     letter-spacing: $base-letter-spacing;
+    font-weight: 400;
     height: 100vh;
     a {
         color: $link-color;
