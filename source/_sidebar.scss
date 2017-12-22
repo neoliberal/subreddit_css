@@ -6,11 +6,13 @@
     box-sizing: content-box;
     display: flex;
     flex-direction: column;
-    &:before {
-        display: block;
-        height: $sidebar-image-height;
-        background: url("%%#{$sidebar-image}%%");
-        content: ""
+    @if variable-exists($name: "sidebar-image") {
+        &:before {
+            display: block;
+            height: $sidebar-image-height;
+            background: url("%%#{$sidebar-image}%%");
+            content: ""
+        }
     }
     .subscribers {
         font-size: 14px;
