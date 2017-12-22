@@ -66,7 +66,9 @@
         letter-spacing: $sidebar-button-letter-spacing;
         background-color: $sidebar-button-color;
     }
-    .morelink a {
+    .morelink a,
+    .account-activity-box a,
+    .sidecontentbox a.helplink {
         @include display-flex();
         justify-content: center;
         align-items: center;
@@ -74,12 +76,6 @@
     }
     .disabled .morelink a {
         color: rgba(255, 255, 255, .6)
-    }
-    .account-activity-box a {
-        background: #f36c60;
-        &:active {
-            background: #dc6257
-        }
     }
     .account-activity-box a:before,
     .create .morelink a:before,
@@ -131,12 +127,6 @@
     .sidecontentbox a.helplink,
     input#addSubreddit {
         text-align: center
-    }
-    .fancy-toggle-button .add,
-    .sidecontentbox a.helplink {
-        &:active {
-            background: #d33
-        }
     }
     .res & span.RESDashboardToggle,
     .res & span.RESshortcutside,
