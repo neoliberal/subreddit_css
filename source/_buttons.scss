@@ -105,21 +105,6 @@ span.RESshortcutside:active {
     background-color: rgba(144, 144, 144, .2)
 }
 
-.md a[href="#bigspecialbutton"]+a,
-.md a[href="#specialbutton"]+a,
-.res .blueButton,
-.res a.RESNotificationButtonBlue,
-.submit-page .tabmenu.formtab li.selected a,
-.wiki-page .pageactions .wikiaction-current,
-a.guider_button,
-button.save,
-button[name=save] {
-    display: inline-block;
-    border-color: transparent;
-    background: #c22;
-    color: #fff
-}
-
 .md {
     a[href="#button"]+a {
         display: inline-block;
@@ -169,15 +154,6 @@ button[name=save] {
         padding: 0 20px;
         line-height: 36px
     }
-}
-
-.md a[href="#bigspecialbutton"]+a:hover,
-.md a[href="#specialbutton"]+a:hover,
-.side .morelink a:hover,
-.wiki-page .pageactions .wikiaction-current:hover,
-button.save:hover,
-button[name=save]:hover {
-    background: #e44
 }
 
 .md a[href="#bigspecialbutton"]+a:active,
