@@ -1,9 +1,15 @@
 .side {
     margin: $sidebar-spacing 0;
-    padding: 0 $sidebar-spacing;
+    padding: $sidebar-spacing;
     width: $sidebar-width;
     background-color: $sidebar-background-color;
     box-sizing: content-box;
+    &:before {
+        display: block;
+        height: $sidebar-image-height;
+        background: url("%%#{$sidebar-image}%%");
+        content: ""
+    }
     .subscribers {
         font-size: 14px;
         display: block;
@@ -246,14 +252,6 @@
         }
         .fancy-toggle-button .active {
             border-radius: 5px
-        }
-        &:before {
-            display: block;
-            margin: 10px 0;
-            height: 428px;
-            border-radius: 5px;
-            background: url("%%" + $sidebar-image + "%%");
-            content: ""
         }
     }
     &:after {
