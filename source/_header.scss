@@ -42,7 +42,7 @@
             .dropdown.srdrop {
                 float: none;
                 padding: 0;
-                .selected.title {
+                .selected {
                     background-image: none;
                     padding: 0;
                     margin: 0;
@@ -96,6 +96,7 @@
             padding: 0 $header-item-spacing;
             display: inline-block;
             text-decoration: none;
+            color: inherit;
         }
         .sr-list {
             margin-right: 50px
