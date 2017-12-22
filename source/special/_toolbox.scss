@@ -1,6 +1,6 @@
 body.mod-toolbox {
     .tb-bracket-button {
-        box-sizing: border-box;
+        @include box-sizing(border-box);
         position: relative;
         width: 20px;
         height: 20px;

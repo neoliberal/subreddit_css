@@ -145,7 +145,7 @@ div.RESDialogSmall>h3 {
     height: 20px;
     line-height: 20px;
     display: inline-block;
-    box-sizing: border-box;
+    @include box-sizing(border-box);
 }
 
 #NREFloat {

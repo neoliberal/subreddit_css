@@ -121,7 +121,7 @@ $image-flairs: (
         width: 20px;
         font-size: 10px;
         font-weight: 600;
-        box-sizing: border-box;
+        @include box-sizing(border-box);
         display: inline-flex;
         align-items: center;
         visibility: visible;
