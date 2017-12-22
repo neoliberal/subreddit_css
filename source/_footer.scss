@@ -1,7 +1,7 @@
 .footer-parent {
     position: relative;
     padding: 0;
-    background: url(%%overlay%%) fixed center/auto auto, linear-gradient(45deg, rgba(39, 161, 227, .65), rgba(231, 35, 42, .65)), url(%%header%%) fixed center/cover;
+    background-color: $footer-color;
     width: 100%;
     .footer {
         display: block;
