@@ -3,6 +3,7 @@
     padding: 0;
     background-color: $footer-color;
     width: 100%;
+    padding: $footer-spacing;
     .footer {
         display: block;
         margin: 0;
@@ -10,15 +11,10 @@
         max-width: none;
         border: 0;
         border-radius: 0;
-        padding: 50px 0;
-        text-align: center;
         .col {
             @include flex(none);
             border: 0;
-            padding: 0 50px;
-            li {
-                margin-bottom: 10px
-            }
+            padding: 0;
             a {
                 color: #fff,
             }
@@ -54,14 +50,9 @@
     }
     .bottommenu {
         color: #fff;
+        padding: 10px 0;
         a {
             color: #fff;
-        }
-        &:nth-of-type(1) {
-            padding: 60px 0 20px
-        }
-        &:nth-of-type(2) {
-            padding-bottom: 60px
         }
     }
     ~.debuginfo {
