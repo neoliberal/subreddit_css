@@ -5,7 +5,7 @@ body {
     flex-flow: row wrap;
     font-size: $base-font-size;
     letter-spacing: $base-letter-spacing;
-    font-weight: 400;
+    font-weight: $base-font-weight;
     height: 100vh;
     a {
         color: $link-color;
@@ -29,7 +29,7 @@ html {
 #search input[type=text],
 body,
 textarea {
-    font-family: -apple-system, BlinkMacSystemFont, "Open Sans", Helvetica, sans-serif
+    font-family: $base-font;
 }
 
 

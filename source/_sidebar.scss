@@ -14,6 +14,9 @@
             content: ""
         }
     }
+    * {
+        box-sizing: border-box;
+    }
     .spacer {
         margin: $sidebar-item-spacing 0;
     }
