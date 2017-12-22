@@ -5,6 +5,7 @@
     background: url(%%header%%);
     font-family: $future-font;
     font-size: $header-font-size;
+    color: $header-text-color;
     background-position: center $topbar-height;
     background-color: $main-color;
     order: -1;
@@ -31,7 +32,7 @@
         background: $topbar-color;
         text-transform: uppercase;
         font-size: inherit;
-        color: $header-text-color;
+        color: inherit;
         @include display-flex();
         align-items: center;
         justify-content: center;
@@ -46,6 +47,7 @@
                     background-image: none;
                     padding: 0;
                     margin: 0;
+                    color: inherit;
                     &:after {
                         content: "▼"
                     }
@@ -104,10 +106,6 @@
         .ChatApp__reddit-icon {
             margin-left: 20px;
         }
-        .drop-choices.srdrop {
-            margin-top: 10px;
-            margin-left: 10px
-        }
     }
     #header-bottom-left {
         font-size: inherit;
@@ -138,7 +136,7 @@
                     border: 0;
                     padding: 0;
                     background: none;
-                    color: $header-text-color;
+                    color: inherit;
                 }
             }
         }
@@ -162,7 +160,7 @@
             white-space: nowrap;
             a {
                 font-weight: 400;
-                color: $header-text-color;
+                color: inherit;
             }
         }
         .beta-hint,
