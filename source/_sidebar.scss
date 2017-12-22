@@ -36,14 +36,6 @@
             content: $online-text;
         }
     }
-    div.flairselector.drop-choices {
-        left: auto;
-        right: 10px;
-        width: 300px;
-        &:before {
-            left: calc(50% - 8px)
-        }
-    }
     #search input[type=text] {
         height: 40px;
         width: 100%;
@@ -56,56 +48,31 @@
         margin-top: 10px;
         border: 0
     }
-    .infobar {
-        border: 1px solid rgba(144, 144, 144, .25);
-        background: #fff
-    }
-    #searchexpando,
-    .ad300x250,
-    .infobar {
-        border-radius: 5px
-    }
     .account-activity-box a,
     .morelink,
-    .morelink:hover,
     .sidecontentbox a.helplink {
         position: relative;
         float: none;
-        height: 40px;
+        height: $sidebar-button-height;
         border: 0;
         background: 0 0;
-        line-height: 40px;
-        letter-spacing: 0;
-        text-align: center;
         text-transform: uppercase;
         font-size: 10px;
         font-weight: 700
     }
-    .account-activity-box a,
-    .morelink,
-    .morelink:hover {
-        display: block
-    }
     .sidecontentbox a.helplink {
-        border-radius: 5px;
         background: #c22;
-        transition: .2s
     }
     .account-activity-box a,
     .morelink a {
-        border-radius: 5px;
         background: #c22;
         color: #fff;
-        transition: .2s
     }
     .disabled .morelink a {
         color: rgba(255, 255, 255, .6)
     }
     .account-activity-box a {
         background: #f36c60;
-        &:hover {
-            background: #f87
-        }
         &:active {
             background: #dc6257
         }
