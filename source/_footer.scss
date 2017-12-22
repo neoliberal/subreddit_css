@@ -7,6 +7,8 @@
     width: 100%;
     padding: $footer-spacing;
     color: $footer-text-color;
+    font-family: $future-font;
+    font-weight: 400;
     a {
         color: $footer-link-color;
     }
@@ -52,11 +54,20 @@
         }
     }
     .bottommenu {
+        color: inherit;
+        text-transform: uppercase;
         padding: 10px 0;
+        a {
+            text-decoration: none;
+        }
     }
     ~.debuginfo {
         position: relative;
         margin-top: -25px;
         color: $footer-text-color;
+        .icon {
+            color: inherit;
+            padding: 0;
+        }
     }
 }

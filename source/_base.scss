@@ -1,17 +1,18 @@
+html {
+    @include box-sizing(border-box);
+    @include text-size-adjust(none);
+    text-rendering: optimizeLegibility;
+    font-size: $base-font-size;
+}
+
 body {
     background-color: $body-color;
     padding: $body-spacing;
     @include display-flex();
     flex-flow: row wrap;
-    font-size: $base-font-size;
     letter-spacing: $base-letter-spacing;
     font-weight: $base-font-weight;
-}
-
-html {
-    @include box-sizing(border-box);
-    @include text-size-adjust(none);
-    text-rendering: optimizeLegibility;
+    font-size: inherit;
 }
 
 *,
