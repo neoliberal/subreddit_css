@@ -1,6 +1,5 @@
 $body-spacing: 20px;
 
-/* Header */
 $topbar-height: 40px;
 $header-height: 300px;
 $bottombar-height: 40px;
@@ -11,7 +10,8 @@ $header-item-spacing: 6px;
 
 $sidebar-width: 300px;
 $sidebar-spacing: 20px;
-$combined-sidebar-spacing: $body-spacing + $sidebar-width + $sidebar-spacing + $sidebar-spacing;
+$combined-sidebar-width: $sidebar-width + $sidebar-spacing + $sidebar-spacing;
+$combined-sidebar-spacing: $body-spacing + $combined-sidebar-width;
 $sidebar-item-spacing: 10px;
 $sidebar-button-height: 40px;
 

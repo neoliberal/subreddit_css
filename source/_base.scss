@@ -12,7 +12,7 @@ body {
     font-weight: $base-font-weight;
     font-size: inherit;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto $combined-sidebar-width;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
         "header header"
