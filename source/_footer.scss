@@ -1,4 +1,5 @@
 .footer-parent {
+    grid-area: footer;
     @include display-flex();
     flex-direction: column;
     position: relative;

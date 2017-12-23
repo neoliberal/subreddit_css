@@ -1,4 +1,5 @@
 #header {
+    grid-area: header;
     height: $combined-header-height;
     border: 0;
     width: 100%;
@@ -8,7 +9,6 @@
     color: $header-text-color;
     background-position: center $topbar-height;
     background-color: $main-color;
-    order: -1;
     .separator,
     .srSep {
         display: none;
