@@ -18,6 +18,7 @@ body {
         "header header"
         "content sidebar"
         "footer footer";
+    grid-row-gap: $body-spacing;
 }
 
 *,

@@ -1,6 +1,6 @@
 body>.content {
     grid-area: content;
-    margin: $content-top 0 0 0;
+    margin: $announcement-height 0 0 0;
     .sitetable {
         @include display-flex();
         flex-direction: column;
