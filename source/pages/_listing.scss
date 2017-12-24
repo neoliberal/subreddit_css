@@ -1,6 +1,4 @@
-body>.content {
-    grid-area: content;
-    margin: $content-top 0 0 0;
+.listing-page {
     .sitetable {
         @include display-flex();
         flex-direction: column;

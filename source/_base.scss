@@ -18,6 +18,10 @@ body {
         "header header"
         "content sidebar"
         "footer footer";
+    >.content {
+        grid-area: content;
+        margin: $content-top 0 0 0;
+    }
 }
 
 *,
