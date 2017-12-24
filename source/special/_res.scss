@@ -150,9 +150,6 @@ div.RESDialogSmall>h3 {
 
 #NREFloat {
     position: fixed;
-    margin-top: 1px;
-    right: 13px;
-    top: 45px;
     ul {
         @include display-flex();
         width: 50px;
@@ -163,8 +160,5 @@ div.RESDialogSmall>h3 {
     }
     &[hidden] {
         display: block;
-    }
-    .message-count {
-        display: none !important;
     }
 }

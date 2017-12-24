@@ -164,6 +164,25 @@
                 color: inherit;
             }
         }
+        .message-count {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: $message-count-bottom;
+            margin: 0 auto;
+            width: $message-count-width;
+            height: $message-count-height;
+            line-height: $message-count-height;
+            text-align: center;
+            background-color: $message-count-background-color;
+            font-size: $message-count-text-size;
+            color: $message-count-text-color;
+            font-weight: inherit;
+            &:after {
+                content: $message-count-text;
+                margin-left: 0.5em;
+            }
+        }
         .beta-hint,
         .beta-hint a {
             position: relative;

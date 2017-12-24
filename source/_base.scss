@@ -130,22 +130,3 @@ body.show-controversial .comment.controversial>.entry .score:after {
     background-repeat: no-repeat;
     background-position: 0 0;
 }
-
-.message-count {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: $message-count-bottom;
-    margin: 0 auto;
-    width: $message-count-width;
-    height: $message-count-height;
-    line-height: $message-count-height;
-    text-align: center;
-    background-color: $message-count-background-color;
-    font-size: $message-count-text-size;
-    color: $message-count-text-color;
-    &:after {
-        content: $message-count-text;
-        margin-left: 0.5em;
-    }
-}
