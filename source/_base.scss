@@ -127,18 +127,6 @@ body.show-controversial .comment.controversial>.entry .score:after {
     background-position: 0 0;
 }
 
-@media only screen and (max-width: 876px) {
-    .side {
-        display: none;
-    }
-    body>.content {
-        margin-top: 0;
-    }
-    .panestack-title {
-        margin-right: 0;
-    }
-}
-
 .message-count {
     position: fixed;
     left: 0;
