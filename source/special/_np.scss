@@ -26,13 +26,12 @@ body:lang(np):not(.subscriber) {
         font-weight: $np-font-weight;
         font-size: $np-font-size;
     }
-}
-
-body.wiki-page:lang(np):not(.subscriber) {
-    span.pageactions a.wikiaction-edit:not(.wikiaction-current),
-    div.wiki-page-content form#editform label[for='reason'],
-    div.wiki-page-content form#editform input#wiki_revision_reason,
-    div.wiki-page-content form#editform input[type='submit'] {
-        display: none !important;
-    }
+   &.wiki-page {
+       span.pageactions a.wikiaction-edit:not(.wikiaction-current),
+       div.wiki-page-content form#editform label[for='reason'],
+       div.wiki-page-content form#editform input#wiki_revision_reason,
+       div.wiki-page-content form#editform input[type='submit'] {
+           display: none !important;
+       }
+   }
 }
