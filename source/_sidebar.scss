@@ -11,7 +11,7 @@
         &:before {
             display: block;
             height: $sidebar-image-height;
-            background: url(image-reference(sidebarimage));
+            background: url(image-reference(sidebar-image));
             content: ""
         }
     }
