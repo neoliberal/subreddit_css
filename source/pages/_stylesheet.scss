@@ -44,7 +44,8 @@
             align-items: center;
             justify-content: flex-start;
             .description {
-                padding-left: $stylesheet-page-vertical-spacing;
+                margin: 0;
+                padding-left: $stylesheet-page-horizontal-spacing;
             }
         }
     }
