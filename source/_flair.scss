@@ -117,7 +117,7 @@ $image-flairs: (
         align-items: center;
     }
     .flair-text.flair-image {
-        $flair-spacing: $flair-image-width + $flair-text-spacing;
+        $flair-spacing: $flair-image-width + $flair-text-padding;
         margin-left: $flair-spacing;
         &:before {
             margin-left: -#{$flair-spacing};
