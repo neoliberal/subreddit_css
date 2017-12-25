@@ -91,24 +91,25 @@ $image-flairs: (
         border: 0;
     }
     .flair-image {
-        margin: 0 0 0 36px;
+        margin: 0 0 0 $flair-image-width;
         &:before {
-            width: 36px;
-            height: 40px;
+            width: $flair-image-width;
+            height: $flair-image-height;
             position: absolute;
             content: "";
-            margin-left: -36px;
+            margin-left: -#{$flair-image-width};
             visibility: visible
         }
     }
     .flair-text {
-        height: 20px;
+        height: $flair-text-height;
+        width: auto;
         font-size: 10px;
         font-weight: 600;
         @include box-sizing(border-box);
         visibility: visible;
-        width: auto;
-        padding: 0 6px;
+        padding: 0 $flair-text-padding;
+        margin: 0 $flair-text-spacing;
         color: #fff;
     }
     .flair-text, .flair-image {
@@ -116,19 +117,20 @@ $image-flairs: (
         align-items: center;
     }
     .flair-text.flair-image {
-        margin-left: 39px;
+        $flair-spacing: $flair-image-width + $flair-text-spacing;
+        margin-left: $flair-spacing;
         &:before {
-            margin-left: -39px;
+            margin-left: -#{$flair-spacing};
         }
     }
 }
 
 @each $name, $category in $image-flairs {
-    $length: length($category) * 100;
+    $length: length($category) * $flairsheet-flair-height;
     .flair-#{$name}:before,
     a[href$="#{$name}-img"] {
         background: url(image-reference("#{$name}-flair")) no-repeat;
-        background-size: 36px #{0.4* $length}px;
+        background-size: #{0.4* $length}px;
     }
 
     @each $image in $category {
@@ -142,8 +144,8 @@ $image-flairs: (
 
 a[href$="-img"] {
     display: block;
-    min-width: 36px;
-    height: 40px;
+    min-width: $flair-image-width;
+    height: $flair-image-height;
     text-indent: 38px;
     padding-top: 12px;
     border: 0
