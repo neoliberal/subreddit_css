@@ -23,6 +23,9 @@ body {
         margin: $content-top 0 $body-spacing 0;
         background-color: $content-color;
     }
+    a {
+        color: $link-color;
+    }
 }
 
 *,
