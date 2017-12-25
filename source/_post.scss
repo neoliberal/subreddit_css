@@ -3,6 +3,9 @@
     margin: 0;
     border: 0;
     @include display-flex();
+    .rank {
+        display: none;
+    }
     .title {
         @include display-flex();
         flex-direction: row;
