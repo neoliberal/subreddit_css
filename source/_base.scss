@@ -102,25 +102,6 @@ input[type=radio] {
     border-radius: 50%
 }
 
-a.choice[href$="controversial"] {
-    visibility: hidden;
-    position: relative;
-}
-
-a.choice[href$="controversial"]:after {
-    visibility: visible;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 30px;
-    border-bottom: 1px solid rgba(255, 255, 255, .075);
-    padding: 0 5px;
-    line-height: 30px;
-    color: #fff;
-    width: 100%;
-    content: "Hot takes"
-}
-
 body.show-controversial .comment.controversial>.entry .score:after {
     top: 0px;
     content: " Hot Take"
