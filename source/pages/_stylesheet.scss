@@ -1,7 +1,6 @@
 .stylesheet-customize-container {
     @include display-flex();
     flex-direction: column;
-    background-color: $content-color;
     padding: $stylesheet-page-vertical-spacing $stylesheet-page-horizontal-spacing;
     .sheets,
     h2,

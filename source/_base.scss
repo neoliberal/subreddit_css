@@ -21,6 +21,7 @@ body {
     >.content {
         grid-area: content;
         margin: $content-top 0 0 0;
+        background-color: $content-color;
     }
 }
 
