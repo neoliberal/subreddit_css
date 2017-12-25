@@ -133,7 +133,7 @@ $image-flairs: (
 
 @each $name, $category in $image-flairs {
     $length: length($category) * 100;
-    .flair-#{$name},
+    .flair-#{$name}:before,
     a[href$="#{$name}-img"] {
         background-image: url(image-reference("#{$name}-flair")) no-repeat;
         background-size: 36px #{0.4* $length}px;
