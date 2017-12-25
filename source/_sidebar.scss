@@ -29,7 +29,7 @@
         display: block;
         margin: 5px 0;
         .number:after {
-            content: $subscriber-text;
+            content: prefix-space($subscriber-text);
         }
     }
     .users-online {
@@ -37,7 +37,7 @@
         margin: 0 0 10px;
         font-size: 14px;
         .number:after {
-            content: $online-text;
+            content: prefix-space($online-text);
         }
     }
     #search input[type=text] {

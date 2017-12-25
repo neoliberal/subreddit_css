@@ -1,3 +1,7 @@
 @function image-reference($name) {
-    @return "%%#{$name}%%"
+    @return "%%#{$name}%%";
+}
+
+@function prefix-space($content) {
+    @return " " + $content;
 }
