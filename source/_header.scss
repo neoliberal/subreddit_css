@@ -178,6 +178,7 @@
             font-size: $message-count-text-size;
             color: $message-count-text-color;
             font-weight: inherit;
+            z-index: 2;
             &:after {
                 content: $message-count-text;
                 margin-left: 0.5em;

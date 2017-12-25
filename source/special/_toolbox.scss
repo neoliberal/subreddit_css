@@ -37,6 +37,7 @@ body.mod-toolbox {
         font-size: $toolbox-bar-font-size;
         font-family: $future-font;
         color: $toolbox-bar-text-color;
+        z-index: 1;
         #tb-bottombar-contentleft {
             @include display-flex();
             align-items: center;
