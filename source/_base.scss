@@ -25,6 +25,9 @@ body {
     }
     a {
         color: $link-color;
+        &:visited {
+            color: $link-visited-color;
+        }
     }
 }
 
