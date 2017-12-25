@@ -82,7 +82,8 @@ $image-flairs: (
 
 .tagline {
     .flair {
-        display: none;
+        display: inline-flex;
+        align-items: center;
         border-radius: 0;
         visibility: hidden;
         white-space: nowrap;
@@ -111,10 +112,6 @@ $image-flairs: (
         padding: 0 $flair-text-padding;
         margin: 0 $flair-text-spacing;
         color: #fff;
-    }
-    .flair-text, .flair-image {
-        display: inline-flex;
-        align-items: center;
     }
     .flair-text.flair-image {
         $flair-spacing: $flair-image-width + $flair-text-padding;
