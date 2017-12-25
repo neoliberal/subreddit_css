@@ -1,0 +1,3 @@
+@function image-reference($name) {
+    @return "%%#{$name}%%"
+}

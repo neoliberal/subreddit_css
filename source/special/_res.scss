@@ -13,7 +13,7 @@ select {
 input[type=checkbox]:checked,
 input[type=radio]:checked {
     border: 0;
-    background: #5f9dd2 url(%%spritesheet%%) no-repeat -24px -76px/45px 109px;
+    background: #5f9dd2 url(image-reference("spritesheet")) no-repeat -24px -76px/45px 109px;
     content: ""
 }
 

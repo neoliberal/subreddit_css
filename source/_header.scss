@@ -3,7 +3,7 @@
     height: $combined-header-height;
     border: 0;
     width: 100%;
-    background: url(%%header%%);
+    background: url(image-reference("header"));
     font-family: $future-font;
     font-size: $header-font-size;
     color: $header-text-color;
@@ -203,7 +203,7 @@
             width: 20px;
             margin: 0 6px;
             overflow: hidden;
-            background: url(%%spritesheet%%) 0/120px 290px;
+            background: url(image-reference("spritesheet")) 0/120px 290px;
             font-size: 0
         }
         #openRESPrefs .gearIcon {

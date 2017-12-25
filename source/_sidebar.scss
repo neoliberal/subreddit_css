@@ -11,7 +11,7 @@
         &:before {
             display: block;
             height: $sidebar-image-height;
-            background: url("%%#{$sidebar-image}%%");
+            background: url(image-reference(sidebarimage));
             content: ""
         }
     }
@@ -90,7 +90,7 @@
         top: 10px;
         width: 20px;
         height: 20px;
-        background: url(%%spritesheet%%) 0/120px 290px;
+        background: url(image-reference("spritesheet")) 0/120px 290px;
         content: ""
     }
     .submit-link:not(.disabled) .morelink a:before {

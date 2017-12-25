@@ -66,7 +66,7 @@ body .thumbnail {
     border: 2px solid rgba(144, 144, 144, .25);
     border-radius: 50%;
     @include box-sizing(border-box);
-    background: #fff url(%%spritesheet%%)
+    background: #fff url(image-reference("spritesheet"))
 }
 
 .thumbnail.default {
@@ -98,7 +98,7 @@ body .thumbnail {
     max-height: none;
     border: 1px solid rgba(144, 144, 144, .25);
     border-radius: 5px;
-    background: #fff url(%%spritesheet%%) 0/90px 218px;
+    background: #fff url(image-reference("spritesheet")) 0/90px 218px;
     &.selftext {
         background-position: -17px -101px
     }

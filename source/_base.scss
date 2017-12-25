@@ -87,7 +87,7 @@ select {
     -moz-appearance: none;
     height: 20px;
     padding: 0 20px 0 5px;
-    background: url(%%spritesheet%%) no-repeat right -31px top -106px/50px 121px;
+    background: url(image-reference("spritesheet")) no-repeat right -31px top -106px/50px 121px;
 }
 
 input[type=radio] {
@@ -119,14 +119,14 @@ body.show-controversial .comment.controversial>.entry .score:after {
 }
 
 .arrow.up {
-    background-image: url(%%up%%);
+    background-image: url(image-reference("up"));
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0 0;
 }
 
 .arrow.upmod {
-    background-image: url(%%upmod%%);
+    background-image: url(image-reference("upmod"));
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0 0;
