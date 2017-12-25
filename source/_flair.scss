@@ -130,14 +130,14 @@ $image-flairs: (
     .flair-#{$name}:before,
     a[href$="#{$name}-img"] {
         background: url(image-reference("#{$name}-flair")) no-repeat;
-        background-size: #{0.4* $length}px;
+        background-size: #{$flair-image-scale-factor* $length}px;
     }
 
     @each $image in $category {
-        $offset: -100 * (index($category, $image) - 1);
+        $offset: -#{$flairsheet-flair-height} * (index($category, $image) - 1);
         .flair-#{$image}:before,
         a[href="#{$image}-#{$name}-img"] {
-            background-position: 0 #{0.4* $offset}px;
+            background-position: 0 #{$flair-image-scale-factor * $offset}px;
         }
     }
 }
