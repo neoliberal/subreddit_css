@@ -12,7 +12,7 @@ $flair-colors: (
     "grey": #5f5f5f,
     "pink": #e286a9, 
     "black": #000,
-    "plain": transparent
+    "plain": (transparent, #000)
 );
 
 $image-flairs: (
@@ -102,9 +102,8 @@ $image-flairs: (
         }
     }
     .flair-text {
-        height: $flair-text-height;
-        width: auto;
-        font-size: 10px;
+        @include box(auto, $flair-text-height);
+        font-size: 1rem;
         font-weight: 600;
         @include box-sizing(border-box);
         visibility: visible;
@@ -132,7 +131,7 @@ $image-flairs: (
     @each $image in $category {
         $offset: -$flairsheet-flair-height * (index($category, $image) - 1);
         .flair-#{$image}:before,
-        a[href="#{$image}-#{$name}-img"] {
+        a[href="##{$image}-#{$name}-img"] {
             background-position: 0 #{$flair-image-scale-factor * $offset};
         }
     }
@@ -148,17 +147,29 @@ a[href$="-img"] {
 }
 
 @each $key, $color in $flair-colors {
+    $is-list: type-of($color) == list;
     .tagline .flair-#{$key},
     .flairselector .linkflair-#{"" + $key},
     .linkflair-#{$key} .title .linkflairlabel {
-        background-color: $color;
+        @if $is-list {
+            background-color: nth($color, 1);
+            color: nth($color, 2);
+        } @else {
+            background-color: $color;
+        }
     }
     .tagline .flair-#{$key}-border {
-        border: 2px solid $color
+        @if $is-list {
+            border: 2px solid nth($color, 1);
+        }
+        @else {
+            border: 2px solid $color;
+        }
     }
 }
 
 a.author.moderator~.flair-mod {
-    background-color: #c22;
-    border-color: #c22;
+    $color: map-get($flair-colors, "red");
+    background-color: $color;
+    border-color: $color;
 }
