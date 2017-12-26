@@ -114,10 +114,10 @@ $image-flairs: (
         color: #fff;
     }
     .flair-text.flair-image {
-        $flair-spacing: $flair-image-width + $flair-text-padding;
+        $flair-spacing: calc(#{$flair-image-width} + #{$flair-text-padding});
         margin-left: $flair-spacing;
         &:before {
-            margin-left: -#{$flair-spacing};
+            margin-left: calc(-1 * #{$flair-spacing})
         }
     }
 }
