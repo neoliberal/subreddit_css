@@ -1,25 +1,25 @@
-$body-spacing: 20px;
+$body-spacing: 2rem;
 
-$topbar-height: 40px;
-$header-height: 300px;
-$bottombar-height: 40px;
+$topbar-height: 4rem;
+$header-height: 30rem;
+$bottombar-height: 4rem;
 $combined-header-height: $topbar-height + $header-height + $bottombar-height;
 
-$header-spacing: 20px;
-$header-item-spacing: 6px;
+$header-spacing: 2rem;
+$header-item-spacing: 0.6rem;
 
-$sidebar-width: 300px;
-$sidebar-spacing: 20px;
+$sidebar-width: 30rem;
+$sidebar-spacing: 2rem;
 $combined-sidebar-width: $sidebar-width + $sidebar-spacing + $sidebar-spacing;
 $combined-sidebar-spacing: $body-spacing + $combined-sidebar-width;
-$sidebar-item-spacing: 10px;
-$sidebar-button-height: 40px;
+$sidebar-item-spacing: 1rem;
+$sidebar-button-height: 4rem;
 
 $announcement-top: $body-spacing + $combined-header-height + $body-spacing;
 $announcement-left: $body-spacing;
 $announcement-right: $combined-sidebar-spacing;
-$announcement-height: 50px;
-$announcement-spacing: 20px;
+$announcement-height: 5rem;
+$announcement-spacing: 2rem;
 
 $content-top: $announcement-height + $body-spacing;
 $content-spacing: $combined-sidebar-spacing;
@@ -32,22 +32,22 @@ $flair-image-height: 40px;
 $flair-image-scale-factor: $flair-image-height / $flairsheet-flair-height;
 $flair-image-width: $flairsheet-flair-width * $flair-image-scale-factor;
 $flair-text-height: 20px;
-$flair-text-padding: 6px;
-$flair-text-spacing: 3px;
+$flair-text-padding: 0.6rem;
+$flair-text-spacing: 0.3rem;
 
 $message-count-bottom: $body-spacing;
-$message-count-height: 60px;
+$message-count-height: 6rem;
 $message-count-width: 30vw;
-$message-count-text-size: 12px;
+$message-count-text-size: 1.2rem;
 
-$stylesheet-page-horizontal-spacing: 20px;
-$stylesheet-page-vertical-spacing: 10px;
+$stylesheet-page-horizontal-spacing: 2rem;
+$stylesheet-page-vertical-spacing: 1rem;
 
-$toolbox-bar-height: 40px;
+$toolbox-bar-height: 4rem;
 $toolbox-bar-spacing: $body-spacing;
-$toolbox-bar-item-spacing: 3px;
+$toolbox-bar-item-spacing: 0.3rem;
 
-$np-height: 40px;
-$np-vertical-spacing: 20px;
+$np-height: 4rem;
+$np-vertical-spacing: 2rem;
 
-$footer-spacing: 20px;
+$footer-spacing: 2rem;
