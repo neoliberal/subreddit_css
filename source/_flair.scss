@@ -151,20 +151,13 @@ a[href$="-img"] {
     .tagline .flair-#{$key},
     .flairselector .linkflair-#{"" + $key},
     .linkflair-#{$key} .title .linkflairlabel {
+        background-color: nth($color, 1);
         @if $is-list {
-            background-color: nth($color, 1);
             color: nth($color, 2);
-        } @else {
-            background-color: $color;
         }
     }
     .tagline .flair-#{$key}-border {
-        @if $is-list {
-            border: 2px solid nth($color, 1);
-        }
-        @else {
-            border: 2px solid $color;
-        }
+        border: 2px solid nth($color, 1);
     }
 }
 
