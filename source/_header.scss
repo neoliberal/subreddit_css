@@ -1,8 +1,7 @@
 #header {
     grid-area: header;
-    height: $combined-header-height;
+    @include box($combined-header-height, 100%);
     border: 0;
-    width: 100%;
     background: url(image-reference("header"));
     font-family: $future-font;
     font-size: $header-font-size;
@@ -19,8 +18,7 @@
         z-index: -1;
         left: 0;
         bottom: 0;
-        width: 100%;
-        height: $bottombar-height;
+        @include box($bottombar-height, 100%);
         background: $bottombar-color;
         content: "";
     }
@@ -74,8 +72,7 @@
         #sr-more-link,
         #RESShortcutsEditContainer {
             @include display-flex();
-            width: auto;
-            height: auto;
+            @include box(auto, auto);
             max-height: none;
             background: none;
             position: inherit;
@@ -83,10 +80,10 @@
             justify-content: space-around;
         }
         #RESShortcutsEditContainer div {
+            @include display-flex();
+            @include box(auto, auto);
             position: inherit;
             display: inline-block;
-            width: auto;
-            height: auto;
             line-height: unset;
             background: none;
             color: $header-text-color;
@@ -170,8 +167,7 @@
             right: 0;
             bottom: $message-count-bottom;
             margin: 0 auto;
-            width: $message-count-width;
-            height: $message-count-height;
+            @include box($message-count-width, $message-count-height);
             line-height: $message-count-height;
             text-align: center;
             background-color: $message-count-background-color;
@@ -199,9 +195,8 @@
         .beta-hint,
         .beta-hint a {
             @include display-flex();
+            @include box(20px);
             justify-content: center;
-            height: 20px;
-            width: 20px;
             margin: 0 6px;
             overflow: hidden;
             background: url(image-reference("spritesheet")) 0/120px 290px;

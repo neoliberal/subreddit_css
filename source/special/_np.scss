@@ -15,10 +15,9 @@ body:lang(np):not(.subscriber) {
     #siteTable:before {
         content: $np-message;
         display: inline-flex;
-        width: 100%;
+        @include box(100%, $np-height);
         padding: 0 $np-vertical-spacing;
         color: $np-text-color;
-        height: $np-height;
         align-items: center;
         text-transform: uppercase;
         font-family: $future-font;

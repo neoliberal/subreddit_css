@@ -88,8 +88,7 @@
         position: absolute;
         left: 10px;
         top: 10px;
-        width: 20px;
-        height: 20px;
+        @include box(20px);
         background: url(image-reference("spritesheet")) 0/120px 290px;
         content: ""
     }
@@ -201,8 +200,7 @@
             margin-bottom: 5px
         }
         .sidecontentbox .collapse-button {
-            width: 15px;
-            height: 15px;
+           @include box(15px);
             border: 1px solid rgba(144, 144, 144, .25);
             border-radius: 5px;
             text-indent: 0;

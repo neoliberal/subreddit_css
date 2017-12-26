@@ -94,8 +94,7 @@ $image-flairs: (
     .flair-image {
         margin: 0 0 0 $flair-image-width;
         &:before {
-            width: $flair-image-width;
-            height: $flair-image-height;
+            @include box($flair-image-width, $flair-image-height);
             position: absolute;
             content: "";
             margin-left: -#{$flair-image-width};
