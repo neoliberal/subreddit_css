@@ -1,6 +1,6 @@
 #header {
     grid-area: header;
-    @include box($combined-header-height, 100%);
+    @include box(100%, $combined-header-height);
     border: 0;
     background: url(image-reference("header"));
     font-family: $future-font;
