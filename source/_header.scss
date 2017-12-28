@@ -18,7 +18,7 @@
         z-index: -1;
         left: 0;
         bottom: 0;
-        @include box($bottombar-height, 100%);
+        @include box(100%, $bottombar-height);
         background: $bottombar-color;
         content: "";
     }
