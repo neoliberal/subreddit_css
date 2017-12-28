@@ -32,8 +32,8 @@ $flair-image-height: 40px;
 $flair-image-scale-factor: $flair-image-height / $flairsheet-flair-height;
 $flair-image-width: $flairsheet-flair-width * $flair-image-scale-factor;
 $flair-text-height: 20px;
-$flair-text-padding: 0.6rem;
-$flair-text-spacing: 0.3rem;
+$flair-text-padding: 6px;
+$flair-text-spacing: 3px;
 
 $message-count-bottom: $body-spacing;
 $message-count-height: 6rem;
