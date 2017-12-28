@@ -166,3 +166,99 @@ a.author.moderator~.flair-mod {
     background-color: $color;
     border-color: $color;
 }
+
+$donation-flairs: (
+    genscher,
+    stevens,
+    massoud,
+    hrc,
+    kristersson,
+    pilecki,
+    young,
+    arendt,
+    wbush,
+    clarke,
+    goldin,
+    hamilton,
+    mccain,
+    pericles,
+    roem,
+    sakamoto,
+    cantwell,
+    daniels,
+    garrett,
+    kaine,
+    lincoln,
+    schwarzenegger,
+    truman,
+    xiaobo,
+    norris,
+    chretien,
+    stein,
+    thorbecke,
+    roth,
+    mulroney,
+    twashington,
+    mcnamara,
+    beyonce,
+    talleyrand,
+    freeland,
+    obama,
+    nixon,
+    kohl,
+    ginsburg,
+    thatcher,
+    slabunova,
+    reagan,
+    lafayette,
+    opp,
+    blair,
+    lamb,
+    bonaparte,
+    kenyatta,
+    palpatine,
+    lange,
+    ryan,
+    shulter,
+    dimon,
+    ross,
+    wyden,
+    pechtold,
+    vestager,
+    geon,
+    wellstone,
+    bentham,
+    loof,
+    wickremesinghe,
+    clarke,
+    hatta,
+    recette,
+    bobama,
+    cowperthwaite,
+    parnell,
+    yates,
+    george,
+    masaryk,
+    harris,
+    ataturk,
+    pelosi,
+    baker,
+    bensten,
+    romney,
+    walt,
+    marx, // ugh
+    patrick,
+);
+
+.flair-donation:before {
+    $length: length($donation-flairs) * $flairsheet-flair-height;
+    background: url(image-reference("donation-flair")) no-repeat;
+    background-size: $flair-image-width #{$flair-image-scale-factor * $length};
+}
+
+@each $image in $donation-flairs {
+    $offset: -$flairsheet-flair-height * (index($donation-flairs, $image) - 1);
+    .flair-#{$image}:before {
+        background-position: 0 #{$flair-image-scale-factor * $offset};
+    }
+}
