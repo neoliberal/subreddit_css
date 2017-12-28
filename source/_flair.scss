@@ -160,7 +160,11 @@ $image-flairs: (
         romney,
         walt,
         marx, // ugh
-        patrick
+        patrick,
+        khama,
+        macron,
+        osborne,
+        lidner
     )
 );
 
@@ -197,10 +201,10 @@ $image-flairs: (
         color: #fff;
     }
     .flair-text.flair-image {
-        $flair-spacing: calc(#{$flair-image-width} + #{$flair-text-padding});
+        $flair-spacing: $flair-image-width + $flair-text-padding + $flair-text-spacing;
         margin-left: $flair-spacing;
         &:before {
-            margin-left: calc(-1 * #{$flair-spacing})
+            margin-left: -#{$flair-spacing}
         }
     }
 }
