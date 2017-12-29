@@ -39,8 +39,8 @@ def assemble_spritsheet(flair_dir: Path) -> None:
         location: int = individual_image[1] * count
         spritesheet.paste(image, (0, location))
 
-    # for example, if the folder name is "politicians"
-    # the image will be saved as "politicians_spritesheet.png" in the politicians folder
+    # for example, if the folder name is "politician"
+    # the image will be saved as "politician-flair.png" in the "politician" folder
     spritesheet.save(flair_dir / (flair_dir.name + "-flair.png"))
     return
 
