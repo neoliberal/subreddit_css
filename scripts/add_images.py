@@ -16,8 +16,7 @@ def flairs_list(flair_dir: Path) -> sass.SassList:
         [
             flair.stem[1:]
             for flair in sorted(
-                list(flair_dir.glob("_*.png")),
-                key=lambda image: str(image.name)
+                list(flair_dir.glob("_*.png"))
             )
         ],
         separator=sass.SASS_SEPARATOR_COMMA

@@ -24,8 +24,7 @@ def assemble_spritsheet(flair_dir: Path) -> None:
     images: List[Image] = [
         Image.open(image).resize(individual_image)
         for image in sorted(
-            list(flair_dir.glob("_*.png")),
-            key=lambda image: str(image.name)
+            list(flair_dir.glob("_*.png"))
         )
     ]
 
