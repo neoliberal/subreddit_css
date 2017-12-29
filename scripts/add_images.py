@@ -7,7 +7,7 @@ def flair_images() -> sass.SassMap:
     flairs_dir: Path = (Path.cwd().parent / "assets" / "flairs")
 
     return sass.SassMap({
-        f"${subdir.name}": flairs_list(subdir)
+        subdir.name: flairs_list(subdir)
         for subdir in (dir for dir in flairs_dir.iterdir() if dir.is_dir())
     })
 
