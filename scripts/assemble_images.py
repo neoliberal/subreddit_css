@@ -21,10 +21,12 @@ def assemble_spritsheet(flair_dir: Path) -> None:
     from PIL import Image
 
     individual_image: Tuple[int, int] = (92, 100)
-
     images: List[Image] = [
         Image.open(image).resize(individual_image)
-        for image in flair_dir.glob("_*.png") # individual images must be underscored
+        for image in sorted(
+            list(flair_dir.glob("_*.png")),
+            key=lambda image: str(image.parts[-1])
+        )
     ]
 
     spritesheet: Image = Image.new(
@@ -39,5 +41,8 @@ def assemble_spritsheet(flair_dir: Path) -> None:
 
     # for example, if the folder name is "politicians"
     # the image will be saved as "politicians_spritesheet.png" in the politicians folder
-    spritesheet.save(flair_dir / (flair_dir.name + "-flairs.png"))
+    spritesheet.save(flair_dir / (flair_dir.name + "-flair.png"))
     return
+
+if __name__ == "__main__":
+    assemble_images()
