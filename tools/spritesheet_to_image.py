@@ -9,7 +9,6 @@ def spritesheet_to_image(image: str) -> None:
     new_image_height: int = 100
 
     number: int = int(height / new_image_height)
-    print(number)
     for i in range(0, number):
         box: Tuple[int, int, int, int] = (
             0,
@@ -17,7 +16,6 @@ def spritesheet_to_image(image: str) -> None:
             width,
             new_image_height * (i+1)
         )
-        print(box)
         sprite: Image = spritesheet.crop(box)
         sprite.save(f"{i}.png")
     return
