@@ -4,6 +4,7 @@ from pathlib import Path
 import sass
 
 def flair_images() -> sass.SassMap:
+    """reads directory and produces a map of flairs"""
     flairs_dir: Path = (Path.cwd().parent / "assets" / "flairs")
 
     return sass.SassMap({
@@ -15,6 +16,7 @@ def flair_images() -> sass.SassMap:
     })
 
 def flairs_list(flair_dir: Path) -> sass.SassList:
+    """creates flair list"""
     return sass.SassList(
         [
             flair.stem[1:]
