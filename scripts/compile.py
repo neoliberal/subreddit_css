@@ -1,3 +1,4 @@
+"""compiles sass with custom functions"""
 from pathlib import Path
 
 import sass
