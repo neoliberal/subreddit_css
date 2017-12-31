@@ -8,7 +8,10 @@ def flair_images() -> sass.SassMap:
 
     return sass.SassMap({
         subdir.name: flairs_list(subdir)
-        for subdir in (dir for dir in flairs_dir.iterdir() if dir.is_dir())
+        for subdir in (
+            dir for dir in flairs_dir.iterdir()
+            if dir.is_dir() and not dir.stem.startswith('_')
+        )
     })
 
 def flairs_list(flair_dir: Path) -> sass.SassList:
