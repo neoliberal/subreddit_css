@@ -5,7 +5,7 @@ import sass
 
 def custom_flair_images() -> sass.SassMap:
     """reads directory and produces a map of flairs"""
-    flairs_dir: Path = (Path.cwd().parent / "assets" / "flairs")
+    flairs_dir: Path = (Path(__file__).parents[1] / "assets" / "flairs")
 
     return sass.SassMap({
         subdir.name: flairs_list(subdir)

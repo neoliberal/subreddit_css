@@ -12,7 +12,7 @@ from find_sidebar import (
 
 def compile_sass() -> str:
     """compiles sass index file"""
-    index_file: Path = (Path.cwd().parent / "index.scss")
+    index_file: Path = (Path(__file__).parents[1] / "index.scss")
     return sass.compile(
         filename=str(index_file),
         custom_functions={
