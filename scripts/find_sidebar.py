@@ -10,7 +10,7 @@ def _sidebar_path() -> Path:
         if not image.name.startswith('_')
     ), None)
 
-def custom_sidebar_exists() -> bool: 
+def custom_sidebar_exists() -> bool:
     """checks if sidebar image actually exists"""
     return _sidebar_path() is not None
 
