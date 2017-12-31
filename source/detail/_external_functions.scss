@@ -1,3 +1,15 @@
 @function image-flairs() {
     @return custom-flair-images();
 }
+
+@function sidebar-exists() {
+    @return custom-sidebar-exists();
+}
+
+@function sidebar-name() {
+    @return custom-sidebar-name();
+}
+
+@function sidebar-dimensions() {
+    @return custom-sidebar-dimensions();
+}

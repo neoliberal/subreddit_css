@@ -7,11 +7,15 @@
     @include box-sizing(content-box);
     @include display-flex();
     flex-direction: column;
-    @if variable-exists($name: "sidebar-image") {
+    @if sidebar-exists() { 
         &:before {
+            $image-width: nth(sidebar-dimensions(), 1);
+            $image-height: nth(sidebar-dimensions(), 2);
+            $scale-factor: $sidebar-width / $image-width;
+            width: $sidebar-width;
+            height: #{$image-height * $scale-factor};
             display: block;
-            height: $sidebar-image-height;
-            background: url(image-reference($sidebar-image));
+            background: url(image-reference(sidebar-name()));
             content: ""
         }
     }
