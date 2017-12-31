@@ -15,8 +15,6 @@ $flair-colors: (
     "plain": (transparent, #000)
 );
 
-$image-flairs: flair-images();
-
 .tagline {
     .flair {
         display: inline-flex;
@@ -58,7 +56,7 @@ $image-flairs: flair-images();
     }
 }
 
-@each $name, $category in $image-flairs {
+@each $name, $category in image-flairs() {
     $length: length($category) * $flairsheet-flair-height;
     .flair-#{$name}:before,
     a[href$="#{$name}-img"] {
