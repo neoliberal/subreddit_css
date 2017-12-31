@@ -3,7 +3,7 @@ from pathlib import Path
 
 import sass
 
-def flair_images() -> sass.SassMap:
+def custom_flair_images() -> sass.SassMap:
     """reads directory and produces a map of flairs"""
     flairs_dir: Path = (Path.cwd().parent / "assets" / "flairs")
 
@@ -28,4 +28,4 @@ def flairs_list(flair_dir: Path) -> sass.SassList:
     )
 
 if __name__ == "__main__":
-    print(flair_images())
+    print(custom_flair_images())
