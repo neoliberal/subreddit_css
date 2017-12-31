@@ -87,7 +87,7 @@ a[href$="-img"] {
     .flairselector .linkflair-#{$key},
     .linkflair-#{$key} .title .linkflairlabel {
         background-color: nth($color, 1);
-        @if type-of($color)==list {
+        @if type-of($color) == list {
             color: nth($color, 2);
         }
     }
