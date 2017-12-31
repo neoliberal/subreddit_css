@@ -83,12 +83,11 @@ a[href$="-img"] {
 }
 
 @each $key, $color in $flair-colors {
-    $is-list: type-of($color) == list;
     .tagline .flair-#{$key},
     .flairselector .linkflair-#{$key},
     .linkflair-#{$key} .title .linkflairlabel {
         background-color: nth($color, 1);
-        @if $is-list {
+        @if type-of($color)==list {
             color: nth($color, 2);
         }
     }
