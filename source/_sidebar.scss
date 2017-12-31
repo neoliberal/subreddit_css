@@ -15,7 +15,7 @@
             width: $sidebar-width;
             height: #{$image-height * $scale-factor};
             display: block;
-            background: url(image-reference(sidebar-name()));
+            background: url(image-reference(sidebar-name())) contain;
             content: ""
         }
     }
