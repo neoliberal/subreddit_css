@@ -7,7 +7,7 @@ def assemble_images() -> None:
     """
     converts flairs into a combined flairsheet
     """
-    flairs_dir: Path = (Path(__file__).parents[1] / "assets" / "flairs")
+    flairs_dir: Path = (Path(__file__).resolve().parents[1] / "assets" / "flairs")
     for subdir in (
             dir for dir in flairs_dir.iterdir()
             if dir.is_dir() and not dir.stem.startswith('_')
