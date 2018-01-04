@@ -25,7 +25,7 @@ def compile_sass() -> str:
 
 def main() -> None:
     """outputs generated css to file"""
-    output: Path = (Path.cwd().parent / "output.css")
+    output: Path = (Path(__file__).resolve().parents[1] / "output.css")
     output.touch()
 
     with output.open("w") as file:
