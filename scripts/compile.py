@@ -5,8 +5,8 @@ import sass
 
 from add_images import custom_flair_images
 from find_sidebar import (
-    custom_sidebar_dimensions, 
-    custom_sidebar_name, 
+    custom_sidebar_dimensions,
+    custom_sidebar_name,
     custom_sidebar_exists
 )
 
