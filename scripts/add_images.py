@@ -18,18 +18,17 @@ def custom_flair_images() -> sass.SassMap:
 
 def flairs_list(flair_dir: Path) -> sass.SassList:
     """creates flair list"""
-    assemble_spritsheet(flair_dir)
+    flairs: List[Path] = list(flair_dir.glob("_*.png"))
+    assemble_spritsheet(flair_dir, flairs)
     return sass.SassList(
         [
             flair.stem[1:]
-            for flair in sorted(
-                list(flair_dir.glob("_*.png"))
-            )
+            for flair in flairs
         ],
         separator=sass.SASS_SEPARATOR_COMMA
     )
 
-def assemble_spritsheet(flair_dir: Path) -> None:
+def assemble_spritsheet(flair_dir: Path, flairs: List[Path]) -> None:
     """
     assembles the spritsheet from various images
 
@@ -39,10 +38,8 @@ def assemble_spritsheet(flair_dir: Path) -> None:
 
     individual_image: Tuple[int, int] = (92, 100)
     images: List[Image] = [
-        Image.open(image).resize(individual_image)
-        for image in sorted(
-            list(flair_dir.glob("_*.png"))
-        )
+        Image.open(flair).resize(individual_image)
+        for flair in flairs
     ]
 
     spritesheet: Image = Image.new(
