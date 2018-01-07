@@ -4,7 +4,7 @@ from pathlib import Path
 import sass
 
 def _sidebar_path() -> Path:
-    sidebar_dir = (Path(__file__).parents[1] / "assets" / "sidebar")
+    sidebar_dir = (Path(__file__).parents[2] / "assets" / "sidebar")
     return next((
         image for image in sidebar_dir.glob("*.png")
         if not image.name.startswith('_')
