@@ -25,6 +25,6 @@
         letter-spacing: $announcement-letter-spacing;
         font-weight: $announcement-bold-font-weight;
         color: $announcement-bold-color;
-        content:  $announcement-text;
+        content:  suffix-space($announcement-text);
     }
 }

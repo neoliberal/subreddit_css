@@ -5,3 +5,7 @@
 @function prefix-space($content) {
     @return " " + $content;
 }
+
+@function suffix-space($content) {
+    @return $content + " ";
+}
