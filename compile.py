@@ -3,8 +3,8 @@ from pathlib import Path
 
 import sass
 
-from add_images import custom_flair_images
-from find_sidebar import (
+from scripts.add_images import custom_flair_images
+from scripts.find_sidebar import (
     custom_sidebar_dimensions,
     custom_sidebar_name,
     custom_sidebar_exists
@@ -12,7 +12,7 @@ from find_sidebar import (
 
 def compile_sass() -> str:
     """compiles sass index file"""
-    index_file: Path = (Path(__file__).resolve().parents[1] / "index.scss")
+    index_file: Path = (Path(__file__).resolve().parent / "index.scss")
     return sass.compile(
         filename=str(index_file),
         custom_functions={
@@ -25,7 +25,7 @@ def compile_sass() -> str:
 
 def main() -> None:
     """outputs generated css to file"""
-    output: Path = (Path(__file__).resolve().parents[1] / "output.css")
+    output: Path = (Path(__file__).resolve().parent / "output.css")
     output.touch()
 
     with output.open("w") as file:
