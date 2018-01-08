@@ -1,22 +1,13 @@
 {
     "css_updater": {
-        "main": "index.scss",
         "assets": "assets/",
         "reddit": {
             "main": "neoliberal",
             "testing": "nl_staging"
         },
-        "style": {
-            "type": "sass",
-            "options": {
-                "output_style": "compressed",
-                "pre-build": [
-                    "scripts/assemble_images.py"
-                ],
-                "custom_functions": [
-                    "scripts/add_images.py"
-                ]
-            }
+        "compile": {
+            "file": "compile.py",
+            "function": "compile_sass"
         }
     }
 }
