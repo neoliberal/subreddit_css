@@ -18,7 +18,7 @@ def custom_flair_images() -> sass.SassMap:
 
 def flairs_list(flair_dir: Path) -> sass.SassList:
     """creates flair list"""
-    flairs: List[Path] = list(flair_dir.glob("_*.png"))
+    flairs: List[Path] = sorted(list(flair_dir.glob("_*.png")))
     assemble_spritsheet(flair_dir, flairs)
     return sass.SassList(
         [
