@@ -3,8 +3,8 @@ from pathlib import Path
 
 import sass
 
-from source.hooks.add_images import custom_flair_images
-from source.hooks.find_sidebar import (
+from source.detail.add_images import custom_flair_images
+from source.detail.find_sidebar import (
     custom_sidebar_dimensions,
     custom_sidebar_name,
     custom_sidebar_exists
