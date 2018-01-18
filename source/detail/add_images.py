@@ -52,15 +52,17 @@ def assemble_spritsheet(flair_dir: Path, flairs: List[Path]) -> None:
         location: int = individual_image[1] * count
         spritesheet.paste(image, (0, location))
 
-    # reduce the output file's colour depth
-    alpha = spritesheet.split()[-1]
-    spritesheet = spritesheet.convert('RGB').convert('P', palette=Image.ADAPTIVE, colors=255)
-    mask = Image.eval(alpha, lambda a: 255 if a <=128 else 0)
-    spritesheet.paste(255, mask)
-
     # for example, if the folder name is "politician"
     # the image will be saved as "politician-flair.png" in the "politician" folder
-    spritesheet.save(flair_dir / f"{flair_dir.name}-flair.png", transparency=255)
+    with (flair_dir / f"{flair_dir.name}-flair.png").open('wb') as image:
+        while True:
+            spritesheet.save(image, format="png", transparency=255)
+            if image.getbuffer().nbytes > 500000: # 500kb
+                alpha = spritesheet.getchannel('A')
+                spritesheet = spritesheet.convert("RGB").convert('P', palette=Image.ADAPTIVE, colors=255)
+                mask: Image = Image.eval(alpha, lambda a: 255 if a <= 128 else 0)
+                spritesheet.paste(255, mask)
+
     return
 
 if __name__ == "__main__":
