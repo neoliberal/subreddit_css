@@ -37,12 +37,12 @@ def assemble_spritsheet(flair_dir: Path, flairs: List[Path]) -> None:
     from PIL import Image
 
     individual_image: Tuple[int, int] = (92, 100)
-    images: List[Image] = [
+    images: List[Image.Image] = [
         Image.open(flair).resize(individual_image)
         for flair in flairs
     ]
 
-    spritesheet: Image = Image.new(
+    spritesheet: Image.Image = Image.new(
         mode="RGBA",
         size=(individual_image[0], individual_image[1] * len(images)),
         color=(0, 0, 0, 0)
@@ -55,7 +55,7 @@ def assemble_spritsheet(flair_dir: Path, flairs: List[Path]) -> None:
     # reduce the output file's colour depth
     alpha = spritesheet.split()[-1]
     spritesheet = spritesheet.convert('RGB').convert('P', palette=Image.ADAPTIVE, colors=255)
-    mask = Image.eval(alpha, lambda a: 255 if a <=128 else 0)
+    mask: Image.Image = Image.eval(alpha, lambda a: 255 if a <=128 else 0)
     spritesheet.paste(255, mask)
 
     # for example, if the folder name is "politician"
