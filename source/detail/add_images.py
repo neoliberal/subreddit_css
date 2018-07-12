@@ -58,9 +58,10 @@ def assemble_spritsheet(flair_dir: Path, flairs: List[Path]) -> None:
     mask: Image.Image = Image.eval(alpha, lambda a: 255 if a <=128 else 0)
     spritesheet.paste(255, mask)
 
+    filename = flair_dir.name.replace("_", "-")
     # for example, if the folder name is "politician"
     # the image will be saved as "politician-flair.png" in the "politician" folder
-    spritesheet.save(flair_dir / f"{flair_dir.name}-flair.png", transparency=255)
+    spritesheet.save(flair_dir / f"{filename}-flair.png", transparency=255)
     return
 
 if __name__ == "__main__":
