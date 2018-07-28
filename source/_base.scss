@@ -2340,6 +2340,16 @@ body.show-controversial .comment.controversial>.entry .score:after {
     background-image: url(%%upmod%%)
 }
 
+.arrow.down,
+.arrow.downmod {
+    background-image: url(%%downtarrif%%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0; }
+
+.arrow.downmod {
+    background-image: url(%%downtarrifmod%%); }
+
 p.tagline {
     display: flex;
     flex-direction: row;
