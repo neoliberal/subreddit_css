@@ -42,8 +42,15 @@ a {
     color: #5f9dd2
 }
 
-.tagline a {
+.tagline a,
+.tagline a.submitter.author {
     color: #585858
+}
+
+.tagline a.subreddit {
+    margin-bottom: 0;
+    margin-left: 3px;
+
 }
 
 .commentNavSortType:hover,
@@ -124,6 +131,10 @@ h6 {
     color: #4d5968
 }
 
+.md.wiki > h1 {
+    font-size: 175% !important;
+}
+
 h1,
 h2 {
     font-size: 17px!important
@@ -148,7 +159,7 @@ h6 {
     border-left: 4px solid rgba(144, 144, 144, .25);
     padding: 5px;
     background: rgba(144, 144, 144, .075);
-    font-style: italic
+
 }
 
 .md td,
@@ -805,10 +816,15 @@ a.choice[href$=controversial]:after {
     height: 325px;
     border: 0;
     box-shadow: inset 0 -90px 0 0 #313131;
-    background: url(%%header-ex%%) no-repeat;
-    background-color: #515b8c;
+    background: url(%%nlbanner-expansionary%%) no-repeat;
+    background-color: rgb(71,81,133);
     background-size: auto 104%;
     box-shadow: inset 0 -38px 0 0 rgba(49, 49, 49, .8)
+}
+
+#header-logo {
+  background: url(%%nl-logo%%) no-repeat;
+
 }
 
 #header,
@@ -1754,8 +1770,7 @@ span.redditSingleClick {
 .tagline .userattrs a.moderator,
 .tagline .userattrs a.submitter,
 .thing .tagline a.author.admin,
-.thing .tagline a.author.moderator,
-.thing .tagline a.author.submitter {
+.thing .tagline a.author.moderator {
     display: inline-block;
     border-radius: 0;
     padding: 1px 6px;
@@ -1765,9 +1780,7 @@ span.redditSingleClick {
     color: #fff
 }
 
-.tagline .userattrs a.submitter,
-.thing .tagline a.author.submitter,
-.thing .tagline a.author.submitter:hover {
+.tagline .userattrs a.submitter {
     background: #5f9dd2!important
 }
 
@@ -1885,7 +1898,8 @@ span.RESThrobber:before {
 .footer-parent {
     position: relative;
     padding: 0;
-    background: url(%%overlay%%) fixed center/auto auto, linear-gradient(45deg, rgba(39, 161, 227, .65), rgba(231, 35, 42, .65)), url(%%header-ex%%) fixed center/cover
+    background: url(%%sidebar%%) fixed bottom/auto auto, linear-gradient(45deg, rgba(39, 161, 227, .65), rgba(231, 35, 42, .65)), url(%%header-ex%%) fixed center/cover;
+    background-size: cover
 }
 
 .footer {
@@ -1895,8 +1909,7 @@ span.RESThrobber:before {
     max-width: none;
     border: 0;
     border-radius: 0;
-    padding: 50px 0;
-    background: rgba(21, 27, 33, .6);
+    padding: 720px 0 50px 0;
     text-align: center
 }
 
@@ -2291,10 +2304,10 @@ div.guider {
 .side:before {
     display: block;
     margin: 10px 0;
-    height: 434px;
+    height: 435px;
     border-radius: 5px;
     background: url(%%sidebarimage%%);
-    background-size: 100%;
+    background-size: cover;
     content: ""
 }
 
@@ -2316,11 +2329,11 @@ div.guider {
 }
 
 .side .subscribers .number:after {
-    content: " engaging in Blockchain exploratory efforts"
+    content: " members of the deep state"
 }
 
 .side .users-online .number:after {
-    content: " merging their consciousness into the Blockchain"
+    content: " members of the deep state's deep state"
 }
 
 body.show-controversial .comment.controversial>.entry .score:after {
@@ -2339,16 +2352,6 @@ body.show-controversial .comment.controversial>.entry .score:after {
 .arrow.upmod {
     background-image: url(%%upmod%%)
 }
-
-.arrow.down,
-.arrow.downmod {
-    background-image: url(%%downtarrif%%);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0 0; }
-
-.arrow.downmod {
-    background-image: url(%%downtarrifmod%%); }
 
 p.tagline {
     display: flex;
@@ -2398,6 +2401,7 @@ body.mod-toolbox .tb-bracket-button.nuke-button {
 
 .tagline .score {
     margin-right: 5px
+
 }
 
 .tb-bracket-button.add-user-tag-neoliberal:not([title=""]) {
@@ -2496,6 +2500,75 @@ body.mod-toolbox .tb-bracket-button.nuke-button {
     }
 }
 
+.md [href='#goolsbee-stupid']{
+    background: url(%%goolsbee-stupid%%);
+    background-size: cover;
+    cursor: default;
+    display: inline-block;
+    height: 74px;
+    width: 259px;
+
+}
+
+/*.md [href='#goolsbee-funny']{
+    background: url(%%goolsbee-funny%%);
+    background-size: cover;
+    cursor: default;
+    display: inline-block;
+    height: 74px;
+    width: 351px;
+
+}*/
+
+.md [href='#goolsbee-pistol']{
+    background: url(%%goolsbee-pistol%%);
+    background-size: cover;
+    cursor: default;
+    display: inline-block;
+    height: 70px;
+    width: 301px;
+
+}
+
+
+.md [href="#mission-accomplished"] {
+  background: url(%%mission-accomplished%%);
+  background-size: cover;
+  cursor: default;
+  display: inline-block;
+  height: 360px;
+  width: 640px;
+  -webkit-animation: bush 4.8s steps(42) infinite;
+  animation: bush 4.8s steps(42) infinite;
+  color: #fff;
+  text-shadow: 0 0 15px #000;
+  text-align: center;
+  font-family: impact;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+
+
+@-webkit-keyframes bush {
+  from {
+    background-position: 0 0;
+}
+  to {
+    background-position: 0 -15120px;
+    }
+}
+
+@keyframes bush {
+  from {
+    background-position: 0 0;
+}
+  to {
+    background-position: 0 -15120px;
+    }
+}
+
+
 .md [href="#theresamay"] {
     background: url(%%theresamay%%);
     cursor: default;
@@ -2527,6 +2600,40 @@ body.mod-toolbox .tb-bracket-button.nuke-button {
     }
     to {
         background-position: 0 -12349px
+    }
+}
+
+.md [href="#BasicShyBear"] {
+  background: url(%%BasicShyBear%%);
+  cursor: default;
+  display: inline-block;
+  height: 250px;
+  width: 444px;
+  -webkit-animation: BasicShyBear 8.6s steps(86) infinite;
+  animation: BasicShyBear 8.6s steps(86) infinite;
+  color: #fff;
+  text-shadow: 0 0 15px #000;
+  text-align: center;
+  font-family: impact;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+@-webkit-keyframes BasicShyBear {
+  from {
+    background-position: 0 0;
+}
+  to {
+    background-position: 0 -21500px;
+    }
+}
+
+@keyframes BasicShyBear {
+  from {
+    background-position: 0 0;
+}
+  to {
+    background-position: 0 -21500px;
     }
 }
 
@@ -2570,8 +2677,8 @@ body.mod-toolbox .tb-bracket-button.nuke-button {
     display: inline-block;
     height: 200px;
     width: 270px;
-    -webkit-animation: GOAT 10.34s steps(155) infinite;
-    animation: GOAT 10.34s steps(155) infinite;
+    -webkit-animation: GOAT 1.34s steps(155) infinite;
+    animation: GOAT 1.34s steps(155) infinite;
     color: #fff;
     text-shadow: 0 0 15px #000;
     text-align: center;
@@ -2596,6 +2703,43 @@ body.mod-toolbox .tb-bracket-button.nuke-button {
     to {
         background-position: 0 -31000px
     }
+}
+
+.md [href="#grievelife"],
+.md [href="#grievelife"]:hover,
+.md [href="#grievelife"]:active,
+.md [href="#grievelife"]:visited {
+  background: url(%%grievelife%%);
+  cursor: default;
+  display: inline-block;
+  width: 383px;
+  height: 216px;
+  -webkit-animation: grievelife 3.1s steps(75) infinite;
+  animation: grievelife 3.1s steps(75) infinite;
+  color: #fff;
+  text-shadow: 0 0 15px #000;
+  text-align: center;
+  font-family: impact;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+@-webkit-keyframes grievelife {
+  from {
+    background-position: 0 0;
+}
+  to {
+    background-position: 0 -16200px;
+}
+}
+
+@keyframes grievelife {
+  from {
+    background-position: 0 0;
+}
+  to {
+    background-position: 0 -16200px;
+}
 }
 
 .md [href="#ryandab"] {
