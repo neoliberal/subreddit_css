@@ -19,9 +19,17 @@ def main() -> None:
     """outputs generated css to file"""
     output: Path = (Path(__file__).resolve().parent / "output.css")
     output.touch()
-
-    with output.open("w") as file:
-        file.write(compile_sass())
+    with output.open("w") as f:
+        f.write(compile_sass())
+    # fix donation_spring2018 image name, and remove charset
+    with open(output, "r") as f:
+        new_css = f.read()
+        new_css = new_css.replace(
+            "%%donation_spring2018-flair%%", "%%donation-spring2018-flair%%"
+        )
+        new_css = new_css.replace('@charset "UTF-8";\n', '')
+    with open(output, "w") as f:
+        f.write(new_css)
 
 if __name__ == "__main__":
     main()
