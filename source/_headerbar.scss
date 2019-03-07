@@ -1,0 +1,94 @@
+/* The text/image links directly below "hot, new, rising" */
+/* The text area containing the images */
+.side .md>h1:first-of-type {
+    position: absolute;
+    overflow: hidden;
+    left: 0px;
+    right: 320px;
+    margin: 0;
+    height: 75px;
+    white-space: nowrap;
+    letter-spacing: 0;
+    font: 300 14px/40px -apple-system, "Open Sans", Helvetica, sans-serif!important;
+    top: 324px;
+    box-shadow: -3px 1px 5px 0px #222;
+}
+
+.side .md>h1:first-of-type:before {
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-weight: 700;
+    color: #4d5968!important;
+}
+.side .md>h1:first-of-type strong {
+    color: #c22
+}
+.side .md>h1:first-of-type:before {
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-weight: 700;
+    color: #4d5968!important;
+}
+
+
+/* The images themselves */
+.side .md a[href^="#headerbutton"] + a {
+    width: 33.33%;
+    height: 100%;
+    border: none;
+    background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(75,76,78,0) 97%,rgba(76,76,76,1) 100%), url("%%header-img-1%%") no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    font-size: 125% !important;
+    color: white;
+    text-shadow: -1px -1px 2px black, -1px 1px 2px black, 1px -1px 2px black, 1px 1px 2px black;
+    padding-left: 5px;
+    font-weight: bold;
+    position:absolute;
+    line-height: 15px;
+    padding-top: 10px;
+    white-space: pre-line;
+}
+.side .md a[href^="#headerbutton"] + a:after {
+    content: "Neoliberal Shill Bracket";
+}
+.side .md a[href^="#headerbutton"] + a:hover::after {
+    content: "Vote for the best Neoliberal shill of the year on our Twitter page!";
+    font-size: 80% !important;
+    text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+    font-weight: normal;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 300px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: rgba(20,20,20,0.5);
+}
+
+.side .md a[href="#headerbutton-2"] + a {
+    background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(75,76,78,0) 97%,rgba(76,76,76,1) 100%), url("%%header-img-2%%") no-repeat;
+    background-size: cover;
+    left: 33.33%;
+}
+.side .md a[href="#headerbutton-2"] + a:after {
+    content: "Roots Of The Kashmir Conflict";
+}
+.side .md a[href="#headerbutton-2"] + a:hover::after {
+    content: "/u/Cuddlyaxe details how the British withdrawal from the Indian subcontinent set the stage for conflicts that continue to this day.";
+    box-shadow: 219px 0px 0px 220px rgba(0, 0, 0, 0.7);
+}
+
+.side .md a[href="#headerbutton-3"] + a {
+    background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(75,76,78,0) 97%,rgba(76,76,76,1) 100%), url("%%header-img-3%%") no-repeat;
+    background-size: cover;
+    left: 66.66%;
+}
+.side .md a[href="#headerbutton-3"] + a:after {
+    content: "Charter Cities AMA";
+}
+.side .md a[href="#headerbutton-3"] + a:hover::after {
+    content: "The Center for Innovative Government Research answers your questions about charter cities. While the AMA has ended, further discussion is encouraged.";
+    box-shadow: 249px 0px 0px 250px rgba(0, 0, 0, 0.5);
+}

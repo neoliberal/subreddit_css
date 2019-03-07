@@ -1,14 +1,17 @@
+//Helper functions
 @import "source/constants/colors";
 @import "source/constants/fonts";
 @import "source/constants/sizing";
 @import "source/constants/text";
 @import "source/constants/variables";
-
 @import "source/detail/mixins";
 @import "source/detail/functions";
 @import "source/detail/external_functions";
 
+//Content -- Remember that order matters
 @import "source/base";
 @import "source/flair";
-
+@import "source/animations";
+@import "source/inline-images";
+@import "source/headerbar";
 @import "source/manual";

@@ -101,3 +101,12 @@ a.author.moderator~.flair-mod {
     background-color: $color;
     border-color: $color;
 }
+
+[data-author="ThatOtherGhost"] > .entry > p > .flair {
+    border: 2px solid #ffa4f0;
+    background-color: #7676a7;
+}
+.flair-girl {
+    border: 1px solid #ffa4f0 !important;
+    background-color: #7676a7 !important;
+}
