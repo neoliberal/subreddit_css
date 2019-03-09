@@ -1172,6 +1172,9 @@ span#openRESPrefs {
     display: none!important
 }
 
+/*
+.side .md a[href="#headerbutton"]+a,
+*/
 .side .md a[href="#homebutton"]+a {
     position: absolute;
     padding: 0 30px;
@@ -1184,6 +1187,17 @@ span#openRESPrefs {
     z-index: 2147483647
 }
 
+/*
+.side .md a[href="#headerbutton"]+a {
+    right: 20px;
+    background: rgba(0, 0, 0, .75);
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    top: 50px
+}
+*/
+
 .side .md a[href="#homebutton"]+a {
     top: 30px;
     left: 497px;
@@ -1193,6 +1207,16 @@ span#openRESPrefs {
     border-radius: 150px;
     background: 0 0
 }
+
+/*
+.side .md a[href="#headerbutton"]+a:hover {
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.side .md a[href="#headerbutton"]+a:active {
+    background-color: rgba(255, 255, 255, .2)
+}
+*/
 
 .side {
     margin: 0 0 50px 10px;
@@ -2422,6 +2446,400 @@ body.mod-toolbox .tb-bracket-button.nuke-button {
 
 .reddit-infobar p {
     margin-left: 50px
+}
+
+.md [href="#ohjeremycorbyn"] {
+    background: url(%%corbyn%%);
+    cursor: default;
+    display: inline-block;
+    height: 315px;
+    width: 387px;
+    -webkit-animation: corbyn 3.5s steps(40) infinite;
+    animation: corbyn 3.5s steps(40) infinite;
+    color: #fff;
+    text-shadow: 0 0 15px #000;
+    text-align: center;
+    font-family: impact;
+    font-size: 20px;
+    overflow: hidden
+}
+
+@-webkit-keyframes corbyn {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 0 -12600px
+    }
+}
+
+@keyframes corbyn {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 0 -12600px
+    }
+}
+
+.md [href='#goolsbee-stupid']{
+    background: url(%%goolsbee-stupid%%);
+    background-size: cover;
+    cursor: default;
+    display: inline-block;
+    height: 74px;
+    width: 259px;
+
+}
+
+/*.md [href='#goolsbee-funny']{
+    background: url(%%goolsbee-funny%%);
+    background-size: cover;
+    cursor: default;
+    display: inline-block;
+    height: 74px;
+    width: 351px;
+
+}*/
+
+.md [href='#goolsbee-pistol']{
+    background: url(%%goolsbee-pistol%%);
+    background-size: cover;
+    cursor: default;
+    display: inline-block;
+    height: 70px;
+    width: 301px;
+
+}
+
+
+.md [href="#mission-accomplished"] {
+  background: url(%%mission-accomplished%%);
+  background-size: cover;
+  cursor: default;
+  display: inline-block;
+  height: 360px;
+  width: 640px;
+  -webkit-animation: bush 4.8s steps(42) infinite;
+  animation: bush 4.8s steps(42) infinite;
+  color: #fff;
+  text-shadow: 0 0 15px #000;
+  text-align: center;
+  font-family: impact;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+
+
+@-webkit-keyframes bush {
+  from {
+    background-position: 0 0;
+}
+  to {
+    background-position: 0 -15120px;
+    }
+}
+
+@keyframes bush {
+  from {
+    background-position: 0 0;
+}
+  to {
+    background-position: 0 -15120px;
+    }
+}
+
+
+.md [href="#theresamay"] {
+    background: url(%%theresamay%%);
+    cursor: default;
+    display: inline-block;
+    height: 172px;
+    width: 300px;
+    -webkit-animation: theresamay 3.5s steps(73) infinite;
+    animation: theresamay 3.5s steps(73) infinite;
+    color: #fff;
+    text-shadow: 0 0 15px #000;
+    text-align: center;
+    font-family: impact;
+    font-size: 20px;
+    overflow: hidden
+}
+
+@-webkit-keyframes theresamay {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 0 -12349px
+    }
+}
+
+@keyframes theresamay {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 0 -12349px
+    }
+}
+
+.md [href="#BasicShyBear"] {
+  background: url(%%BasicShyBear%%);
+  cursor: default;
+  display: inline-block;
+  height: 250px;
+  width: 444px;
+  -webkit-animation: BasicShyBear 8.6s steps(86) infinite;
+  animation: BasicShyBear 8.6s steps(86) infinite;
+  color: #fff;
+  text-shadow: 0 0 15px #000;
+  text-align: center;
+  font-family: impact;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+@-webkit-keyframes BasicShyBear {
+  from {
+    background-position: 0 0;
+}
+  to {
+    background-position: 0 -21500px;
+    }
+}
+
+@keyframes BasicShyBear {
+  from {
+    background-position: 0 0;
+}
+  to {
+    background-position: 0 -21500px;
+    }
+}
+
+.md [href="#theresamayfish"] {
+    background: url(%%theresamayfish%%);
+    cursor: default;
+    display: inline-block;
+    height: 180px;
+    width: 374px;
+    -webkit-animation: theresamayfish 3.5s steps(90) infinite;
+    animation: theresamayfish 3.5s steps(90) infinite;
+    color: #fff;
+    text-shadow: 0 0 15px #000;
+    text-align: center;
+    font-family: impact;
+    font-size: 20px;
+    overflow: hidden
+}
+
+@-webkit-keyframes theresamayfish {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 0 -16200px
+    }
+}
+
+@keyframes theresamayfish {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 0 -16200px
+    }
+}
+
+.md [href="#GOAT"] {
+    background: url(%%GOAT%%);
+    cursor: default;
+    display: inline-block;
+    height: 200px;
+    width: 270px;
+    -webkit-animation: GOAT 1.34s steps(155) infinite;
+    animation: GOAT 1.34s steps(155) infinite;
+    color: #fff;
+    text-shadow: 0 0 15px #000;
+    text-align: center;
+    font-family: impact;
+    font-size: 20px;
+    overflow: hidden
+}
+
+@-webkit-keyframes GOAT {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 0 -31000px
+    }
+}
+
+@keyframes GOAT {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 0 -31000px
+    }
+}
+
+.md [href="#grievelife"],
+.md [href="#grievelife"]:hover,
+.md [href="#grievelife"]:active,
+.md [href="#grievelife"]:visited {
+  background: url(%%grievelife%%);
+  cursor: default;
+  display: inline-block;
+  width: 383px;
+  height: 216px;
+  -webkit-animation: grievelife 3.1s steps(75) infinite;
+  animation: grievelife 3.1s steps(75) infinite;
+  color: #fff;
+  text-shadow: 0 0 15px #000;
+  text-align: center;
+  font-family: impact;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+@-webkit-keyframes grievelife {
+  from {
+    background-position: 0 0;
+}
+  to {
+    background-position: 0 -16200px;
+}
+}
+
+@keyframes grievelife {
+  from {
+    background-position: 0 0;
+}
+  to {
+    background-position: 0 -16200px;
+}
+}
+
+.md [href="#ryandab"] {
+    background: url(%%ryandab%%);
+    cursor: default;
+    display: inline-block;
+    height: 278px;
+    width: 468px;
+    -webkit-animation: ryandab 1.9s steps(38) infinite;
+    animation: ryandab 1.9s steps(38) infinite;
+    color: #fff;
+    text-shadow: 0 0 15px #000;
+    text-align: center;
+    font-family: impact;
+    font-size: 20px;
+    overflow: hidden
+}
+
+@-webkit-keyframes ryandab {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 0 -10564px
+    }
+}
+
+@keyframes ryandab {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 0 -10564px
+    }
+}
+
+.md [href="#voteblair"] {
+    background: url(%%blair%%);
+    cursor: default;
+    display: inline-block;
+    height: 240px;
+    width: 300px;
+    -webkit-animation: blair 2.8s steps(50) infinite;
+    animation: blair 2.8s steps(50) infinite;
+    color: #fff;
+    text-shadow: 0 0 15px #000;
+    text-align: center;
+    font-family: impact;
+    font-size: 20px;
+    overflow: hidden
+}
+
+@-webkit-keyframes blair {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 0 -12000px
+    }
+}
+
+@keyframes blair {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 0 -12000px
+    }
+}
+
+.md [href="#corbynwwe"] {
+    background: url(%%corbynwwe%%);
+    cursor: default;
+    display: inline-block;
+    height: 459px;
+    width: 480px;
+    -webkit-animation: corbynwwe 1.7s steps(19) infinite;
+    animation: corbynwwe 1.7s steps(19) infinite;
+    color: #fff;
+    text-shadow: 0 0 15px #000;
+    text-align: center;
+    font-family: impact;
+    font-size: 20px;
+    overflow: hidden
+}
+
+.md [href="#corbynretreat"] {
+    background: url(%%corbynretreat%%);
+    cursor: default;
+    display: inline-block;
+    height: 459px;
+    width: 480px;
+    -webkit-animation: corbynwwe 1.7s steps(19) infinite;
+    animation: corbynwwe 1.7s steps(19) infinite;
+    color: #fff;
+    text-shadow: 0 0 15px #000;
+    text-align: center;
+    font-family: impact;
+    font-size: 20px;
+    overflow: hidden
+}
+
+@-webkit-keyframes corbynwwe {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 0 -8721px
+    }
+}
+
+@keyframes corbynwwe {
+    from {
+        background-position: 0 0
+    }
+    to {
+        background-position: 0 -8721px
+    }
 }
 
 #chat {
