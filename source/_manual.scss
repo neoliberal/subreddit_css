@@ -762,6 +762,7 @@ a[href$="communism-img"] {
     padding-left: 15px;
     padding-right: 15px;
     background: rgba(20,20,20,0.5);
+    width: 100%;
 }
 
 .side .md a[href="#headerbutton-2"] + a {
@@ -789,3 +790,29 @@ a[href$="communism-img"] {
     content: "The Center for Innovative Government Research answers your questions about charter cities. While the AMA has ended, further discussion is encouraged.";
     box-shadow: 249px 0px 0px 250px rgba(0, 0, 0, 0.5);
 }
+
+/* Manually added */
+.md [href='#klobuchar-img']{
+    background: url(%%klobuchar-img%%);
+    background-size: cover;
+    cursor: default;
+    display: inline-block;
+    height: 50px;
+    width: 42px;
+}
+.flair-contests:before,
+a[href$="contests-img"] {
+    background: url("%%contests-flair%%") no-repeat;
+    background-size: 36.8px 120px; }
+
+.flair-bernke:before,
+a[href="#bernke-contests-img"] {
+  background-position: 0 0px; }
+
+.flair-goolsbae:before,
+a[href="#goolsbae-contests-img"] {
+  background-position: 0 -40px; }
+
+.flair-kendrick2020:before,
+a[href="#kendrick2020-contests-img"] {
+  background-position: 0 -80px; }
