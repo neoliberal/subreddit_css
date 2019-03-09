@@ -25,7 +25,7 @@ def main() -> None:
     with open(output, "r") as f:
         new_css = f.read()
         new_css = new_css.replace(
-            "%%donation_spring2018-flair%%", "%%donation-spring2018-flair%%"
+            "donation_spring2018", "donation-spring2018"
         )
         new_css = new_css.replace('@charset "UTF-8";\n', '')
     with open(output, "w") as f:
