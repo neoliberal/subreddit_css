@@ -401,7 +401,7 @@ a[href$="rolf-img"]:hover, a[href$="rofl-img"]:hover {
   background-image: url(%%downtarrif%%);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 0 0; 
+  background-position: 0 0;
 }
 
 .arrow.downmod {
@@ -413,11 +413,11 @@ a[href$="rolf-img"]:hover, a[href$="rofl-img"]:hover {
   background-image: url(%%up%%);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 0 0; 
+  background-position: 0 0;
 }
 
 .res-nightmode .arrow.upmod {
-  background-image: url(%%upmod%%); 
+  background-image: url(%%upmod%%);
 }
 
 .res-nightmode .arrow.down, .res-nightmode
@@ -609,18 +609,18 @@ overflow: hidden;
 }
 @keyframes jiggle-crazy {
     0%   { transform: translateX(-50%) rotate(90deg);  }
-    13%  { transform: translateX(-50%) rotate(123deg); } 
-    18%  { transform: translateX(-50%) rotate(146deg); } 
-    28%  { transform: translateX(-50%) rotate(189deg); } 
-    29%  { transform: translateX(-50%) rotate(217deg); } 
-    48%  { transform: translateX(-50%) rotate(243deg); } 
+    13%  { transform: translateX(-50%) rotate(123deg); }
+    18%  { transform: translateX(-50%) rotate(146deg); }
+    28%  { transform: translateX(-50%) rotate(189deg); }
+    29%  { transform: translateX(-50%) rotate(217deg); }
+    48%  { transform: translateX(-50%) rotate(243deg); }
     50%  { transform: translateX(-50%) rotate(270deg); } /*End, start flipping back*/
-    55%  { transform: translateX(-50%) rotate(241deg); } 
-    69%  { transform: translateX(-50%) rotate(209deg); } 
-    75%  { transform: translateX(-50%) rotate(174deg); } 
+    55%  { transform: translateX(-50%) rotate(241deg); }
+    69%  { transform: translateX(-50%) rotate(209deg); }
+    75%  { transform: translateX(-50%) rotate(174deg); }
     81%  { transform: translateX(-50%) rotate(141deg); }
-    96%  { transform: translateX(-50%) rotate(114deg); } 
-    100% { transform: translateX(-50%) rotate(90deg);  } 
+    96%  { transform: translateX(-50%) rotate(114deg); }
+    100% { transform: translateX(-50%) rotate(90deg);  }
 }
 
 /*------------------------------------*/
@@ -770,11 +770,13 @@ a[href$="communism-img"] {
     background-size: cover;
     left: 33.33%;
 }
+
 .side .md a[href="#headerbutton-2"] + a:after {
-    content: "Roots Of The Kashmir Conflict";
+    content: "Neolib Podcast: Future of the Right";
 }
+
 .side .md a[href="#headerbutton-2"] + a:hover::after {
-    content: "/u/Cuddlyaxe details how the British withdrawal from the Indian subcontinent set the stage for conflicts that continue to this day.";
+    content: "Charlie Sykes, Will Wilkinson and Robert Mariani join the podcast to discuss the future of right-leaning politics in the US";
     box-shadow: 219px 0px 0px 220px rgba(0, 0, 0, 0.7);
 }
 
@@ -783,11 +785,13 @@ a[href$="communism-img"] {
     background-size: cover;
     left: 66.66%;
 }
+
 .side .md a[href="#headerbutton-3"] + a:after {
-    content: "Charter Cities AMA";
+    content: "Adam Smith Institute AMA";
 }
+
 .side .md a[href="#headerbutton-3"] + a:hover::after {
-    content: "The Center for Innovative Government Research answers your questions about charter cities. While the AMA has ended, further discussion is encouraged.";
+    content: "The ASI is a non-profit, non-partisan, economic, and political think tank based in the UK. The AMA has ended, but further discussion is encouraged.";
     box-shadow: 249px 0px 0px 250px rgba(0, 0, 0, 0.5);
 }
 
