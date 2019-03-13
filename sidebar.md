@@ -23,7 +23,8 @@
  - [Ping Groups](https://www.reddit.com/r/neoliberal/wiki/userpinger/groups)
 - Community ▾
  - [Twitter](http://twitter.com/ne0liberal)
-
+ - [Plug.dj](https://plug.dj/rneoliberal)
+ - [Podcasts](https://www.reddit.com/r/neoliberal/wiki/podcasts)
 
 For off-topic discussion  and political discussions not worth their own submission, visit the stickied discussion thread  
 
