@@ -1,7 +1,7 @@
 [](#NL MODS READ THIS)
 [](#To change the links in the headerbar text, read the instructions here: https://github.com/neoliberal/subreddit_css/wiki/Editing-The-Headerbar)
 
-#[](#headerbutton)[](https://twitter.com/ne0liberal)[](#headerbutton-2)[](https://www.stitcher.com/podcast/the-neolib-podcast/e/59269813?autoplay=true)[](#headerbutton-3)[](https://www.reddit.com/r/neoliberal/comments/azbj2p/adam_smith_institute_ama/)
+#[](#headerbutton)[](https://medium.com/@_JeremiahJohnson/andrew-yang-is-not-ready-to-be-president-aabe61bfd0e4)[](#headerbutton-2)[](https://www.stitcher.com/podcast/the-neolib-podcast/e/59366060?autoplay=true)[](#headerbutton-3)[](https://www.reddit.com/r/neoliberal/comments/b3buc6/the_political_parties_of_india_101/)
  
 [](#homebutton)[](/r/neoliberal)
 
@@ -13,14 +13,16 @@
 
 ---
 
-- [FAQs](https://www.reddit.com/r/neoliberal/wiki/faq)
+- FAQs ▾
+ - [/r/Neoliberal FAQs](https://www.reddit.com/r/neoliberal/wiki/faq)
+ - [/r/Economics FAQs](https://www.reddit.com/r/Economics/wiki/index)
 - [Resources ▾](https://www.reddit.com/r/neoliberal/wiki/)
  - [Reading list](https://www.reddit.com/r/neoliberal/wiki/readinglist)
- - [/r/Economics FAQs](https://www.reddit.com/r/Economics/wiki/index)
  - [Rules](https://www.reddit.com/r/neoliberal/wiki/rules)
  - [Self-Moderation](https://www.reddit.com/r/neoliberal/wiki/communicationtips)
  - [Press](https://www.reddit.com/r/neoliberal/wiki/press)
  - [Ping Groups](https://www.reddit.com/r/neoliberal/wiki/userpinger/groups)
+ - [CSS Help](https://www.reddit.com/r/neoliberal/wiki/csshelp)
 - Community ▾
  - [Twitter](http://twitter.com/ne0liberal)
  - [Plug.dj](https://plug.dj/rneoliberal)
