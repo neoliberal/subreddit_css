@@ -4,63 +4,42 @@
 }
 
 @mixin box-sizing($sizing-rule) {
-	-webkit-box-sizing: $sizing-rule;
-	-moz-box-sizing: $sizing-rule;
 	box-sizing: $sizing-rule;
 }
 
 @mixin text-size-adjust($type) {
-	-webkit-text-size-adjust: $type;
-	-moz-text-size-adjust: $type;
-	-ms-text-size-adjust: $type;
+	text-size-adjust: $type;
 }
 
 @mixin appearance($rule) {
-	-webkit-appearance: $rule;
-	-moz-appearance: $rule;
 	appearance: $rule;
 }
 
 @mixin display-flex() {
-	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 }
 
 @mixin flex-flow($rule) {
-	-webkit-flex-flow: $rule;
-	-ms-flex-flow: $rule;
 	flex-flow: $rule;
 }
 
 @mixin transform($transform) {
-	-webkit-transform: $transform;
-	-moz-transform: $transform;
-	-ms-transform: $transform;
 	transform: $transform;
 }
 
 @mixin flex($rule) {
-	-webkit-flex: $rule;
-	-ms-flex: $rule;
 	flex: $rule;
 }
 
 @mixin order($order) {
-	-webkit-order: $order;
-	-ms-flex-order: $order;
 	order: $order;
 }
 
 @mixin border-image($rule) {
-	-webkit-border-image: $rule;
-	-moz-border-image: $rule;
 	border-image: $rule;
 }
 
 @mixin animation($rule) {
-	-webkit-animation: $rule;
-	-moz-animation: $rule;
 	animation: $rule;
 }
 
