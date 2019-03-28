@@ -1,7 +1,7 @@
 [](#NL MODS READ THIS)
 [](#To change the links in the headerbar text, read the instructions here: https://github.com/neoliberal/subreddit_css/wiki/Editing-The-Headerbar)
 
-#[](#headerbutton)[](https://medium.com/@_JeremiahJohnson/andrew-yang-is-not-ready-to-be-president-aabe61bfd0e4)[](#headerbutton-2)[](https://www.stitcher.com/podcast/the-neolib-podcast/e/59506774?autoplay=true)[](#headerbutton-3)[](https://www.reddit.com/r/neoliberal/comments/b3buc6/the_political_parties_of_india_101/)
+#[](#headerbutton)[](https://medium.com/@_JeremiahJohnson/andrew-yang-is-not-ready-to-be-president-aabe61bfd0e4)[](#headerbutton-2)[](https://www.stitcher.com/podcast/the-neolib-podcast/e/59635401?autoplay=true)[](#headerbutton-3)[](https://www.reddit.com/r/neoliberal/comments/b3buc6/the_political_parties_of_india_101/)
 
 [](#homebutton)[](/r/neoliberal)
 
@@ -26,7 +26,7 @@ We do not all subscribe to a single comprehensive philosophy but instead find co
 
 1. Individual choice and markets are of paramount importance both as an expression of individual liberty and driving force of economic prosperity.
 2. The state serves an important role in establishing conditions favorable to competition through preventing monopoly, providing a stable monetary framework, and relieving acute misery and distress.
-3. Free exchange and movement between countries makes us richer and has led to an [unparalleled decline in global poverty.](https://imgur.com/a/zM2rh)
+3. Free exchange and movement between countries makes us richer and has led to an [unparalleled decline in global poverty.](https://ourworldindata.org/uploads/2013/05/World-Poverty-Since-1820.png)
 4. Public policy has global ramifications and should take into account the effect it has on people around the world regardless of nationality.
 
 **Policies we support include but are not limited to:**
@@ -58,7 +58,7 @@ We do not all subscribe to a single comprehensive philosophy but instead find co
 
 ---
 
-##Rules
+##[Rules](https://www.reddit.com/r/neoliberal/wiki/rules)
 
 Comments violating these rule will be removed. Repeatedly violating the rules will result in a ban.
 
