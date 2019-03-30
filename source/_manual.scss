@@ -563,3 +563,32 @@ a[href="#goolsbae-contests-img"] {
 a[href="#kendrick2020-contests-img"] {
   background-position: 0 -80px;
 }
+
+.md [href="#its-happening"] {
+  background: url(%%its-happening%%);
+  cursor: default;
+  display: inline-block;
+  height: 150px;
+  width: 225px;
+  animation: its-happening 1s steps(18) infinite;
+  overflow: hidden;
+  background-position: 0px;}
+
+@keyframes its-happening {
+  from {
+    background-position: 0px 0px; }
+  to {
+    background-position: 0px -2696px; } }
+
+.flair-party-parrot:before{
+  background: url(%%parrot-flair%%);
+  animation: parrot-flair .4s steps(9) infinite;
+  background-size: 100%;
+}
+
+@keyframes parrot-flair {
+  from {
+    background-position: 0px 0px; }
+  to {
+    background-position: 0px -360px; }
+}
