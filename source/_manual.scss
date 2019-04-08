@@ -255,10 +255,10 @@ a[href$="rolf-img"]:hover, a[href$="rofl-img"]:hover {
 }
 
 /* Sounds like Communist propaganda, but okay */
-a[href$="communism-img"] {
+a[href="#communism-img"] {
     background: url("%%communism-img%%") no-repeat;
-    width: 300px;
-    height: 190px;
+    width: 250px;
+    height: 158px;
 }
 
 /* The text/image links directly below "hot, new, rising" */
@@ -320,11 +320,11 @@ a[href$="communism-img"] {
 }
 
 .side .md a[href^="#headerbutton"] + a:after {
-    content: "Andrew Yang Is Not Ready To Be President";
+    content: "Effortpost: Rural Distress In India";
 }
 
 .side .md a[href^="#headerbutton"] + a:hover::after {
-    content: "A breakdown of Yang's bizarre policies, which show his thinking is too shallow to serve as president.";
+    content: "/u/atleastafool highlights how badly designed government policies have failed rural Indian farmers.";
     font-size: 80% !important;
     text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
     font-weight: normal;
@@ -346,11 +346,11 @@ a[href$="communism-img"] {
 }
 
 .side .md a[href="#headerbutton-2"] + a:after {
-    content: "Neolib Podcast: 'Open' ft. Dr Kimberly Clausing";
+    content: "Neolib Podcast: 'Kidney Donation' Ft. Dylan Matthews";
 }
 
 .side .md a[href="#headerbutton-2"] + a:hover::after {
-    content: "Kimberly Clausing joins the podcast to discuss her new book 'Open: The Progressive Case for Trade, Immigration and Global Capital.'";
+    content: "Vox's Dylan Matthews joins the podcast to discuss the personal and medical side of donating a kidney to a stranger.";
     box-shadow: 219px 0px 0px 220px rgba(0, 0, 0, 0.7);
 }
 
@@ -361,11 +361,11 @@ a[href$="communism-img"] {
 }
 
 .side .md a[href="#headerbutton-3"] + a:after {
-    content: "The Political Parties Of India";
+    content: "Roundtable Discussion On Education";
 }
 
 .side .md a[href="#headerbutton-3"] + a:hover::after {
-    content: "/u/atleastafool gives a breakdown of India's political parties in preparation for the general elections in April and May.";
+    content: "The subreddit discusses a number of issues relating to education policy -- college, K-12, charter schools, and more.";
     box-shadow: 249px 0px 0px 250px rgba(0, 0, 0, 0.5);
 }
 
@@ -427,4 +427,31 @@ a[href="#kendrick2020-contests-img"] {
     background-position: 0px 0px; }
   to {
     background-position: 0px -360px; }
+}
+
+a[href="#time-to-stop-posting"] {
+  background-image: url(%%time-to-stop-posting%%);
+  width: 200px;
+  height: 150px;
+  display: inline-block;
+}
+a[href="#doubt"] {
+  background-image: url(%%doubt%%);
+  width: 160px;
+  height: 84px;
+  display: inline-block;
+}
+a[href="#go-to-bed"] {
+  background-image: url(%%go-to-bed%%);
+  width: 330px;
+  height: 180px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  padding-left: 6px;
+  padding-right: 132px;
+  overflow: hidden;
+  font-size: 25px;
+  text-shadow: 1px 1px 1px black, 1px -1px 1px black, -1px 1px 1px black, -1px -1px 1px black;
 }
