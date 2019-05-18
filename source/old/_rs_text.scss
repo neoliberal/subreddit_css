@@ -1,0 +1,184 @@
+$length: 50;
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(2.5px);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-2.5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    text-indent: 500px;
+  }
+  100% {
+    text-indent: -20em;
+  }
+}
+
+@keyframes slide {
+  0%{
+    top: -1.5em;
+  }
+  10%,
+  90%{
+    top: 0;
+  }
+  100% {
+    top: 1.5em;
+  }
+}
+
+@keyframes flash1 {
+  0%{
+    color: #FF0000;
+  }
+  50%{
+    color: #ff0;
+  }
+}
+
+@keyframes flash2 {
+  0%{
+    color: #0000FF;
+  }
+  50%{
+    color: #00FFFF;
+  }
+}
+
+@keyframes flash3 {
+  0%{
+    color: #00B000;
+  }
+  50%{
+    color: #80FF80;
+  }
+}
+
+@keyframes glow1 {
+  0%{
+    color: #FF0000;
+  } 33%{
+    color: #00B000;
+  } 66% {
+    color: #0000FF;
+  } 100% {
+    color: #FF0000;
+  }
+}
+
+@keyframes glow2 {
+  0%{
+    color: #FF0000;
+  } 33%{
+    color: #800080;
+  } 66% {
+    color: #0000FF;
+  } 100% {
+    color: #FF0000;
+  }
+}
+
+@keyframes glow3 {
+  0%{
+    color: #FFFFFF;
+  } 25%{
+    color: #00B000;
+  } 50% {
+    color: #FFFFFF;
+  } 67.5%{
+    color: #00FFFF;
+  } 75% {
+    color: #0000FF;
+  } 100% {
+    color: #FFFFFF;
+  }
+}
+
+
+//@mixin wave($length){
+//  @for $i from 1 through $length {
+//    .md [href='#wave'] ~ sup#{i*}>sup{
+//      animation: wave .66s linear infinite unquote(-$i * 50 + ms);
+//        //the negative animation delay means the characters all start at the same time but at different parts of the animation!
+//    }
+//  } 
+//}
+
+.md [href='#wave'] ~ sup>sup{animation: wave 0.66s linear infinite -50ms;}
+.md [href='#wave'] ~ sup>sup>sup{animation: wave 0.66s linear infinite -100ms;}
+.md [href='#wave'] ~ sup>sup>sup>sup{animation: wave 0.66s linear infinite -150ms;}
+.md [href='#wave'] ~ sup>sup>sup>sup>sup{animation: wave 0.66s linear infinite -200ms;}
+.md [href='#wave'] ~ sup>sup>sup>sup>sup>sup{animation: wave 0.66s linear infinite -250ms;}
+.md [href='#wave'] ~ sup>sup>sup>sup>sup>sup>sup{animation: wave 0.66s linear infinite -300ms;}
+.md [href='#wave'] ~ sup>sup>sup>sup>sup>sup>sup>sup{animation: wave 0.66s linear infinite -350ms;}
+.md [href='#wave'] ~ sup>sup>sup>sup>sup>sup>sup>sup>sup{animation: wave 0.66s linear infinite -400ms;}
+.md [href='#wave'] ~ sup>sup>sup>sup>sup>sup>sup>sup>sup>sup{animation: wave 0.66s linear infinite -450ms;}
+.md [href='#wave'] ~ sup>sup>sup>sup>sup>sup>sup>sup>sup>sup>sup{animation: wave 0.66s linear infinite -500ms;}
+.md [href='#wave'] ~ sup>sup>sup>sup>sup>sup>sup>sup>sup>sup>sup>sup{animation: wave 0.66s linear infinite -550ms;}
+.md [href='#wave'] ~ sup>sup>sup>sup>sup>sup>sup>sup>sup>sup>sup>sup>sup{animation: wave 0.66s linear infinite -600ms;}
+.md [href='#wave'] ~ sup>sup>sup>sup>sup>sup>sup>sup>sup>sup>sup>sup>sup>sup{animation: wave 0.66s linear infinite -650ms;}
+.md [href='#wave'] ~ sup>sup>sup>sup>sup>sup>sup>sup>sup>sup>sup>sup>sup>sup>sup{animation: wave 0.66s linear infinite -700ms;}
+
+.md [href='#wave'] ~ sup,
+.md [href='#wave'] ~ sup * {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 15px;
+}
+
+.md [href="#scroll"] ~ * {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 8s infinite linear;
+}
+
+.md [href="#slide"] ~ * {
+  animation: slide 3s infinite linear;
+  position:relative;
+  top: -2em;
+}
+
+@for $i from 1 through 3 {
+  .md [href="#flash#{$i}"] ~ * {
+  animation: flash#{$i} 0.45s steps(1, end) infinite;
+  }
+}
+
+@for $i from 1 through 3 {
+  .md [href="#glow#{$i}"] ~ * {
+  animation: glow#{$i} 3s linear infinite;
+  }
+}
+
+.md [href="#white"] ~ * {
+    color: white;
+}
+
+.md [href="#cyan"] ~ * {
+    color: cyan;
+}
+
+.md [href="#red"] ~ * {
+    color: red;
+}
+
+.md [href="#green"] ~ * {
+    color: green;
+}
+
+.md [href="#purple"] ~ * {
+    color: purple;
+}
