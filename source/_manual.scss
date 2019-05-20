@@ -455,3 +455,12 @@ a[href="#go-to-bed"] {
   font-size: 25px;
   text-shadow: 1px 1px 1px black, 1px -1px 1px black, -1px 1px 1px black, -1px -1px 1px black;
 }
+
+.give-gold {
+  font-size: 0px !important;
+}
+
+a.give-gold::after {
+  font-size: 10px;
+  content: "give sorosbux";
+}
