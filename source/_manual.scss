@@ -464,3 +464,10 @@ a.give-gold::after {
   font-size: 10px;
   content: "give sorosbux";
 }
+
+span.multi-count, .res-fancy-toggle-button {
+    height: 26px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 6px !important;
+}
