@@ -466,8 +466,9 @@ a.give-gold::after {
 }
 
 span.multi-count, .res-fancy-toggle-button {
-    height: 26px;
-    border-radius: 5px;
+    height: 28px;
+    border-radius: 5px !important;
     text-align: center;
-    padding-top: 6px !important;
+    padding-top: 8px !important;
+    border: none !important;
 }

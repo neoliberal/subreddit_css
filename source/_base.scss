@@ -1948,8 +1948,7 @@ span.RESThrobber:before {
 }
 
 .linkinfo {
-    border: 1px solid rgba(144, 144, 144, .25);
-    border-radius: 5px;
+    border: none;
     background: 0 0;
     padding: 10px
 }
@@ -1989,11 +1988,6 @@ a.edit-btn {
     margin-left: 0
 }
 
-.res .usertext .help-toggle .active,
-.usertext a.reddiquette {
-    border-right: 0
-}
-
 .usertext a.reddiquette {
     border-radius: 5px 0 0 5px
 }
@@ -2003,7 +1997,8 @@ a.edit-btn {
 }
 
 .res .usertext .help-toggle .active {
-    border-radius: 0
+    border-radius: 0px 5px 5px 0px;
+    border-left: none;
 }
 
 .new-comment .usertext-body {
