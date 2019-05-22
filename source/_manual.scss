@@ -472,3 +472,14 @@ span.multi-count, .res-fancy-toggle-button {
     padding-top: 8px !important;
     border: none !important;
 }
+
+.res .res .RESDropdownList li{
+    width: 140px;
+}
+
+#RESSettingsButton{
+    display: inline-block;
+    transform: scale(1.6);
+    padding-top: 2.3px;
+    margin-left: 15px;
+}
