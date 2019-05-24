@@ -1,7 +1,9 @@
 [](#NL MODS READ THIS)
 [](#To change the links in the headerbar text, read the instructions here: https://github.com/neoliberal/subreddit_css/wiki/Editing-The-Headerbar)
 
-#[](#headerbutton)[](https://medium.com/@_JeremiahJohnson/andrew-yang-is-not-ready-to-be-president-aabe61bfd0e4)[](#headerbutton-2)[](https://www.stitcher.com/podcast/the-neolib-podcast/e/59635401?autoplay=true)[](#headerbutton-3)[](https://www.reddit.com/r/neoliberal/comments/b3buc6/the_political_parties_of_india_101/)
+[](#/RES_SR_Config/NightModeCompatible)
+
+#[](#headerbutton)[](https://www.reddit.com/r/neoliberal/comments/bns5mk/information_asymmetry_adverse_selection_and_death/)[](#headerbutton-2)[](https://podcasts.apple.com/us/podcast/the-neolib-podcast/id1390384827?mt=2)[](#headerbutton-3)[](https://www.reddit.com/r/neoliberal/comments/bmj0yi/an_overview_of_everyones_favorite_country/)
 
 [](#homebutton)[](/r/neoliberal)
 
@@ -81,7 +83,9 @@ Submissions should be relevant to public policy or political theory. Post articl
 Submissions should contain some level of analysis or argument. General news reporting should be restricted to particularly important developments with significant policy implications  (decided at mod discretion).
 
 **VI**: *Memes*  
-GET 👏 THAT 👏 KARMA 👏👏👏
+GET 👏 THAT 👏 KARMA 👏
+
+The best time to post for maximum exposure is approximately 2PM GMT. To convert this to your local time zone [click here.](https://www.google.com/search?q=2pm+gmt+to+my+time)
 
 ---
 
