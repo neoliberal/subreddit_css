@@ -5,7 +5,7 @@
 
 #[](#headerbutton)[](https://www.reddit.com/r/neoliberal/comments/bns5mk/information_asymmetry_adverse_selection_and_death/)[](#headerbutton-2)[](https://podcasts.apple.com/us/podcast/the-neolib-podcast/id1390384827?mt=2)[](#headerbutton-3)[](https://www.reddit.com/r/neoliberal/comments/bmj0yi/an_overview_of_everyones_favorite_country/)
 
-[](#homebutton)[](/r/neoliberal)
+[](#homebutton)[](https://www.reddit.com/r/neoliberal)
 
 [](#bigbutton) [Change flair](https://www.reddit.com/r/neoliberal/wiki/flairs)
 
