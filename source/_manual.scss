@@ -487,3 +487,30 @@ span.multi-count, .res-fancy-toggle-button {
 .side .tagline {
     margin: 5px 0px 10px 20px;
 }
+
+div[data-author="BainCapitalist"] > .entry .author {
+  font-size: 0px !important;
+}
+
+div[data-author="BainCapitalist"] > .entry .author::after {
+  font-size: 11px;
+  content: "BrainCRAPitalist";
+}
+
+div[data-author="lionmoose"] > .entry .author {
+  font-size: 0px !important;
+}
+
+div[data-author="lionmoose"] > .entry .author::after {
+  font-size: 11px;
+  content: "cuccmoose";
+}
+
+div[data-author="paulatreides0"] > .entry .author {
+  font-size: 0px;
+}
+
+div[data-author="paulatreides0"] > .entry .author::after {
+  font-size: 11px;
+  content: "Leto Atreides II";
+}
