@@ -317,11 +317,7 @@ span.RESshortcutside.remove {
 .usertext .help-toggle .active,
 .usertext a.reddiquette,
 .wiki-page .wiki-page-content input.wiki_button,
-button,
-span.RESDashboardToggle,
-span.RESDashboardToggle.remove,
-span.RESshortcutside,
-span.RESshortcutside.remove {
+button {
     display: inline-block;
     height: 28px;
     border: 1px solid rgba(144, 144, 144, .25);
