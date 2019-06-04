@@ -130,11 +130,13 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-### Sass ###
+# Sass #
 .sass-cache/
 *.css.map
+output.css
+*-flair.png
 
-### VisualStudioCode ###
+# VisualStudioCode #
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -144,6 +146,9 @@ venv.bak/
 
 # End of https://www.gitignore.io/api/sass,macos,python,visualstudiocode
 
-## SASS build ###
-output.css
-*-flair.png
+# vim #
+*.swp
+*.swo
+
+# bot info #
+bot_deets.json
