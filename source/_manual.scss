@@ -507,7 +507,7 @@ div[data-author="lionmoose"] > .entry .author::after {
 }
 
 div[data-author="paulatreides0"] > .entry .author {
-  font-size: 0px;
+  font-size: 0px !important;
 }
 
 div[data-author="paulatreides0"] > .entry .author::after {
