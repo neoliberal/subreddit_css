@@ -515,6 +515,15 @@ div[data-author="paulatreides0"] > .entry .author::after {
   content: "Leto Atreides II";
 }
 
+div[data-author="adamtraskk"] > .entry .author {
+  font-size: 0px !important; 
+}
+
+div[data-author="adamtraskk"] > .entry .author::after {
+  font-size: 11px;
+  content: "Talks an Awful Lot of Shit For Someone Who Literally Shovels Shit for a Living"; 
+}
+
 #NREMail {
   display: none;
 }
