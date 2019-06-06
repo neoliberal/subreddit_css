@@ -47,4 +47,5 @@ for flair_filename in flair_filenames:
 subreddit_emojis = [emoji.name for emoji in subreddit.emoji]
 for idx, flair in enumerate(flair_names):
     if flair not in subreddit_emojis:
+        subreddit.emoji.add(flair, flair_filenames[idx])
         print('adding {}'.format(flair))
