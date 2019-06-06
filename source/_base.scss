@@ -1967,8 +1967,9 @@ a.edit-btn {
 
 .content button.RESBigEditorPop {
     margin-top: 5px;
-    border: 2px solid rgba(144, 144, 144, .25);
+    border: 1px solid rgba(144, 144, 144, .25);
     border-radius: 0 5px 5px 0;
+    border-left: none;
     padding: 0 10px;
     background-position: 10px 50%;
     color: #4d5968;
@@ -1990,7 +1991,7 @@ a.edit-btn {
 }
 
 .usertext .help-toggle .active {
-    border-radius: 0 5px 5px 0
+    border-radius: 0 !important
 }
 
 .res .usertext .help-toggle .active {
