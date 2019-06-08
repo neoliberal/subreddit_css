@@ -37,6 +37,7 @@ We do not all subscribe to a single comprehensive philosophy but instead find co
 - [Reduced barriers to migration](https://www.reddit.com/r/neoliberal/wiki/openborders)
 - [Occupational licensing reform](https://www.brookings.edu/opinions/the-future-of-occupational-licensing-reform/)
 - [Zoning reform](https://www.brookings.edu/blog/social-mobility-memos/2016/08/16/zoning-as-opportunity-hoarding/)
+- [Carbon Pricing](https://www.reddit.com/r/Economics/wiki/faq_carbonpricing)
 
 **Introductory reading**
 
