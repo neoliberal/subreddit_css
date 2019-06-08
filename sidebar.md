@@ -3,7 +3,7 @@
 
 [](#/RES_SR_Config/NightModeCompatible)
 
-#[](#headerbutton)[](https://www.reddit.com/r/neoliberal/comments/bns5mk/information_asymmetry_adverse_selection_and_death/)[](#headerbutton-2)[](https://podcasts.apple.com/us/podcast/the-neolib-podcast/id1390384827?mt=2)[](#headerbutton-3)[](https://www.reddit.com/r/neoliberal/comments/bmj0yi/an_overview_of_everyones_favorite_country/)
+#[](#headerbutton)[](https://www.reddit.com/r/neoliberal/comments/bvo384/effortpost_tankie_myths/)[](#headerbutton-2)[](https://www.stitcher.com/podcast/the-neolib-podcast/e/61577934?autoplay=true)[](#headerbutton-3)[](https://www.reddit.com/r/neoliberal/comments/bwqmco/zhou_ziyang_the_real_reformer_behind_china/)
 
 [](#homebutton)[](https://www.reddit.com/r/neoliberal)
 
