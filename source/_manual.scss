@@ -316,8 +316,9 @@ a[href="#communism-img"] {
     position:absolute;
     line-height: 18px;
     padding-top: 8px;
-    padding-right: 7.2vw;
+    padding-right: 8.4vw;
     white-space: pre-line;
+    background-position: center right 50% !important;
 }
 
 .side .md a[href^="#headerbutton"] + a:after {
@@ -333,10 +334,10 @@ a[href="#communism-img"] {
     left: 0px;
     top: 0px;
     height: 300px;
-    padding-top: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    background: rgba(20,20,20,0.5);
+    padding-top: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    background: rgba(20,20,20,0.55);
     width: 100%;
 }
 
