@@ -381,27 +381,6 @@ a[href="#communism-img"] {
     width: 42px;
 }
 
-.flair-contests:before,
-a[href$="contests-img"] {
-    background: url("%%contests-flair%%") no-repeat;
-    background-size: 36.8px 120px;
-}
-
-.flair-bernke:before,
-a[href="#bernke-contests-img"] {
-  background-position: 0 0px;
-}
-
-.flair-goolsbae:before,
-a[href="#goolsbae-contests-img"] {
-  background-position: 0 -40px;
-}
-
-.flair-kendrick2020:before,
-a[href="#kendrick2020-contests-img"] {
-  background-position: 0 -80px;
-}
-
 .md [href="#its-happening"] {
   background: url(%%its-happening%%);
   cursor: default;
