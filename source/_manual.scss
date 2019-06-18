@@ -497,12 +497,12 @@ div[data-author="paulatreides0"] > .entry .author::after {
 }
 
 div[data-author="adamtraskk"] > .entry .author {
-  font-size: 0px !important; 
+  font-size: 0px !important;
 }
 
 div[data-author="adamtraskk"] > .entry .author::after {
   font-size: 11px;
-  content: "Talks an Awful Lot of Shit For Someone Who Literally Shovels Shit for a Living"; 
+  content: "Talks an Awful Lot of Shit For Someone Who Literally Shovels Shit for a Living";
 }
 
 #NREMail {
@@ -515,4 +515,19 @@ div[data-author="adamtraskk"] > .entry .author::after {
 
 .res-icon.res-icon-12 {
   display: none
+}
+
+div[data-author="sansampersamp"] > .entry .author {
+  font-size: 0px !important; }
+
+div[data-author="sansampersamp"] > .entry .author::after {
+  font-size: 11px;
+  content: "S&";
+}
+
+div[data-author="Deggit"] > .entry h1 {
+  font-size: 14px !important;
+  font-weight: normal;
+  letter-spacing: 0em;
+  color: #222222;
 }
