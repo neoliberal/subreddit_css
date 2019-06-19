@@ -14,6 +14,8 @@ import praw
 
 input_dir = 'assets/imagebar/'
 output_dir = 'assets/imagebar/edited_for_newreddit'
+if not os.path.exists(output_dir):
+    os.mkdir(output_dir)
 fnames = [f for f in os.listdir(input_dir) if f.endswith('.jpg')]
 input_fnames = [os.path.join(input_dir, fname) for fname in fnames]
 output_fnames = [os.path.join(output_dir, fname) for fname in fnames]
