@@ -67,7 +67,7 @@ $flair-colors: (
     @each $image in $category {
         $offset: -$flairsheet-flair-height * (index($category, $image) - 1);
         .flair-#{$image}:before,
-        a[href="##{$image}-#{$name}-img"] {
+        a[href$="##{$image}-#{$name}-img"] {
             background-position: 0 #{$flair-image-scale-factor * $offset};
         }
     }
@@ -77,9 +77,11 @@ a[href$="-img"] {
     display: inline-block;
     min-width: $flair-image-width;
     height: $flair-image-height;
-    text-indent: 38px;
-    padding-top: 12px;
-    border: 0
+    font-size: 0;
+}
+
+a[href$="-img"] + .res-freetext-expando {
+    display: none;
 }
 
 @each $key, $color in $flair-colors {
