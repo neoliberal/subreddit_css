@@ -321,12 +321,12 @@ a[href="#communism-img"] {
     background-position: center right 50% !important;
 }
 
-.side .md a[href^="#headerbutton"] + a:after {
-    content: "A NIMBY's Wet Dream";
+.side .md a[href="#headerbutton"] + a:after {
+    content: "Debunking Racism";
 }
 
 .side .md a[href^="#headerbutton"] + a:hover::after {
-    content: "/u/477-US-131-at-152 explains how SCOTUS' Euclid v. Amber Reality Co. makes abolishing Zoning a herculean task.";
+    content: '/u/Archipelagoofthesun walks through "race-realist" talking points, showing how each is based on lies and half-truths.';
     font-size: 80% !important;
     text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
     font-weight: normal;
@@ -348,11 +348,11 @@ a[href="#communism-img"] {
 }
 
 .side .md a[href="#headerbutton-2"] + a:after {
-    content: "Meet The Teens Running Gravel's 2020 Campaign";
+    content: "Neolib Podcast: Effective Altruism ft. Robert Wiblin";
 }
 
 .side .md a[href="#headerbutton-2"] + a:hover::after {
-    content: "Williams & Oks discuss why Gravel's 2020 bid matters even if he can't win, and why Twitter has outsized influence on culture.";
+    content: "Robert Wiblin from 80000hours.org joins the podcast to discuss effective altruism, long-termism, and high-leverage ways to impact the world.";
     box-shadow: 219px 0px 0px 220px rgba(0, 0, 0, 0.7);
 }
 
