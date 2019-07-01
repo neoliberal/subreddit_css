@@ -5,7 +5,7 @@
 
 #[](#headerbutton)[](https://www.reddit.com/r/neoliberal/comments/c4rhy5/you_guys_helped_me_leave_the_altright_but_i_still/ery37c1)[](#headerbutton-2)[](https://podcasts.apple.com/us/podcast/good-at-doing-good-effective-altrusim-ft-robert-wiblin/id1390384827?i=1000442297328)[](#headerbutton-3)[](https://np.reddit.com/r/Beto2020/comments/c2mqcb/hi_there_jen_omalley_dillon_here_ask_me_anything/)
 
-[](#homebutton)[](https://www.reddit.com/r/neoliberal)
+[](#homebutton)[](https://old.reddit.com/r/neoliberal)
 
 [](#bigbutton) [Change flair](https://www.reddit.com/r/neoliberal/wiki/flairs)
 
@@ -31,7 +31,7 @@ We do not all subscribe to a single comprehensive philosophy but instead find co
 3. Free exchange and movement between countries makes us richer and has led to an [unparalleled decline in global poverty.](https://ourworldindata.org/uploads/2013/05/World-Poverty-Since-1820.png)
 4. Public policy has global ramifications and should take into account the effect it has on people around the world regardless of nationality.
 
-**Policies we support include but are not limited to:**
+**Policies we support include:**
 
 - [Free trade](http://www.walkerd.people.cofc.edu/Readings/Trade/iowacarcrop.pdf)
 - [Reduced barriers to migration](https://www.reddit.com/r/neoliberal/wiki/openborders)
