@@ -3,7 +3,7 @@
 
 [](#/RES_SR_Config/NightModeCompatible)
 
-#[](#headerbutton)[](https://www.reddit.com/r/neoliberal/comments/bydybm/a_nimbys_wet_dream_supreme_court_decisions_and/)[](#headerbutton-2)[](https://www.stitcher.com/podcast/the-neolib-podcast/e/61989782?autoplay=true)[](#headerbutton-3)[](https://np.reddit.com/r/Beto2020/comments/c2mqcb/hi_there_jen_omalley_dillon_here_ask_me_anything/)
+#[](#headerbutton)[](https://www.reddit.com/r/neoliberal/comments/c4rhy5/you_guys_helped_me_leave_the_altright_but_i_still/ery37c1)[](#headerbutton-2)[](https://podcasts.apple.com/us/podcast/good-at-doing-good-effective-altrusim-ft-robert-wiblin/id1390384827?i=1000442297328)[](#headerbutton-3)[](https://np.reddit.com/r/Beto2020/comments/c2mqcb/hi_there_jen_omalley_dillon_here_ask_me_anything/)
 
 [](#homebutton)[](https://www.reddit.com/r/neoliberal)
 
