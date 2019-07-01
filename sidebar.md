@@ -7,7 +7,8 @@
 
 [](#homebutton)[](https://old.reddit.com/r/neoliberal)
 
-[](#bigbutton) [Change flair](https://www.reddit.com/r/neoliberal/wiki/flairs)
+[](#bigbutton) [Change flair](https://www.reddit.com/r/neoliberal/wiki/flairs)  
+[](#bigbutton) [Join Ping Group](https://www.reddit.com/r/neoliberal/wiki/userpinger/groups)
 
 ---
 
