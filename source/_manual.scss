@@ -466,7 +466,12 @@ span.multi-count, .res-fancy-toggle-button {
 }
 
 .side .tagline {
-    margin: 5px 0px 10px 20px;
+    margin: 0;
+    font-size: 0;
+    display: table-cell;
+    height: 30px;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
 div[data-author="BainCapitalist"] > .entry .author {
@@ -527,3 +532,7 @@ div[data-author="sansampersamp"] > .entry .author::after {
 
 .res-floater-list {
   display: none !important; }
+
+.side .author {
+  font-size: 11px;
+}
