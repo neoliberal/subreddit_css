@@ -1065,8 +1065,8 @@ span#openRESPrefs {
 
 #header #header-bottom-right #new_modmail {
     margin-left: 20px;
-    transform: scale(1.3);
-    top: 1px
+    transform: scale(1.25);
+    top: 1.6px
 }
 
 #header-bottom-right a.pref-lang {
@@ -2538,5 +2538,7 @@ p.tagline {
 }
 
 #chat {
-    margin-left: 20px
+    margin-left: 20px;
+    transform: scale(1.2);
+    top: 3.9px;
 }
