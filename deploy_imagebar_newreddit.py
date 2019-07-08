@@ -20,10 +20,10 @@ fnames = [f for f in os.listdir(input_dir) if f.endswith('.jpg')]
 input_fnames = [os.path.join(input_dir, fname) for fname in fnames]
 output_fnames = [os.path.join(output_dir, fname) for fname in fnames]
 
-wrap_length = 30
+wrap_length = 26
 x = 25 # padding-left
 y = 8 # padding-top
-font_size = 26
+font_size = 28
 fill_color = 'white'
 shadow_color = 'black'
 font = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', font_size)
