@@ -103,3 +103,11 @@ a.author.moderator~.flair-mod {
     background-color: $color;
     border-color: $color;
 }
+
+.linkflairlabel {
+    overflow: visible;
+    max-width: none;
+    font-size: 11px;
+    color: #fff;
+    background-color: #777;
+}
