@@ -1,7 +1,7 @@
 [](#NL MODS: the imagebar has been moved to the bottom of this page.)
 
-[](#bigbutton) [Get a Flair](https://old.reddit.com/r/neoliberal/wiki/flairs)   
-[](#bigbutton) [Join a Ping Group](https://old.reddit.com/r/neoliberal/wiki/userpinger/groups)
+[](#bigbutton) [Get a Flair](https://reddit.com/r/neoliberal/wiki/flairs)   
+[](#bigbutton) [Join a Ping Group](https://reddit.com/r/neoliberal/wiki/userpinger/groups)
 
 ---
 
@@ -81,4 +81,4 @@ GET 👏 THAT 👏 KARMA 👏. The best time to post for maximum exposure is app
 
 [](#homebutton)[](https://old.reddit.com/r/Neoliberal)
 
-#[](#headerbutton)[](https://www.reddit.com/r/neoliberal/comments/c4rhy5/you_guys_helped_me_leave_the_altright_but_i_still/ery37c1)[](#headerbutton-2)[](https://podcasts.apple.com/us/podcast/immigration-nation-ft-alex-nowrasteh/id1390384827?i=1000443445581)[](#headerbutton-3)[](https://np.reddit.com/r/Beto2020/comments/c2mqcb/hi_there_jen_omalley_dillon_here_ask_me_anything/)
+#[](#headerbutton)[](https://old.reddit.com/r/neoliberal/comments/c4rhy5/you_guys_helped_me_leave_the_altright_but_i_still/ery37c1)[](#headerbutton-2)[](https://podcasts.apple.com/us/podcast/immigration-nation-ft-alex-nowrasteh/id1390384827?i=1000443445581)[](#headerbutton-3)[](https://old.reddit.com/r/neoliberal/comments/caek7v/new_neoliberal_events_in_san_fransisco_this_month/)
