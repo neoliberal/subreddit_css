@@ -14,13 +14,14 @@ import praw
 
 input_dir = 'assets/imagebar/'
 output_dir = 'assets/imagebar/edited_for_newreddit'
+extensions = ('.png', '.jpg', '.jpeg')
 if not os.path.exists(output_dir):
     os.mkdir(output_dir)
-fnames = [f for f in os.listdir(input_dir) if f.endswith('.jpg')]
+fnames = [f for f in os.listdir(input_dir) if f.endswith(extensions)]
 input_fnames = [os.path.join(input_dir, fname) for fname in fnames]
 output_fnames = [os.path.join(output_dir, fname) for fname in fnames]
 
-wrap_length = 26
+wrap_length = 22
 x = 25 # padding-left
 y = 8 # padding-top
 font_size = 28
@@ -30,6 +31,8 @@ font = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 
 for input_fname, output_fname in zip(input_fnames, output_fnames):
     text = input(f'Enter the text for {input_fname}:\n')
+    if text == "":
+        continue
     wrapped_text = textwrap.fill(text, wrap_length)
 
     img = Image.open(input_fname).crop((0, 0, 600, 112))
