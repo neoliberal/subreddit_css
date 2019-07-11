@@ -2579,20 +2579,20 @@ p.tagline {
     background: none !important;
 }
 
-thead,
-tr:nth-of-type(2n) {
-    background-color: #f3f3f3;
+.content thead,
+.content tr:nth-of-type(2n) {
+    background-color: #f5f5f5;
 }
 
-tbody {
-    background-color: #f8f8f8;
+.content tbody {
+    background-color: #fafafa;
 }
 
-.res-nightmode thead,
-.res-nightmode tr:nth-of-type(2n) {
+.res-nightmode .content thead,
+.res-nightmode .content tr:nth-of-type(2n) {
     background-color: #555;
 }
 
-.res-nightmode tbody{
+.res-nightmode .content tbody{
     background-color: #444;
 }
