@@ -178,37 +178,37 @@ a[href$="rolf-img"]:hover, a[href$="rofl-img"]:hover {
     background-image: url(%%downtarrifmod%%);
 }
 
-.res-nightmode .arrow.up, .res-nightmode
-.arrow.upmod {
+.res-nightmode .content .arrow.up,
+.res-nightmode .content .arrow.upmod {
     background-image: url(%%up%%);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0 0;
 }
 
-.res-nightmode .arrow.upmod {
+.res-nightmode .content .arrow.upmod {
     background-image: url(%%upmod%%);
 }
 
-.res-nightmode .arrow.down, .res-nightmode
-.arrow.downmod {
+.res-nightmode .content .arrow.down,
+.res-nightmode .content .arrow.downmod {
     background-image: url(%%downtarrif%%);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0 0; }
 
-.res-nightmode .arrow.downmod {
+.res-nightmode .content .arrow.downmod {
     background-image: url(%%downtarrifmod%%);
 }
 
-.res-nightmode .arrow.up:hover{
+.res-nightmode .content .arrow.up:hover{
     background-image: url(%%up%%);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0 0;
 }
 
-.res-nightmode .arrow.down:hover{
+.res-nightmode .content .arrow.down:hover{
     background-image: url(%%downtarrif%%);
     background-size: contain;
     background-repeat: no-repeat;

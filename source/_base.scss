@@ -2543,3 +2543,38 @@ p.tagline {
     transform: scale(1.2);
     top: 3.9px;
 }
+
+.res-nightmode .commentarea .flair-image,
+.res-nightmode .side .md a[href^="#headerbutton"] + a,
+.res-nightmode .side::before {
+    opacity: 0.8;
+}
+
+.res-nightmode a[href="#bigbutton"] + a,
+.res-nightmode .side .subButtons *,
+.res-nightmode .side .helplink,
+.res-nightmode .image-preview-list .description .img-url,
+.res-nightmode .login-required.access-required,
+.res-nightmode .side .account-activity-box a {
+    color: #ddd;
+}
+
+.res-nightmode .side .md > ul:nth-of-type(3) {
+    background-color: #000;
+}
+
+.res-nightmode .side .md > ul:nth-of-type(3) > li > ul > li > a,
+.res-nightmode .side .md > ul:nth-of-type(3) > li > ul > li > ul > li a {
+    color: #ddd;
+}
+
+.res-nightmode #sr-header-area,
+.res-nightmode #sr-more-link {
+    background-color: rgba(0,0,0,0.3) !important;
+    color: #fff !important;
+}
+
+.res-nightmode #RESShortcutsEditContainer,
+.res-nightmode #RESShortcutsEditContainer div {
+    background: none !important;
+}
