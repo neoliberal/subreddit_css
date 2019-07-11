@@ -15,7 +15,7 @@ We welcome people of all political persuasions as long as civility standards are
 
 ##About Us
 
-With collectivism on the rise, a group of liberal philosophers, economists, and journalists met in Paris at the Walter Lippmann Colloquium in 1938 to discuss the future prospects of liberalism. While the participants could not agree on a comprehensive programme, there was universal agreement that a new liberal (neoliberal) project, able to resist the tendency towards ever more state control without falling back into the dogma of complete laissez-faire, was necessary. This sub serves as a forum to continue that project against new threats posed by the populist left and right.  
+With collectivism on the rise, a group of liberal philosophers, economists, and journalists met in Paris at the Walter Lippmann Colloquium in 1938 to discuss the future prospects of liberalism. While the participants could not agree on a comprehensive program, there was universal agreement that a new liberal (neoliberal) project, able to resist the tendency towards ever more state control without falling back into the dogma of complete laissez-faire, was necessary. This sub serves as a forum to continue that project against new threats posed by the populist left and right.  
 
 We do not all subscribe to a single comprehensive philosophy but instead find common ground in shared sentiments and approaches to public policy.
 
@@ -81,4 +81,4 @@ GET 👏 THAT 👏 KARMA 👏. The best time to post for maximum exposure is app
 
 [](#homebutton)[](https://old.reddit.com/r/Neoliberal)
 
-#[](#headerbutton)[](https://old.reddit.com/r/neoliberal/comments/c4rhy5/you_guys_helped_me_leave_the_altright_but_i_still/ery37c1)[](#headerbutton-2)[](https://podcasts.apple.com/us/podcast/immigration-nation-ft-alex-nowrasteh/id1390384827?i=1000443445581)[](#headerbutton-3)[](https://old.reddit.com/r/neoliberal/comments/caek7v/new_neoliberal_events_in_san_fransisco_this_month/)
+#[](#headerbutton)[](https://old.reddit.com/r/neoliberal/comments/cb37w7/the_impact_of_mental_health_on_our_economy_and/)[](#headerbutton-2)[](https://podcasts.apple.com/us/podcast/immigration-nation-ft-alex-nowrasteh/id1390384827?i=1000443445581)[](#headerbutton-3)[](https://old.reddit.com/r/neoliberal/comments/caek7v/new_neoliberal_events_in_san_fransisco_this_month/)
