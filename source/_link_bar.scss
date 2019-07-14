@@ -26,8 +26,9 @@ table#srList tbody tr:last-of-type {
 
 .side .md>ul:nth-of-type(3) a,
 .side .md>ul:nth-of-type(3) strong {
-    text-decoration: none;
-    color: #fff
+    color: #fff;
+    padding: 0 20px;
+    display: block;
 }
 
 .side .md>ul:nth-of-type(3) li {
@@ -88,10 +89,8 @@ table#srList tbody tr:last-of-type {
 .side .md>ul:nth-of-type(3)>li>ul>li>ul>li {
     display: block;
     margin: 0;
-    height: 40px;
     border-bottom: 1px solid rgba(255, 255, 255, .075);
-    padding: 0 20px;
-    line-height: 40px;
+    padding: 0;
     white-space: nowrap
 }
 
