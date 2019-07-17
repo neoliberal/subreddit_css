@@ -5,6 +5,8 @@
 
 ---
 
+**San Francisco Neolibs:** [join us for drinks on July 22nd](https://www.eventbrite.com/e/san-francisco-yimby-neoliberal-neoliberal-project-happy-hour-tickets-64893783052) + debate parties on [July 30th](https://www.eventbrite.com/e/san-francisco-yimby-neoliberal-debate-watch-party-night-1-tickets-65504099525) & [July 31st](https://www.eventbrite.com/e/san-francisco-yimby-neoliberal-debate-watch-party-night-2-tickets-65504386383).
+
 Please send feedback to /r/metaNL.
 
 For off-topic chat, join the community in the stickied [discussion thread.](https://neoliber.al/dt)
@@ -34,6 +36,7 @@ We do not all subscribe to a single comprehensive philosophy but instead find co
 
 **Introductory reading:**
 
+- [The Neoliberal Mind](https://static1.squarespace.com/static/56eddde762cd9413e151ac92/t/58e3c27b2e69cf75e8b510fc/1491321484029/the_neoliberal_mind_web.pdf)
 - [Neo-Liberalism and its Prospects](https://miltonfriedman.hoover.org/friedman_images/Collections/2016c21/Farmand_02_17_1951.pdf)
 - [Neoliberalism: The Genesis of a Political Swearword](https://olivermhartwich.files.wordpress.com/2015/02/neoliberalism.pdf)  
 
@@ -81,4 +84,4 @@ GET 👏 THAT 👏 KARMA 👏. The best time to post for maximum exposure is app
 
 [](#homebutton)[](https://old.reddit.com/r/Neoliberal)
 
-#[](#headerbutton)[](https://old.reddit.com/r/neoliberal/comments/cb37w7/the_impact_of_mental_health_on_our_economy_and/)[](#headerbutton-2)[](https://podcasts.apple.com/us/podcast/immigration-nation-ft-alex-nowrasteh/id1390384827?i=1000443445581)[](#headerbutton-3)[](https://old.reddit.com/r/neoliberal/comments/ce15t7/raiding_corruption_and_trojan_horses_russias/)
+#[](#headerbutton)[](https://old.reddit.com/r/neoliberal/comments/cb37w7/the_impact_of_mental_health_on_our_economy_and/)[](#headerbutton-2)[](https://podcasts.apple.com/us/podcast/right-wing-grifters-2-grift-harder/id1390384827?i=1000444201110)[](#headerbutton-3)[](https://old.reddit.com/r/neoliberal/comments/ce15t7/raiding_corruption_and_trojan_horses_russias/)
