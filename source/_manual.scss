@@ -541,3 +541,10 @@ div[data-author="sansampersamp"] > .entry .author::after {
   color: #fff !important;
   text-shadow: none !important;
 }
+
+.drop-choices form:last-of-type a,
+.drop-choices>a.choice:last-of-type,
+.res .res .RESDropdownList li:last-of-type,
+table#srList tbody tr:last-of-type {
+    border: 0
+}
