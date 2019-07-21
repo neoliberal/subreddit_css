@@ -23,36 +23,17 @@
     z-index: 10000000000;
 }
 
-
-[data-author="ThatOtherGhost"] > .entry > p > .flair {
-    border: 2px solid #ffa4f0;
-    background-color: #7676a7;
+.md a[href$="thonk-img"] {
+    background: url("%%thonk-img%%") 0/contain;
 }
 
-.flair-girl {
-    border: 1px solid #ffa4f0 !important;
-    background-color: #7676a7 !important;
+.md a[href$="wew-img"] {
+    background: url("%%wew-img%%") 0/contain;
 }
 
-
-.flair-thonk:before,
-a[href$="thonk-img"] {
-    background: url("%%thonk-img%%") no-repeat;
-    background-size: 40px 40px;
-}
-
-.flair-wew:before,
-a[href$="wew-img"] {
-    background: url("%%wew-img%%") no-repeat;
-    background-size: 56.98px 40px;
-    width: 56.98px;
-}
-
-.flair-rolf:before, .flair-rofl:before,
 a[href$="rolf-img"], a[href$="rofl-img"] {
-    background: url("%%image%%") no-repeat;
-    background-size: 40px 40px;
-    min-width: 40px; }
+    background: url("%%image%%") 0/contain no-repeat;
+}
 
 /* From Obnoxious.css: http://tholman.com/obnoxious/ */
 @keyframes intensifies {
@@ -160,89 +141,45 @@ a[href$="rolf-img"], a[href$="rofl-img"] {
 }
 
 a[href$="rolf-img"]:hover, a[href$="rofl-img"]:hover {
-    animation-timing-function: ease-out;
-    transform-origin: bottom center;
-    animation-name: intensifies;
-    animation-duration: 5s;
+    animation: intensifies 5s ease-out;
 }
 
 .arrow.down,
-.arrow.downmod {
-    background-image: url(%%downtarrif%%);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0 0;
+.res-nightmode .content .arrow.down {
+    background: url(%%downtarrif%%) 0/contain no-repeat;
 }
 
-.arrow.downmod {
-    background-image: url(%%downtarrifmod%%);
+.arrow.downmod,
+.res-nightmode .content .arrow.downmod {
+    background: url(%%downtarrifmod%%) 0/contain no-repeat;
 }
 
-.res-nightmode .content .arrow.up,
-.res-nightmode .content .arrow.upmod {
-    background-image: url(%%up%%);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0 0;
+.res-nightmode .content .arrow.up {
+    background: url(%%up%%) 0/contain no-repeat;
 }
 
 .res-nightmode .content .arrow.upmod {
     background-image: url(%%upmod%%);
 }
 
-.res-nightmode .content .arrow.down,
-.res-nightmode .content .arrow.downmod {
-    background-image: url(%%downtarrif%%);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0 0; }
-
-.res-nightmode .content .arrow.downmod {
-    background-image: url(%%downtarrifmod%%);
-}
-
-.res-nightmode .content .arrow.up:hover{
-    background-image: url(%%up%%);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-}
-
-.res-nightmode .content .arrow.down:hover{
-    background-image: url(%%downtarrif%%);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-}
-
-@media (max-width: 768px) {
-    #header .pagename {
-        display:block;
-        /* background-color: #00000094; */
-        padding: 10px;
-        box-shadow: 0 0 20px 0px black;
-    }
-}
-
-[data-author="jobautomator"] blockquote {
-    font-size: 18px;
-    color: black;
+.res-nightmode .content .arrow.up:hover,
+.res-nightmode .content .arrow.down:hover {
+    background-position: 0;
 }
 
 .md [href="#party-parrot"] {
     background: url(%%parrot-flair%%);
-    cursor: default;
     display: inline-block;
     height: 100px;
     width: 92px;
     animation: party-parrot 0.4s steps(9) infinite;
     color: #fff;
-    text-shadow: 0 0 15px #000;
+    text-shadow: 1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000, -1px 1px #000;
     text-align: center;
-    font-family: impact;
-    font-size: 20px;
+    font-size: 16px;
     overflow: hidden;
-    background-position: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
  }
 
 @keyframes party-parrot {
@@ -256,7 +193,7 @@ a[href$="rolf-img"]:hover, a[href$="rofl-img"]:hover {
 
 /* Sounds like Communist propaganda, but okay */
 a[href="#communism-img"] {
-    background: url("%%communism-img%%") no-repeat;
+    background: url("%%communism-img%%");
     width: 250px;
     height: 158px;
 }
@@ -270,53 +207,24 @@ a[href="#communism-img"] {
     right: 320px;
     margin: 0;
     height: 75px;
-    white-space: nowrap;
     letter-spacing: 0;
     font: 300 14px/40px -apple-system, "Open Sans", Helvetica, sans-serif!important;
     top: 324px;
     box-shadow: -3px 1px 5px 0px #222;
 }
 
-.side .md>h1:first-of-type strong {
-    color: #c22
-}
-
-.side .md>h1:first-of-type:before {
-    text-transform: uppercase;
-    letter-spacing: .05em;
-    font-weight: 700;
-    color: #4d5968!important;
-}
-
-.side .md>h1:first-of-type strong {
-    color: #c22
-}
-
-.side .md>h1:first-of-type:before {
-    text-transform: uppercase;
-    letter-spacing: .05em;
-    font-weight: 700;
-    color: #4d5968!important;
-}
-
-
 /* The images themselves */
 .side .md a[href^="#headerbutton"] + a {
     width: 33.33%;
     height: 100%;
-    border: none;
-    background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(75,76,78,0) 97%,rgba(76,76,76,1) 100%), url("%%header-img-1%%") no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
+    background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(75,76,78,0) 97%,rgba(76,76,76,1) 100%), url("%%header-img-1%%") 50%/cover;
     font-size: 125% !important;
     color: white;
-    text-shadow: -1px -1px 2px black, -1px 1px 2px black, 1px -1px 2px black, 1px 1px 2px black;
-    padding-left: 10px;
+    text-shadow: -1px -1px 2px #000, -1px 1px 2px #000, 1px -1px 2px #000, 1px 1px 2px #000;
     font-weight: bold;
     position:absolute;
     line-height: 18px;
-    padding-top: 8px;
-    padding-right: 8.4vw;
+    padding: 8px 8.4vw 0 10px;
     white-space: pre-line;
     background-position: center right 50% !important;
 }
@@ -334,15 +242,13 @@ a[href="#communism-img"] {
     left: 0px;
     top: 0px;
     height: 300px;
-    padding-top: 5px;
-    padding-left: 7px;
-    padding-right: 7px;
+    padding: 5px 7px 0 7px;
     background: rgba(20,20,20,0.55);
     width: 100%;
 }
 
 .side .md a[href="#headerbutton-2"] + a {
-    background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(75,76,78,0) 97%,rgba(76,76,76,1) 100%), url("%%header-img-2%%") no-repeat;
+    background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(75,76,78,0) 97%,rgba(76,76,76,1) 100%), url("%%header-img-2%%");
     background-size: cover;
     left: 33.33%;
 }
@@ -357,7 +263,7 @@ a[href="#communism-img"] {
 }
 
 .side .md a[href="#headerbutton-3"] + a {
-    background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(75,76,78,0) 97%,rgba(76,76,76,1) 100%), url("%%header-img-3%%") no-repeat;
+    background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(75,76,78,0) 97%,rgba(76,76,76,1) 100%), url("%%header-img-3%%");
     background-size: cover;
     left: 66.66%;
 }
@@ -374,40 +280,9 @@ a[href="#communism-img"] {
 /* Manually added */
 .md [href='#klobuchar-img']{
     background: url(%%klobuchar-img%%);
-    background-size: cover;
-    cursor: default;
     display: inline-block;
     height: 50px;
     width: 42px;
-}
-
-.md [href="#its-happening"] {
-  background: url(%%its-happening%%);
-  cursor: default;
-  display: inline-block;
-  height: 150px;
-  width: 225px;
-  animation: its-happening 1s steps(18) infinite;
-  overflow: hidden;
-  background-position: 0px;}
-
-@keyframes its-happening {
-  from {
-    background-position: 0px 0px; }
-  to {
-    background-position: 0px -2696px; } }
-
-.flair-party-parrot:before{
-  background: url(%%parrot-flair%%);
-  animation: parrot-flair .4s steps(9) infinite;
-  background-size: 100%;
-}
-
-@keyframes parrot-flair {
-  from {
-    background-position: 0px 0px; }
-  to {
-    background-position: 0px -360px; }
 }
 
 a[href="#time-to-stop-posting"] {
@@ -429,9 +304,7 @@ a[href="#go-to-bed"] {
   display: inline-block;
   color: white;
   text-align: center;
-  padding-top: 100px;
-  padding-left: 6px;
-  padding-right: 132px;
+  padding: 100px 132px 0 6px;
   overflow: hidden;
   font-size: 25px;
   text-shadow: 1px 1px 1px black, 1px -1px 1px black, -1px 1px 1px black, -1px -1px 1px black;
