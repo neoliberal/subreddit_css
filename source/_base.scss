@@ -256,27 +256,6 @@ input[type=radio]:checked {
     content: ""
 }
 
-.md a[href="#button"]+a {
-    display: inline-block;
-    color: #4d5968
-}
-
-.md a[href="#button"]+a,
-.md a[href="#specialbutton"]+a {
-    width: auto;
-    height: 30px;
-    border: rgba(144, 144, 144, .25);
-    border-radius: 5px;
-    padding: 0 10px;
-    background: 0 0;
-    line-height: 26px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: 700;
-    transition: .2s
-}
-
 .md a[href^="#headerbutton"]+a,
 .md a[href="#bigbutton"]+a {
     display: inline-block;
@@ -284,8 +263,7 @@ input[type=radio]:checked {
 }
 
 .md a[href^="headerbutton"]+a,
-.md a[href="#bigbutton"]+a,
-.md a[href="#bigspecialbutton"]+a {
+.md a[href="#bigbutton"]+a {
     width: auto;
     border: 2px solid rgba(144, 144, 144, .25);
     border-radius: 5px;
@@ -409,8 +387,6 @@ span.RESshortcutside:active {
     background-color: rgba(144, 144, 144, .2)
 }
 
-.md a[href="#bigspecialbutton"]+a,
-.md a[href="#specialbutton"]+a,
 .res .blueButton,
 .res a.RESNotificationButtonBlue,
 .submit-page .tabmenu.formtab li.selected a,
@@ -426,9 +402,6 @@ button[name=save] {
 
 .md a[href^="headerbutton"]+a+.keyNavAnnotation,
 .md a[href="#bigbutton"]+a+.keyNavAnnotation,
-.md a[href="#bigspecialbutton"]+a+.keyNavAnnotation,
-.md a[href="#button"]+a+.keyNavAnnotation,
-.md a[href="#specialbutton"]+a+.keyNavAnnotation,
 .res i#RESSearchMenuItem {
     display: none
 }
@@ -452,10 +425,7 @@ button[name=save]:active {
 }
 
 .side .md a[href^="headerbutton"]+a,
-.side .md a[href="#bigbutton"]+a,
-.side .md a[href="#bigspecialbutton"]+a,
-.side .md a[href="#button"]+a,
-.side .md a[href="#specialbutton"]+a {
+.side .md a[href="#bigbutton"]+a {
     margin-top: 5px;
     overflow: hidden;
     vertical-align: center;
@@ -463,20 +433,11 @@ button[name=save]:active {
     text-align: center
 }
 
-.side .md a[href="#button"]+a,
-.side .md a[href="#specialbutton"]+a {
-    margin-right: 10px;
-    width: 93.3px
-}
-
-.side .fancy-toggle-button+span+span,
-.side .md a[href="#rightalign"]+a[href="#button"]+a,
-.side .md a[href="#rightalign"]+a[href="#specialbutton"]+a {
+.side .fancy-toggle-button+span+span {
     margin-right: 0
 }
 
-.side .md a[href="#bigbutton"]+a,
-.side .md a[href="#bigspecialbutton"]+a {
+.side .md a[href="#bigbutton"]+a {
     width: 300px
 }
 
@@ -1155,25 +1116,12 @@ span#openRESPrefs {
 
 .side .md a[href="#homebutton"]+a {
     position: absolute;
-    padding: 0 30px;
-    line-height: 46px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #fff;
-    transition: .2s;
-    z-index: 2147483647
-}
-
-
-.side .md a[href="#homebutton"]+a {
+    z-index: 10000000;
     top: 30px;
     left: 497px;
     width: 260px;
     height: 257px;
-    border: 0;
     border-radius: 150px;
-    background: 0 0
 }
 
 .side {
