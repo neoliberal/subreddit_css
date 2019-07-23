@@ -355,9 +355,7 @@ span.RESSubscriptionButton.unsubscribe {
     transition: .2s
 }
 
-.md a[href^="headerbutton"]+a:hover,
 .md a[href="#bigbutton"]+a:hover,
-.md a[href="#button"]+a:hover,
 .side .fancy-toggle-button .active:hover,
 .usertext .help-toggle .active:hover,
 .usertext a.reddiquette:hover,
@@ -372,9 +370,7 @@ span.RESshortcutside:hover {
     background-color: rgba(144, 144, 144, .075)
 }
 
-.md a[href^="headerbutton"]+a:active,
 .md a[href="#bigbutton"]+a:active,
-.md a[href="#button"]+a:active,
 .side .fancy-toggle-button .active:active,
 .usertext .help-toggle .active:active,
 .usertext a.reddiquette:active,
@@ -406,8 +402,6 @@ button[name=save] {
     display: none
 }
 
-.md a[href="#bigspecialbutton"]+a:hover,
-.md a[href="#specialbutton"]+a:hover,
 .morelink a:hover,
 .wiki-page .pageactions .wikiaction-current:hover,
 button.save:hover,
@@ -415,8 +409,6 @@ button[name=save]:hover {
     background: #e44
 }
 
-.md a[href="#bigspecialbutton"]+a:active,
-.md a[href="#specialbutton"]+a:active,
 .morelink a:active,
 button.save:active,
 button[name=save]:active {
@@ -424,21 +416,17 @@ button[name=save]:active {
     background: #a00
 }
 
-.side .md a[href^="headerbutton"]+a,
 .side .md a[href="#bigbutton"]+a {
     margin-top: 5px;
     overflow: hidden;
     vertical-align: center;
     text-overflow: ellipsis;
-    text-align: center
+    text-align: center;
+    width: 300px;
 }
 
 .side .fancy-toggle-button+span+span {
     margin-right: 0
-}
-
-.side .md a[href="#bigbutton"]+a {
-    width: 300px
 }
 
 .BEFoot button {
@@ -763,16 +751,8 @@ a.choice[href$=controversial]:after {
 #header {
     height: 325px;
     border: 0;
-    box-shadow: inset 0 -90px 0 0 #313131;
-    background: url(%%nlbanner-expansionary%%) no-repeat;
-    background-color: rgb(71,81,133);
-    background-size: auto 104%;
+    background: rgb(71,81,133) url(%%nlbanner-expansionary%%) 0 0/auto 104% no-repeat;
     box-shadow: inset 0 -38px 0 0 rgba(49, 49, 49, .8)
-}
-
-#header-logo {
-  background: url(%%nl-logo%%) no-repeat;
-
 }
 
 #header,
@@ -810,7 +790,6 @@ body .modal {
     color: #fff
 }
 
-#header a#header-img-a,
 #sr-header-area .separator {
     display: none
 }
@@ -985,8 +964,8 @@ span#openRESPrefs {
     font-size: 0
 }
 
-#header #header-bottom-right #mail,
-#header #header-bottom-right #modmail,
+#header-bottom-right #mail,
+#header-bottom-right #modmail,
 #header-bottom-right #openRESPrefs .gearIcon,
 #header-bottom-right .logout a,
 #header-bottom-right a.pref-lang {
@@ -1016,15 +995,15 @@ span#openRESPrefs {
     background-position: -56px -28px
 }
 
-#header #header-bottom-right #mail {
+#header-bottom-right #mail {
     background-position: -84px -28px
 }
 
-#header #header-bottom-right #modmail {
+#header-bottom-right #modmail {
     background-position: 0 -56px
 }
 
-#header #header-bottom-right #new_modmail {
+#header-bottom-right #new_modmail {
     margin-left: 20px;
     transform: scale(1.25);
     top: 1.6px
@@ -2203,34 +2182,40 @@ p.tagline {
     margin-left: 50px
 }
 
-.md [href="#ohjeremycorbyn"] {
-    background: url(%%corbyn%%);
-    cursor: default;
+.md [href="#ohjeremycorbyn"],
+.md [href="#mission-accomplished"],
+.md [href="#theresamay"],
+.md [href="#BasicShyBear"],
+.md [href="#theresamayfish"],
+.md [href="#GOAT"],
+.md [href="#grievelife"],
+.md [href="#ryandab"],
+.md [href="#voteblair"],
+.md [href="#corbynwwe"],
+.md [href="#corbynretreat"] {
+    background-size: cover;
     display: inline-block;
-    height: 315px;
-    width: 387px;
-    animation: corbyn 3.5s steps(40) infinite;
     color: #fff;
     text-shadow: 0 0 15px #000;
     text-align: center;
-    font-family: impact;
     font-size: 20px;
     overflow: hidden
 }
 
+.md [href="#ohjeremycorbyn"] {
+    background: url(%%corbyn%%);
+    height: 315px;
+    width: 387px;
+    animation: corbyn 3.5s steps(40) infinite;
+}
+
 @keyframes corbyn {
-    from {
-        background-position: 0 0
-    }
-    to {
-        background-position: 0 -12600px
-    }
+    from {background-position: 0 0}
+    to {background-position: 0 -12600px}
 }
 
 .md [href='#goolsbee-stupid']{
-    background: url(%%goolsbee-stupid%%);
-    background-size: cover;
-    cursor: default;
+    background: url(%%goolsbee-stupid%%) cover;
     display: inline-block;
     height: 74px;
     width: 259px;
@@ -2238,252 +2223,126 @@ p.tagline {
 }
 
 .md [href='#goolsbee-pistol']{
-    background: url(%%goolsbee-pistol%%);
-    background-size: cover;
-    cursor: default;
+    background: url(%%goolsbee-pistol%%) cover;
     display: inline-block;
     height: 70px;
     width: 301px;
 
 }
 
-
 .md [href="#mission-accomplished"] {
-  background: url(%%mission-accomplished%%);
-  background-size: cover;
-  cursor: default;
-  display: inline-block;
-  height: 360px;
-  width: 640px;
-  animation: bush 4.8s steps(42) infinite;
-  color: #fff;
-  text-shadow: 0 0 15px #000;
-  text-align: center;
-  font-family: impact;
-  font-size: 20px;
-  overflow: hidden;
+    background: url(%%mission-accomplished%%) 0/cover;
+    height: 360px;
+    width: 640px;
+    animation: bush 4.8s steps(42) infinite;
 }
-
-
 
 @keyframes bush {
-  from {
-    background-position: 0 0;
+    from {background-position: 0 0;}
+    to {background-position: 0 -15120px;}
 }
-  to {
-    background-position: 0 -15120px;
-    }
-}
-
 
 .md [href="#theresamay"] {
     background: url(%%theresamay%%);
-    cursor: default;
-    display: inline-block;
     height: 172px;
     width: 300px;
     animation: theresamay 3.5s steps(73) infinite;
-    color: #fff;
-    text-shadow: 0 0 15px #000;
-    text-align: center;
-    font-family: impact;
-    font-size: 20px;
-    overflow: hidden
 }
 
 @keyframes theresamay {
-    from {
-        background-position: 0 0
-    }
-    to {
-        background-position: 0 -12349px
-    }
+    from {background-position: 0 0}
+    to {background-position: 0 -12349px}
 }
 
 .md [href="#BasicShyBear"] {
-  background: url(%%BasicShyBear%%);
-  cursor: default;
-  display: inline-block;
-  height: 250px;
-  width: 444px;
-  animation: BasicShyBear 8.6s steps(86) infinite;
-  color: #fff;
-  text-shadow: 0 0 15px #000;
-  text-align: center;
-  font-family: impact;
-  font-size: 20px;
-  overflow: hidden;
+    background: url(%%BasicShyBear%%);
+    height: 250px;
+    width: 444px;
+    animation: BasicShyBear 8.6s steps(86) infinite;
 }
 
 @keyframes BasicShyBear {
-  from {
-    background-position: 0 0;
-}
-  to {
-    background-position: 0 -21500px;
-    }
+    from {background-position: 0 0;}
+    to {background-position: 0 -21500px;}
 }
 
 .md [href="#theresamayfish"] {
     background: url(%%theresamayfish%%);
-    cursor: default;
-    display: inline-block;
     height: 180px;
     width: 374px;
     animation: theresamayfish 3.5s steps(90) infinite;
-    color: #fff;
-    text-shadow: 0 0 15px #000;
-    text-align: center;
-    font-family: impact;
-    font-size: 20px;
-    overflow: hidden
 }
 
 @keyframes theresamayfish {
-    from {
-        background-position: 0 0
-    }
-    to {
-        background-position: 0 -16200px
-    }
+    from {background-position: 0 0}
+    to {background-position: 0 -16200px}
 }
 
 .md [href="#GOAT"] {
     background: url(%%GOAT%%);
-    cursor: default;
-    display: inline-block;
     height: 200px;
     width: 270px;
     animation: GOAT 1.34s steps(155) infinite;
-    color: #fff;
-    text-shadow: 0 0 15px #000;
-    text-align: center;
-    font-family: impact;
-    font-size: 20px;
-    overflow: hidden
 }
 
 @keyframes GOAT {
-    from {
-        background-position: 0 0
-    }
-    to {
-        background-position: 0 -31000px
-    }
+    from {background-position: 0 0}
+    to {background-position: 0 -31000px}
 }
 
-.md [href="#grievelife"],
-.md [href="#grievelife"]:hover,
-.md [href="#grievelife"]:active,
-.md [href="#grievelife"]:visited {
-  background: url(%%grievelife%%);
-  cursor: default;
-  display: inline-block;
-  width: 383px;
-  height: 216px;
-  animation: grievelife 3.1s steps(75) infinite;
-  color: #fff;
-  text-shadow: 0 0 15px #000;
-  text-align: center;
-  font-family: impact;
-  font-size: 20px;
-  overflow: hidden;
+.md [href="#grievelife"] {
+    background: url(%%grievelife%%);
+    width: 383px;
+    height: 216px;
+    animation: grievelife 3.1s steps(75) infinite;
 }
 
 @keyframes grievelife {
-  from {
-    background-position: 0 0;
-}
-  to {
-    background-position: 0 -16200px;
-}
+    from {background-position: 0 0;}
+    to {background-position: 0 -16200px;}
 }
 
 .md [href="#ryandab"] {
     background: url(%%ryandab%%);
-    cursor: default;
-    display: inline-block;
     height: 278px;
     width: 468px;
     animation: ryandab 1.9s steps(38) infinite;
-    color: #fff;
-    text-shadow: 0 0 15px #000;
-    text-align: center;
-    font-family: impact;
-    font-size: 20px;
-    overflow: hidden
 }
 
 @keyframes ryandab {
-    from {
-        background-position: 0 0
-    }
-    to {
-        background-position: 0 -10564px
-    }
+    from {background-position: 0 0}
+    to {background-position: 0 -10564px}
 }
 
 .md [href="#voteblair"] {
     background: url(%%blair%%);
-    cursor: default;
-    display: inline-block;
     height: 240px;
     width: 300px;
     animation: blair 2.8s steps(50) infinite;
-    color: #fff;
-    text-shadow: 0 0 15px #000;
-    text-align: center;
-    font-family: impact;
-    font-size: 20px;
-    overflow: hidden
 }
 
 @keyframes blair {
-    from {
-        background-position: 0 0
-    }
-    to {
-        background-position: 0 -12000px
-    }
+    from {background-position: 0 0}
+    to {background-position: 0 -12000px}
 }
 
 .md [href="#corbynwwe"] {
     background: url(%%corbynwwe%%);
-    cursor: default;
-    display: inline-block;
     height: 459px;
     width: 480px;
     animation: corbynwwe 1.7s steps(19) infinite;
-    color: #fff;
-    text-shadow: 0 0 15px #000;
-    text-align: center;
-    font-family: impact;
-    font-size: 20px;
-    overflow: hidden
 }
 
 .md [href="#corbynretreat"] {
     background: url(%%corbynretreat%%);
-    cursor: default;
-    display: inline-block;
     height: 459px;
     width: 480px;
     animation: corbynwwe 1.7s steps(19) infinite;
-    color: #fff;
-    text-shadow: 0 0 15px #000;
-    text-align: center;
-    font-family: impact;
-    font-size: 20px;
-    overflow: hidden
 }
 
 @keyframes corbynwwe {
-    from {
-        background-position: 0 0
-    }
-    to {
-        background-position: 0 -8721px
-    }
+    from {background-position: 0 0}
+    to {background-position: 0 -8721px}
 }
 
 #chat {
