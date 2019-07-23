@@ -5,11 +5,11 @@
 
 ---
 
-**San Francisco Neolibs:** [join us for drinks on July 22nd](https://www.eventbrite.com/e/san-francisco-yimby-neoliberal-neoliberal-project-happy-hour-tickets-64893783052) + debate parties on [July 30th](https://www.eventbrite.com/e/san-francisco-yimby-neoliberal-debate-watch-party-night-1-tickets-65504099525) & [July 31st](https://www.eventbrite.com/e/san-francisco-yimby-neoliberal-debate-watch-party-night-2-tickets-65504386383).
+**SF, LA, DC & NYC:** Join a [debate watch party in your city](https://old.reddit.com/r/neoliberal/comments/cgk4t7/weve_added_new_dates_for_our_dem_debate_watch/).
 
-Please send feedback to /r/metaNL.
+Our charity drive benefiting the [Against Malaria Foundation](https://www.againstmalaria.com/) begins July 29th!
 
-For off-topic chat, join the community in the stickied [discussion thread.](https://neoliber.al/dt)
+Please send feedback to /r/metaNL. For off-topic chat, join the community in the pinned [discussion thread.](https://neoliber.al/dt)
 
 We welcome people of all political persuasions as long as civility standards are observed.
 
