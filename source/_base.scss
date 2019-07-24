@@ -98,6 +98,7 @@ hr {
     background: rgba(144, 144, 144, .25)
 }
 
+.linefield .title,
 h1,
 h2,
 h3,
@@ -119,6 +120,7 @@ h2 {
     font-size: 17px!important
 }
 
+.linefield .title,
 .side .titlebox h1 a,
 .sidecontentbox .title h1,
 h3,
@@ -149,6 +151,7 @@ h6 {
 #search input[type=text],
 .c-form-control,
 .combined-search-page #search input[type=text],
+.linefield input[type=text],
 .linkinfo .shortlink input,
 .login-form-side input[type=password],
 .login-form-side input[type=text],
@@ -1908,6 +1911,7 @@ a.edit-btn {
 }
 
 #subreddit_stylesheet>.sheets:before,
+.linefield,
 .wiki-page .wiki-page-content .wiki>.toc>ul {
     border: 1px solid rgba(144, 144, 144, .25);
     border-radius: 5px
@@ -1938,6 +1942,15 @@ a.edit-btn {
 
 form .spacer+.spacer {
     margin: 10px 0
+}
+
+.linefield {
+    width: 520px;
+    background: 0 0
+}
+
+.linefield div.usertext-edit.md-container {
+    width: 494px!important
 }
 
 div#RESStyleSheetTipPane {
