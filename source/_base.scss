@@ -99,6 +99,7 @@ hr {
 }
 
 .linefield .title,
+.roundfield span.title,
 h1,
 h2,
 h3,
@@ -121,6 +122,7 @@ h2 {
 }
 
 .linefield .title,
+.roundfield .title,
 .side .titlebox h1 a,
 .sidecontentbox .title h1,
 h3,
@@ -157,6 +159,9 @@ h6 {
 .login-form-side input[type=text],
 .pretty-form input[type=text],
 .pretty-form textarea,
+.roundfield input[type=text],
+.roundfield input[type=url],
+.roundfield textarea,
 input[type=checkbox],
 input[type=text],
 textarea {
@@ -193,6 +198,7 @@ select#comment-visits {
 #search input[type=text]:focus,
 .c-form-control:focus,
 .hover-bubble.multi-selector .create-multi input[type=text]:focus,
+.roundfield input[type=url]:focus,
 input[type=text]:focus,
 select:focus,
 textarea:focus {
@@ -1912,6 +1918,7 @@ a.edit-btn {
 
 #subreddit_stylesheet>.sheets:before,
 .linefield,
+.roundfield,
 .wiki-page .wiki-page-content .wiki>.toc>ul {
     border: 1px solid rgba(144, 144, 144, .25);
     border-radius: 5px
@@ -1935,6 +1942,12 @@ a.edit-btn {
     margin-right: 10px
 }
 
+.roundfield input[type=text],
+.roundfield input[type=url],
+.roundfield textarea {
+    width: 500px
+}
+
 .content.submit .info-notice {
     width: 520px;
     border: 0
@@ -1944,7 +1957,8 @@ form .spacer+.spacer {
     margin: 10px 0
 }
 
-.linefield {
+.linefield,
+.roundfield {
     width: 520px;
     background: 0 0
 }
