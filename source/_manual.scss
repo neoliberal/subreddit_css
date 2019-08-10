@@ -419,3 +419,25 @@ div[data-author="sansampersamp"] > .entry .author::after {
 table#srList tbody tr:last-of-type {
     border: 0
 }
+
+html[lang="np"] .usertext.border .md:after {
+    content: "Edit: Wow this really blew up! Thank you so much for le gold, kind stranger! You are a gentleman and a scholar! Can't believe my top comment is about this! RIP my inbox!";
+}
+
+html[lang="np"] .midcol:hover {
+    transform: translateY(-10000px);
+    transition: 5s;
+}
+
+@keyframes colorchange {
+    0% {background: red; }
+    25% {background: yellow; }
+    50% {background: blue; }
+    75% {background: green; }
+    100% {background: red; }
+}
+
+html[lang="bb"] {
+    opacity: 0.8;
+    animation: colorchange 10s infinite;
+}
