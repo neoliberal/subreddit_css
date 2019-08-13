@@ -488,3 +488,12 @@ html[lang="cc"] .side .md a[href="#oonts-parrot-right"] {
     z-index: 10000001;
     pointer-events: none;
 }
+
+div[data-author="They_Care"] > .entry .author {
+    font-size: 0px !important;
+}
+
+div[data-author="They_Care"] > .entry .author::after {
+    font-size: 11px;
+    content: "We Care";
+}
