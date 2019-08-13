@@ -429,15 +429,62 @@ html[lang="np"] .midcol:hover {
     transition: 5s;
 }
 
-@keyframes colorchange {
-    0% {background: red; }
-    25% {background: yellow; }
-    50% {background: blue; }
-    75% {background: green; }
-    100% {background: red; }
+html[lang="cc"] .side .md a[href="#oonts"]{
+    position: fixed;
+    background-image: repeating-linear-gradient(red, green, blue, red);
+    z-index: 10000000;
+    opacity: .2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    animation: oonts 5s linear infinite;
+    background-size: 100% 200%
 }
 
-html[lang="bb"] {
-    opacity: 0.8;
-    animation: colorchange 10s infinite;
+@keyframes oonts {
+    0% {background-position: 0% 0%;}
+    100% {background-position: 0% 200%;}
+}
+
+html[lang="cc"] .side .md a[href="#disco-ball"] {
+    background: url(%%disco-ball%%);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    height: 195px;
+    width: 154px;
+    animation: disco-ball 0.9s steps(4) infinite;
+    z-index: 10000001;
+    pointer-events: none;
+}
+
+@keyframes disco-ball {
+    from {background-position: 0px 0px;}
+    to {background-position: 0px -780px;}
+}
+
+html[lang="cc"] .side .md a[href="#oonts-parrot-left"] {
+    background: url(%%parrot-flair%%);
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    width: 276px;
+    animation: party-parrot 0.4s steps(9) infinite;
+    z-index: 10000001;
+    pointer-events: none;
+}
+
+html[lang="cc"] .side .md a[href="#oonts-parrot-right"] {
+    background: url(%%parrot-flair%%);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+    width: 276px;
+    animation: party-parrot 0.4s steps(9) infinite;
+    z-index: 10000001;
+    pointer-events: none;
 }
