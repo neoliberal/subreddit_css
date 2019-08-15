@@ -497,3 +497,12 @@ div[data-author="They_Care"] > .entry .author::after {
     font-size: 11px;
     content: "We Care";
 }
+
+div[data-author="p00bix"] > .entry .author {
+    font-size: 0px !important;
+}
+
+div[data-author="p00bix"] > .entry .author::after {
+    font-size: 11px;
+    content: "darkaceaus";
+}
