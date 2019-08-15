@@ -429,7 +429,8 @@ html[lang="np"] .midcol:hover {
     transition: 5s;
 }
 
-html[lang="cc"] .side .md a[href="#oonts"]{
+html[lang="np"] .side .md a[href="#oonts"],
+html[lang="cc"] .side .md a[href="#oonts"] {
     position: fixed;
     background-image: repeating-linear-gradient(red, green, blue, red);
     z-index: 10000000;
@@ -448,6 +449,7 @@ html[lang="cc"] .side .md a[href="#oonts"]{
     100% {background-position: 0% 200%;}
 }
 
+html[lang="np"] .side .md a[href="#disco-ball"],
 html[lang="cc"] .side .md a[href="#disco-ball"] {
     background: url(%%disco-ball%%);
     position: fixed;
@@ -465,6 +467,7 @@ html[lang="cc"] .side .md a[href="#disco-ball"] {
     to {background-position: 0px -780px;}
 }
 
+html[lang="np"] .side .md a[href="#oonts-parrot-left"],
 html[lang="cc"] .side .md a[href="#oonts-parrot-left"] {
     background: url(%%parrot-flair%%);
     position: fixed;
@@ -477,6 +480,7 @@ html[lang="cc"] .side .md a[href="#oonts-parrot-left"] {
     pointer-events: none;
 }
 
+html[lang="np"] .side .md a[href="#oonts-parrot-right"],
 html[lang="cc"] .side .md a[href="#oonts-parrot-right"] {
     background: url(%%parrot-flair%%);
     position: fixed;
