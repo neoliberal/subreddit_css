@@ -254,7 +254,7 @@ a[href="#communism-img"] {
 }
 
 .side .md a[href="#headerbutton-2"] + a:after {
-    content: "Neolib Podcast: Criminal Jusice ft. Dr Jennifer Doleac";
+    content: "Neolib Podcast: Criminal Justice ft. Dr Jennifer Doleac";
 }
 
 .side .md a[href="#headerbutton-2"] + a:hover::after {
@@ -283,18 +283,13 @@ a[href="#communism-img"] {
     width: 42px;
 }
 
-a[href="#time-to-stop-posting"] {
-  background-image: url(%%time-to-stop-posting%%);
-  width: 200px;
-  height: 150px;
-  display: inline-block;
-}
 a[href="#doubt"] {
   background-image: url(%%doubt%%);
   width: 160px;
   height: 84px;
   display: inline-block;
 }
+
 a[href="#go-to-bed"] {
   background-image: url(%%go-to-bed%%);
   width: 330px;
@@ -509,4 +504,11 @@ div[data-author="p00bix"] > .entry .author {
 div[data-author="p00bix"] > .entry .author::after {
     font-size: 11px;
     content: "darkaceaus";
+}
+
+a[href="#jeb"] {
+  background-image: url(%%jeb%%);
+  width: 129px;
+  height: 100px;
+  display: inline-block;
 }
