@@ -224,17 +224,18 @@ a[href="#communism-img"] {
     font-weight: bold;
     position:absolute;
     line-height: 18px;
-    padding: 8px 8.4vw 0 10px;
+    /* padding: 8px 8.4vw 0 10px; */
+    padding: 8px 10.5vw 0 10px;
     white-space: pre-line;
     background-position: center right 50% !important;
 }
 
 .side .md a[href="#headerbutton"] + a:after {
-    content: "Bolsonaro and the Destruction of the Amazon";
+    content: "Russia's Extractive Institutions";
 }
 
 .side .md a[href^="#headerbutton"] + a:hover::after {
-    content: "/u/gnikivar2 details the extraordinary damage being done to the Amazon Rainforest as a result of the Bolsonaro regime.";
+    content: "/u/gnikivar2 describes how Putin's cronyism has led to political instability and economic stagnation.";
     font-size: 80% !important;
     font-weight: normal;
     position: absolute;
@@ -254,11 +255,11 @@ a[href="#communism-img"] {
 }
 
 .side .md a[href="#headerbutton-2"] + a:after {
-    content: "Neolib Podcast: Criminal Justice ft. Dr Jennifer Doleac";
+    content: "Neolib Podcast: Mailbag Episode #2";
 }
 
 .side .md a[href="#headerbutton-2"] + a:hover::after {
-    content: "Economist Jennifer Doleac joins the podcast to discuss the field of criminal justice research, reforms, and technology.";
+    content: "Jeremiah and Matt discuss judicial philosophy, the rise of China, Twitter memes, the Neoliberal Project, data science, UBI, immigration and more.";
 }
 
 .side .md a[href="#headerbutton-3"] + a {
@@ -268,11 +269,11 @@ a[href="#communism-img"] {
 }
 
 .side .md a[href="#headerbutton-3"] + a:after {
-    content: "Mass Shootings and Mental Health";
+    content: "Poverty to Prosperity: 3 Success Stories";
 }
 
 .side .md a[href="#headerbutton-3"] + a:hover::after {
-    content: "/u/JetJaguar124 argues that mass shootings aren't caused by mental illness, but do need to be addressed as a health crisis.";
+    content: "/u/SalokinSekwah explains how Botswana, Estonia, and Costa Rica were able to emerge from poverty while similar countries have languished.";
 }
 
 /* Manually added */
