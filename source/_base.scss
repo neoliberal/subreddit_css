@@ -1772,7 +1772,8 @@ span.RESThrobber:before {
     position: relative;
     padding: 0;
     background: url(%%sidebar%%) fixed bottom/auto auto, linear-gradient(45deg, rgba(39, 161, 227, .65), rgba(231, 35, 42, .65)), url(%%header-ex%%) fixed center/cover;
-    background-size: cover
+    background-size: cover;
+    text-shadow: 1px 1px 1px black, 0px 0px 2px black;
 }
 
 .footer {
