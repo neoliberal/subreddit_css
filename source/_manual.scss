@@ -33,6 +33,7 @@
 
 a[href$="rolf-img"], a[href$="rofl-img"] {
     background: url("%%image%%") 0/contain no-repeat;
+    vertical-align: middle;
 }
 
 /* From Obnoxious.css: http://tholman.com/obnoxious/ */
