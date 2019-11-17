@@ -2392,3 +2392,8 @@ p.tagline {
 .child > form > .usertext-edit {
     padding-left: 11px
 }
+
+.thing.spam > .entry.res-selected,
+.thing.spam > .entry.res-selected .md-container {
+    background-color: #ec6b5b !important;
+}
