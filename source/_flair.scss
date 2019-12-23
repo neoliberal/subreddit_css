@@ -38,7 +38,8 @@ $flair-colors: (
         }
     }
     .flair-text {
-        @include box(auto, 18px);
+        height: 18px;
+        width: auto !important;
         font-size: 10px;
         font-weight: 600;
         @include box-sizing(border-box);
