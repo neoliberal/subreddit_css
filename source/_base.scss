@@ -2397,3 +2397,7 @@ p.tagline {
 .res-nightmode .thing.spam > .entry.res-selected .md-container {
     background-color: #3e1e1a !important;
 }
+
+.res-nightmode .comment.spam > .child, .res-nightmode .message.spam > .child {
+    background-color: #232323 !important;
+}
