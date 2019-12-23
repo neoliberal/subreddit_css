@@ -2392,3 +2392,8 @@ p.tagline {
 .thing.spam > .entry.res-selected .md-container {
     background-color: #ec6b5b !important;
 }
+
+.res-nightmode .thing.spam > .entry.res-selected,
+.res-nightmode .thing.spam > .entry.res-selected .md-container {
+    background-color: #3e1e1a !important;
+}
