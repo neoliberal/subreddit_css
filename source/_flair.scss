@@ -20,9 +20,7 @@ $flair-colors: (
         display: inline-flex;
         align-items: center;
         border-radius: 0;
-        visibility: hidden;
         white-space: nowrap;
-        width: 0;
         padding: 0;
         border: 0;
     }
@@ -113,7 +111,111 @@ a.author.moderator~.flair-mod {
     background-color: #777;
 }
 
-.flair-girl {
-    border: 1px solid #ffa4f0 !important;
-    background-color: #7676a7 !important;
+.flairemoji {
+    height: 37px !important;
+    width: 40px !important;
+    background-color: white;
+    border-left: 4px solid white;
+}
+
+.flair.flairrichtext {
+    overflow: visible !important;
+    background: transparent;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.flair-settings.fancy-settings::before {
+    content: "Please do not use this page to apply flairs. Instead, use New Reddit. Contact /u/jenbanim for details";
+    font-size: 45px;
+}
+
+.res-selected > .entry .flairemoji {
+    background-color: #f0f3fc;
+    border-left: 4px solid #f0f3fc;
+}
+
+.res-selected.spam > .entry .flairemoji {
+    background-color: #ec6b5b;
+    border-left: 4px solid #ec6b5b;
+}
+
+.spam > .entry .flairemoji {
+    background-color: #fa8072;
+    border-left: 4px solid #fa8072;
+}
+
+.res-nightmode .flairemoji {
+    background-color: #262626;
+    border-left: 4px solid #262626;
+}
+
+.res-nightmode .res-selected > .entry .flairemoji {
+    background-color: #373737;
+    border-left: 4px solid #373737;
+}
+
+.res-nightmode .spam > .entry .flairemoji {
+    background-color: #3d2929;
+    border-left: 4px solid #3d2929;
+}
+
+.res-nightmode .res-selected.spam > .entry .flairemoji {
+    background-color: #3e1e1a;
+    border-left: 4px solid #3e1e1a;
+}
+
+.flair span:last-child {
+    padding: 0 4px 0 4px;
+}
+
+// Red bordered flairs
+div[data-author="thebowski"] > .entry .flair span:last-child,
+div[data-author="errantventure"] > .entry .flair span:last-child,
+div[data-author="mrdannyocean"] > .entry .flair span:last-child,
+div[data-author="cdstephens"] > .entry .flair span:last-child,
+div[data-author="1amathrowaway"] > .entry .flair span:last-child,
+div[data-author="thatfrenchieguy"] > .entry .flair span:last-child,
+div[data-author="caesar15"] > .entry .flair span:last-child,
+div[data-author="lionmoose"] > .entry .flair span:last-child,
+div[data-author="BainCapitalist"] > .entry .flair span:last-child,
+div[data-author="ostrichmustard"] > .entry .flair span:last-child,
+div[data-author="paulatreides0"] > .entry .flair span:last-child,
+div[data-author="vakiadia"] > .entry .flair span:last-child,
+div[data-author="birdious"] > .entry .flair span:last-child,
+div[data-author="DiveIntoTheShadows"] > .entry .flair span:last-child,
+div[data-author="p00bix"] > .entry .flair span:last-child,
+div[data-author="neoliberal_shill_bot"] > .entry .flair span:last-child,
+div[data-author="commalacomekrugman"] > .entry .flair span:last-child,
+div[data-author="sansampersamp"] > .entry .flair span:last-child,
+div[data-author="qchisq"] > .entry .flair span:last-child,
+div[data-author="daokedao4"] > .entry .flair span:last-child,
+div[data-author="buenzlitum"] > .entry .flair span:last-child,
+div[data-author="int6"] > .entry .flair span:last-child,
+div[data-author="ExternalNeoliberal"] > .entry .flair span:last-child,
+div[data-author="BastestKitty1"] > .entry .flair span:last-child,
+div[data-author="jenbanim"] > .entry .flair span:last-child {
+    border: 2px solid #c22;
+}
+
+// Pink border
+div[data-author="usrname42"] > .entry .flair span:last-child {
+    border: 2px solid #e286a9;
+}
+
+// Blue border flairs
+div[data-author="BernieMeinhoffGang"] > .entry .flair span:last-child {
+    border: 2px solid #003366;
+}
+
+// Pale magenta borders, originally girl flairs
+div[data-author="Kelsig"] > .entry .flair span:last-child,
+div[data-author="AJungianIdeal"] > .entry .flair span:last-child,
+div[data-author="LefthandedLunatic"] > .entry .flair span:last-child,
+div[data-author="karry9001"] > .entry .flair span:last-child,
+div[data-author="ByzantiumBall"] > .entry .flair span:last-child,
+div[data-author="onometre"] > .entry .flair span:last-child,
+div[data-author="thelargestgay"] > .entry .flair span:last-child,
+div[data-author="taylor1589"] > .entry .flair span:last-child {
+    border: 2px solid #ffa4f0;
 }
