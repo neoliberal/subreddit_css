@@ -114,8 +114,7 @@ a.author.moderator~.flair-mod {
 .flairemoji {
     height: 37px !important;
     width: 40px !important;
-    background-color: white;
-    border-left: 4px solid white;
+    visibility: visible;
 }
 
 .flair.flairrichtext {
@@ -123,6 +122,7 @@ a.author.moderator~.flair-mod {
     background: transparent;
     font-size: 10px;
     font-weight: bold;
+    visibility: hidden;
 }
 
 .flair-settings.fancy-settings::before {
@@ -130,43 +130,10 @@ a.author.moderator~.flair-mod {
     font-size: 45px;
 }
 
-.res-selected > .entry .flairemoji {
-    background-color: #f0f3fc;
-    border-left: 4px solid #f0f3fc;
-}
-
-.res-selected.spam > .entry .flairemoji {
-    background-color: #ec6b5b;
-    border-left: 4px solid #ec6b5b;
-}
-
-.spam > .entry .flairemoji {
-    background-color: #fa8072;
-    border-left: 4px solid #fa8072;
-}
-
-.res-nightmode .flairemoji {
-    background-color: #262626;
-    border-left: 4px solid #262626;
-}
-
-.res-nightmode .res-selected > .entry .flairemoji {
-    background-color: #373737;
-    border-left: 4px solid #373737;
-}
-
-.res-nightmode .spam > .entry .flairemoji {
-    background-color: #3d2929;
-    border-left: 4px solid #3d2929;
-}
-
-.res-nightmode .res-selected.spam > .entry .flairemoji {
-    background-color: #3e1e1a;
-    border-left: 4px solid #3e1e1a;
-}
-
 .flair span:last-child {
     padding: 0 4px 0 4px;
+    visibility: visible;
+    background-color: inherit;
 }
 
 // Red bordered flairs
