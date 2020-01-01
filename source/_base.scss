@@ -690,11 +690,10 @@ div.flairselector.drop-choices {
 .side div.flairselector.drop-choices {
     left: auto!important;
     right: 10px;
-    width: 300px!important
 }
 
 .side div.flairselector.drop-choices:before {
-    left: calc(50% - 8px)
+    left: 78%;
 }
 
 .content div.flairselector.drop-choices:before {
@@ -1314,7 +1313,6 @@ input#addSubreddit {
 .flairselector li,
 .flairselector li:hover,
 body .entry .buttons .flairselector li {
-    margin-bottom: 5px;
     border: 0;
     padding: 5px;
     background: 0 0
@@ -1332,7 +1330,8 @@ body .entry .buttons .flairselector li {
 }
 
 .flairoptionpane {
-    max-height: none
+    max-height: 400px;
+    border: 1px solid #ccc;
 }
 
 .over18>.entry>p>a.title:before,
@@ -2400,4 +2399,14 @@ p.tagline {
 
 .res-nightmode .comment.spam > .child, .res-nightmode .message.spam > .child {
     background-color: #232323 !important;
+}
+
+.flairselector.drop-choices.active {
+    background-color: #f9f9f9;
+    border: 1px solid black !important;
+}
+
+.flairselector.active .flairemoji {
+    width: 25px !important;
+    height: 25px !important;
 }
