@@ -2081,7 +2081,7 @@ p.tagline {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: center
 }
 
