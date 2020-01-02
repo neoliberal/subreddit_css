@@ -113,7 +113,9 @@ a.author.moderator~.flair-mod {
 
 .flairemoji {
     height: 37px !important;
+    min-height: 37px;
     width: 40px !important;
+    min-width: 40px;
     visibility: visible;
 }
 
@@ -123,6 +125,11 @@ a.author.moderator~.flair-mod {
     font-size: 10px;
     font-weight: bold;
     visibility: hidden;
+    height: auto;
+}
+
+.flairselector .flair.flairrichtext {
+    line-height: 10px;
 }
 
 .flair-settings.fancy-settings::before {

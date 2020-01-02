@@ -1315,7 +1315,8 @@ input#addSubreddit {
 body .entry .buttons .flairselector li {
     border: 0;
     padding: 5px;
-    background: 0 0
+    background: 0 0;
+    height: 40px;
 }
 
 .flairselector li.selected {
@@ -2404,9 +2405,4 @@ p.tagline {
 .flairselector.drop-choices.active {
     background-color: #f9f9f9;
     border: 1px solid black !important;
-}
-
-.flairselector.active .flairemoji {
-    width: 25px !important;
-    height: 25px !important;
 }
