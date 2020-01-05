@@ -199,3 +199,44 @@ div[data-author="taylor1589"] > .entry .flair span:last-child {
 div[data-author="gammbus"] > .entry .author {
     transform: scale(-1, -1);
 }
+
+// Replace usernames
+div[data-author="p00bix"] > .entry .author,
+div[data-author="sansampersamp"] > .entry .author,
+div[data-author="lionmoose"] > .entry .author,
+div[data-author="paulatreides0"] > .entry .author,
+div[data-author="adamtraskk"] > .entry .author,
+div[data-author="BainCapitalist"] > .entry .author {
+    font-size: 0px !important;
+}
+
+div[data-author="p00bix"] > .entry .author::after {
+    font-size: 11px;
+    content: "Enbymod";
+}
+
+div[data-author="sansampersamp"] > .entry .author::after {
+  font-size: 11px;
+  content: "S&";
+}
+
+div[data-author="BainCapitalist"] > .entry .author::after {
+  font-size: 11px;
+  content: "BrainCRAPitalist";
+}
+
+div[data-author="lionmoose"] > .entry .author::after {
+  font-size: 11px;
+  content: "cuccmoose";
+}
+
+div[data-author="paulatreides0"] > .entry .author::after {
+  font-size: 11px;
+  content: "Leto Atreides II";
+}
+
+div[data-author="adamtraskk"] > .entry .author::after {
+  font-size: 11px;
+  content: "Talks an Awful Lot of Shit For Someone Who Literally Shovels Shit for a Living";
+}
+

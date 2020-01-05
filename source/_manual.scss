@@ -338,42 +338,6 @@ span.multi-count, .res-fancy-toggle-button {
     align-items: center;
 }
 
-div[data-author="BainCapitalist"] > .entry .author {
-  font-size: 0px !important;
-}
-
-div[data-author="BainCapitalist"] > .entry .author::after {
-  font-size: 11px;
-  content: "BrainCRAPitalist";
-}
-
-div[data-author="lionmoose"] > .entry .author {
-  font-size: 0px !important;
-}
-
-div[data-author="lionmoose"] > .entry .author::after {
-  font-size: 11px;
-  content: "cuccmoose";
-}
-
-div[data-author="paulatreides0"] > .entry .author {
-  font-size: 0px !important;
-}
-
-div[data-author="paulatreides0"] > .entry .author::after {
-  font-size: 11px;
-  content: "Leto Atreides II";
-}
-
-div[data-author="adamtraskk"] > .entry .author {
-  font-size: 0px !important;
-}
-
-div[data-author="adamtraskk"] > .entry .author::after {
-  font-size: 11px;
-  content: "Talks an Awful Lot of Shit For Someone Who Literally Shovels Shit for a Living";
-}
-
 #NREMail {
   display: none;
 }
@@ -384,14 +348,6 @@ div[data-author="adamtraskk"] > .entry .author::after {
 
 .res-icon.res-icon-12 {
   display: none
-}
-
-div[data-author="sansampersamp"] > .entry .author {
-  font-size: 0px !important; }
-
-div[data-author="sansampersamp"] > .entry .author::after {
-  font-size: 11px;
-  content: "S&";
 }
 
 .res-floater-list {
@@ -484,24 +440,6 @@ html[lang="cc"] .side .md a[href="#oonts-parrot-right"] {
     animation: party-parrot 0.4s steps(9) infinite;
     z-index: 10000001;
     pointer-events: none;
-}
-
-div[data-author="They_Care"] > .entry .author {
-    font-size: 0px !important;
-}
-
-div[data-author="They_Care"] > .entry .author::after {
-    font-size: 11px;
-    content: "Penguin";
-}
-
-div[data-author="p00bix"] > .entry .author {
-    font-size: 0px !important;
-}
-
-div[data-author="p00bix"] > .entry .author::after {
-    font-size: 11px;
-    content: "Enbymod";
 }
 
 a[href="#jeb"] {
