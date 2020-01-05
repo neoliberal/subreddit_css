@@ -194,3 +194,8 @@ div[data-author="thelargestgay"] > .entry .flair span:last-child,
 div[data-author="taylor1589"] > .entry .flair span:last-child {
     border: 2px solid #ffa4f0;
 }
+
+// Flip gammbus' username
+div[data-author="gammbus"] > .entry .author {
+    transform: scale(-1, -1);
+}
