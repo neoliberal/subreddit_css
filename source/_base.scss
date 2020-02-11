@@ -2406,3 +2406,15 @@ p.tagline {
     background-color: #f9f9f9;
     border: 1px solid black !important;
 }
+
+#srList {
+    z-index: 99999999 !important;
+    top: 30px !important;
+    left: 5px !important;
+    width: 350px !important;
+    padding: 5px;
+}
+
+#srList table {
+    margin: 5px;
+}
