@@ -170,6 +170,8 @@ div[data-author="int6"] > .entry .flair span:last-child,
 div[data-author="ExternalNeoliberal"] > .entry .flair span:last-child,
 div[data-author="BastestKitty1"] > .entry .flair span:last-child,
 div[data-author="jenbanim"] > .entry .flair span:last-child,
+div[data-author="EScforlyfe"] > .entry .flair span:last-child,
+div[data-author="adamtraskk"] > .entry .flair span:last-child,
 div[data-author="sower_of_salt"] > .entry .flair span:last-child {
     border: 2px solid #c22;
 }
@@ -206,7 +208,6 @@ div[data-author="p00bix"] > .entry .author,
 div[data-author="sansampersamp"] > .entry .author,
 div[data-author="lionmoose"] > .entry .author,
 div[data-author="paulatreides0"] > .entry .author,
-div[data-author="adamtraskk"] > .entry .author,
 div[data-author="BainCapitalist"] > .entry .author {
     font-size: 0px !important;
 }
@@ -235,9 +236,3 @@ div[data-author="paulatreides0"] > .entry .author::after {
   font-size: 11px;
   content: "Leto Atreides II";
 }
-
-div[data-author="adamtraskk"] > .entry .author::after {
-  font-size: 11px;
-  content: "Talks an Awful Lot of Shit For Someone Who Literally Shovels Shit for a Living";
-}
-
