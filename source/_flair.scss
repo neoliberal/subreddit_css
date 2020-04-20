@@ -55,22 +55,22 @@ $flair-colors: (
     }
 }
 
-@each $name, $category in image-flairs() {
-    $length: length($category) * $flairsheet-flair-height;
-    .flair-#{$name}:before,
-    a[href$="#{$name}-img"] {
-        background: url(image-reference("#{$name}-flair")) no-repeat;
-        background-size: $flair-image-width #{$flair-image-scale-factor * $length};
-    }
-
-    @each $image in $category {
-        $offset: -$flairsheet-flair-height * (index($category, $image) - 1);
-        .flair-#{$image}:before,
-        a[href$="##{$image}-#{$name}-img"] {
-            background-position: 0 #{$flair-image-scale-factor * $offset};
-        }
-    }
-}
+//@each $name, $category in image-flairs() {
+//    $length: length($category) * $flairsheet-flair-height;
+//    .flair-#{$name}:before,
+//    a[href$="#{$name}-img"] {
+//        background: url(image-reference("#{$name}-flair")) no-repeat;
+//        background-size: $flair-image-width #{$flair-image-scale-factor * $length};
+//    }
+//
+//    @each $image in $category {
+//        $offset: -$flairsheet-flair-height * (index($category, $image) - 1);
+//        .flair-#{$image}:before,
+//        a[href$="##{$image}-#{$name}-img"] {
+//            background-position: 0 #{$flair-image-scale-factor * $offset};
+//        }
+//    }
+//}
 
 a[href$="-img"] {
     display: inline-block;
