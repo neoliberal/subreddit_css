@@ -1071,16 +1071,6 @@ span#openRESPrefs {
     display: none!important
 }
 
-.side .md a[href="#homebutton"]+a {
-    position: absolute;
-    z-index: 10000000;
-    top: 30px;
-    left: 497px;
-    width: 260px;
-    height: 257px;
-    border-radius: 150px;
-}
-
 .side {
     margin: 0 0 50px 10px;
     width: 322px;
@@ -2114,8 +2104,26 @@ p.tagline {
     margin-left: 5px
 }
 
-.redditname {
-    display: none
+.hover.pagename.redditname {
+    visibility: hidden;
+    position: unset !important;
+}
+
+.hover.pagename.redditname > a {
+    position: absolute;
+    z-index: 10000000;
+    top: 30px;
+    left: 497px;
+    width: 260px;
+    height: 257px;
+    border-radius: 150px;
+    visibility: visible;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.side .hover.redditname {
+    display: none;
 }
 
 #NREFloat {
