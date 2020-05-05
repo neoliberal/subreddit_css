@@ -201,7 +201,7 @@ a[href="#communism-img"] {
 
 /* The text/image links directly below "hot, new, rising" */
 /* The text area containing the images */
-.side .md>h1:first-of-type {
+.side .md>ul:nth-of-type(2) {
     position: absolute;
     overflow: hidden;
     left: 0px;
@@ -212,10 +212,12 @@ a[href="#communism-img"] {
     font: 300 14px/40px -apple-system, "Open Sans", Helvetica, sans-serif!important;
     top: 324px;
     box-shadow: -3px 1px 5px 0px #222;
+    list-style: none;
+    padding: 0;
 }
 
 /* The images themselves */
-.side .md a[href^="#headerbutton"] + a {
+.side .md > ul:nth-of-type(2) > li > p {
     width: 33.33%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(75,76,78,0) 97%,rgba(76,76,76,1) 100%), url("%%header-img-1%%") 50%/cover;
@@ -225,55 +227,48 @@ a[href="#communism-img"] {
     font-weight: bold;
     position:absolute;
     line-height: 18px;
-    padding: 8px 8.4vw 0 10px;
     white-space: pre-line;
     background-position: center right 50% !important;
+    margin: 0;
 }
 
-.side .md a[href="#headerbutton"] + a:after {
-    content: "COVID-19 and The Rally Round the Flag Effect";
-}
-
-.side .md a[href^="#headerbutton"] + a:hover::after {
-    content: "/u/LtGaymer69 explains the 'Rally Around the Flag' effect and documents how it's working across many countries during the coronavirus pandemic.";
-    font-size: 80% !important;
-    font-weight: normal;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    height: 300px;
-    padding: 5px 7px 0 7px;
-    background: rgba(20,20,20,0.55);
+.side .md > ul:nth-of-type(2) > li > p > a {
+    color: white;
+    display: block;
     width: 100%;
-    transition: background-color 0.4s;
+    height: 100%;
+    padding: 8px 8.4vw 0 10px;
 }
 
-.side .md a[href="#headerbutton-2"] + a {
+.side .md > ul:nth-of-type(2) > li > p:nth-of-type(2) {
+    opacity: 0;
+    pointer-events: none;
+    font-size: 14px !important;
+    padding: 5px 7px 0 7px;
+    background: rgba(20,20,20,0.55) !important;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.side .md > ul:nth-of-type(2) > li > p:hover {
+    font-size: 0 !important;
+}
+
+.side .md > ul:nth-of-type(2) > li > p:hover + p {
+    opacity: 1;
+    transition: opacity 0.4s;
+}
+
+.side .md > ul:nth-of-type(2) > li:nth-of-type(2) > p {
     background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(75,76,78,0) 97%,rgba(76,76,76,1) 100%), url("%%header-img-2%%");
     background-size: cover;
     left: 33.33%;
 }
 
-.side .md a[href="#headerbutton-2"] + a:after {
-    content: "Podcast: Real Neoliberal Hour ft. Shoshan a Wiessmann & Andrew Heaton";
-}
-
-.side .md a[href="#headerbutton-2"] + a:hover::after {
-    content: "Shoshana Weissmann & Andrew Heaton join the show to discuss oil going negative, occupational licensing, gene rational divides, shutdown protests, and more.";
-}
-
-.side .md a[href="#headerbutton-3"] + a {
+.side .md > ul:nth-of-type(2) > li:nth-of-type(3) > p {
     background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(75,76,78,0) 97%,rgba(76,76,76,1) 100%), url("%%header-img-3%%");
     background-size: cover;
     left: 66.66%;
-}
-
-.side .md a[href="#headerbutton-3"] + a:after {
-    content: "How Argentina learned to stop worrying and combat Coronavirus";
-}
-
-.side .md a[href="#headerbutton-3"] + a:hover::after {
-    content: "/u/mrmanager237 explains what Argentina has done in response to the Coronavirus pandemic, along with context about Argentina's economic situation.";
 }
 
 /* Manually added */
@@ -447,4 +442,16 @@ a[href="#jeb"] {
   width: 129px;
   height: 100px;
   display: inline-block;
+}
+
+/* Hide sidebar headers for sections restyled with CSS */
+.side .md>h1:nth-of-type(1),
+.side .md>h1:nth-of-type(2),
+.side .md>h2:nth-of-type(3) {
+    display: none;
+}
+
+.side .md>ul:first-of-type {
+    list-style: none;
+    padding: 0;
 }
