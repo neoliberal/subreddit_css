@@ -213,8 +213,20 @@ div[data-author="sansampersamp"] > .entry .author,
 div[data-author="lionmoose"] > .entry .author,
 div[data-author="paulatreides0"] > .entry .author,
 div[data-author="EScforlyfe"] > .entry .author,
+div[data-author="warrioguythi"] > .entry .author,
+div[data-author="dubyahhh"] > .entry .author,
 div[data-author="BainCapitalist"] > .entry .author {
     font-size: 0px !important;
+}
+
+div[data-author="warrioguythi"] > .entry .author::after {
+    font-size: 11px;
+    content: "Fake Lusvig";
+}
+
+div[data-author="dubyahhh"] > .entry .author::after {
+    font-size: 11px;
+    content: "George W Bush";
 }
 
 div[data-author="p00bix"] > .entry .author::after {
