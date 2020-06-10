@@ -176,6 +176,7 @@ div[data-author="adamtraskk"] > .entry .flair span:last-child,
 div[data-author="Boule_de_Neige"] > .entry .flair span:last-child,
 div[data-author="dubyahhh"] > .entry .flair span:last-child,
 div[data-author="riverafaun"] > .entry .flair span:last-child,
+div[data-author="sir_shivers"] > .entry .flair span:last-child,
 div[data-author="sower_of_salt"] > .entry .flair span:last-child {
     border: 2px solid #c22;
 }
@@ -215,6 +216,9 @@ div[data-author="paulatreides0"] > .entry .author,
 div[data-author="EScforlyfe"] > .entry .author,
 div[data-author="warrioguythi"] > .entry .author,
 div[data-author="dubyahhh"] > .entry .author,
+div[data-author="stupid-_-"] > .entry .author,
+div[data-author="The420Roll"] > .entry .author,
+div[data-author="jonathansfox"] > .entry .author,
 div[data-author="BainCapitalist"] > .entry .author {
     font-size: 0px !important;
 }
@@ -252,6 +256,21 @@ div[data-author="paulatreides0"] > .entry .author::after {
 div[data-author="EScforlyfe"] > .entry .author::after {
   font-size: 11px;
   content: "Carl Bildt stan account";
+}
+
+div[data-author="stupid-_-"] > .entry .author::after {
+  font-size: 11px;
+  content: "diese nüsse";
+}
+
+div[data-author="The420Roll"] > .entry .author::after {
+  font-size: 11px;
+  content: "Jeb! 420 Bush";
+}
+
+div[data-author="jonathansfox"] > .entry .author::after {
+  font-size: 11px;
+  content: "Jonathan S. Fox";
 }
 
 div[data-author="BainCapitalist"] > .entry .author::after {
