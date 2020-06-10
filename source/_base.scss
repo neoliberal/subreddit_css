@@ -2160,6 +2160,7 @@ p.tagline {
     margin-left: 50px
 }
 
+.md [href="#biden"],
 .md [href="#ohjeremycorbyn"],
 .md [href="#mission-accomplished"],
 .md [href="#theresamay"],
@@ -2181,6 +2182,13 @@ p.tagline {
     font-size: 20px;
     overflow: hidden;
     pointer-events: none
+}
+
+.md [href="#biden"] {
+    background: url(%%biden%%);
+    height: 169px;
+    width: 300px;
+    animation: biden 2s steps(26) infinite;
 }
 
 .md [href="#ohjeremycorbyn"] {
@@ -2214,6 +2222,11 @@ p.tagline {
     height: 360px;
     width: 640px;
     animation: bush 4.8s steps(42) infinite;
+}
+
+@keyframes biden {
+    from {background-position: 0 0; }
+    to {background-position: 0 -4394px;}
 }
 
 @keyframes bush {
