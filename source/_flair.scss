@@ -209,6 +209,7 @@ div[data-author="gammbus"] > .entry .author {
 }
 
 // Replace usernames
+div[data-author="MistakeNotDotDotDot"] > .entry .author,
 div[data-author="p00bix"] > .entry .author,
 div[data-author="sansampersamp"] > .entry .author,
 div[data-author="lionmoose"] > .entry .author,
@@ -235,7 +236,7 @@ div[data-author="dubyahhh"] > .entry .author::after {
 
 div[data-author="p00bix"] > .entry .author::after {
     font-size: 11px;
-    content: "Enbymod";
+    content: "Pizzabix";
 }
 
 div[data-author="sansampersamp"] > .entry .author::after {
@@ -276,4 +277,15 @@ div[data-author="jonathansfox"] > .entry .author::after {
 div[data-author="BainCapitalist"] > .entry .author::after {
   font-size: 11px;
   content: "BrainCRAPitalist";
+}
+
+div[data-author="MistakeNotDotDotDot"] > .entry .author::before {
+  font-size: 11px;
+  content: "Ue ";
+}
+
+div[data-author="MistakeNotDotDotDot"] > .entry .author::after {
+  font-size: 11px;
+  content: "Mistake Not...";
+  font-style: italic;
 }
