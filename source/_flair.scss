@@ -117,6 +117,15 @@ a.author.moderator~.flair-mod {
     width: 40px !important;
     min-width: 40px;
     visibility: visible;
+    margin: 0 4px 0 4px;
+}
+
+.flair span:first-child {
+    margin-left: 0;
+}
+
+.flair span:last-child {
+    margin-right: 0;
 }
 
 .flair.flairrichtext {
@@ -137,7 +146,7 @@ a.author.moderator~.flair-mod {
     font-size: 45px;
 }
 
-.flair span:last-child {
+.flair span:not(.flairemoji) {
     padding: 0 4px 0 4px;
     visibility: visible;
     background-color: inherit;
@@ -145,146 +154,146 @@ a.author.moderator~.flair-mod {
 }
 
 // Red bordered flairs
-div[data-author="ThatFrenchieGuy"] > .entry .flair span:last-child,
-div[data-author="thebowski"] > .entry .flair span:last-child,
-div[data-author="errantventure"] > .entry .flair span:last-child,
-div[data-author="MrDannyOcean"] > .entry .flair span:last-child,
-div[data-author="cdstephens"] > .entry .flair span:last-child,
-div[data-author="1amathrowaway"] > .entry .flair span:last-child,
-div[data-author="thatfrenchieguy"] > .entry .flair span:last-child,
-div[data-author="caesar15"] > .entry .flair span:last-child,
-div[data-author="lionmoose"] > .entry .flair span:last-child,
-div[data-author="BainCapitalist"] > .entry .flair span:last-child,
-div[data-author="ostrichmustard"] > .entry .flair span:last-child,
-div[data-author="paulatreides0"] > .entry .flair span:last-child,
-div[data-author="vakiadia"] > .entry .flair span:last-child,
-div[data-author="birdious"] > .entry .flair span:last-child,
-div[data-author="DiveIntoTheShadows"] > .entry .flair span:last-child,
-div[data-author="p00bix"] > .entry .flair span:last-child,
-div[data-author="neoliberal_shill_bot"] > .entry .flair span:last-child,
-div[data-author="commalacomekrugman"] > .entry .flair span:last-child,
-div[data-author="sansampersamp"] > .entry .flair span:last-child,
-div[data-author="qchisq"] > .entry .flair span:last-child,
-div[data-author="daokedao4"] > .entry .flair span:last-child,
-div[data-author="buenzlitum"] > .entry .flair span:last-child,
-div[data-author="int6"] > .entry .flair span:last-child,
-div[data-author="ExternalNeoliberal"] > .entry .flair span:last-child,
-div[data-author="BastestKitty1"] > .entry .flair span:last-child,
-div[data-author="jenbanim"] > .entry .flair span:last-child,
-div[data-author="EScforlyfe"] > .entry .flair span:last-child,
-div[data-author="adamtraskk"] > .entry .flair span:last-child,
-div[data-author="Boule_de_Neige"] > .entry .flair span:last-child,
-div[data-author="dubyahhh"] > .entry .flair span:last-child,
-div[data-author="riverafaun"] > .entry .flair span:last-child,
-div[data-author="sir_shivers"] > .entry .flair span:last-child,
-div[data-author="sower_of_salt"] > .entry .flair span:last-child {
+a[href$="ThatFrenchieGuy"] ~ .flair span:not(.flairemoji),
+a[href$="thebowski"] ~ .flair span:not(.flairemoji),
+a[href$="errantventure"] ~ .flair span:not(.flairemoji),
+a[href$="MrDannyOcean"] ~ .flair span:not(.flairemoji),
+a[href$="cdstephens"] ~ .flair span:not(.flairemoji),
+a[href$="1amathrowaway"] ~ .flair span:not(.flairemoji),
+a[href$="thatfrenchieguy"] ~ .flair span:not(.flairemoji),
+a[href$="caesar15"] ~ .flair span:not(.flairemoji),
+a[href$="lionmoose"] ~ .flair span:not(.flairemoji),
+a[href$="BainCapitalist"] ~ .flair span:not(.flairemoji),
+a[href$="ostrichmustard"] ~ .flair span:not(.flairemoji),
+a[href$="paulatreides0"] ~ .flair span:not(.flairemoji),
+a[href$="vakiadia"] ~ .flair span:not(.flairemoji),
+a[href$="birdious"] ~ .flair span:not(.flairemoji),
+a[href$="DiveIntoTheShadows"] ~ .flair span:not(.flairemoji),
+a[href$="p00bix"] ~ .flair span:not(.flairemoji),
+a[href$="neoliberal_shill_bot"] ~ .flair span:not(.flairemoji),
+a[href$="commalacomekrugman"] ~ .flair span:not(.flairemoji),
+a[href$="sansampersamp"] ~ .flair span:not(.flairemoji),
+a[href$="qchisq"] ~ .flair span:not(.flairemoji),
+a[href$="daokedao4"] ~ .flair span:not(.flairemoji),
+a[href$="buenzlitum"] ~ .flair span:not(.flairemoji),
+a[href$="int6"] ~ .flair span:not(.flairemoji),
+a[href$="ExternalNeoliberal"] ~ .flair span:not(.flairemoji),
+a[href$="BastestKitty1"] ~ .flair span:not(.flairemoji),
+a[href$="jenbanim"] ~ .flair span:not(.flairemoji),
+a[href$="EScforlyfe"] ~ .flair span:not(.flairemoji),
+a[href$="adamtraskk"] ~ .flair span:not(.flairemoji),
+a[href$="Boule_de_Neige"] ~ .flair span:not(.flairemoji),
+a[href$="dubyahhh"] ~ .flair span:not(.flairemoji),
+a[href$="riverafaun"] ~ .flair span:not(.flairemoji),
+a[href$="sir_shivers"] ~ .flair span:not(.flairemoji),
+a[href$="sower_of_salt"] ~ .flair span:not(.flairemoji) {
     border: 2px solid #c22;
 }
 
 // Pink border
-div[data-author="usrname42"] > .entry .flair span:last-child {
+a[href$="usrname42"] ~ .flair span:not(.flairemoji) {
     border: 2px solid #e286a9;
 }
 
 // Blue border flairs
-div[data-author="BernieMeinhoffGang"] > .entry .flair span:last-child {
+a[href$="BernieMeinhoffGang"] ~ .flair span:not(.flairemoji) {
     border: 2px solid #003366;
 }
 
 // Pale magenta borders, originally girl flairs
-div[data-author="Kelsig"] > .entry .flair span:last-child,
-div[data-author="AJungianIdeal"] > .entry .flair span:last-child,
-div[data-author="LefthandedLunatic"] > .entry .flair span:last-child,
-div[data-author="karry9001"] > .entry .flair span:last-child,
-div[data-author="ByzantiumBall"] > .entry .flair span:last-child,
-div[data-author="onometre"] > .entry .flair span:last-child,
-div[data-author="thelargestgay"] > .entry .flair span:last-child,
-div[data-author="taylor1589"] > .entry .flair span:last-child {
+a[href$="Kelsig"] ~ .flair span:not(.flairemoji),
+a[href$="AJungianIdeal"] ~ .flair span:not(.flairemoji),
+a[href$="LefthandedLunatic"] ~ .flair span:not(.flairemoji),
+a[href$="karry9001"] ~ .flair span:not(.flairemoji),
+a[href$="ByzantiumBall"] ~ .flair span:not(.flairemoji),
+a[href$="onometre"] ~ .flair span:not(.flairemoji),
+a[href$="thelargestgay"] ~ .flair span:not(.flairemoji),
+a[href$="taylor1589"] ~ .flair span:not(.flairemoji) {
     border: 2px solid #ffa4f0;
 }
 
 // Flip gammbus' username
-div[data-author="gammbus"] > .entry .author {
+a[href$="gammbus"] ~ .author {
     transform: scale(-1, -1);
 }
 
 // Replace usernames
-div[data-author="MistakeNotDotDotDot"] > .entry .author,
-div[data-author="p00bix"] > .entry .author,
-div[data-author="sansampersamp"] > .entry .author,
-div[data-author="lionmoose"] > .entry .author,
-div[data-author="paulatreides0"] > .entry .author,
-div[data-author="EScforlyfe"] > .entry .author,
-div[data-author="warrioguythi"] > .entry .author,
-div[data-author="dubyahhh"] > .entry .author,
-div[data-author="stupid-_-"] > .entry .author,
-div[data-author="The420Roll"] > .entry .author,
-div[data-author="jonathansfox"] > .entry .author,
-div[data-author="BainCapitalist"] > .entry .author {
+a[href$="MistakeNotDotDotDot"] ~ .author,
+a[href$="p00bix"] ~ .author,
+a[href$="sansampersamp"] ~ .author,
+a[href$="lionmoose"] ~ .author,
+a[href$="paulatreides0"] ~ .author,
+a[href$="EScforlyfe"] ~ .author,
+a[href$="warrioguythi"] ~ .author,
+a[href$="dubyahhh"] ~ .author,
+a[href$="stupid-_-"] ~ .author,
+a[href$="The420Roll"] ~ .author,
+a[href$="jonathansfox"] ~ .author,
+a[href$="BainCapitalist"] ~ .author {
     font-size: 0px !important;
 }
 
-div[data-author="warrioguythi"] > .entry .author::after {
+a[href$="warrioguythi"] ~ .author::after {
     font-size: 11px;
     content: "Fake Lusvig";
 }
 
-div[data-author="dubyahhh"] > .entry .author::after {
+a[href$="dubyahhh"] ~ .author::after {
     font-size: 11px;
     content: "George W Bush";
 }
 
-div[data-author="p00bix"] > .entry .author::after {
+a[href$="p00bix"] ~ .author::after {
     font-size: 11px;
     content: "Pizzabix";
 }
 
-div[data-author="sansampersamp"] > .entry .author::after {
+a[href$="sansampersamp"] ~ .author::after {
   font-size: 11px;
   content: "S&";
 }
 
-div[data-author="lionmoose"] > .entry .author::after {
+a[href$="lionmoose"] ~ .author::after {
   font-size: 11px;
   content: "cuccmoose";
 }
 
-div[data-author="paulatreides0"] > .entry .author::after {
+a[href$="paulatreides0"] ~ .author::after {
   font-size: 11px;
   content: "Leto Atreides II";
 }
 
-div[data-author="EScforlyfe"] > .entry .author::after {
+a[href$="EScforlyfe"] ~ .author::after {
   font-size: 11px;
   content: "Carl Bildt stan account";
 }
 
-div[data-author="stupid-_-"] > .entry .author::after {
+a[href$="stupid-_-"] ~ .author::after {
   font-size: 11px;
   content: "diese nüsse";
 }
 
-div[data-author="The420Roll"] > .entry .author::after {
+a[href$="The420Roll"] ~ .author::after {
   font-size: 11px;
   content: "Jeb! 420 Bush";
 }
 
-div[data-author="jonathansfox"] > .entry .author::after {
+a[href$="jonathansfox"] ~ .author::after {
   font-size: 11px;
   content: "Jonathan S. Fox";
 }
 
-div[data-author="BainCapitalist"] > .entry .author::after {
+a[href$="BainCapitalist"] ~ .author::after {
   font-size: 11px;
   content: "BrainCRAPitalist";
 }
 
-div[data-author="MistakeNotDotDotDot"] > .entry .author::before {
+a[href$="MistakeNotDotDotDot"] ~ .author::before {
   font-size: 11px;
   content: "Ue ";
 }
 
-div[data-author="MistakeNotDotDotDot"] > .entry .author::after {
+a[href$="MistakeNotDotDotDot"] ~ .author::after {
   font-size: 11px;
   content: "Mistake Not...";
   font-style: italic;
