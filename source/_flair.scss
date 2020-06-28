@@ -218,82 +218,82 @@ a[href$="gammbus"] ~ .author {
 }
 
 // Replace usernames
-a[href$="MistakeNotDotDotDot"] ~ .author,
-a[href$="p00bix"] ~ .author,
-a[href$="sansampersamp"] ~ .author,
-a[href$="lionmoose"] ~ .author,
-a[href$="paulatreides0"] ~ .author,
-a[href$="EScforlyfe"] ~ .author,
-a[href$="warrioguythi"] ~ .author,
-a[href$="dubyahhh"] ~ .author,
-a[href$="stupid-_-"] ~ .author,
-a[href$="The420Roll"] ~ .author,
-a[href$="jonathansfox"] ~ .author,
-a[href$="BainCapitalist"] ~ .author {
+div[data-author="MistakeNotDotDotDot"] > .entry .author,
+div[data-author="p00bix"] > .entry .author,
+div[data-author="sansampersamp"] > .entry .author,
+div[data-author="lionmoose"] > .entry .author,
+div[data-author="paulatreides0"] > .entry .author,
+div[data-author="EScforlyfe"] > .entry .author,
+div[data-author="warrioguythi"] > .entry .author,
+div[data-author="dubyahhh"] > .entry .author,
+div[data-author="stupid-_-"] > .entry .author,
+div[data-author="The420Roll"] > .entry .author,
+div[data-author="jonathansfox"] > .entry .author,
+div[data-author="BainCapitalist"] > .entry .author {
     font-size: 0px !important;
 }
 
-a[href$="warrioguythi"] ~ .author::after {
+div[data-author="warrioguythi"] > .entry .author::after {
     font-size: 11px;
     content: "Fake Lusvig";
 }
 
-a[href$="dubyahhh"] ~ .author::after {
+div[data-author="dubyahhh"] > .entry .author::after {
     font-size: 11px;
     content: "George W Bush";
 }
 
-a[href$="p00bix"] ~ .author::after {
+div[data-author="p00bix"] > .entry .author::after {
     font-size: 11px;
     content: "Pizzabix";
 }
 
-a[href$="sansampersamp"] ~ .author::after {
+div[data-author="sansampersamp"] > .entry .author::after {
   font-size: 11px;
   content: "S&";
 }
 
-a[href$="lionmoose"] ~ .author::after {
+div[data-author="lionmoose"] > .entry .author::after {
   font-size: 11px;
   content: "cuccmoose";
 }
 
-a[href$="paulatreides0"] ~ .author::after {
+div[data-author="paulatreides0"] > .entry .author::after {
   font-size: 11px;
   content: "Leto Atreides II";
 }
 
-a[href$="EScforlyfe"] ~ .author::after {
+div[data-author="EScforlyfe"] > .entry .author::after {
   font-size: 11px;
   content: "Carl Bildt stan account";
 }
 
-a[href$="stupid-_-"] ~ .author::after {
+div[data-author="stupid-_-"] > .entry .author::after {
   font-size: 11px;
   content: "diese nüsse";
 }
 
-a[href$="The420Roll"] ~ .author::after {
+div[data-author="The420Roll"] > .entry .author::after {
   font-size: 11px;
   content: "Jeb! 420 Bush";
 }
 
-a[href$="jonathansfox"] ~ .author::after {
+div[data-author="jonathansfox"] > .entry .author::after {
   font-size: 11px;
   content: "Jonathan S. Fox";
 }
 
-a[href$="BainCapitalist"] ~ .author::after {
+div[data-author="BainCapitalist"] > .entry .author::after {
   font-size: 11px;
   content: "BrainCRAPitalist";
 }
 
-a[href$="MistakeNotDotDotDot"] ~ .author::before {
+div[data-author="MistakeNotDotDotDot"] > .entry .author::before {
   font-size: 11px;
   content: "Ue ";
 }
 
-a[href$="MistakeNotDotDotDot"] ~ .author::after {
+div[data-author="MistakeNotDotDotDot"] > .entry .author::after {
   font-size: 11px;
   content: "Mistake Not...";
   font-style: italic;
