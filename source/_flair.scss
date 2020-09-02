@@ -186,6 +186,9 @@ a[href$="Boule_de_Neige"] ~ .flair span:not(.flairemoji),
 a[href$="dubyahhh"] ~ .flair span:not(.flairemoji),
 a[href$="riverafaun"] ~ .flair span:not(.flairemoji),
 a[href$="sir_shivers"] ~ .flair span:not(.flairemoji),
+a[href$="phunphun"] ~ .flair span:not(.flairemoji),
+a[href$="Lux_Stella"] ~ .flair span:not(.flairemoji),
+a[href$="CletusMcGuilly"] ~ .flair span:not(.flairemoji),
 a[href$="sower_of_salt"] ~ .flair span:not(.flairemoji) {
     border: 2px solid #c22;
 }
@@ -229,6 +232,7 @@ div[data-author="dubyahhh"] > .entry .author,
 div[data-author="stupid-_-"] > .entry .author,
 div[data-author="The420Roll"] > .entry .author,
 div[data-author="jonathansfox"] > .entry .author,
+div[data-author="t1o1"] > .entry .author,
 div[data-author="BainCapitalist"] > .entry .author {
     font-size: 0px !important;
 }
@@ -297,4 +301,9 @@ div[data-author="MistakeNotDotDotDot"] > .entry .author::after {
   font-size: 11px;
   content: "Mistake Not...";
   font-style: italic;
+}
+
+div[data-author="t1o1"] > .entry .author::before {
+  font-size: 11px;
+  content: "1 ";
 }
