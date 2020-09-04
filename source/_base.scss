@@ -1401,7 +1401,7 @@ body>.content {
 .organic-listing {
     margin: 0;
     border: 0;
-    padding: 15px 0
+    padding: 12px 0;
 }
 
 .link.last-clicked {
@@ -1414,7 +1414,7 @@ body>.content {
 }
 
 .link .midcol {
-    margin: 0 10px
+    margin: 8px 10px;
 }
 
 .comment .midcol {
@@ -1446,7 +1446,8 @@ body .thumbnail img {
 p.title {
     display: flex;
     flex-direction: row;
-    align-items: center
+    align-items: center;
+    min-height: 33px;
 }
 
 .approval-checkmark {
@@ -1469,7 +1470,9 @@ p.title {
 }
 
 .thumbnail.default {
-    background-position: -97px -133px
+    background-position: -97px -133px;
+    margin-top: 14px;
+    margin-bottom: 13px;
 }
 
 .thumbnail[href*="reddit.com"] {
@@ -1477,7 +1480,9 @@ p.title {
 }
 
 .self .thumbnail.self {
-    background-position: -60px -133px
+    background-position: -60px -133px;
+    margin-top: 14px;
+    margin-bottom: 13px;
 }
 
 .search-result.has-thumbnail>.thumbnail.nsfw,
@@ -1616,7 +1621,7 @@ div.commentNavSortType,
 span.redditSingleClick {
     font-size: 11px;
     font-weight: 400;
-    color: #4d5968
+    color: #616F80;
 }
 
 .tagline .userattrs a.admin,
@@ -2068,7 +2073,11 @@ p.tagline {
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-    align-content: center
+    align-content: center;
+}
+
+.thing.link > .entry .tagline {
+    min-height: 16px;
 }
 
 .comment>.entry>.tagline {
@@ -2093,7 +2102,8 @@ p.tagline {
 }
 
 .top-matter .tagline .author {
-    margin-left: 3px
+    margin-left: 3px;
+    font-weight: bold;
 }
 
 .top-matter .tagline .stickied-tagline {
@@ -2433,4 +2443,12 @@ p.tagline {
 
 .subreddit-rules-page {
     margin-top: 80px;
+}
+
+.entry .buttons .comments {
+    font-weight: bold;
+}
+
+.thing.link:not(.self) .entry {
+    min-height: 70px;
 }
