@@ -168,7 +168,7 @@ a[href$="rolf-img"]:hover, a[href$="rofl-img"]:hover {
     background-position: 0;
 }
 
-.md [href="#party-parrot"] {
+.md [href="#party-parrot" i] {
     background: url(%%parrot-flair%%);
     display: inline-block;
     height: 100px;
@@ -193,7 +193,7 @@ a[href$="rolf-img"]:hover, a[href$="rofl-img"]:hover {
 }
 
 /* Sounds like Communist propaganda, but okay */
-a[href="#communism-img"] {
+a[href="#communism-img" i] {
     background: url("%%communism-img%%");
     width: 250px;
     height: 158px;
@@ -271,21 +271,21 @@ a[href="#communism-img"] {
 }
 
 /* Manually added */
-.md [href='#klobuchar-img']{
+.md [href='#klobuchar-img' i]{
     background: url(%%klobuchar-img%%);
     display: inline-block;
     height: 50px;
     width: 42px;
 }
 
-a[href="#doubt"] {
+a[href="#doubt" i] {
   background-image: url(%%doubt%%);
   width: 160px;
   height: 84px;
   display: inline-block;
 }
 
-a[href="#go-to-bed"] {
+a[href="#go-to-bed" i] {
   background-image: url(%%go-to-bed%%);
   width: 330px;
   height: 180px;
@@ -436,7 +436,7 @@ html[lang="cc"] .side .md a[href="#oonts-parrot-right"] {
     pointer-events: none;
 }
 
-a[href="#jeb"] {
+a[href="#jeb" i] {
   background-image: url(%%jeb%%);
   width: 129px;
   height: 100px;
@@ -455,7 +455,7 @@ a[href="#jeb"] {
     padding: 0;
 }
 
-a[href="#gigachad"] {
+a[href="#gigachad" i] {
     display: flex;
     align-items: center;
     padding-left: 80px;
