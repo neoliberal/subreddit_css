@@ -2170,20 +2170,20 @@ p.tagline {
     margin-left: 50px
 }
 
-.md [href="#BasicShyBear" i],
-.md [href="#biden" i],
-.md [href="#corbynretreat" i],
-.md [href="#corbynwwe" i],
-.md [href="#GOAT" i],
-.md [href="#grievelife" i],
-.md [href='#goolsbee-pistol' i],
-.md [href='#goolsbee-stupid' i],
-.md [href="#mission-accomplished" i],
-.md [href="#ohjeremycorbyn" i],
-.md [href="#ryandab" i],
-.md [href="#theresamay" i],
-.md [href="#theresamayfish" i],
-.md [href="#voteblair" i] {
+.md [href="#biden"],
+.md [href="#ohjeremycorbyn"],
+.md [href="#mission-accomplished"],
+.md [href="#theresamay"],
+.md [href="#BasicShyBear"],
+.md [href="#theresamayfish"],
+.md [href="#GOAT"],
+.md [href="#grievelife"],
+.md [href="#ryandab"],
+.md [href="#voteblair"],
+.md [href="#corbynwwe"],
+.md [href='#goolsbee-stupid'],
+.md [href='#goolsbee-pistol'],
+.md [href="#corbynretreat"] {
     background-size: cover;
     display: inline-block;
     color: #fff;
@@ -2194,14 +2194,14 @@ p.tagline {
     pointer-events: none
 }
 
-.md [href="#biden" i] {
+.md [href="#biden"] {
     background: url(%%biden%%);
     height: 169px;
     width: 300px;
     animation: biden 2s steps(26) infinite;
 }
 
-.md [href="#ohjeremycorbyn" i] {
+.md [href="#ohjeremycorbyn"] {
     background: url(%%corbyn%%);
     height: 315px;
     width: 387px;
@@ -2213,21 +2213,21 @@ p.tagline {
     to {background-position: 0 -12600px}
 }
 
-.md [href='#goolsbee-stupid' i]{
+.md [href='#goolsbee-stupid']{
     background: url(%%goolsbee-stupid%%);
     height: 74px;
     width: 259px;
 
 }
 
-.md [href='#goolsbee-pistol' i]{
+.md [href='#goolsbee-pistol']{
     background: url(%%goolsbee-pistol%%);
     height: 70px;
     width: 301px;
 
 }
 
-.md [href="#mission-accomplished" i] {
+.md [href="#mission-accomplished"] {
     background: url(%%mission-accomplished%%) 0/cover;
     height: 360px;
     width: 640px;
@@ -2244,7 +2244,7 @@ p.tagline {
     to {background-position: 0 -15120px;}
 }
 
-.md [href="#theresamay" i] {
+.md [href="#theresamay"] {
     background: url(%%theresamay%%);
     height: 172px;
     width: 300px;
@@ -2256,7 +2256,7 @@ p.tagline {
     to {background-position: 0 -12349px}
 }
 
-.md [href="#BasicShyBear" i] {
+.md [href="#BasicShyBear"] {
     background: url(%%BasicShyBear%%);
     height: 250px;
     width: 444px;
@@ -2268,7 +2268,7 @@ p.tagline {
     to {background-position: 0 -21500px;}
 }
 
-.md [href="#theresamayfish" i] {
+.md [href="#theresamayfish"] {
     background: url(%%theresamayfish%%);
     height: 180px;
     width: 374px;
@@ -2280,7 +2280,7 @@ p.tagline {
     to {background-position: 0 -16200px}
 }
 
-.md [href="#GOAT" i] {
+.md [href="#GOAT"] {
     background: url(%%GOAT%%);
     height: 200px;
     width: 270px;
@@ -2292,7 +2292,7 @@ p.tagline {
     to {background-position: 0 -31000px}
 }
 
-.md [href="#grievelife" i] {
+.md [href="#grievelife"] {
     background: url(%%grievelife%%);
     width: 383px;
     height: 216px;
@@ -2304,7 +2304,7 @@ p.tagline {
     to {background-position: 0 -16200px;}
 }
 
-.md [href="#ryandab" i] {
+.md [href="#ryandab"] {
     background: url(%%ryandab%%);
     height: 278px;
     width: 468px;
@@ -2316,7 +2316,7 @@ p.tagline {
     to {background-position: 0 -10564px}
 }
 
-.md [href="#voteblair" i] {
+.md [href="#voteblair"] {
     background: url(%%blair%%);
     height: 240px;
     width: 300px;
@@ -2328,14 +2328,14 @@ p.tagline {
     to {background-position: 0 -12000px}
 }
 
-.md [href="#corbynwwe" i] {
+.md [href="#corbynwwe"] {
     background: url(%%corbynwwe%%);
     height: 459px;
     width: 480px;
     animation: corbynwwe 1.7s steps(19) infinite;
 }
 
-.md [href="#corbynretreat" i] {
+.md [href="#corbynretreat"] {
     background: url(%%corbynretreat%%);
     height: 459px;
     width: 480px;
