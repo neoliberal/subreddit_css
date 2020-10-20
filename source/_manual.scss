@@ -146,25 +146,25 @@ a[href$="rolf-img"]:hover, a[href$="rofl-img"]:hover {
 }
 
 .arrow.down,
-.res-nightmode .content .arrow.down {
+ .content .arrow.down {
     background: url(%%downtarrif%%) 0/contain no-repeat;
 }
 
 .arrow.downmod,
-.res-nightmode .content .arrow.downmod {
+ .content .arrow.downmod {
     background: url(%%downtarrifmod%%) 0/contain no-repeat;
 }
 
-.res-nightmode .content .arrow.up {
+ .content .arrow.up {
     background: url(%%up%%) 0/contain no-repeat;
 }
 
-.res-nightmode .content .arrow.upmod {
+ .content .arrow.upmod {
     background-image: url(%%upmod%%);
 }
 
-.res-nightmode .content .arrow.up:hover,
-.res-nightmode .content .arrow.down:hover {
+ .content .arrow.up:hover,
+ .content .arrow.down:hover {
     background-position: 0;
 }
 

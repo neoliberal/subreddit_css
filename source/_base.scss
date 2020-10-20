@@ -238,7 +238,7 @@ input[type=radio]:checked {
 .md a[href^="#headerbutton"]+a,
 .md a[href="#bigbutton"]+a {
     display: inline-block;
-    color: #4d5968
+    color: #dedede
 }
 
 .md a[href^="headerbutton"]+a,
@@ -1529,7 +1529,7 @@ div.RES-keyNav-activeElement {
 .search-result :link>mark,
 .thing a.title {
     font-weight: 700;
-    color: #4d5968
+    color: #dedede
 }
 
 .search-result-meta .stickied-tagline,
@@ -2353,33 +2353,33 @@ p.tagline {
     top: 3.9px;
 }
 
-.res-nightmode .commentarea .flair-image,
-.res-nightmode .side .md a[href^="#headerbutton"] + a,
-.res-nightmode .side::before {
+ .commentarea .flair-image,
+ .side .md a[href^="#headerbutton"] + a,
+ .side::before {
     opacity: 0.8;
 }
 
-.res-nightmode a[href="#bigbutton"] + a,
-.res-nightmode .side .subButtons *,
-.res-nightmode .side .helplink,
-.res-nightmode .image-preview-list .description .img-url,
-.res-nightmode .login-required.access-required,
-.res-nightmode .side .account-activity-box a {
+ a[href="#bigbutton"] + a,
+ .side .subButtons *,
+ .side .helplink,
+ .image-preview-list .description .img-url,
+ .login-required.access-required,
+ .side .account-activity-box a {
     color: #ddd;
 }
 
-.res-nightmode .side .md > ul:nth-of-type(5) {
+ .side .md > ul:nth-of-type(5) {
     background-color: #000;
 }
 
-.res-nightmode #sr-header-area,
-.res-nightmode #sr-more-link {
+#sr-header-area,
+#sr-more-link {
     background-color: rgba(0,0,0,0.3) !important;
     color: #fff !important;
 }
 
-.res-nightmode #RESShortcutsEditContainer,
-.res-nightmode #RESShortcutsEditContainer div {
+#RESShortcutsEditContainer,
+#RESShortcutsEditContainer div {
     background: none !important;
 }
 
@@ -2392,12 +2392,12 @@ p.tagline {
     background-color: #fafafa;
 }
 
-.res-nightmode .content thead,
-.res-nightmode .content tr:nth-of-type(2n) {
+ .content thead,
+ .content tr:nth-of-type(2n) {
     background-color: #555;
 }
 
-.res-nightmode .content tbody {
+ .content tbody {
     background-color: #444;
 }
 
@@ -2415,17 +2415,21 @@ p.tagline {
     background-color: #ec6b5b !important;
 }
 
-.res-nightmode .thing.spam > .entry.res-selected,
-.res-nightmode .thing.spam > .entry.res-selected .md-container {
+.content .entry.res-selected, .content .entry.res-selected .md-container {
+    background-color: #373737 !important;
+}
+
+.thing.spam > .entry.res-selected,
+.thing.spam > .entry.res-selected .md-container {
     background-color: #3e1e1a !important;
 }
 
-.res-nightmode .comment.spam > .child, .res-nightmode .message.spam > .child {
+ .comment.spam > .child,  .message.spam > .child {
     background-color: #232323 !important;
 }
 
 .flairselector.drop-choices.active {
-    background-color: #f9f9f9;
+    //background-color: #f9f9f9;
     border: 1px solid black !important;
 }
 

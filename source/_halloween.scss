@@ -1,0 +1,57 @@
+* {
+    cursor: url(%%skeleton-cursor%%) 0 0, default !important;
+}
+
+.side .md a[href="#skeleton-dance-left"] {
+    background: url(%%skeleton-dance%%);
+    position: fixed;
+    width: 162px;
+    height: 127px;
+    bottom: 0;
+    left: 0;
+    animation: skeleton-dance 1.5s steps(9) infinite;
+    z-index: 10000001;
+    pointer-events: none;
+}
+
+.side .md a[href="#skeleton-dance-right"] {
+    background: url(%%skeleton-dance%%);
+    position: fixed;
+    width: 162px;
+    height: 127px;
+    bottom: 0;
+    right: 0;
+    animation: skeleton-dance 1.5s steps(9) infinite;
+    z-index: 10000001;
+    pointer-events: none;
+}
+
+@keyframes skeleton-dance {
+    from {background-position: 0px 0px;}
+    to {background-position: 0px -1143px;}
+}
+
+.side .md a[href="#jack-o-lantern-header"] {
+    background: url(%%jack-o-lantern-header%%);
+    position: fixed;
+    width: 100%;
+    height: 44px;
+    top: 0;
+    right: 360px;
+    animation: jack-o-lantern-header .5s steps(2) infinite;
+    z-index: 100000;
+    pointer-events: none;
+}
+
+@keyframes jack-o-lantern-header {
+    from {background-position: 0px 0px;}
+    to {background-position: 0px -88px;}
+}
+
+.side .md > ul:nth-of-type(5) {
+    background-color: #000;
+}
+
+#header {
+    background: url(%%nlbanner-expansionary%%) 0 0/auto 104% no-repeat, linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(204, 89, 0) 100%);
+}
