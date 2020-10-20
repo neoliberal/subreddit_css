@@ -10,7 +10,7 @@
     bottom: 0;
     left: 0;
     animation: skeleton-dance 1.5s steps(9) infinite;
-    z-index: 10000001;
+    z-index: 1000;
     pointer-events: none;
 }
 
@@ -22,7 +22,7 @@
     bottom: 0;
     right: 0;
     animation: skeleton-dance 1.5s steps(9) infinite;
-    z-index: 10000001;
+    z-index: 1000;
     pointer-events: none;
 }
 
@@ -53,5 +53,17 @@
 }
 
 #header {
-    background: url(%%nlbanner-expansionary%%) 0 0/auto 104% no-repeat, linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(204, 89, 0) 100%);
+    background: url(%%nlbanner-halloween%%) 0 0/auto 104% no-repeat, linear-gradient(0deg, rgb(2, 0, 36) 0%, rgb(204, 89, 0) 100%);
+}
+
+.md hr {
+    background: url(%%bloodbar%%);
+    animation: bloodbar 1s steps(5) infinite;
+    height: 24px;
+    width: 100%;
+}
+
+@keyframes bloodbar {
+    from {background-position: 0px 0px;}
+    to {background-position: 0px -120px;}
 }
