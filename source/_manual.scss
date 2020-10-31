@@ -474,3 +474,7 @@ a[href="#gigachad"] {
     height: 16px;
     width: 16px;
 }
+
+.thing.deleted > .entry .border .md > p::after {
+    content: " (Comment contained information that would lead to the arrest of Hillary Clinton)";
+}
