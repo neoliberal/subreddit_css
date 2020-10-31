@@ -67,3 +67,45 @@
     from {background-position: 0px 0px;}
     to {background-position: 0px -120px;}
 }
+
+.tb-page-overlay {
+    color: black;
+}
+
+body.mod-toolbox-rd .tb-general-button,
+body.mod-toolbox-rd li a.tb-general-button,
+body.mod-toolbox-rd .tb-bracket-button {
+    color: #aaa;
+}
+
+.res-commentBoxes .comment .comment.thing,
+.res-commentBoxes .comment .comment .comment .comment.thing,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment.thing,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment.thing,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment.thing {
+    background-color: #262626 !important;
+}
+
+.res-commentBoxes .comment .comment .comment.thing,
+.res-commentBoxes .comment .comment .comment .comment .comment.thing,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment.thing,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment.thing {
+    background-color: #161616 !important;
+}
+
+.res-voteEnhancements-highlightScores span.score {
+    color: #888 !important;
+}
+
+.res-commentBoxes .comment.thing.spam {
+    background-image: none !important;
+    background-color: #5c3131 !important;
+}
+
+#srList {
+    background-color: #232323 !important;
+}
+
+.res-commentBoxes .comment.thing {
+    border-color: #333333 !important;
+}
